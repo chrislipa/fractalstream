@@ -102,6 +102,13 @@
 
 
 	data.manager = data.owner = dynamics;
+	data.result = 0;
+	data.workers = 0;
+	data.workerID = 0;
+	data.size = 0;
+	data.kernel = nil;
+	data.plane = 0;
+	data.parameters = nil;
 	[manager processData: data];
 }
 

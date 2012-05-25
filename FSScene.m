@@ -43,6 +43,6 @@
 	kernel = k; center[0] = x; center[1] = y; pixelSize[0] = pixelSize[1] = dz; conformal = YES;
 }
 
-- (BOOL) canPushParameter { return ([parameters length] == nParameters)? NO : YES; }
+- (BOOL) canPushParameter { return ([parameters count] == nParameters)? NO : YES; }
 
 @end

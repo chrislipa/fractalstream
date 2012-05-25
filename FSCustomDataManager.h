@@ -5,6 +5,24 @@
 
 #import <Cocoa/Cocoa.h>
 
+@protocol RespondsToQueryNamed <NSObject>
+@optional
+-(void*) queryNamed:(NSString*) name;
+@end
+
+@protocol RespondsToDataNamed <NSObject>
+@optional
+-(void*) dataNamed:(NSString*) name;
+@end
+
+
+@protocol RespondsToEvalNamed <NSObject>
+@optional
+-(void*) evalNamed:(NSString*) name;
+@end
+
+
+
 
 @interface FSCustomDataManager : NSObject {
 	NSMutableDictionary* dataDictionary;

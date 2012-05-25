@@ -16,7 +16,7 @@
 
 - (id) initWithReal: (double) x imag: (double) y;
 - (BOOL) isReal;
-- setReal: (BOOL) r;
+- (void) setReal: (BOOL) r;
 - (double) realPart;
 - (double) imagPart;
 - (void) setReal: (double) r imag: (double) i;

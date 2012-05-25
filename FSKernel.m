@@ -18,8 +18,8 @@
 
 - (void) runWithData: (FSKernelData*) data {
 	int i,j,k,index;
-	double z[2], Z[2], t, c[2];
-	int count;
+	double z[2], Z[2], t;
+
 	
 	z[0] = data->z[0]; z[1] = data->z[1];
 	index = 0;
@@ -51,7 +51,10 @@
 	FSVariable *c, *z;
 	c = [[FSVariable alloc] initWithName: @"c" real: 0.0 imag: 0.0];
 	z = [[FSVariable alloc] initWithName: @"z" real: 0.0 imag: 0.0];
-	return [NSArray arrayWithObjects: c, z, nil];
+	NSArray* retArray = [NSArray arrayWithObjects: c, z, nil];
+	[c release];
+	[z release];
+	return retArray;
 }
 - (NSArray*) parameters { return nil; }
 - (NSArray*) defaults { return nil; }

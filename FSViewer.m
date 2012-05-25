@@ -3,7 +3,7 @@
 
 
 #import "FSViewer.h"
-
+#import "FSInteraction.h"
 
 @implementation FSViewer
 
@@ -60,7 +60,10 @@
 	savedBackground = [[dynamics image] retain];
 	savedPanX = panX; savedPanY = panY; savedScale = scale;
 	[self resetPanAndScaleNoDisplayUpdate];	
-	[self drawScene: [[note object] scene]];
+	if ([[note object] isKindOfClass:[FSInteraction class]]) {
+		[self drawScene: [((FSInteraction*)[note object]) scene]];
+	}
+	
 }
 
 - (void) mouseEntered: (NSEvent*) theEvent {
@@ -121,7 +124,8 @@
 - (void) touchesEndedWithEvent: (NSEvent*) event {
 	if(followingTouches) {
 		NSLog(@"end of touch\n");
-		[interaction sendSceneNotification];
+		
+		[(FSInteraction*)interaction sendSceneNotification];
 		followingTouches = NO;
 		panningTouches = NO;
 	}
@@ -141,12 +145,12 @@
 
 - (void) drawSceneOnMainThread: (FSScene*) scene {
 	FSKernelData data;
-	double aspect_ratio;
+	//double aspect_ratio;
 	
 	data.z[0] = [scene center][0] - [self bounds].size.width * [scene pixelSize][0] / 2.0; 
 	data.z[1] = [scene center][1] - [self bounds].size.height * [scene pixelSize][1] / 2.0; 
 	data.dim[0] = [self bounds].size.width; data.dim[1] = [self bounds].size.height;
-	aspect_ratio = (double) data.dim[1] / (double) data.dim[0];
+	//aspect_ratio = (double) data.dim[1] / (double) data.dim[0];
 	data.dz[0] = [scene pixelSize][0]; data.dz[1] = [scene pixelSize][1];
 //	if([scene isConformal]) data.dz[1] = data.dz[0] * aspect_ratio;
 	data.kernel = [scene kernel];
@@ -156,6 +160,11 @@
 	data.bitmap = [dynamics getBitmapWithWidth: data.dim[0] height: data.dim[1]];
 	data.batch = [dynamics getBatchIdentifier];
 	data.manager = data.owner = dynamics;
+	data.result = NULL;
+	data.workers = 0;
+	data.workerID = 0;
+	data.size = 0;
+	
 	[workManager processData: data];
 }
 

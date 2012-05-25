@@ -9,7 +9,7 @@
 	double pixelSize[2];
 	BOOL conformal;
 	FSKernel* kernel;
-	NSArray* parameters;
+	NSMutableArray* parameters;
 	NSArray* annotations;
 	int activePlane;
 	int nParameters;

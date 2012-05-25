@@ -31,7 +31,16 @@
 	data.dim[1] = 128;
 	
 	data.manager = data.owner = self;
+	data.result = NULL;
+	data.batch = 0;
+	data.workers = 0;
 	
+	data.workerID = 0;
+	data.size = 0;
+	data.kernel = nil;
+	data.parameters = nil;
+	data.plane = 0;
+	data.bitmap = nil;
 	[manager processData: data];
 }
 
@@ -45,12 +54,12 @@
 
 - (void) processResults: (FSWorker*) worker {
 	FSKernelData* data;
-	int x,y;
+	//int x;//,y;
 	int i,j,index,jndex;
 	char s[65*66+2];
 	data = (FSKernelData*) [worker dataPtr];
-	x = (int)((data->z[0] - -2.0)/data->dz[0]);
-	y = (int)((data->z[1] - 2.0)/data->dz[1]);
+	//x = (int)((data->z[0] - -2.0)/data->dz[0]);
+	//y = (int)((data->z[1] - 2.0)/data->dz[1]);
 	index = jndex = 0;
 	
 	s[jndex++] = '\n';

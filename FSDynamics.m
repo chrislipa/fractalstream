@@ -65,7 +65,8 @@
 	index = 0;
 	for(i = 0; i < data -> dim[1]; i++) {
 		for(j = 0; j < data -> dim[0]; j++) {
-			g = b = 0;
+			//g = 
+			//b = 0;
 			k = ((int*)&(data->result[index]))[0];
 			index += sizeof(int);
 			index += sizeof(double);

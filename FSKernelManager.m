@@ -25,9 +25,10 @@
 	k = [[FSKernel alloc] initWithFunction: kernelPtr];
 	[kernelArray addObject: k];
 	[k release];
+	return 0;
 }
 
-- deprecateKernel: (int) kernel { [[kernelArray objectAtIndex: kernel] setActive: NO]; }
+- deprecateKernel: (int) kernel { [[kernelArray objectAtIndex: kernel] setActive: NO]; return 0;}
 
 - (void*) kernel: (int) kernel { return [kernelArray objectAtIndex: kernel]; }
 

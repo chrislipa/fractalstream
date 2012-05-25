@@ -117,7 +117,6 @@
 		6874B10812188A2E00B0367D /* FSEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSEditController.m; sourceTree = "<group>"; };
 		6874B10B12188C6900B0367D /* Interacting with FractalStream.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Interacting with FractalStream.pdf"; sourceTree = "<group>"; };
 		6877B426121985DC00A084F1 /* FractalStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FractalStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6877B428121985DD00A084F1 /* FractalStream-Info copy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FractalStream-Info copy.plist"; sourceTree = "<group>"; };
 		8D15AC360486D014006FF6A4 /* FractalStream-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FractalStream-Info.plist"; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* FractalStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FractalStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -216,7 +215,6 @@
 				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
 				1DDD58280DA1D0D100B32029 /* FSDocument.xib */,
 				1DDD582A0DA1D0D100B32029 /* MainMenu.xib */,
-				6877B428121985DD00A084F1 /* FractalStream-Info copy.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -341,7 +339,11 @@
 			isa = PBXProject;
 			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "FractalStream" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* FractalStream */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -531,6 +533,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -561,6 +564,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -575,6 +579,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;

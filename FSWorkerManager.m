@@ -30,7 +30,7 @@
 	double z0;
 	double z[2];
 	int offset[2];
-	double boxSize;
+	//double boxSize;
 	FSWorker* worker;
 	
 	//test
@@ -41,7 +41,7 @@
 	
 	offset[0] = offset[1] = 0;
 	++batch;
-	boxSize = (double)(1 << logBoxDim);
+	//boxSize = (double)(1 << logBoxDim);
 	fullDim[0] = data.dim[0];
 	fullDim[1] = data.dim[1];
 	boxDim[0] = (fullDim[0] >> logBoxDim) + ((fullDim[0] % (1 << logBoxDim))?1:0);

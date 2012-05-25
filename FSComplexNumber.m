@@ -25,7 +25,7 @@
 
 
 - (BOOL) isReal { return isReal; }
-- setReal: (BOOL) r { isReal = r; }
+- (void) setReal: (BOOL) r { isReal = r; }
 - (double) realPart { return z[0]; }
 - (double) imagPart { return isReal? 0.0 : z[1]; }
 - (void) setReal: (double) r imag: (double) i { z[0] = r; z[1] = i; }
