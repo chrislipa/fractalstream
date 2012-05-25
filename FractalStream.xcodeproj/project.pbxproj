@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1DDD582C0DA1D0D100B32029 /* FSDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58280DA1D0D100B32029 /* FSDocument.xib */; };
 		1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD582A0DA1D0D100B32029 /* MainMenu.xib */; };
+		36ECB4F11570540400CB4C31 /* FSPreferencesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36ECB4F01570540400CB4C31 /* FSPreferencesView.m */; };
 		684D9A081219DFC80042A74A /* FSWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 684D9A071219DFC80042A74A /* FSWorker.m */; };
 		684D9A0B1219DFF00042A74A /* FSWorkerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 684D9A0A1219DFF00042A74A /* FSWorkerManager.m */; };
 		684D9A0C1219DFF00042A74A /* FSWorkerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 684D9A0A1219DFF00042A74A /* FSWorkerManager.m */; };
@@ -86,6 +87,8 @@
 		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		36ECB4EF1570540400CB4C31 /* FSPreferencesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPreferencesView.h; sourceTree = "<group>"; };
+		36ECB4F01570540400CB4C31 /* FSPreferencesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPreferencesView.m; sourceTree = "<group>"; };
 		684D9A061219DFC80042A74A /* FSWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSWorker.h; sourceTree = "<group>"; };
 		684D9A071219DFC80042A74A /* FSWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSWorker.m; sourceTree = "<group>"; };
 		684D9A091219DFF00042A74A /* FSWorkerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSWorkerManager.h; sourceTree = "<group>"; };
@@ -184,6 +187,7 @@
 		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				36ECB4ED157053DF00CB4C31 /* View */,
 				684D9FEA121B99570042A74A /* FSComplexNumber.h */,
 				684D9FEB121B99570042A74A /* FSComplexNumber.m */,
 				684DA022121C58500042A74A /* FSVariable.h */,
@@ -226,6 +230,15 @@
 				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36ECB4ED157053DF00CB4C31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				36ECB4EF1570540400CB4C31 /* FSPreferencesView.h */,
+				36ECB4F01570540400CB4C31 /* FSPreferencesView.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		684D9B1D121AB9FD0042A74A /* Viewer */ = {
@@ -441,6 +454,7 @@
 				684D9FE8121B98170042A74A /* FSScene.m in Sources */,
 				684D9FEC121B99570042A74A /* FSComplexNumber.m in Sources */,
 				684DA024121C58500042A74A /* FSVariable.m in Sources */,
+				36ECB4F11570540400CB4C31 /* FSPreferencesView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
