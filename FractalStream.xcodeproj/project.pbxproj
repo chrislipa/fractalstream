@@ -7,33 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		364D0AD0157114D700971A37 /* nqsle.fs in Sources */ = {isa = PBXBuildFile; fileRef = 364D0AB3157114D700971A37 /* nqsle.fs */; };
-		364D0AD1157114D700971A37 /* pend.fs in Sources */ = {isa = PBXBuildFile; fileRef = 364D0AB4157114D700971A37 /* pend.fs */; };
-		364D0AD2157114D700971A37 /* henona.fs in Sources */ = {isa = PBXBuildFile; fileRef = 364D0AB6157114D700971A37 /* henona.fs */; };
-		364D0AD3157114D700971A37 /* henonc.fs in Sources */ = {isa = PBXBuildFile; fileRef = 364D0AB7157114D700971A37 /* henonc.fs */; };
-		364D0AD4157114D700971A37 /* saddledrop.fs in Sources */ = {isa = PBXBuildFile; fileRef = 364D0AB8157114D700971A37 /* saddledrop.fs */; };
-		364D0AD5157114D700971A37 /* auto.fs in Sources */ = {isa = PBXBuildFile; fileRef = 364D0ABA157114D700971A37 /* auto.fs */; };
-		364D0AD6157114D700971A37 /* mandbr.fs in Sources */ = {isa = PBXBuildFile; fileRef = 364D0ABB157114D700971A37 /* mandbr.fs */; };
-		364D0AD7157114D700971A37 /* z3-1.fs in Sources */ = {isa = PBXBuildFile; fileRef = 364D0ABC157114D700971A37 /* z3-1.fs */; };
-		364D0AD8157114D700971A37 /* mathieu.fs in Sources */ = {isa = PBXBuildFile; fileRef = 364D0ABE157114D700971A37 /* mathieu.fs */; };
-		364D0AD9157114D700971A37 /* torus.fs in Sources */ = {isa = PBXBuildFile; fileRef = 364D0ABF157114D700971A37 /* torus.fs */; };
-		364D0ADA157114D700971A37 /* ab.fs in Sources */ = {isa = PBXBuildFile; fileRef = 364D0AC1157114D700971A37 /* ab.fs */; };
-		364D0ADB157114D700971A37 /* boundary.fs in Sources */ = {isa = PBXBuildFile; fileRef = 364D0AC2157114D700971A37 /* boundary.fs */; };
-		364D0ADC157114D700971A37 /* ext.fs in Sources */ = {isa = PBXBuildFile; fileRef = 364D0AC3157114D700971A37 /* ext.fs */; };
-		364D0ADD157114D700971A37 /* extern.fs in Sources */ = {isa = PBXBuildFile; fileRef = 364D0AC4157114D700971A37 /* extern.fs */; };
-		364D0ADE157114D700971A37 /* Julia.fs in Sources */ = {isa = PBXBuildFile; fileRef = 364D0AC5157114D700971A37 /* Julia.fs */; };
-		364D0ADF157114D700971A37 /* Mandelbrot.fs in Sources */ = {isa = PBXBuildFile; fileRef = 364D0AC6157114D700971A37 /* Mandelbrot.fs */; };
-		364D0AE0157114D700971A37 /* precrit.fs in Sources */ = {isa = PBXBuildFile; fileRef = 364D0AC7157114D700971A37 /* precrit.fs */; };
-		364D0AE1157114D700971A37 /* tiles.fs in Sources */ = {isa = PBXBuildFile; fileRef = 364D0AC8157114D700971A37 /* tiles.fs */; };
-		364D0AE2157114D700971A37 /* tricorn.fs in Sources */ = {isa = PBXBuildFile; fileRef = 364D0AC9157114D700971A37 /* tricorn.fs */; };
-		364D0AE3157114D700971A37 /* except.fs in Sources */ = {isa = PBXBuildFile; fileRef = 364D0ACB157114D700971A37 /* except.fs */; };
-		364D0AE4157114D700971A37 /* arcsin.fs in Sources */ = {isa = PBXBuildFile; fileRef = 364D0ACD157114D700971A37 /* arcsin.fs */; };
-		364D0AE5157114D700971A37 /* arcsinp1.fs in Sources */ = {isa = PBXBuildFile; fileRef = 364D0ACE157114D700971A37 /* arcsinp1.fs */; };
-		364D0AE6157114D700971A37 /* exp.fs in Sources */ = {isa = PBXBuildFile; fileRef = 364D0ACF157114D700971A37 /* exp.fs */; };
 		364D0AE81571159600971A37 /* LLVMExecutionEngine.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 364D0AE71571159600971A37 /* LLVMExecutionEngine.o */; };
 		364D0AEA157115B200971A37 /* LLVMJIT.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 364D0AE9157115B200971A37 /* LLVMJIT.o */; };
 		364D0AEC157115BA00971A37 /* LLVMPowerPCAsmPrinter.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 364D0AEB157115BA00971A37 /* LLVMPowerPCAsmPrinter.o */; };
 		364D0AEE157115C600971A37 /* LLVMPowerPCCodeGen.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 364D0AED157115C600971A37 /* LLVMPowerPCCodeGen.o */; };
+		36F02924157133A600FEA4A6 /* ab.fs in Copy Files (Quadratic Maps) */ = {isa = PBXBuildFile; fileRef = 364D0AC1157114D700971A37 /* ab.fs */; };
+		36F02925157133A600FEA4A6 /* boundary.fs in Copy Files (Quadratic Maps) */ = {isa = PBXBuildFile; fileRef = 364D0AC2157114D700971A37 /* boundary.fs */; };
+		36F02926157133A600FEA4A6 /* ext.fs in Copy Files (Quadratic Maps) */ = {isa = PBXBuildFile; fileRef = 364D0AC3157114D700971A37 /* ext.fs */; };
+		36F02927157133A600FEA4A6 /* extern.fs in Copy Files (Quadratic Maps) */ = {isa = PBXBuildFile; fileRef = 364D0AC4157114D700971A37 /* extern.fs */; };
+		36F02928157133A600FEA4A6 /* Julia.fs in Copy Files (Quadratic Maps) */ = {isa = PBXBuildFile; fileRef = 364D0AC5157114D700971A37 /* Julia.fs */; };
+		36F02929157133A600FEA4A6 /* Mandelbrot.fs in Copy Files (Quadratic Maps) */ = {isa = PBXBuildFile; fileRef = 364D0AC6157114D700971A37 /* Mandelbrot.fs */; };
+		36F0292A157133A600FEA4A6 /* precrit.fs in Copy Files (Quadratic Maps) */ = {isa = PBXBuildFile; fileRef = 364D0AC7157114D700971A37 /* precrit.fs */; };
+		36F0292B157133A600FEA4A6 /* tiles.fs in Copy Files (Quadratic Maps) */ = {isa = PBXBuildFile; fileRef = 364D0AC8157114D700971A37 /* tiles.fs */; };
+		36F0292C157133A600FEA4A6 /* tricorn.fs in Copy Files (Quadratic Maps) */ = {isa = PBXBuildFile; fileRef = 364D0AC9157114D700971A37 /* tricorn.fs */; };
+		36F0292D157134F200FEA4A6 /* nqsle.fs in Copy Files (Differential Eqns) */ = {isa = PBXBuildFile; fileRef = 364D0AB3157114D700971A37 /* nqsle.fs */; };
+		36F0292E157134F200FEA4A6 /* pend.fs in Copy Files (Differential Eqns) */ = {isa = PBXBuildFile; fileRef = 364D0AB4157114D700971A37 /* pend.fs */; };
+		36F0292F1571350000FEA4A6 /* auto.fs in Copy Files (Newton's Method) */ = {isa = PBXBuildFile; fileRef = 364D0ABA157114D700971A37 /* auto.fs */; };
+		36F029301571350000FEA4A6 /* mandbr.fs in Copy Files (Newton's Method) */ = {isa = PBXBuildFile; fileRef = 364D0ABB157114D700971A37 /* mandbr.fs */; };
+		36F029311571350000FEA4A6 /* z3-1.fs in Copy Files (Newton's Method) */ = {isa = PBXBuildFile; fileRef = 364D0ABC157114D700971A37 /* z3-1.fs */; };
+		36F029321571351000FEA4A6 /* arcsin.fs in Copy Files (Transcendental Dynamics) */ = {isa = PBXBuildFile; fileRef = 364D0ACD157114D700971A37 /* arcsin.fs */; };
+		36F029331571351000FEA4A6 /* arcsinp1.fs in Copy Files (Transcendental Dynamics) */ = {isa = PBXBuildFile; fileRef = 364D0ACE157114D700971A37 /* arcsinp1.fs */; };
+		36F029341571351000FEA4A6 /* exp.fs in Copy Files (Transcendental Dynamics) */ = {isa = PBXBuildFile; fileRef = 364D0ACF157114D700971A37 /* exp.fs */; };
+		36F029351571351D00FEA4A6 /* henona.fs in Copy Files (Hénon Map) */ = {isa = PBXBuildFile; fileRef = 364D0AB6157114D700971A37 /* henona.fs */; };
+		36F029361571351D00FEA4A6 /* henonc.fs in Copy Files (Hénon Map) */ = {isa = PBXBuildFile; fileRef = 364D0AB7157114D700971A37 /* henonc.fs */; };
+		36F029371571351D00FEA4A6 /* saddledrop.fs in Copy Files (Hénon Map) */ = {isa = PBXBuildFile; fileRef = 364D0AB8157114D700971A37 /* saddledrop.fs */; };
+		36F029381571352900FEA4A6 /* except.fs in Copy Files (Several Complex Variables) */ = {isa = PBXBuildFile; fileRef = 364D0ACB157114D700971A37 /* except.fs */; };
+		36F029391571353600FEA4A6 /* mathieu.fs in Copy Files (Other) */ = {isa = PBXBuildFile; fileRef = 364D0ABE157114D700971A37 /* mathieu.fs */; };
+		36F0293A1571353600FEA4A6 /* torus.fs in Copy Files (Other) */ = {isa = PBXBuildFile; fileRef = 364D0ABF157114D700971A37 /* torus.fs */; };
+		36F0293F1571360F00FEA4A6 /* < please name me >.fscolor in Resources */ = {isa = PBXBuildFile; fileRef = 36F0293B1571360F00FEA4A6 /* < please name me >.fscolor */; };
+		36F029401571360F00FEA4A6 /* C13699648.fscolor in Resources */ = {isa = PBXBuildFile; fileRef = 36F0293C1571360F00FEA4A6 /* C13699648.fscolor */; };
+		36F029411571360F00FEA4A6 /* C13708784.fscolor in Resources */ = {isa = PBXBuildFile; fileRef = 36F0293D1571360F00FEA4A6 /* C13708784.fscolor */; };
+		36F029421571360F00FEA4A6 /* ColorLibrary in Resources */ = {isa = PBXBuildFile; fileRef = 36F0293E1571360F00FEA4A6 /* ColorLibrary */; };
+		36F029431571362500FEA4A6 /* < please name me >.fscolor in Copy Files (Colors) */ = {isa = PBXBuildFile; fileRef = 36F0293B1571360F00FEA4A6 /* < please name me >.fscolor */; };
+		36F029441571362600FEA4A6 /* C13699648.fscolor in Copy Files (Colors) */ = {isa = PBXBuildFile; fileRef = 36F0293C1571360F00FEA4A6 /* C13699648.fscolor */; };
+		36F029451571362600FEA4A6 /* C13708784.fscolor in Copy Files (Colors) */ = {isa = PBXBuildFile; fileRef = 36F0293D1571360F00FEA4A6 /* C13708784.fscolor */; };
+		36F029461571362600FEA4A6 /* ColorLibrary in Copy Files (Colors) */ = {isa = PBXBuildFile; fileRef = 36F0293E1571360F00FEA4A6 /* ColorLibrary */; };
 		36F1D9B3157115E000E1B7E5 /* LLVMX86AsmPrinter.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F1D9B1157115E000E1B7E5 /* LLVMX86AsmPrinter.o */; };
 		36F1D9B4157115E000E1B7E5 /* LLVMX86CodeGen.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F1D9B2157115E000E1B7E5 /* LLVMX86CodeGen.o */; };
 		36F1D9B71571168300E1B7E5 /* libLLVMAsmPrinter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F1D9B61571168300E1B7E5 /* libLLVMAsmPrinter.a */; };
@@ -138,18 +146,11 @@
 			dstPath = "Scripts/Hénon Map";
 			dstSubfolderSpec = 13;
 			files = (
+				36F029351571351D00FEA4A6 /* henona.fs in Copy Files (Hénon Map) */,
+				36F029361571351D00FEA4A6 /* henonc.fs in Copy Files (Hénon Map) */,
+				36F029371571351D00FEA4A6 /* saddledrop.fs in Copy Files (Hénon Map) */,
 			);
 			name = "Copy Files (Hénon Map)";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		681AF1F90F69A8C900E8DE1B /* Copy Files (Scripts) */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = Scripts;
-			dstSubfolderSpec = 13;
-			files = (
-			);
-			name = "Copy Files (Scripts)";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		681AF1FA0F69A8C900E8DE1B /* Copy Files (Differential Eqns) */ = {
@@ -159,6 +160,8 @@
 			dstPath = "Scripts/Differential Equations";
 			dstSubfolderSpec = 13;
 			files = (
+				36F0292D157134F200FEA4A6 /* nqsle.fs in Copy Files (Differential Eqns) */,
+				36F0292E157134F200FEA4A6 /* pend.fs in Copy Files (Differential Eqns) */,
 			);
 			name = "Copy Files (Differential Eqns)";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,6 +172,9 @@
 			dstPath = "Scripts/Newton's Method";
 			dstSubfolderSpec = 13;
 			files = (
+				36F0292F1571350000FEA4A6 /* auto.fs in Copy Files (Newton's Method) */,
+				36F029301571350000FEA4A6 /* mandbr.fs in Copy Files (Newton's Method) */,
+				36F029311571350000FEA4A6 /* z3-1.fs in Copy Files (Newton's Method) */,
 			);
 			name = "Copy Files (Newton's Method)";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,6 +185,8 @@
 			dstPath = Scripts/Other;
 			dstSubfolderSpec = 13;
 			files = (
+				36F029391571353600FEA4A6 /* mathieu.fs in Copy Files (Other) */,
+				36F0293A1571353600FEA4A6 /* torus.fs in Copy Files (Other) */,
 			);
 			name = "Copy Files (Other)";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,6 +197,15 @@
 			dstPath = "Scripts/Quadratic Maps";
 			dstSubfolderSpec = 13;
 			files = (
+				36F02924157133A600FEA4A6 /* ab.fs in Copy Files (Quadratic Maps) */,
+				36F02925157133A600FEA4A6 /* boundary.fs in Copy Files (Quadratic Maps) */,
+				36F02926157133A600FEA4A6 /* ext.fs in Copy Files (Quadratic Maps) */,
+				36F02927157133A600FEA4A6 /* extern.fs in Copy Files (Quadratic Maps) */,
+				36F02928157133A600FEA4A6 /* Julia.fs in Copy Files (Quadratic Maps) */,
+				36F02929157133A600FEA4A6 /* Mandelbrot.fs in Copy Files (Quadratic Maps) */,
+				36F0292A157133A600FEA4A6 /* precrit.fs in Copy Files (Quadratic Maps) */,
+				36F0292B157133A600FEA4A6 /* tiles.fs in Copy Files (Quadratic Maps) */,
+				36F0292C157133A600FEA4A6 /* tricorn.fs in Copy Files (Quadratic Maps) */,
 			);
 			name = "Copy Files (Quadratic Maps)";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,6 +216,7 @@
 			dstPath = "Scripts/Several Complex Variables";
 			dstSubfolderSpec = 13;
 			files = (
+				36F029381571352900FEA4A6 /* except.fs in Copy Files (Several Complex Variables) */,
 			);
 			name = "Copy Files (Several Complex Variables)";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +227,9 @@
 			dstPath = "Scripts/Transcendental Dynamics";
 			dstSubfolderSpec = 13;
 			files = (
+				36F029321571351000FEA4A6 /* arcsin.fs in Copy Files (Transcendental Dynamics) */,
+				36F029331571351000FEA4A6 /* arcsinp1.fs in Copy Files (Transcendental Dynamics) */,
+				36F029341571351000FEA4A6 /* exp.fs in Copy Files (Transcendental Dynamics) */,
 			);
 			name = "Copy Files (Transcendental Dynamics)";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +240,10 @@
 			dstPath = Colors;
 			dstSubfolderSpec = 13;
 			files = (
+				36F029431571362500FEA4A6 /* < please name me >.fscolor in Copy Files (Colors) */,
+				36F029441571362600FEA4A6 /* C13699648.fscolor in Copy Files (Colors) */,
+				36F029451571362600FEA4A6 /* C13708784.fscolor in Copy Files (Colors) */,
+				36F029461571362600FEA4A6 /* ColorLibrary in Copy Files (Colors) */,
 			);
 			name = "Copy Files (Colors)";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +387,10 @@
 		364D0AEB157115BA00971A37 /* LLVMPowerPCAsmPrinter.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = LLVMPowerPCAsmPrinter.o; path = "llvm-2.5/Release/lib/LLVMPowerPCAsmPrinter.o"; sourceTree = "<group>"; };
 		364D0AED157115C600971A37 /* LLVMPowerPCCodeGen.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = LLVMPowerPCCodeGen.o; path = "llvm-2.5/Release/lib/LLVMPowerPCCodeGen.o"; sourceTree = "<group>"; };
 		36F029121571255600FEA4A6 /* LLVM.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LLVM.xcodeproj; path = "llvm-2.5/Xcode/LLVM.xcodeproj"; sourceTree = "<group>"; };
+		36F0293B1571360F00FEA4A6 /* < please name me >.fscolor */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "< please name me >.fscolor"; path = "Colors/< please name me >.fscolor"; sourceTree = "<group>"; };
+		36F0293C1571360F00FEA4A6 /* C13699648.fscolor */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = C13699648.fscolor; path = Colors/C13699648.fscolor; sourceTree = "<group>"; };
+		36F0293D1571360F00FEA4A6 /* C13708784.fscolor */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = C13708784.fscolor; path = Colors/C13708784.fscolor; sourceTree = "<group>"; };
+		36F0293E1571360F00FEA4A6 /* ColorLibrary */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = ColorLibrary; path = Colors/ColorLibrary; sourceTree = "<group>"; };
 		36F1D9B1157115E000E1B7E5 /* LLVMX86AsmPrinter.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = LLVMX86AsmPrinter.o; path = "llvm-2.5/Release/lib/LLVMX86AsmPrinter.o"; sourceTree = "<group>"; };
 		36F1D9B2157115E000E1B7E5 /* LLVMX86CodeGen.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = LLVMX86CodeGen.o; path = "llvm-2.5/Release/lib/LLVMX86CodeGen.o"; sourceTree = "<group>"; };
 		36F1D9B61571168300E1B7E5 /* libLLVMAsmPrinter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMAsmPrinter.a; path = "llvm-2.5/Release/lib/libLLVMAsmPrinter.a"; sourceTree = "<group>"; };
@@ -876,6 +905,10 @@
 		681AF1760F699B3900E8DE1B /* Colors */ = {
 			isa = PBXGroup;
 			children = (
+				36F0293B1571360F00FEA4A6 /* < please name me >.fscolor */,
+				36F0293C1571360F00FEA4A6 /* C13699648.fscolor */,
+				36F0293D1571360F00FEA4A6 /* C13708784.fscolor */,
+				36F0293E1571360F00FEA4A6 /* ColorLibrary */,
 			);
 			name = Colors;
 			sourceTree = "<group>";
@@ -935,7 +968,6 @@
 				8D15AC300486D014006FF6A4 /* Sources */,
 				681AF3210F6BFC3200E8DE1B /* Copy Files (Tools) */,
 				8D15AC330486D014006FF6A4 /* Frameworks */,
-				681AF1F90F69A8C900E8DE1B /* Copy Files (Scripts) */,
 				681AF27A0F69C44100E8DE1B /* Copy Files (Colors) */,
 				681AF1FA0F69A8C900E8DE1B /* Copy Files (Differential Eqns) */,
 				681AF2020F69A93600E8DE1B /* Copy Files (Newton's Method) */,
@@ -1012,6 +1044,10 @@
 				683942D110B39DEB00A6A993 /* MainMenu-windows.xib in Resources */,
 				8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */,
 				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
+				36F0293F1571360F00FEA4A6 /* < please name me >.fscolor in Resources */,
+				36F029401571360F00FEA4A6 /* C13699648.fscolor in Resources */,
+				36F029411571360F00FEA4A6 /* C13708784.fscolor in Resources */,
+				36F029421571360F00FEA4A6 /* ColorLibrary in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1097,29 +1133,6 @@
 				68605DB80F6DCEE500189C8C /* FSCustomDataManager.m in Sources */,
 				68411693100306F000C5323F /* FSColor.m in Sources */,
 				6802822D10AB17CF0077048E /* FSPanel.m in Sources */,
-				364D0AD0157114D700971A37 /* nqsle.fs in Sources */,
-				364D0AD1157114D700971A37 /* pend.fs in Sources */,
-				364D0AD2157114D700971A37 /* henona.fs in Sources */,
-				364D0AD3157114D700971A37 /* henonc.fs in Sources */,
-				364D0AD4157114D700971A37 /* saddledrop.fs in Sources */,
-				364D0AD5157114D700971A37 /* auto.fs in Sources */,
-				364D0AD6157114D700971A37 /* mandbr.fs in Sources */,
-				364D0AD7157114D700971A37 /* z3-1.fs in Sources */,
-				364D0AD8157114D700971A37 /* mathieu.fs in Sources */,
-				364D0AD9157114D700971A37 /* torus.fs in Sources */,
-				364D0ADA157114D700971A37 /* ab.fs in Sources */,
-				364D0ADB157114D700971A37 /* boundary.fs in Sources */,
-				364D0ADC157114D700971A37 /* ext.fs in Sources */,
-				364D0ADD157114D700971A37 /* extern.fs in Sources */,
-				364D0ADE157114D700971A37 /* Julia.fs in Sources */,
-				364D0ADF157114D700971A37 /* Mandelbrot.fs in Sources */,
-				364D0AE0157114D700971A37 /* precrit.fs in Sources */,
-				364D0AE1157114D700971A37 /* tiles.fs in Sources */,
-				364D0AE2157114D700971A37 /* tricorn.fs in Sources */,
-				364D0AE3157114D700971A37 /* except.fs in Sources */,
-				364D0AE4157114D700971A37 /* arcsin.fs in Sources */,
-				364D0AE5157114D700971A37 /* arcsinp1.fs in Sources */,
-				364D0AE6157114D700971A37 /* exp.fs in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
