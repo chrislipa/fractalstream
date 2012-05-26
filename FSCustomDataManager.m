@@ -1,3 +1,10 @@
+//
+//  FSCustomDataManager.m
+//  FractalStream
+//
+//  Created by Matthew Noonan on 3/15/09.
+//  Copyright 2009 Cornell University. All rights reserved.
+//
 
 #import "FSCustomDataManager.h"
 
@@ -24,14 +31,14 @@
 - (void*) getFunctionPointerForQuery: (NSString*) name {
 	id ob;
 	ob = [queryDictionary objectForKey: name];
-	if([ob respondsToSelector: @selector(queryNamed:)]) return [((id<RespondsToQueryNamed>)ob) queryNamed: name];
+	if([ob respondsToSelector: @selector(queryNamed:)]) return [ob queryNamed: name];
 	return NULL;
 }
 
 - (void*) getFunctionPointerForMerge: (NSString*) name {
 	id ob;
 	ob = [dataDictionary objectForKey: name];
-	if([ob respondsToSelector: @selector(queryNamed:)]) return [((id<RespondsToQueryNamed>)ob) queryNamed: name];
+	if([ob respondsToSelector: @selector(queryNamed:)]) return [ob queryNamed: name];
 	return NULL;
 }
 
@@ -43,7 +50,7 @@
 //	NSLog(@"ob is %@\n", ob);
 	if([ob respondsToSelector: @selector(dataNamed:)]) {
 //		NSLog(@"responds to selector\n");
-		return [((id<RespondsToDataNamed>)ob) dataNamed: name];
+		return [ob dataNamed: name];
 	}
 //	NSLog(@"!!!! does not respond to selector ????\n");
 	return NULL;	
@@ -53,7 +60,7 @@
 	id ob;
 	ob = [dataDictionary objectForKey: name];
 	if([ob respondsToSelector: @selector(evalNamed:)]) {
-		return [((id<RespondsToEvalNamed>)ob) evalNamed: name];
+		return [ob evalNamed: name];
 	}
 	return NULL;	
 }

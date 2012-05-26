@@ -1,27 +1,12 @@
-/*
- Manages named data sources provided by external tools and acts as glue to make these
- data sources (C arrays) available to FSKernels.
- */
+//
+//  FSCustomDataManager.h
+//  FractalStream
+//
+//  Created by Matthew Noonan on 3/15/09.
+//  Copyright 2009 Cornell University. All rights reserved.
+//
 
 #import <Cocoa/Cocoa.h>
-
-@protocol RespondsToQueryNamed <NSObject>
-@optional
--(void*) queryNamed:(NSString*) name;
-@end
-
-@protocol RespondsToDataNamed <NSObject>
-@optional
--(void*) dataNamed:(NSString*) name;
-@end
-
-
-@protocol RespondsToEvalNamed <NSObject>
-@optional
--(void*) evalNamed:(NSString*) name;
-@end
-
-
 
 
 @interface FSCustomDataManager : NSObject {
