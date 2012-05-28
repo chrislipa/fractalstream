@@ -82,13 +82,13 @@ AR="ar"
 AR_FLAGS="cru"
 
 # A C compiler.
-LTCC="gcc"
+LTCC="gcc -arch x86_64"
 
 # LTCC compiler flags.
 LTCFLAGS="-g -O2"
 
 # A language-specific compiler.
-CC="gcc"
+CC="gcc -arch x86_64"
 
 # Is the compiler the GNU C compiler?
 with_gcc=yes
@@ -7250,13 +7250,13 @@ AR="ar"
 AR_FLAGS="cru"
 
 # A C compiler.
-LTCC="gcc"
+LTCC="gcc -arch x86_64"
 
 # LTCC compiler flags.
 LTCFLAGS="-g -O2"
 
 # A language-specific compiler.
-CC="g++"
+CC="g++ -arch x86_64"
 
 # Is the compiler the GNU C compiler?
 with_gcc=yes
