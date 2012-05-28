@@ -948,7 +948,7 @@
 		36F029821573C22A00FEA4A6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				36F029891573C22A00FEA4A6 /* FSToolTest.fstool */,
+				36F029891573C22A00FEA4A6 /* FSMovieTool.fstool */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1270,7 +1270,7 @@
 			remoteRef = 360A228D1573E5B100BF41B2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		36F029891573C22A00FEA4A6 /* FSToolTest.fstool */ = {
+		36F029891573C22A00FEA4A6 /* FSMovieTool.fstool */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = FSMovieTool.fstool;
