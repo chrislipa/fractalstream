@@ -47,6 +47,7 @@
 		360A230D1573EC6D00BF41B2 /* LLVMJIT.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 360A23091573EC6D00BF41B2 /* LLVMJIT.o */; };
 		360A230E1573EC6D00BF41B2 /* LLVMPowerPCAsmPrinter.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 360A230A1573EC6D00BF41B2 /* LLVMPowerPCAsmPrinter.o */; };
 		360A230F1573EC6D00BF41B2 /* LLVMPowerPCCodeGen.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 360A230B1573EC6D00BF41B2 /* LLVMPowerPCCodeGen.o */; };
+		365AECDE1574097000083A53 /* SDTool.fstool in Copy Files (Tools) */ = {isa = PBXBuildFile; fileRef = 36F029921573C23100FEA4A6 /* SDTool.fstool */; };
 		36F02924157133A600FEA4A6 /* ab.fs in Copy Files (Quadratic Maps) */ = {isa = PBXBuildFile; fileRef = 364D0AC1157114D700971A37 /* ab.fs */; };
 		36F02925157133A600FEA4A6 /* boundary.fs in Copy Files (Quadratic Maps) */ = {isa = PBXBuildFile; fileRef = 364D0AC2157114D700971A37 /* boundary.fs */; };
 		36F02926157133A600FEA4A6 /* ext.fs in Copy Files (Quadratic Maps) */ = {isa = PBXBuildFile; fileRef = 364D0AC3157114D700971A37 /* ext.fs */; };
@@ -353,6 +354,7 @@
 			dstPath = Tools;
 			dstSubfolderSpec = 13;
 			files = (
+				365AECDE1574097000083A53 /* SDTool.fstool in Copy Files (Tools) */,
 			);
 			name = "Copy Files (Tools)";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -568,9 +570,6 @@
 		36F029931573C23D00FEA4A6 /* FSToolTest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FSToolTest.xcodeproj; path = tools/emptytool/FSToolTest.xcodeproj; sourceTree = "<group>"; };
 		6802824410AB1A060077048E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/FSDocument.xib; sourceTree = "<group>"; };
 		6802824610AB1A060077048E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		681AF1630F699B3800E8DE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		681AF1650F699B3800E8DE1B /* FSMovieTool */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = FSMovieTool; sourceTree = "<group>"; };
-		681AF1670F699B3800E8DE1B /* FSMovieTool.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = FSMovieTool.nib; sourceTree = "<group>"; };
 		681AF16A0F699B3800E8DE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		681AF16C0F699B3800E8DE1B /* FSSnapshotTool */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = FSSnapshotTool; sourceTree = "<group>"; };
 		681AF16E0F699B3800E8DE1B /* FSSnapshotTool.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = FSSnapshotTool.nib; sourceTree = "<group>"; };
@@ -942,9 +941,6 @@
 		36F029801573C21700FEA4A6 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				36F029931573C23D00FEA4A6 /* FSToolTest.xcodeproj */,
-				36F0298A1573C23100FEA4A6 /* SDTool.xcodeproj */,
-				36F029811573C22A00FEA4A6 /* FSMovieTool.xcodeproj */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -986,45 +982,13 @@
 		681AF1600F699B3800E8DE1B /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				681AF1610F699B3800E8DE1B /* FSMovieTool.fstool */,
+				36F029931573C23D00FEA4A6 /* FSToolTest.xcodeproj */,
+				36F0298A1573C23100FEA4A6 /* SDTool.xcodeproj */,
+				36F029811573C22A00FEA4A6 /* FSMovieTool.xcodeproj */,
 				681AF1680F699B3800E8DE1B /* FSSnapshotTool.fstool */,
 				681AF16F0F699B3800E8DE1B /* FSTraceTool.fstool */,
 			);
 			name = Tools;
-			sourceTree = "<group>";
-		};
-		681AF1610F699B3800E8DE1B /* FSMovieTool.fstool */ = {
-			isa = PBXGroup;
-			children = (
-				681AF1620F699B3800E8DE1B /* Contents */,
-			);
-			path = FSMovieTool.fstool;
-			sourceTree = "<group>";
-		};
-		681AF1620F699B3800E8DE1B /* Contents */ = {
-			isa = PBXGroup;
-			children = (
-				681AF1630F699B3800E8DE1B /* Info.plist */,
-				681AF1640F699B3800E8DE1B /* MacOS */,
-				681AF1660F699B3800E8DE1B /* Resources */,
-			);
-			path = Contents;
-			sourceTree = "<group>";
-		};
-		681AF1640F699B3800E8DE1B /* MacOS */ = {
-			isa = PBXGroup;
-			children = (
-				681AF1650F699B3800E8DE1B /* FSMovieTool */,
-			);
-			path = MacOS;
-			sourceTree = "<group>";
-		};
-		681AF1660F699B3800E8DE1B /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				681AF1670F699B3800E8DE1B /* FSMovieTool.nib */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		681AF1680F699B3800E8DE1B /* FSSnapshotTool.fstool */ = {
@@ -1194,6 +1158,7 @@
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				en,
+				English,
 			);
 			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* FractalStream */;
 			projectDirPath = "";
@@ -1308,7 +1273,7 @@
 		36F029891573C22A00FEA4A6 /* FSToolTest.fstool */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = FSToolTest.fstool;
+			path = FSMovieTool.fstool;
 			remoteRef = 36F029881573C22A00FEA4A6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};

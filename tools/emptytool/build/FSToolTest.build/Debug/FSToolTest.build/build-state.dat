@@ -1,268 +1,0 @@
-TFSToolTest
-v5
-r1
-cCheck dependencies
-cProcessInfoPlistFile /Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool/Contents/Info.plist Info.plist
-cCopyStringsFile /Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-cStripNIB /Users/lipa/fractalstream/tools/emptytool/FSToolTest.nib
-cProcessPCH /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/FSToolTest_Prefix-hgpmniktnaljxnalfwisztfvhvny/FSToolTest_Prefix.pch.pth FSToolTest_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cProcessPCH /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/FSToolTest_Prefix-fodwnzebxrtwknarmqykzueooscs/FSToolTest_Prefix.pch.pth FSToolTest_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/x86_64/FSToolTest.o /Users/lipa/fractalstream/tools/emptytool/FSToolTest.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/i386/FSToolTest.o /Users/lipa/fractalstream/tools/emptytool/FSToolTest.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/i386/FSToolTest normal i386
-cLd /Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/x86_64/FSToolTest normal x86_64
-cCreateUniversalBinary /Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool/Contents/MacOS/FSToolTest normal "x86_64 i386"
-cTouch /Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk
-c000000004F6B9CF200000000000000EE
-t1332452594
-s238
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
-c000000004F46A04D00000000000001E5
-t1330028621
-s485
-
-N/System/Library/Frameworks/Cocoa.framework/Cocoa
-c000000004E4F54FD0000000000006560
-t1313821949
-s25952
-
-N/Users/lipa/fractalstream/tools/emptytool/English.lproj/InfoPlist.strings
-c00000000473A64B200000000000000CC
-t1195009202
-s204
-
-N/Users/lipa/fractalstream/tools/emptytool/FSToolTest.h
-c00000000473A83D20000000000000370
-t1195017170
-s880
-
-N/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m
-c00000000473B304A0000000000000DA7
-t1195061322
-s3495
-
-N/Users/lipa/fractalstream/tools/emptytool/FSToolTest.nib
-c000000004FC389B600000000000000AA
-t1338214838
-s170
-
-N/Users/lipa/fractalstream/tools/emptytool/FSToolTest_Prefix.pch
-c00000000473A64B20000000000000098
-t1195009202
-s152
-i<Cocoa/Cocoa.h>
-
-N/Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool
-t1338231292
-s102
-
-N/Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool/Contents/Info.plist
-t1338231289
-s1121
-
-N/Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool/Contents/MacOS/FSToolTest
-t1338231292
-s39672
-
-N/Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool/Contents/Resources/English.lproj/InfoPlist.strings
-t1338231289
-s204
-
-N/Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool/Contents/Resources/FSToolTest.nib
-t1338231290
-s3143
-
-N/Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/i386/FSToolTest
-t1338231292
-s19192
-
-N/Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/i386/FSToolTest.LinkFileList
-c000000004FC3C9AA0000000000000079
-t1338231210
-s121
-
-N/Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/i386/FSToolTest.o
-t1338231291
-s24164
-
-N/Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/x86_64/FSToolTest
-t1338231291
-s16204
-
-N/Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/x86_64/FSToolTest.LinkFileList
-c000000004FC3C9F9000000000000007B
-t1338231289
-s123
-
-N/Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/x86_64/FSToolTest.o
-t1338231291
-s28916
-
-N/var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/FSToolTest_Prefix-fodwnzebxrtwknarmqykzueooscs/FSToolTest_Prefix.pch.pth
-t1338231291
-s11438768
-
-N/var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/FSToolTest_Prefix-hgpmniktnaljxnalfwisztfvhvny/FSToolTest_Prefix.pch.pth
-t1338231291
-s10722192
-
-NInfo.plist
-c00000000473A6510000000000000031D
-t1195009296
-s797
-
-CBuild AST from /Users/lipa/fractalstream/tools/emptytool/FSToolTest.m
-r0
-
-CCheck dependencies
-r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesc65181480274b541^f9f381480274b541^---0#1#0#--18"Check dependencies36"4087DCB2-C0AA-44E3-9AB8-D707C2219AF3-
-
-CCompileC build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/i386/FSToolTest.o /Users/lipa/fractalstream/tools/emptytool/FSToolTest.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s359924091.782835
-e359924091.943606
-r1
-xCompileC
-xbuild/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/i386/FSToolTest.o
-x/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-o/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m:113:11: warning: instance method '-theKernel' not found (return type defaults to 'id')
-o        kernel = [owner theKernel];
-o                 ^~~~~~~~~~~~~~~~~
-o/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m:113:9: warning: incompatible pointer types assigning to 'void (*)(int, double *, int, double *, int, double)' from 'id' [-Wincompatible-pointer-types]
-o        kernel = [owner theKernel];
-o               ^ ~~~~~~~~~~~~~~~~~
-o/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m:114:2: warning: instance method '-convertEvent:toPoint:' not found (return type defaults to 'id')
-o        [owner convertEvent: theEvent toPoint: &p];
-o        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-o3 warnings generated.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Compile /Users/lipa/fractalstream/tools/emptytool/FSToolTest.m1782c87b0174b541^f298f17b0174b541^-768"/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m:113:11: warning: instance method '-theKernel' not found (return type defaults to 'id')        kernel = [owner theKernel];                 ^~~~~~~~~~~~~~~~~/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m:113:9: warning: incompatible pointer types assigning to 'void (*)(int, double *, int, double *, int, double)' from 'id' [-Wincompatible-pointer-types]        kernel = [owner theKernel];               ^ ~~~~~~~~~~~~~~~~~/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m:114:2: warning: instance method '-convertEvent:toPoint:' not found (return type defaults to 'id')        [owner convertEvent: theEvent toPoint: &p];        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~3 warnings generated.3(36%IDEClangDiagnosticActivityLogMessage2@69"Instance method '-theKernel' not found (return type defaults to 'id')-359924091#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@70"file://localhost/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m0000000000000000^112#10#112#10#2849#0#14"Semantic Issue1(3@70"file://localhost/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m0000000000000000^112#10#112#27#2849#16#-2@103"Incompatible pointer types assigning to 'void (*)(int, double *, int, double *, int, double)' from 'id'-359924091#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@70"file://localhost/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m0000000000000000^112#8#112#8#2847#0#14"Semantic Issue1(3@70"file://localhost/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m0000000000000000^112#10#112#27#2849#16#-2@81"Instance method '-convertEvent:toPoint:' not found (return type defaults to 'id')-359924091#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@70"file://localhost/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m0000000000000000^113#1#113#1#2869#0#14"Semantic Issue1(3@70"file://localhost/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m0000000000000000^113#1#113#43#2869#41#-0#0#0#-19%DVTDocumentLocation4@70"file://localhost/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m0000000000000000^2399"CompileC build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/i386/FSToolTest.o FSToolTest.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lipa/fractalstream/tools/emptytool    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -I/Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/FSToolTest.hmap -I/Users/lipa/fractalstream/tools/emptytool/build/Debug/include -I/Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/DerivedSources/i386 -I/Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/DerivedSources -F/Users/lipa/fractalstream/tools/emptytool/build/Debug -include /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/FSToolTest_Prefix-fodwnzebxrtwknarmqykzueooscs/FSToolTest_Prefix.pch -MMD -MT dependencies -MF /Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/i386/FSToolTest.d --serialize-diagnostics /Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/i386/FSToolTest.dia -c /Users/lipa/fractalstream/tools/emptytool/FSToolTest.m -o /Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/i386/FSToolTest.o36"417A582A-FDCC-4D1C-8C48-FF188B73BBBD-
-
-CCompileC build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/x86_64/FSToolTest.o /Users/lipa/fractalstream/tools/emptytool/FSToolTest.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s359924091.782843
-e359924091.867950
-r1
-xCompileC
-xbuild/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/x86_64/FSToolTest.o
-x/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-o/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m:113:11: warning: instance method '-theKernel' not found (return type defaults to 'id')
-o        kernel = [owner theKernel];
-o                 ^~~~~~~~~~~~~~~~~
-o/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m:113:9: warning: incompatible pointer types assigning to 'void (*)(int, double *, int, double *, int, double)' from 'id' [-Wincompatible-pointer-types]
-o        kernel = [owner theKernel];
-o               ^ ~~~~~~~~~~~~~~~~~
-o/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m:114:2: warning: instance method '-convertEvent:toPoint:' not found (return type defaults to 'id')
-o        [owner convertEvent: theEvent toPoint: &p];
-o        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-o3 warnings generated.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Compile /Users/lipa/fractalstream/tools/emptytool/FSToolTest.m9e7ec87b0174b541^f568de7b0174b541^-768"/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m:113:11: warning: instance method '-theKernel' not found (return type defaults to 'id')        kernel = [owner theKernel];                 ^~~~~~~~~~~~~~~~~/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m:113:9: warning: incompatible pointer types assigning to 'void (*)(int, double *, int, double *, int, double)' from 'id' [-Wincompatible-pointer-types]        kernel = [owner theKernel];               ^ ~~~~~~~~~~~~~~~~~/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m:114:2: warning: instance method '-convertEvent:toPoint:' not found (return type defaults to 'id')        [owner convertEvent: theEvent toPoint: &p];        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~3 warnings generated.3(36%IDEClangDiagnosticActivityLogMessage2@69"Instance method '-theKernel' not found (return type defaults to 'id')-359924091#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@70"file://localhost/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m0000000000000000^112#10#112#10#2849#0#14"Semantic Issue1(3@70"file://localhost/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m0000000000000000^112#10#112#27#2849#16#-2@103"Incompatible pointer types assigning to 'void (*)(int, double *, int, double *, int, double)' from 'id'-359924091#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@70"file://localhost/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m0000000000000000^112#8#112#8#2847#0#14"Semantic Issue1(3@70"file://localhost/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m0000000000000000^112#10#112#27#2849#16#-2@81"Instance method '-convertEvent:toPoint:' not found (return type defaults to 'id')-359924091#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@70"file://localhost/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m0000000000000000^113#1#113#1#2869#0#14"Semantic Issue1(3@70"file://localhost/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m0000000000000000^113#1#113#43#2869#41#-0#0#0#-19%DVTDocumentLocation4@70"file://localhost/Users/lipa/fractalstream/tools/emptytool/FSToolTest.m0000000000000000^2413"CompileC build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/x86_64/FSToolTest.o FSToolTest.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lipa/fractalstream/tools/emptytool    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -I/Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/FSToolTest.hmap -I/Users/lipa/fractalstream/tools/emptytool/build/Debug/include -I/Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/DerivedSources/x86_64 -I/Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/DerivedSources -F/Users/lipa/fractalstream/tools/emptytool/build/Debug -include /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/FSToolTest_Prefix-hgpmniktnaljxnalfwisztfvhvny/FSToolTest_Prefix.pch -MMD -MT dependencies -MF /Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/x86_64/FSToolTest.d --serialize-diagnostics /Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/x86_64/FSToolTest.dia -c /Users/lipa/fractalstream/tools/emptytool/FSToolTest.m -o /Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/x86_64/FSToolTest.o36"8D37870F-F793-43C4-BFD2-1968A9155664-
-
-CCopyStringsFile /Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-s359924089.753588
-e359924089.770903
-r1
-xCopyStringsFile
-x/Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool/Contents/Resources/English.lproj/InfoPlist.strings
-xEnglish.lproj/InfoPlist.strings
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Copy English.lproj/InfoPlist.stringsf608c1790174b541^af5ac5790174b541^---0#0#0#-19%DVTDocumentLocation2@89"file://localhost/Users/lipa/fractalstream/tools/emptytool/English.lproj/InfoPlist.strings0000000000000000^409"CopyStringsFile build/Debug/FSToolTest.fstool/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings    cd /Users/lipa/fractalstream/tools/emptytool    builtin-copyStrings --validate --inputencoding utf-16 --outputencoding UTF-16 --outdir /Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool/Contents/Resources/English.lproj -- English.lproj/InfoPlist.strings36"84377510-9443-469D-8F38-D3E375A07DCC-
-
-CCreateUniversalBinary /Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool/Contents/MacOS/FSToolTest normal "x86_64 i386"
-s359924092.101233
-e359924092.107572
-r1
-xCreateUniversalBinary
-x/Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool/Contents/MacOS/FSToolTest
-xnormal
-xx86_64 i386
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"Create universal binary /Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool/Contents/MacOS/FSToolTest6ef8197c0174b541^94891b7c0174b541^---0#0#0#-19%DVTDocumentLocation2@113"file://localhost/Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool/Contents/MacOS/FSToolTest000000000080d041^520"CreateUniversalBinary build/Debug/FSToolTest.fstool/Contents/MacOS/FSToolTest normal "x86_64 i386"    cd /Users/lipa/fractalstream/tools/emptytool    /usr/bin/lipo -create /Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/x86_64/FSToolTest /Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/i386/FSToolTest -output /Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool/Contents/MacOS/FSToolTest36"38C1AF71-BB46-401B-B7D0-136B80E54CDE-
-
-CLd /Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool/Contents/MacOS/FSToolTest normal i386
-r0
-
-CLd /Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/i386/FSToolTest normal i386
-s359924091.956028
-e359924092.081975
-r1
-xLd
-x/Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/i386/FSToolTest
-xnormal
-xi386
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection123"Link /Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/i386/FSToolTestf913f57b0174b541^a8e3157c0174b541^---0#0#0#--826"Ld build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/i386/FSToolTest normal i386    cd /Users/lipa/fractalstream/tools/emptytool    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk -L/Users/lipa/fractalstream/tools/emptytool/build/Debug -F/Users/lipa/fractalstream/tools/emptytool/build/Debug -filelist /Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/i386/FSToolTest.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -o /Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/i386/FSToolTest36"9A55C4C9-B9BA-4395-902F-A53DC71B2E89-
-
-CLd /Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/x86_64/FSToolTest normal x86_64
-s359924091.880039
-e359924091.971897
-r1
-xLd
-x/Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/x86_64/FSToolTest
-xnormal
-xx86_64
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection125"Link /Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/x86_64/FSToolTesta359e17b0174b541^68d0f87b0174b541^---0#0#0#--836"Ld build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/x86_64/FSToolTest normal x86_64    cd /Users/lipa/fractalstream/tools/emptytool    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk -L/Users/lipa/fractalstream/tools/emptytool/build/Debug -F/Users/lipa/fractalstream/tools/emptytool/build/Debug -filelist /Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/x86_64/FSToolTest.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -o /Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/Objects-normal/x86_64/FSToolTest36"A9EA424F-8A9F-409D-AE97-57A66CE9091C-
-
-CProcessInfoPlistFile /Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool/Contents/Info.plist Info.plist
-s359924089.742136
-e359924089.744518
-r1
-xProcessInfoPlistFile
-x/Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool/Contents/Info.plist
-xInfo.plist
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Process Info.plist2d0bbe790174b541^d097be790174b541^---0#0#0#-19%DVTDocumentLocation2@68"file://localhost/Users/lipa/fractalstream/tools/emptytool/Info.plist0000000000000000^304"ProcessInfoPlistFile build/Debug/FSToolTest.fstool/Contents/Info.plist Info.plist    cd /Users/lipa/fractalstream/tools/emptytool    builtin-infoPlistUtility Info.plist -expandbuildsettings -platform macosx -o /Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool/Contents/Info.plist36"BB49B7A8-578E-41BE-8267-8D517E1FBF37-
-
-CProcessPCH /Users/lipa/fractalstream/build/FractalStream/Index/PrecompiledHeaders/FSToolTest_Prefix-dboyqzezgpwpfnbltjuckxpqdrsl_ast/FSToolTest_Prefix.pch.pth FSToolTest_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
-r0
-
-CProcessPCH /Users/lipa/fractalstream/build/FractalStream/Index/PrecompiledHeaders/FSToolTest_Prefix-degajeeetdfmsfbctuwwfrfubkic_ast/FSToolTest_Prefix.pch.pth FSToolTest_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
-r0
-
-CProcessPCH /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/FSToolTest_Prefix-fodwnzebxrtwknarmqykzueooscs/FSToolTest_Prefix.pch.pth FSToolTest_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s359924090.198723
-e359924091.775879
-r1
-xProcessPCH
-x/var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/FSToolTest_Prefix-fodwnzebxrtwknarmqykzueooscs/FSToolTest_Prefix.pch.pth
-xFSToolTest_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection32"Precompile FSToolTest_Prefix.pch3bff327a0174b541^d7a1c67b0174b541^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Users/lipa/fractalstream/tools/emptytool/FSToolTest_Prefix.pch0000000000000000^2476"ProcessPCH /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/FSToolTest_Prefix-fodwnzebxrtwknarmqykzueooscs/FSToolTest_Prefix.pch.pth FSToolTest_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lipa/fractalstream/tools/emptytool    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -I/Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/FSToolTest.hmap -I/Users/lipa/fractalstream/tools/emptytool/build/Debug/include -I/Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/DerivedSources/i386 -I/Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/DerivedSources -F/Users/lipa/fractalstream/tools/emptytool/build/Debug --serialize-diagnostics /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/FSToolTest_Prefix-fodwnzebxrtwknarmqykzueooscs/FSToolTest_Prefix.pch.dia -c /Users/lipa/fractalstream/tools/emptytool/FSToolTest_Prefix.pch -o /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/FSToolTest_Prefix-fodwnzebxrtwknarmqykzueooscs/FSToolTest_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/FSToolTest_Prefix-fodwnzebxrtwknarmqykzueooscs/FSToolTest_Prefix.pch.d36"7E86554E-0FC8-46BC-BC83-808956D80671-
-
-CProcessPCH /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/FSToolTest_Prefix-hgpmniktnaljxnalfwisztfvhvny/FSToolTest_Prefix.pch.pth FSToolTest_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s359924090.196793
-e359924091.776394
-r1
-xProcessPCH
-x/var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/FSToolTest_Prefix-hgpmniktnaljxnalfwisztfvhvny/FSToolTest_Prefix.pch.pth
-xFSToolTest_Prefix.pch
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection32"Precompile FSToolTest_Prefix.pch6fbd327a0174b541^48c2c67b0174b541^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Users/lipa/fractalstream/tools/emptytool/FSToolTest_Prefix.pch0000000000000000^2482"ProcessPCH /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/FSToolTest_Prefix-hgpmniktnaljxnalfwisztfvhvny/FSToolTest_Prefix.pch.pth FSToolTest_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lipa/fractalstream/tools/emptytool    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -I/Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/FSToolTest.hmap -I/Users/lipa/fractalstream/tools/emptytool/build/Debug/include -I/Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/DerivedSources/x86_64 -I/Users/lipa/fractalstream/tools/emptytool/build/FSToolTest.build/Debug/FSToolTest.build/DerivedSources -F/Users/lipa/fractalstream/tools/emptytool/build/Debug --serialize-diagnostics /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/FSToolTest_Prefix-hgpmniktnaljxnalfwisztfvhvny/FSToolTest_Prefix.pch.dia -c /Users/lipa/fractalstream/tools/emptytool/FSToolTest_Prefix.pch -o /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/FSToolTest_Prefix-hgpmniktnaljxnalfwisztfvhvny/FSToolTest_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/FSToolTest_Prefix-hgpmniktnaljxnalfwisztfvhvny/FSToolTest_Prefix.pch.d36"7C479F35-ED42-4359-BBA7-B5D2946C5050-
-
-CStripNIB /Users/lipa/fractalstream/tools/emptytool/FSToolTest.nib
-s359924089.753603
-e359924090.180176
-r1
-xStripNIB
-x/Users/lipa/fractalstream/tools/emptytool/FSToolTest.nib
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Processing /Users/lipa/fractalstream/tools/emptytool/FSToolTest.nib8d09c1790174b541^f31f2e7a0174b541^---0#0#0#-19%DVTDocumentLocation2@73"file://localhost/Users/lipa/fractalstream/tools/emptytool/FSToolTest.nib/0000000000000000^432"StripNIB FSToolTest.nib    cd /Users/lipa/fractalstream/tools/emptytool    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --strip /Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool/Contents/Resources/FSToolTest.nib --output-format human-readable-text /Users/lipa/fractalstream/tools/emptytool/FSToolTest.nib36"CD3FB21C-C312-4C8E-8A9D-9A64BF75D035-
-
-CTouch /Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool
-s359924092.114924
-e359924092.119885
-r1
-xTouch
-x/Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Touch /Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool64771d7c0174b541^18b21e7c0174b541^---0#0#0#--179"Touch build/Debug/FSToolTest.fstool    cd /Users/lipa/fractalstream/tools/emptytool    /usr/bin/touch -c /Users/lipa/fractalstream/tools/emptytool/build/Debug/FSToolTest.fstool36"37593986-3924-4B15-A26F-3138DAE29682-
-

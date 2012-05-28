@@ -247,7 +247,7 @@
 				GCC_PREFIX_HEADER = FSToolTest_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				PRODUCT_NAME = FSToolTest;
+				PRODUCT_NAME = FSMovieTool;
 				WRAPPER_EXTENSION = fstool;
 				ZERO_LINK = YES;
 			};

@@ -1,262 +1,0 @@
-TSDTool
-v5
-r1
-cCheck dependencies
-cProcessInfoPlistFile /Users/lipa/fractalstream/tools/saddledrop/build/Debug/SDTool.fstool/Contents/Info.plist Info.plist
-cCopyStringsFile /Users/lipa/fractalstream/tools/saddledrop/build/Debug/SDTool.fstool/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-cStripNIB /Users/lipa/fractalstream/tools/saddledrop/SDTool.nib
-cProcessPCH /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SDTool_Prefix-braecndufwrgukeglvczpbpnsnav/SDTool_Prefix.pch.pth SDTool_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cProcessPCH /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SDTool_Prefix-aozvzqvtwymdndftpnnewpvhsvje/SDTool_Prefix.pch.pth SDTool_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/SDTool.build/Debug/SDTool.build/Objects-normal/x86_64/SDTool.o /Users/lipa/fractalstream/tools/saddledrop/SDTool.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/SDTool.build/Debug/SDTool.build/Objects-normal/i386/SDTool.o /Users/lipa/fractalstream/tools/saddledrop/SDTool.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/x86_64/SDTool normal x86_64
-cLd /Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/i386/SDTool normal i386
-cCreateUniversalBinary /Users/lipa/fractalstream/tools/saddledrop/build/Debug/SDTool.fstool/Contents/MacOS/SDTool normal "x86_64 i386"
-cTouch /Users/lipa/fractalstream/tools/saddledrop/build/Debug/SDTool.fstool
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk
-c000000004F6B9CF200000000000000EE
-t1332452594
-s238
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
-c000000004F46A04D00000000000001E5
-t1330028621
-s485
-
-N/System/Library/Frameworks/Cocoa.framework/Cocoa
-c000000004E4F54FD0000000000006560
-t1313821949
-s25952
-
-N/Users/lipa/fractalstream/tools/saddledrop/English.lproj/InfoPlist.strings
-c000000004AB3D6B300000000000000CC
-t1253299891
-s204
-
-N/Users/lipa/fractalstream/tools/saddledrop/SDTool.m
-c000000004B01A3D00000000000004BD3
-t1258398672
-s19411
-
-N/Users/lipa/fractalstream/tools/saddledrop/SDTool.nib
-c000000004B0161140000000000000088
-t1258381588
-s136
-
-N/Users/lipa/fractalstream/tools/saddledrop/SDTool_Prefix.pch
-c000000004AB3D6B300000000000000BA
-t1253299891
-s186
-i<Cocoa/Cocoa.h>
-
-N/Users/lipa/fractalstream/tools/saddledrop/build/Debug/SDTool.fstool
-t2
-s0
-
-N/Users/lipa/fractalstream/tools/saddledrop/build/Debug/SDTool.fstool/Contents/Info.plist
-t2
-s0
-
-N/Users/lipa/fractalstream/tools/saddledrop/build/Debug/SDTool.fstool/Contents/MacOS/SDTool
-t2
-s0
-
-N/Users/lipa/fractalstream/tools/saddledrop/build/Debug/SDTool.fstool/Contents/Resources/English.lproj/InfoPlist.strings
-t2
-s0
-
-N/Users/lipa/fractalstream/tools/saddledrop/build/Debug/SDTool.fstool/Contents/Resources/SDTool.nib
-t2
-s0
-
-N/Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/i386/SDTool
-t2
-s0
-
-N/Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/i386/SDTool.LinkFileList
-c000000004FC3C9F9000000000000006E
-t1338231289
-s110
-
-N/Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/i386/SDTool.o
-t2
-s0
-
-N/Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/x86_64/SDTool
-t2
-s0
-
-N/Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/x86_64/SDTool.LinkFileList
-c000000004FC3C9F90000000000000070
-t1338231289
-s112
-
-N/Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/x86_64/SDTool.o
-t2
-s0
-
-N/var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SDTool_Prefix-aozvzqvtwymdndftpnnewpvhsvje/SDTool_Prefix.pch.pth
-t2
-s0
-
-N/var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SDTool_Prefix-braecndufwrgukeglvczpbpnsnav/SDTool_Prefix.pch.pth
-t2
-s0
-
-NInfo.plist
-c000000004AB3D6B30000000000000310
-t1253299891
-s784
-
-CBuild AST from /Users/lipa/fractalstream/tools/saddledrop/SDTool.m
-r0
-
-CCheck dependencies
-r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesa7b2b0790174b541^12c1d4790174b541^---0#1#0#--18"Check dependencies36"D28AAE0A-A855-4A41-925E-837EB3068353-
-
-CCompileC build/SDTool.build/Debug/SDTool.build/Objects-normal/i386/SDTool.o /Users/lipa/fractalstream/tools/saddledrop/SDTool.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s359924091.910567
-e359924092.030481
-r1
-xCompileC
-xbuild/SDTool.build/Debug/SDTool.build/Objects-normal/i386/SDTool.o
-x/Users/lipa/fractalstream/tools/saddledrop/SDTool.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-o/Users/lipa/fractalstream/tools/saddledrop/SDTool.m:174:8: warning: unused variable 'hooks' [-Wunused-variable]
-o        void* hooks[2];
-o              ^
-o/Users/lipa/fractalstream/tools/saddledrop/SDTool.m:276:23: warning: conversion specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
-o                NSLog(@"allocating %iK for saddles\n", (2*sizeof(double) * width * height * saddles)>>10);
-o                                   ~^                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-o                                   %lu
-o/Users/lipa/fractalstream/tools/saddledrop/SDTool.m:411:36: warning: instance method '-reload:' not found (return type defaults to 'id')
-o- (IBAction) redraw: (id) sender { [owner reload: nil]; }
-o                                   ^~~~~~~~~~~~~~~~~~~
-o3 warnings generated.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Compile /Users/lipa/fractalstream/tools/saddledrop/SDTool.m6631e97b0174b541^c5cb077c0174b541^-829"/Users/lipa/fractalstream/tools/saddledrop/SDTool.m:174:8: warning: unused variable 'hooks' [-Wunused-variable]        void* hooks[2];              ^/Users/lipa/fractalstream/tools/saddledrop/SDTool.m:276:23: warning: conversion specifies type 'int' but the argument has type 'unsigned long' [-Wformat]                NSLog(@"allocating %iK for saddles\n", (2*sizeof(double) * width * height * saddles)>>10);                                   ~^                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                   %lu/Users/lipa/fractalstream/tools/saddledrop/SDTool.m:411:36: warning: instance method '-reload:' not found (return type defaults to 'id')- (IBAction) redraw: (id) sender { [owner reload: nil]; }                                   ^~~~~~~~~~~~~~~~~~~3 warnings generated.3(36%IDEClangDiagnosticActivityLogMessage2@23"Unused variable 'hooks'-359924092#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@67"file://localhost/Users/lipa/fractalstream/tools/saddledrop/SDTool.m0000000000000000^173#7#173#7#4972#0#19"Unused Entity Issue--2@73"Conversion specifies type 'int' but the argument has type 'unsigned long'-359924092#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@67"file://localhost/Users/lipa/fractalstream/tools/saddledrop/SDTool.m0000000000000000^275#22#275#22#7875#0#19"Format String Issue3(3@67"file://localhost/Users/lipa/fractalstream/tools/saddledrop/SDTool.m0000000000000000^275#41#275#90#7894#47#3@67"file://localhost/Users/lipa/fractalstream/tools/saddledrop/SDTool.m0000000000000000^275#21#275#23#7874#2#3@67"file://localhost/Users/lipa/fractalstream/tools/saddledrop/SDTool.m0000000000000000^275#21#275#23#7874#2#-2@67"Instance method '-reload:' not found (return type defaults to 'id')-359924092#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@67"file://localhost/Users/lipa/fractalstream/tools/saddledrop/SDTool.m0000000000000000^410#35#410#35#14355#0#14"Semantic Issue1(3@67"file://localhost/Users/lipa/fractalstream/tools/saddledrop/SDTool.m0000000000000000^410#35#410#54#14355#18#-0#0#0#-19%DVTDocumentLocation4@67"file://localhost/Users/lipa/fractalstream/tools/saddledrop/SDTool.m0000000000000000^2317"CompileC build/SDTool.build/Debug/SDTool.build/Objects-normal/i386/SDTool.o SDTool.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lipa/fractalstream/tools/saddledrop    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -I/Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/SDTool.hmap -I/Users/lipa/fractalstream/tools/saddledrop/build/Debug/include -I/Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/DerivedSources/i386 -I/Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/DerivedSources -F/Users/lipa/fractalstream/tools/saddledrop/build/Debug -include /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SDTool_Prefix-aozvzqvtwymdndftpnnewpvhsvje/SDTool_Prefix.pch -MMD -MT dependencies -MF /Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/i386/SDTool.d --serialize-diagnostics /Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/i386/SDTool.dia -c /Users/lipa/fractalstream/tools/saddledrop/SDTool.m -o /Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/i386/SDTool.o36"36E60D2E-819C-4324-B09C-788B9C20B77F-
-
-CCompileC build/SDTool.build/Debug/SDTool.build/Objects-normal/x86_64/SDTool.o /Users/lipa/fractalstream/tools/saddledrop/SDTool.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s359924091.783071
-e359924091.935157
-r1
-xCompileC
-xbuild/SDTool.build/Debug/SDTool.build/Objects-normal/x86_64/SDTool.o
-x/Users/lipa/fractalstream/tools/saddledrop/SDTool.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-o/Users/lipa/fractalstream/tools/saddledrop/SDTool.m:174:8: warning: unused variable 'hooks' [-Wunused-variable]
-o        void* hooks[2];
-o              ^
-o/Users/lipa/fractalstream/tools/saddledrop/SDTool.m:276:23: warning: conversion specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
-o                NSLog(@"allocating %iK for saddles\n", (2*sizeof(double) * width * height * saddles)>>10);
-o                                   ~^                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-o                                   %lu
-o/Users/lipa/fractalstream/tools/saddledrop/SDTool.m:411:36: warning: instance method '-reload:' not found (return type defaults to 'id')
-o- (IBAction) redraw: (id) sender { [owner reload: nil]; }
-o                                   ^~~~~~~~~~~~~~~~~~~
-o3 warnings generated.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Compile /Users/lipa/fractalstream/tools/saddledrop/SDTool.mfc8fc87b0174b541^5f42f17b0174b541^-829"/Users/lipa/fractalstream/tools/saddledrop/SDTool.m:174:8: warning: unused variable 'hooks' [-Wunused-variable]        void* hooks[2];              ^/Users/lipa/fractalstream/tools/saddledrop/SDTool.m:276:23: warning: conversion specifies type 'int' but the argument has type 'unsigned long' [-Wformat]                NSLog(@"allocating %iK for saddles\n", (2*sizeof(double) * width * height * saddles)>>10);                                   ~^                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                   %lu/Users/lipa/fractalstream/tools/saddledrop/SDTool.m:411:36: warning: instance method '-reload:' not found (return type defaults to 'id')- (IBAction) redraw: (id) sender { [owner reload: nil]; }                                   ^~~~~~~~~~~~~~~~~~~3 warnings generated.3(36%IDEClangDiagnosticActivityLogMessage2@23"Unused variable 'hooks'-359924091#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@67"file://localhost/Users/lipa/fractalstream/tools/saddledrop/SDTool.m0000000000000000^173#7#173#7#4972#0#19"Unused Entity Issue--2@73"Conversion specifies type 'int' but the argument has type 'unsigned long'-359924091#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@67"file://localhost/Users/lipa/fractalstream/tools/saddledrop/SDTool.m0000000000000000^275#22#275#22#7875#0#19"Format String Issue3(3@67"file://localhost/Users/lipa/fractalstream/tools/saddledrop/SDTool.m0000000000000000^275#41#275#90#7894#47#3@67"file://localhost/Users/lipa/fractalstream/tools/saddledrop/SDTool.m0000000000000000^275#21#275#23#7874#2#3@67"file://localhost/Users/lipa/fractalstream/tools/saddledrop/SDTool.m0000000000000000^275#21#275#23#7874#2#-2@67"Instance method '-reload:' not found (return type defaults to 'id')-359924091#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@67"file://localhost/Users/lipa/fractalstream/tools/saddledrop/SDTool.m0000000000000000^410#35#410#35#14355#0#14"Semantic Issue1(3@67"file://localhost/Users/lipa/fractalstream/tools/saddledrop/SDTool.m0000000000000000^410#35#410#54#14355#18#-0#0#0#-19%DVTDocumentLocation4@67"file://localhost/Users/lipa/fractalstream/tools/saddledrop/SDTool.m0000000000000000^2331"CompileC build/SDTool.build/Debug/SDTool.build/Objects-normal/x86_64/SDTool.o SDTool.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lipa/fractalstream/tools/saddledrop    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -I/Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/SDTool.hmap -I/Users/lipa/fractalstream/tools/saddledrop/build/Debug/include -I/Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/DerivedSources/x86_64 -I/Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/DerivedSources -F/Users/lipa/fractalstream/tools/saddledrop/build/Debug -include /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SDTool_Prefix-braecndufwrgukeglvczpbpnsnav/SDTool_Prefix.pch -MMD -MT dependencies -MF /Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/x86_64/SDTool.d --serialize-diagnostics /Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/x86_64/SDTool.dia -c /Users/lipa/fractalstream/tools/saddledrop/SDTool.m -o /Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/x86_64/SDTool.o36"DA70EF38-86AA-4D89-BF20-1216F81839BE-
-
-CCopyStringsFile /Users/lipa/fractalstream/tools/saddledrop/build/Debug/SDTool.fstool/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-s359924089.846969
-e359924089.864572
-r1
-xCopyStringsFile
-x/Users/lipa/fractalstream/tools/saddledrop/build/Debug/SDTool.fstool/Contents/Resources/English.lproj/InfoPlist.strings
-xEnglish.lproj/InfoPlist.strings
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Copy English.lproj/InfoPlist.stringsb7f0d8790174b541^fc54dd790174b541^---0#0#0#-19%DVTDocumentLocation2@90"file://localhost/Users/lipa/fractalstream/tools/saddledrop/English.lproj/InfoPlist.strings0000000000000000^403"CopyStringsFile build/Debug/SDTool.fstool/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings    cd /Users/lipa/fractalstream/tools/saddledrop    builtin-copyStrings --validate --inputencoding utf-16 --outputencoding UTF-16 --outdir /Users/lipa/fractalstream/tools/saddledrop/build/Debug/SDTool.fstool/Contents/Resources/English.lproj -- English.lproj/InfoPlist.strings36"584E35E0-15A4-4CFA-BF50-84B25026BA76-
-
-CCreateUniversalBinary /Users/lipa/fractalstream/tools/saddledrop/build/Debug/SDTool.fstool/Contents/MacOS/SDTool normal "x86_64 i386"
-s359924092.101186
-e359924092.108673
-r1
-xCreateUniversalBinary
-x/Users/lipa/fractalstream/tools/saddledrop/build/Debug/SDTool.fstool/Contents/MacOS/SDTool
-xnormal
-xx86_64 i386
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Create universal binary /Users/lipa/fractalstream/tools/saddledrop/build/Debug/SDTool.fstool/Contents/MacOS/SDToolf9f3197c0174b541^3dd31b7c0174b541^---0#0#0#-19%DVTDocumentLocation2@106"file://localhost/Users/lipa/fractalstream/tools/saddledrop/build/Debug/SDTool.fstool/Contents/MacOS/SDTool000000000080d041^484"CreateUniversalBinary build/Debug/SDTool.fstool/Contents/MacOS/SDTool normal "x86_64 i386"    cd /Users/lipa/fractalstream/tools/saddledrop    /usr/bin/lipo -create /Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/x86_64/SDTool /Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/i386/SDTool -output /Users/lipa/fractalstream/tools/saddledrop/build/Debug/SDTool.fstool/Contents/MacOS/SDTool36"FEBB128E-CFD5-482F-BD5A-4CAB7F055ECD-
-
-CLd /Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/i386/SDTool normal i386
-s359924092.036872
-e359924092.086128
-r1
-xLd
-x/Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/i386/SDTool
-xnormal
-xi386
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Link /Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/i386/SDToolf085097c0174b541^880d167c0174b541^---0#0#0#--795"Ld build/SDTool.build/Debug/SDTool.build/Objects-normal/i386/SDTool normal i386    cd /Users/lipa/fractalstream/tools/saddledrop    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk -L/Users/lipa/fractalstream/tools/saddledrop/build/Debug -F/Users/lipa/fractalstream/tools/saddledrop/build/Debug -filelist /Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/i386/SDTool.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -o /Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/i386/SDTool36"5A866765-3FB9-4821-BD0E-66D9A7D70D6D-
-
-CLd /Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/x86_64/SDTool normal x86_64
-s359924091.956027
-e359924092.019163
-r1
-xLd
-x/Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/x86_64/SDTool
-xnormal
-xx86_64
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Link /Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/x86_64/SDToole414f57b0174b541^58e3047c0174b541^---0#0#0#--805"Ld build/SDTool.build/Debug/SDTool.build/Objects-normal/x86_64/SDTool normal x86_64    cd /Users/lipa/fractalstream/tools/saddledrop    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk -L/Users/lipa/fractalstream/tools/saddledrop/build/Debug -F/Users/lipa/fractalstream/tools/saddledrop/build/Debug -filelist /Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/x86_64/SDTool.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -o /Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/Objects-normal/x86_64/SDTool36"7499D3B8-BDC3-4016-B552-C916CF8997C0-
-
-CProcessInfoPlistFile /Users/lipa/fractalstream/tools/saddledrop/build/Debug/SDTool.fstool/Contents/Info.plist Info.plist
-s359924089.836346
-e359924089.838963
-r1
-xProcessInfoPlistFile
-x/Users/lipa/fractalstream/tools/saddledrop/build/Debug/SDTool.fstool/Contents/Info.plist
-xInfo.plist
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Process Info.plistbb28d6790174b541^8bc6d6790174b541^---0#0#0#-19%DVTDocumentLocation2@69"file://localhost/Users/lipa/fractalstream/tools/saddledrop/Info.plist0000000000000000^298"ProcessInfoPlistFile build/Debug/SDTool.fstool/Contents/Info.plist Info.plist    cd /Users/lipa/fractalstream/tools/saddledrop    builtin-infoPlistUtility Info.plist -expandbuildsettings -platform macosx -o /Users/lipa/fractalstream/tools/saddledrop/build/Debug/SDTool.fstool/Contents/Info.plist36"FEBBD2FB-E6D5-4ED0-9237-900BE2F0789F-
-
-CProcessPCH /Users/lipa/fractalstream/build/FractalStream/Index/PrecompiledHeaders/SDTool_Prefix-abiwvlznlyykojccicigvhogrcdy_ast/SDTool_Prefix.pch.pth SDTool_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
-r0
-
-CProcessPCH /Users/lipa/fractalstream/build/FractalStream/Index/PrecompiledHeaders/SDTool_Prefix-hhxmyjpadlgulghkerugzpxfajbx_ast/SDTool_Prefix.pch.pth SDTool_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
-r0
-
-CProcessPCH /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SDTool_Prefix-aozvzqvtwymdndftpnnewpvhsvje/SDTool_Prefix.pch.pth SDTool_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s359924090.399727
-e359924091.902249
-r1
-xProcessPCH
-x/var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SDTool_Prefix-aozvzqvtwymdndftpnnewpvhsvje/SDTool_Prefix.pch.pth
-xSDTool_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Precompile SDTool_Prefix.pchda72667a0174b541^76f9e67b0174b541^---0#0#0#-19%DVTDocumentLocation2@76"file://localhost/Users/lipa/fractalstream/tools/saddledrop/SDTool_Prefix.pch0000000000000000^2415"ProcessPCH /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SDTool_Prefix-aozvzqvtwymdndftpnnewpvhsvje/SDTool_Prefix.pch.pth SDTool_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lipa/fractalstream/tools/saddledrop    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -I/Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/SDTool.hmap -I/Users/lipa/fractalstream/tools/saddledrop/build/Debug/include -I/Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/DerivedSources/i386 -I/Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/DerivedSources -F/Users/lipa/fractalstream/tools/saddledrop/build/Debug --serialize-diagnostics /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SDTool_Prefix-aozvzqvtwymdndftpnnewpvhsvje/SDTool_Prefix.pch.dia -c /Users/lipa/fractalstream/tools/saddledrop/SDTool_Prefix.pch -o /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SDTool_Prefix-aozvzqvtwymdndftpnnewpvhsvje/SDTool_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SDTool_Prefix-aozvzqvtwymdndftpnnewpvhsvje/SDTool_Prefix.pch.d36"163E4A35-B95B-4212-973D-A8988B994635-
-
-CProcessPCH /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SDTool_Prefix-braecndufwrgukeglvczpbpnsnav/SDTool_Prefix.pch.pth SDTool_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s359924090.399523
-e359924091.776416
-r1
-xProcessPCH
-x/var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SDTool_Prefix-braecndufwrgukeglvczpbpnsnav/SDTool_Prefix.pch.pth
-xSDTool_Prefix.pch
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Precompile SDTool_Prefix.pched66667a0174b541^f4c5c67b0174b541^---0#0#0#-19%DVTDocumentLocation2@76"file://localhost/Users/lipa/fractalstream/tools/saddledrop/SDTool_Prefix.pch0000000000000000^2421"ProcessPCH /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SDTool_Prefix-braecndufwrgukeglvczpbpnsnav/SDTool_Prefix.pch.pth SDTool_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lipa/fractalstream/tools/saddledrop    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -I/Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/SDTool.hmap -I/Users/lipa/fractalstream/tools/saddledrop/build/Debug/include -I/Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/DerivedSources/x86_64 -I/Users/lipa/fractalstream/tools/saddledrop/build/SDTool.build/Debug/SDTool.build/DerivedSources -F/Users/lipa/fractalstream/tools/saddledrop/build/Debug --serialize-diagnostics /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SDTool_Prefix-braecndufwrgukeglvczpbpnsnav/SDTool_Prefix.pch.dia -c /Users/lipa/fractalstream/tools/saddledrop/SDTool_Prefix.pch -o /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SDTool_Prefix-braecndufwrgukeglvczpbpnsnav/SDTool_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/7j/v5shjf2n64545v8f4j_4vyt40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SDTool_Prefix-braecndufwrgukeglvczpbpnsnav/SDTool_Prefix.pch.d36"8B51CF9E-687D-4245-B4CA-D7DA381FA491-
-
-CStripNIB /Users/lipa/fractalstream/tools/saddledrop/SDTool.nib
-s359924089.846991
-e359924090.379865
-r1
-xStripNIB
-x/Users/lipa/fractalstream/tools/saddledrop/SDTool.nib
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Processing /Users/lipa/fractalstream/tools/saddledrop/SDTool.nib3fe5d8790174b541^8e3f617a0174b541^---0#0#0#-19%DVTDocumentLocation2@70"file://localhost/Users/lipa/fractalstream/tools/saddledrop/SDTool.nib/0000000000000000^419"StripNIB SDTool.nib    cd /Users/lipa/fractalstream/tools/saddledrop    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --strip /Users/lipa/fractalstream/tools/saddledrop/build/Debug/SDTool.fstool/Contents/Resources/SDTool.nib --output-format human-readable-text /Users/lipa/fractalstream/tools/saddledrop/SDTool.nib36"1C27DF6B-996F-42E3-BFD7-D81C2A952CF8-
-
-CTouch /Users/lipa/fractalstream/tools/saddledrop/build/Debug/SDTool.fstool
-s359924092.116088
-e359924092.121226
-r1
-xTouch
-x/Users/lipa/fractalstream/tools/saddledrop/build/Debug/SDTool.fstool
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Touch /Users/lipa/fractalstream/tools/saddledrop/build/Debug/SDTool.fstoola4c11d7c0174b541^ee081f7c0174b541^---0#0#0#--173"Touch build/Debug/SDTool.fstool    cd /Users/lipa/fractalstream/tools/saddledrop    /usr/bin/touch -c /Users/lipa/fractalstream/tools/saddledrop/build/Debug/SDTool.fstool36"17626B70-62D4-41A0-9B11-149B79FFC8C4-
-
