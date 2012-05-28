@@ -7,10 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		364D0AE81571159600971A37 /* LLVMExecutionEngine.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 364D0AE71571159600971A37 /* LLVMExecutionEngine.o */; };
-		364D0AEA157115B200971A37 /* LLVMJIT.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 364D0AE9157115B200971A37 /* LLVMJIT.o */; };
-		364D0AEC157115BA00971A37 /* LLVMPowerPCAsmPrinter.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 364D0AEB157115BA00971A37 /* LLVMPowerPCAsmPrinter.o */; };
-		364D0AEE157115C600971A37 /* LLVMPowerPCCodeGen.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 364D0AED157115C600971A37 /* LLVMPowerPCCodeGen.o */; };
+		360A22DB1573E5C400BF41B2 /* FSColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22921573E5C400BF41B2 /* FSColor.m */; };
+		360A22DC1573E5C400BF41B2 /* FSColorizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22941573E5C400BF41B2 /* FSColorizer.m */; };
+		360A22DD1573E5C400BF41B2 /* FSColorOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22961573E5C400BF41B2 /* FSColorOperation.m */; };
+		360A22DE1573E5C400BF41B2 /* FSColorWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22981573E5C400BF41B2 /* FSColorWidget.m */; };
+		360A22DF1573E5C400BF41B2 /* FSBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A229C1573E5C400BF41B2 /* FSBrowser.m */; };
+		360A22E01573E5C400BF41B2 /* FSDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A229E1573E5C400BF41B2 /* FSDocument.m */; };
+		360A22E11573E5C400BF41B2 /* FSPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22A01573E5C400BF41B2 /* FSPanel.m */; };
+		360A22E21573E5C400BF41B2 /* FSSave.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22A21573E5C400BF41B2 /* FSSave.m */; };
+		360A22E31573E5C400BF41B2 /* FSSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22A41573E5C400BF41B2 /* FSSession.m */; };
+		360A22E41573E5C400BF41B2 /* FSColorLibraryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22A71573E5C400BF41B2 /* FSColorLibraryController.m */; };
+		360A22E51573E5C400BF41B2 /* FSScriptLibraryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22A91573E5C400BF41B2 /* FSScriptLibraryController.m */; };
+		360A22E61573E5C400BF41B2 /* FSStartup.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22AD1573E5C400BF41B2 /* FSStartup.m */; };
+		360A22E71573E5C400BF41B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22AE1573E5C400BF41B2 /* main.m */; };
+		360A22E81573E5C400BF41B2 /* FSCustomDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22B11573E5C400BF41B2 /* FSCustomDataManager.m */; };
+		360A22E91573E5C400BF41B2 /* FSEC_gcc.c in Sources */ = {isa = PBXBuildFile; fileRef = 360A22B21573E5C400BF41B2 /* FSEC_gcc.c */; };
+		360A22EA1573E5C400BF41B2 /* FSECompiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22B51573E5C400BF41B2 /* FSECompiler.m */; };
+		360A22EB1573E5C400BF41B2 /* FSEController.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22B81573E5C400BF41B2 /* FSEController.m */; };
+		360A22EC1573E5C400BF41B2 /* FSEParseTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22BB1573E5C400BF41B2 /* FSEParseTree.m */; };
+		360A22ED1573E5C400BF41B2 /* FSJitter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 360A22BD1573E5C400BF41B2 /* FSJitter.mm */; };
+		360A22EE1573E5C400BF41B2 /* FSKernel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 360A22BF1573E5C400BF41B2 /* FSKernel.mm */; };
+		360A22EF1573E5C400BF41B2 /* CircularOverwriteBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22C21573E5C400BF41B2 /* CircularOverwriteBuffer.m */; };
+		360A22F01573E5C400BF41B2 /* FSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22C41573E5C400BF41B2 /* FSLog.m */; };
+		360A22F11573E5C400BF41B2 /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 360A22C61573E5C400BF41B2 /* debug.c */; };
+		360A22F21573E5C400BF41B2 /* FSCursors.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22C91573E5C400BF41B2 /* FSCursors.m */; };
+		360A22F31573E5C400BF41B2 /* FSFullscreenWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22CB1573E5C400BF41B2 /* FSFullscreenWindow.m */; };
+		360A22F41573E5C400BF41B2 /* FSRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22CD1573E5C400BF41B2 /* FSRenderer.m */; };
+		360A22F51573E5C400BF41B2 /* FSRenderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22CF1573E5C400BF41B2 /* FSRenderOperation.m */; };
+		360A22F61573E5C400BF41B2 /* FSThreading.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22D21573E5C400BF41B2 /* FSThreading.m */; };
+		360A22F71573E5C400BF41B2 /* FSTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22D61573E5C400BF41B2 /* FSTools.m */; };
+		360A22F81573E5C400BF41B2 /* FSViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22D91573E5C400BF41B2 /* FSViewer.m */; };
+		360A22FB1573E5F300BF41B2 /* ZoomIn.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 360A22FA1573E5F300BF41B2 /* ZoomIn.tiff */; };
+		360A22FE1573E61A00BF41B2 /* julia.icns in Resources */ = {isa = PBXBuildFile; fileRef = 360A22FC1573E61A00BF41B2 /* julia.icns */; };
+		360A22FF1573E61A00BF41B2 /* mandelbrot.icns in Resources */ = {isa = PBXBuildFile; fileRef = 360A22FD1573E61A00BF41B2 /* mandelbrot.icns */; };
+		360A23031573EC1D00BF41B2 /* libLLVMAsmPrinter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 360A23021573EC1D00BF41B2 /* libLLVMAsmPrinter.a */; };
+		360A23051573EC2B00BF41B2 /* LLVMX86AsmPrinter.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 360A23041573EC2B00BF41B2 /* LLVMX86AsmPrinter.o */; };
+		360A23071573EC4000BF41B2 /* LLVMX86CodeGen.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 360A23061573EC4000BF41B2 /* LLVMX86CodeGen.o */; };
+		360A230C1573EC6D00BF41B2 /* LLVMExecutionEngine.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 360A23081573EC6D00BF41B2 /* LLVMExecutionEngine.o */; };
+		360A230D1573EC6D00BF41B2 /* LLVMJIT.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 360A23091573EC6D00BF41B2 /* LLVMJIT.o */; };
+		360A230E1573EC6D00BF41B2 /* LLVMPowerPCAsmPrinter.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 360A230A1573EC6D00BF41B2 /* LLVMPowerPCAsmPrinter.o */; };
+		360A230F1573EC6D00BF41B2 /* LLVMPowerPCCodeGen.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 360A230B1573EC6D00BF41B2 /* LLVMPowerPCCodeGen.o */; };
 		36F02924157133A600FEA4A6 /* ab.fs in Copy Files (Quadratic Maps) */ = {isa = PBXBuildFile; fileRef = 364D0AC1157114D700971A37 /* ab.fs */; };
 		36F02925157133A600FEA4A6 /* boundary.fs in Copy Files (Quadratic Maps) */ = {isa = PBXBuildFile; fileRef = 364D0AC2157114D700971A37 /* boundary.fs */; };
 		36F02926157133A600FEA4A6 /* ext.fs in Copy Files (Quadratic Maps) */ = {isa = PBXBuildFile; fileRef = 364D0AC3157114D700971A37 /* ext.fs */; };
@@ -42,83 +78,22 @@
 		36F029441571362600FEA4A6 /* C13699648.fscolor in Copy Files (Colors) */ = {isa = PBXBuildFile; fileRef = 36F0293C1571360F00FEA4A6 /* C13699648.fscolor */; };
 		36F029451571362600FEA4A6 /* C13708784.fscolor in Copy Files (Colors) */ = {isa = PBXBuildFile; fileRef = 36F0293D1571360F00FEA4A6 /* C13708784.fscolor */; };
 		36F029461571362600FEA4A6 /* ColorLibrary in Copy Files (Colors) */ = {isa = PBXBuildFile; fileRef = 36F0293E1571360F00FEA4A6 /* ColorLibrary */; };
-		36F0294A1571542A00FEA4A6 /* FSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F029491571542A00FEA4A6 /* FSLog.m */; };
-		36F02951157159E900FEA4A6 /* CircularOverwriteBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F02950157159E900FEA4A6 /* CircularOverwriteBuffer.m */; };
-		36F1D9B3157115E000E1B7E5 /* LLVMX86AsmPrinter.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F1D9B1157115E000E1B7E5 /* LLVMX86AsmPrinter.o */; };
-		36F1D9B4157115E000E1B7E5 /* LLVMX86CodeGen.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F1D9B2157115E000E1B7E5 /* LLVMX86CodeGen.o */; };
-		36F1D9B71571168300E1B7E5 /* libLLVMAsmPrinter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F1D9B61571168300E1B7E5 /* libLLVMAsmPrinter.a */; };
-		6802822D10AB17CF0077048E /* FSPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6802822C10AB17CF0077048E /* FSPanel.m */; };
 		6802824710AB1A060077048E /* FSDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6802824310AB1A060077048E /* FSDocument.xib */; };
 		6802824810AB1A060077048E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6802824510AB1A060077048E /* MainMenu.xib */; };
-		6816EB7F10B1CCBC00B01D0E /* mandelbrot.icns in Resources */ = {isa = PBXBuildFile; fileRef = 6816EB7E10B1CCBC00B01D0E /* mandelbrot.icns */; };
-		681AF1470F699AF900E8DE1B /* FSScriptLibraryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1120F699AF900E8DE1B /* FSScriptLibraryController.m */; };
-		681AF1480F699AF900E8DE1B /* FSColorLibraryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1140F699AF900E8DE1B /* FSColorLibraryController.m */; };
-		681AF1490F699AF900E8DE1B /* FSColorWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1180F699AF900E8DE1B /* FSColorWidget.m */; };
-		681AF14A0F699AF900E8DE1B /* FSDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF11B0F699AF900E8DE1B /* FSDocument.m */; };
-		681AF14B0F699AF900E8DE1B /* FSSave.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF11D0F699AF900E8DE1B /* FSSave.m */; };
-		681AF14C0F699AF900E8DE1B /* FSSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF11F0F699AF900E8DE1B /* FSSession.m */; };
-		681AF14D0F699AF900E8DE1B /* FSBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1210F699AF900E8DE1B /* FSBrowser.m */; };
-		681AF14E0F699AF900E8DE1B /* FSEParseTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1260F699AF900E8DE1B /* FSEParseTree.m */; };
-		681AF14F0F699AF900E8DE1B /* FSECompiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1280F699AF900E8DE1B /* FSECompiler.m */; };
-		681AF1510F699AF900E8DE1B /* FSEController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF12C0F699AF900E8DE1B /* FSEController.m */; };
-		681AF1520F699AF900E8DE1B /* FSKernel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 681AF12E0F699AF900E8DE1B /* FSKernel.mm */; };
-		681AF1530F699AF900E8DE1B /* FSJitter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1300F699AF900E8DE1B /* FSJitter.mm */; };
-		681AF1540F699AF900E8DE1B /* FSCursors.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1370F699AF900E8DE1B /* FSCursors.m */; };
-		681AF1550F699AF900E8DE1B /* FSTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1390F699AF900E8DE1B /* FSTools.m */; };
-		681AF1560F699AF900E8DE1B /* FSRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF13B0F699AF900E8DE1B /* FSRenderer.m */; };
-		681AF1570F699AF900E8DE1B /* FSViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF13D0F699AF900E8DE1B /* FSViewer.m */; };
-		681AF1580F699AF900E8DE1B /* FSRenderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1400F699AF900E8DE1B /* FSRenderOperation.m */; };
-		681AF1590F699AF900E8DE1B /* FSColorizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1420F699AF900E8DE1B /* FSColorizer.m */; };
-		681AF15A0F699AF900E8DE1B /* FSColorOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1440F699AF900E8DE1B /* FSColorOperation.m */; };
-		681AF15B0F699AF900E8DE1B /* FSThreading.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1460F699AF900E8DE1B /* FSThreading.m */; };
-		681AF15E0F699B2A00E8DE1B /* FSStartup.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF15D0F699B2A00E8DE1B /* FSStartup.m */; };
-		681AF1B70F699BCC00E8DE1B /* julia.icns in Resources */ = {isa = PBXBuildFile; fileRef = 681AF1B60F699BCC00E8DE1B /* julia.icns */; };
-		681AF4C50F6CCE8000E8DE1B /* FSFullscreenWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF4C40F6CCE8000E8DE1B /* FSFullscreenWindow.m */; };
 		683942D010B39DEB00A6A993 /* FSDocument-windows.xib in Resources */ = {isa = PBXBuildFile; fileRef = 683942CC10B39DEB00A6A993 /* FSDocument-windows.xib */; };
 		683942D110B39DEB00A6A993 /* MainMenu-windows.xib in Resources */ = {isa = PBXBuildFile; fileRef = 683942CE10B39DEB00A6A993 /* MainMenu-windows.xib */; };
 		683CAB330FD787500071EEAB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
 		683CAB340FD787500071EEAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
-		683CAB390FD787500071EEAB /* julia.icns in Resources */ = {isa = PBXBuildFile; fileRef = 681AF1B60F699BCC00E8DE1B /* julia.icns */; };
-		683CAB3B0FD787500071EEAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
-		683CAB3C0FD787500071EEAB /* FSScriptLibraryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1120F699AF900E8DE1B /* FSScriptLibraryController.m */; };
-		683CAB3D0FD787500071EEAB /* FSColorLibraryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1140F699AF900E8DE1B /* FSColorLibraryController.m */; };
-		683CAB3E0FD787500071EEAB /* FSColorWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1180F699AF900E8DE1B /* FSColorWidget.m */; };
-		683CAB3F0FD787500071EEAB /* FSDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF11B0F699AF900E8DE1B /* FSDocument.m */; };
-		683CAB400FD787500071EEAB /* FSSave.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF11D0F699AF900E8DE1B /* FSSave.m */; };
-		683CAB410FD787500071EEAB /* FSSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF11F0F699AF900E8DE1B /* FSSession.m */; };
-		683CAB420FD787500071EEAB /* FSBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1210F699AF900E8DE1B /* FSBrowser.m */; };
-		683CAB430FD787500071EEAB /* FSEParseTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1260F699AF900E8DE1B /* FSEParseTree.m */; };
-		683CAB440FD787500071EEAB /* FSECompiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1280F699AF900E8DE1B /* FSECompiler.m */; };
-		683CAB460FD787500071EEAB /* FSEController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF12C0F699AF900E8DE1B /* FSEController.m */; };
-		683CAB470FD787500071EEAB /* FSKernel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 681AF12E0F699AF900E8DE1B /* FSKernel.mm */; };
-		683CAB480FD787500071EEAB /* FSJitter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1300F699AF900E8DE1B /* FSJitter.mm */; };
-		683CAB490FD787500071EEAB /* FSCursors.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1370F699AF900E8DE1B /* FSCursors.m */; };
-		683CAB4A0FD787500071EEAB /* FSTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1390F699AF900E8DE1B /* FSTools.m */; };
-		683CAB4B0FD787500071EEAB /* FSRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF13B0F699AF900E8DE1B /* FSRenderer.m */; };
-		683CAB4C0FD787500071EEAB /* FSViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF13D0F699AF900E8DE1B /* FSViewer.m */; };
-		683CAB4D0FD787500071EEAB /* FSRenderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1400F699AF900E8DE1B /* FSRenderOperation.m */; };
-		683CAB4E0FD787500071EEAB /* FSColorizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1420F699AF900E8DE1B /* FSColorizer.m */; };
-		683CAB4F0FD787500071EEAB /* FSColorOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1440F699AF900E8DE1B /* FSColorOperation.m */; };
-		683CAB500FD787500071EEAB /* FSThreading.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF1460F699AF900E8DE1B /* FSThreading.m */; };
-		683CAB510FD787500071EEAB /* FSStartup.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF15D0F699B2A00E8DE1B /* FSStartup.m */; };
-		683CAB520FD787500071EEAB /* FSFullscreenWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 681AF4C40F6CCE8000E8DE1B /* FSFullscreenWindow.m */; };
-		683CAB530FD787500071EEAB /* FSCustomDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 68605DB70F6DCEE500189C8C /* FSCustomDataManager.m */; };
 		683CAB570FD787500071EEAB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
-		68411693100306F000C5323F /* FSColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 68411692100306F000C5323F /* FSColor.m */; };
-		68605DB80F6DCEE500189C8C /* FSCustomDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 68605DB70F6DCEE500189C8C /* FSCustomDataManager.m */; };
 		688F109A0FD9BED700FAFC60 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */; };
 		688F109B0FD9BED700FAFC60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */; };
-		68A3108B10B3B79D0019C1F8 /* mandelbrot.icns in Resources */ = {isa = PBXBuildFile; fileRef = 6816EB7E10B1CCBC00B01D0E /* mandelbrot.icns */; };
 		68A3108C10B3B79D0019C1F8 /* FSDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6802824310AB1A060077048E /* FSDocument.xib */; };
 		68A3108D10B3B79D0019C1F8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6802824510AB1A060077048E /* MainMenu.xib */; };
 		68A3108E10B3B79D0019C1F8 /* FSDocument-windows.xib in Resources */ = {isa = PBXBuildFile; fileRef = 683942CC10B39DEB00A6A993 /* FSDocument-windows.xib */; };
 		68A3108F10B3B79D0019C1F8 /* MainMenu-windows.xib in Resources */ = {isa = PBXBuildFile; fileRef = 683942CE10B39DEB00A6A993 /* MainMenu-windows.xib */; };
 		68A3109010B3B79D0019C1F8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D15AC360486D014006FF6A4 /* Info.plist */; };
-		68A310C610B3C1040019C1F8 /* FSPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6802822C10AB17CF0077048E /* FSPanel.m */; };
-		68AF3AA51049EB7600967604 /* FSColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 68411692100306F000C5323F /* FSColor.m */; };
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
 		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
-		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -142,82 +117,103 @@
 /* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
-		36F0296A15731B4600FEA4A6 /* PBXContainerItemProxy */ = {
+		360A22791573E5B100BF41B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 36F0295215731B4500FEA4A6 /* CrashReporter.xcodeproj */;
+			containerPortal = 360A22611573E5B000BF41B2 /* CrashReporter.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 05E731F30EFA1AAB005EDFB7;
 			remoteInfo = "CrashReporter-MacOSX-Static";
 		};
-		36F0296C15731B4600FEA4A6 /* PBXContainerItemProxy */ = {
+		360A227B1573E5B100BF41B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 36F0295215731B4500FEA4A6 /* CrashReporter.xcodeproj */;
+			containerPortal = 360A22611573E5B000BF41B2 /* CrashReporter.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
 			remoteInfo = "CrashReporter-MacOSX";
 		};
-		36F0296E15731B4600FEA4A6 /* PBXContainerItemProxy */ = {
+		360A227D1573E5B100BF41B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 36F0295215731B4500FEA4A6 /* CrashReporter.xcodeproj */;
+			containerPortal = 360A22611573E5B000BF41B2 /* CrashReporter.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 058812B91040582D009128FB;
 			remoteInfo = "CrashReporter-iPhone";
 		};
-		36F0297015731B4600FEA4A6 /* PBXContainerItemProxy */ = {
+		360A227F1573E5B100BF41B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 36F0295215731B4500FEA4A6 /* CrashReporter.xcodeproj */;
+			containerPortal = 360A22611573E5B000BF41B2 /* CrashReporter.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 05CD31520EE936A9000FDE88;
 			remoteInfo = "CrashReporter-iPhoneOS";
 		};
-		36F0297215731B4600FEA4A6 /* PBXContainerItemProxy */ = {
+		360A22811573E5B100BF41B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 36F0295215731B4500FEA4A6 /* CrashReporter.xcodeproj */;
+			containerPortal = 360A22611573E5B000BF41B2 /* CrashReporter.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 05CD31630EE93905000FDE88;
 			remoteInfo = "CrashReporter-iPhoneSimulator";
 		};
-		36F0297415731B4600FEA4A6 /* PBXContainerItemProxy */ = {
+		360A22831573E5B100BF41B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 36F0295215731B4500FEA4A6 /* CrashReporter.xcodeproj */;
+			containerPortal = 360A22611573E5B000BF41B2 /* CrashReporter.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 05E731E30EFA1A3E005EDFB7;
 			remoteInfo = plcrashutil;
 		};
-		36F0297615731B4600FEA4A6 /* PBXContainerItemProxy */ = {
+		360A22851573E5B100BF41B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 36F0295215731B4500FEA4A6 /* CrashReporter.xcodeproj */;
+			containerPortal = 360A22611573E5B000BF41B2 /* CrashReporter.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 05CD32690EE93DC3000FDE88;
 			remoteInfo = "Tests-MacOSX";
 		};
-		36F0297815731B4600FEA4A6 /* PBXContainerItemProxy */ = {
+		360A22871573E5B100BF41B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 36F0295215731B4500FEA4A6 /* CrashReporter.xcodeproj */;
+			containerPortal = 360A22611573E5B000BF41B2 /* CrashReporter.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 05CD32A90EE94062000FDE88;
 			remoteInfo = "Tests-iPhoneSimulator";
 		};
-		36F0297A15731B4600FEA4A6 /* PBXContainerItemProxy */ = {
+		360A22891573E5B100BF41B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 36F0295215731B4500FEA4A6 /* CrashReporter.xcodeproj */;
+			containerPortal = 360A22611573E5B000BF41B2 /* CrashReporter.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 05CD33240EE94439000FDE88;
 			remoteInfo = "Tests-iPhoneOS";
 		};
-		36F0297C15731B4600FEA4A6 /* PBXContainerItemProxy */ = {
+		360A228B1573E5B100BF41B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 36F0295215731B4500FEA4A6 /* CrashReporter.xcodeproj */;
+			containerPortal = 360A22611573E5B000BF41B2 /* CrashReporter.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 05F40CE70EF7AB80008050CF;
 			remoteInfo = DemoCrash;
 		};
-		36F0297E15731B4600FEA4A6 /* PBXContainerItemProxy */ = {
+		360A228D1573E5B100BF41B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 36F0295215731B4500FEA4A6 /* CrashReporter.xcodeproj */;
+			containerPortal = 360A22611573E5B000BF41B2 /* CrashReporter.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 050DE24D0F61B80B00152ED3;
 			remoteInfo = "Fuzz Testing";
+		};
+		365AECC91574010A00083A53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36F029811573C22A00FEA4A6 /* FSMovieTool.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = FSMovieTool;
+		};
+		365AECCB1574010D00083A53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36F0298A1573C23100FEA4A6 /* SDTool.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = SDTool;
+		};
+		365AECCD1574011400083A53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36F029931573C23D00FEA4A6 /* FSToolTest.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = FSToolTest;
 		};
 		36F029881573C22A00FEA4A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -457,11 +453,89 @@
 /* Begin PBXFileReference section */
 		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		32DBCF750370BD2300C91783 /* FractalStream_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FractalStream_Prefix.pch; sourceTree = "<group>"; };
+		360A22531573E5A100BF41B2 /* LLVM.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LLVM.xcodeproj; path = "external/llvm-2.5/Xcode/LLVM.xcodeproj"; sourceTree = "<group>"; };
+		360A22611573E5B000BF41B2 /* CrashReporter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CrashReporter.xcodeproj; path = "external/plcrashreporter-1.0/CrashReporter.xcodeproj"; sourceTree = "<group>"; };
+		360A22911573E5C400BF41B2 /* FSColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSColor.h; sourceTree = "<group>"; };
+		360A22921573E5C400BF41B2 /* FSColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSColor.m; sourceTree = "<group>"; };
+		360A22931573E5C400BF41B2 /* FSColorizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSColorizer.h; sourceTree = "<group>"; };
+		360A22941573E5C400BF41B2 /* FSColorizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSColorizer.m; sourceTree = "<group>"; };
+		360A22951573E5C400BF41B2 /* FSColorOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSColorOperation.h; sourceTree = "<group>"; };
+		360A22961573E5C400BF41B2 /* FSColorOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSColorOperation.m; sourceTree = "<group>"; };
+		360A22971573E5C400BF41B2 /* FSColorWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSColorWidget.h; sourceTree = "<group>"; };
+		360A22981573E5C400BF41B2 /* FSColorWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSColorWidget.m; sourceTree = "<group>"; };
+		360A22991573E5C400BF41B2 /* FSCWNamedColors.H */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FSCWNamedColors.H; sourceTree = "<group>"; };
+		360A229B1573E5C400BF41B2 /* FSBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSBrowser.h; sourceTree = "<group>"; };
+		360A229C1573E5C400BF41B2 /* FSBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSBrowser.m; sourceTree = "<group>"; };
+		360A229D1573E5C400BF41B2 /* FSDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSDocument.h; sourceTree = "<group>"; };
+		360A229E1573E5C400BF41B2 /* FSDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSDocument.m; sourceTree = "<group>"; };
+		360A229F1573E5C400BF41B2 /* FSPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPanel.h; sourceTree = "<group>"; };
+		360A22A01573E5C400BF41B2 /* FSPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPanel.m; sourceTree = "<group>"; };
+		360A22A11573E5C400BF41B2 /* FSSave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSSave.h; sourceTree = "<group>"; };
+		360A22A21573E5C400BF41B2 /* FSSave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSSave.m; sourceTree = "<group>"; };
+		360A22A31573E5C400BF41B2 /* FSSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSSession.h; sourceTree = "<group>"; };
+		360A22A41573E5C400BF41B2 /* FSSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSSession.m; sourceTree = "<group>"; };
+		360A22A61573E5C400BF41B2 /* FSColorLibraryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSColorLibraryController.h; sourceTree = "<group>"; };
+		360A22A71573E5C400BF41B2 /* FSColorLibraryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSColorLibraryController.m; sourceTree = "<group>"; };
+		360A22A81573E5C400BF41B2 /* FSScriptLibraryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSScriptLibraryController.h; sourceTree = "<group>"; };
+		360A22A91573E5C400BF41B2 /* FSScriptLibraryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSScriptLibraryController.m; sourceTree = "<group>"; };
+		360A22AB1573E5C400BF41B2 /* FractalStream_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FractalStream_Prefix.pch; sourceTree = "<group>"; };
+		360A22AC1573E5C400BF41B2 /* FSStartup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSStartup.h; sourceTree = "<group>"; };
+		360A22AD1573E5C400BF41B2 /* FSStartup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSStartup.m; sourceTree = "<group>"; };
+		360A22AE1573E5C400BF41B2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		360A22B01573E5C400BF41B2 /* FSCustomDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCustomDataManager.h; sourceTree = "<group>"; };
+		360A22B11573E5C400BF41B2 /* FSCustomDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCustomDataManager.m; sourceTree = "<group>"; };
+		360A22B21573E5C400BF41B2 /* FSEC_gcc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FSEC_gcc.c; sourceTree = "<group>"; };
+		360A22B31573E5C400BF41B2 /* FSEC_gcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSEC_gcc.h; sourceTree = "<group>"; };
+		360A22B41573E5C400BF41B2 /* FSECompiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSECompiler.h; sourceTree = "<group>"; };
+		360A22B51573E5C400BF41B2 /* FSECompiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSECompiler.m; sourceTree = "<group>"; };
+		360A22B61573E5C400BF41B2 /* FSECompilerSymbols.H */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FSECompilerSymbols.H; sourceTree = "<group>"; };
+		360A22B71573E5C400BF41B2 /* FSEController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSEController.h; sourceTree = "<group>"; };
+		360A22B81573E5C400BF41B2 /* FSEController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSEController.m; sourceTree = "<group>"; };
+		360A22B91573E5C400BF41B2 /* FSEParseNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSEParseNode.h; sourceTree = "<group>"; };
+		360A22BA1573E5C400BF41B2 /* FSEParseTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSEParseTree.h; sourceTree = "<group>"; };
+		360A22BB1573E5C400BF41B2 /* FSEParseTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSEParseTree.m; sourceTree = "<group>"; };
+		360A22BC1573E5C400BF41B2 /* FSJitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSJitter.h; sourceTree = "<group>"; };
+		360A22BD1573E5C400BF41B2 /* FSJitter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FSJitter.mm; sourceTree = "<group>"; };
+		360A22BE1573E5C400BF41B2 /* FSKernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSKernel.h; sourceTree = "<group>"; };
+		360A22BF1573E5C400BF41B2 /* FSKernel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FSKernel.mm; sourceTree = "<group>"; };
+		360A22C11573E5C400BF41B2 /* CircularOverwriteBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularOverwriteBuffer.h; sourceTree = "<group>"; };
+		360A22C21573E5C400BF41B2 /* CircularOverwriteBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularOverwriteBuffer.m; sourceTree = "<group>"; };
+		360A22C31573E5C400BF41B2 /* FSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSLog.h; sourceTree = "<group>"; };
+		360A22C41573E5C400BF41B2 /* FSLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSLog.m; sourceTree = "<group>"; };
+		360A22C61573E5C400BF41B2 /* debug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = debug.c; sourceTree = "<group>"; };
+		360A22C71573E5C400BF41B2 /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		360A22C81573E5C400BF41B2 /* FSCursors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCursors.h; sourceTree = "<group>"; };
+		360A22C91573E5C400BF41B2 /* FSCursors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCursors.m; sourceTree = "<group>"; };
+		360A22CA1573E5C400BF41B2 /* FSFullscreenWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSFullscreenWindow.h; sourceTree = "<group>"; };
+		360A22CB1573E5C400BF41B2 /* FSFullscreenWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSFullscreenWindow.m; sourceTree = "<group>"; };
+		360A22CC1573E5C400BF41B2 /* FSRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSRenderer.h; sourceTree = "<group>"; };
+		360A22CD1573E5C400BF41B2 /* FSRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSRenderer.m; sourceTree = "<group>"; };
+		360A22CE1573E5C400BF41B2 /* FSRenderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSRenderOperation.h; sourceTree = "<group>"; };
+		360A22CF1573E5C400BF41B2 /* FSRenderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSRenderOperation.m; sourceTree = "<group>"; };
+		360A22D01573E5C400BF41B2 /* FSRenderUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSRenderUnit.h; sourceTree = "<group>"; };
+		360A22D11573E5C400BF41B2 /* FSThreading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSThreading.h; sourceTree = "<group>"; };
+		360A22D21573E5C400BF41B2 /* FSThreading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSThreading.m; sourceTree = "<group>"; };
+		360A22D31573E5C400BF41B2 /* FSTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSTool.h; sourceTree = "<group>"; };
+		360A22D41573E5C400BF41B2 /* FSToolInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSToolInterface.h; sourceTree = "<group>"; };
+		360A22D51573E5C400BF41B2 /* FSTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSTools.h; sourceTree = "<group>"; };
+		360A22D61573E5C400BF41B2 /* FSTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSTools.m; sourceTree = "<group>"; };
+		360A22D71573E5C400BF41B2 /* FSToolStruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSToolStruct.h; sourceTree = "<group>"; };
+		360A22D81573E5C400BF41B2 /* FSViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSViewer.h; sourceTree = "<group>"; };
+		360A22D91573E5C400BF41B2 /* FSViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSViewer.m; sourceTree = "<group>"; };
+		360A22DA1573E5C400BF41B2 /* FSViewerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSViewerData.h; sourceTree = "<group>"; };
+		360A22FA1573E5F300BF41B2 /* ZoomIn.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ZoomIn.tiff; sourceTree = "<group>"; };
+		360A22FC1573E61A00BF41B2 /* julia.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = julia.icns; sourceTree = "<group>"; };
+		360A22FD1573E61A00BF41B2 /* mandelbrot.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = mandelbrot.icns; sourceTree = "<group>"; };
+		360A23021573EC1D00BF41B2 /* libLLVMAsmPrinter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMAsmPrinter.a; path = "external/llvm-2.5/Release/lib/libLLVMAsmPrinter.a"; sourceTree = "<group>"; };
+		360A23041573EC2B00BF41B2 /* LLVMX86AsmPrinter.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = LLVMX86AsmPrinter.o; path = "external/llvm-2.5/Release/lib/LLVMX86AsmPrinter.o"; sourceTree = "<group>"; };
+		360A23061573EC4000BF41B2 /* LLVMX86CodeGen.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = LLVMX86CodeGen.o; path = "external/llvm-2.5/Release/lib/LLVMX86CodeGen.o"; sourceTree = "<group>"; };
+		360A23081573EC6D00BF41B2 /* LLVMExecutionEngine.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = LLVMExecutionEngine.o; path = "external/llvm-2.5/Release/lib/LLVMExecutionEngine.o"; sourceTree = "<group>"; };
+		360A23091573EC6D00BF41B2 /* LLVMJIT.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = LLVMJIT.o; path = "external/llvm-2.5/Release/lib/LLVMJIT.o"; sourceTree = "<group>"; };
+		360A230A1573EC6D00BF41B2 /* LLVMPowerPCAsmPrinter.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = LLVMPowerPCAsmPrinter.o; path = "external/llvm-2.5/Release/lib/LLVMPowerPCAsmPrinter.o"; sourceTree = "<group>"; };
+		360A230B1573EC6D00BF41B2 /* LLVMPowerPCCodeGen.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = LLVMPowerPCCodeGen.o; path = "external/llvm-2.5/Release/lib/LLVMPowerPCCodeGen.o"; sourceTree = "<group>"; };
 		364D0AB3157114D700971A37 /* nqsle.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = nqsle.fs; sourceTree = "<group>"; };
 		364D0AB4157114D700971A37 /* pend.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = pend.fs; sourceTree = "<group>"; };
 		364D0AB6157114D700971A37 /* henona.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = henona.fs; sourceTree = "<group>"; };
@@ -485,84 +559,15 @@
 		364D0ACD157114D700971A37 /* arcsin.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = arcsin.fs; sourceTree = "<group>"; };
 		364D0ACE157114D700971A37 /* arcsinp1.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = arcsinp1.fs; sourceTree = "<group>"; };
 		364D0ACF157114D700971A37 /* exp.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = exp.fs; sourceTree = "<group>"; };
-		364D0AE71571159600971A37 /* LLVMExecutionEngine.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = LLVMExecutionEngine.o; path = "llvm-2.5/Release/lib/LLVMExecutionEngine.o"; sourceTree = "<group>"; };
-		364D0AE9157115B200971A37 /* LLVMJIT.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = LLVMJIT.o; path = "llvm-2.5/Release/lib/LLVMJIT.o"; sourceTree = "<group>"; };
-		364D0AEB157115BA00971A37 /* LLVMPowerPCAsmPrinter.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = LLVMPowerPCAsmPrinter.o; path = "llvm-2.5/Release/lib/LLVMPowerPCAsmPrinter.o"; sourceTree = "<group>"; };
-		364D0AED157115C600971A37 /* LLVMPowerPCCodeGen.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = LLVMPowerPCCodeGen.o; path = "llvm-2.5/Release/lib/LLVMPowerPCCodeGen.o"; sourceTree = "<group>"; };
-		36F029121571255600FEA4A6 /* LLVM.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LLVM.xcodeproj; path = "llvm-2.5/Xcode/LLVM.xcodeproj"; sourceTree = "<group>"; };
 		36F0293B1571360F00FEA4A6 /* < please name me >.fscolor */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "< please name me >.fscolor"; path = "Colors/< please name me >.fscolor"; sourceTree = "<group>"; };
 		36F0293C1571360F00FEA4A6 /* C13699648.fscolor */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = C13699648.fscolor; path = Colors/C13699648.fscolor; sourceTree = "<group>"; };
 		36F0293D1571360F00FEA4A6 /* C13708784.fscolor */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = C13708784.fscolor; path = Colors/C13708784.fscolor; sourceTree = "<group>"; };
 		36F0293E1571360F00FEA4A6 /* ColorLibrary */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = ColorLibrary; path = Colors/ColorLibrary; sourceTree = "<group>"; };
-		36F029481571542A00FEA4A6 /* FSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSLog.h; sourceTree = "<group>"; };
-		36F029491571542A00FEA4A6 /* FSLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSLog.m; sourceTree = "<group>"; };
-		36F0294F157159E900FEA4A6 /* CircularOverwriteBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularOverwriteBuffer.h; sourceTree = "<group>"; };
-		36F02950157159E900FEA4A6 /* CircularOverwriteBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularOverwriteBuffer.m; sourceTree = "<group>"; };
-		36F0295215731B4500FEA4A6 /* CrashReporter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CrashReporter.xcodeproj; path = "plcrashreporter-1.0/CrashReporter.xcodeproj"; sourceTree = "<group>"; };
 		36F029811573C22A00FEA4A6 /* FSMovieTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FSMovieTool.xcodeproj; path = tools/movietool/FSMovieTool.xcodeproj; sourceTree = "<group>"; };
 		36F0298A1573C23100FEA4A6 /* SDTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDTool.xcodeproj; path = tools/saddledrop/SDTool.xcodeproj; sourceTree = "<group>"; };
 		36F029931573C23D00FEA4A6 /* FSToolTest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FSToolTest.xcodeproj; path = tools/emptytool/FSToolTest.xcodeproj; sourceTree = "<group>"; };
-		36F1D9B1157115E000E1B7E5 /* LLVMX86AsmPrinter.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = LLVMX86AsmPrinter.o; path = "llvm-2.5/Release/lib/LLVMX86AsmPrinter.o"; sourceTree = "<group>"; };
-		36F1D9B2157115E000E1B7E5 /* LLVMX86CodeGen.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = LLVMX86CodeGen.o; path = "llvm-2.5/Release/lib/LLVMX86CodeGen.o"; sourceTree = "<group>"; };
-		36F1D9B61571168300E1B7E5 /* libLLVMAsmPrinter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMAsmPrinter.a; path = "llvm-2.5/Release/lib/libLLVMAsmPrinter.a"; sourceTree = "<group>"; };
-		6802822B10AB17CF0077048E /* FSPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPanel.h; sourceTree = "<group>"; };
-		6802822C10AB17CF0077048E /* FSPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPanel.m; sourceTree = "<group>"; };
 		6802824410AB1A060077048E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/FSDocument.xib; sourceTree = "<group>"; };
 		6802824610AB1A060077048E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		6802831810ABD0CF0077048E /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
-		6816EB7E10B1CCBC00B01D0E /* mandelbrot.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = mandelbrot.icns; sourceTree = "<group>"; };
-		681AF1110F699AF900E8DE1B /* FSScriptLibraryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSScriptLibraryController.h; sourceTree = "<group>"; };
-		681AF1120F699AF900E8DE1B /* FSScriptLibraryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSScriptLibraryController.m; sourceTree = "<group>"; };
-		681AF1130F699AF900E8DE1B /* FSColorLibraryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSColorLibraryController.h; sourceTree = "<group>"; };
-		681AF1140F699AF900E8DE1B /* FSColorLibraryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSColorLibraryController.m; sourceTree = "<group>"; };
-		681AF1160F699AF900E8DE1B /* FSCWNamedColors.H */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FSCWNamedColors.H; sourceTree = "<group>"; };
-		681AF1170F699AF900E8DE1B /* FSColorWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSColorWidget.h; sourceTree = "<group>"; };
-		681AF1180F699AF900E8DE1B /* FSColorWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSColorWidget.m; sourceTree = "<group>"; };
-		681AF11A0F699AF900E8DE1B /* FSDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSDocument.h; sourceTree = "<group>"; };
-		681AF11B0F699AF900E8DE1B /* FSDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSDocument.m; sourceTree = "<group>"; };
-		681AF11C0F699AF900E8DE1B /* FSSave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSSave.h; sourceTree = "<group>"; };
-		681AF11D0F699AF900E8DE1B /* FSSave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSSave.m; sourceTree = "<group>"; };
-		681AF11E0F699AF900E8DE1B /* FSSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSSession.h; sourceTree = "<group>"; };
-		681AF11F0F699AF900E8DE1B /* FSSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSSession.m; sourceTree = "<group>"; };
-		681AF1200F699AF900E8DE1B /* FSBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSBrowser.h; sourceTree = "<group>"; };
-		681AF1210F699AF900E8DE1B /* FSBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSBrowser.m; sourceTree = "<group>"; };
-		681AF1230F699AF900E8DE1B /* FSECompilerSymbols.H */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FSECompilerSymbols.H; sourceTree = "<group>"; };
-		681AF1240F699AF900E8DE1B /* FSEParseNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSEParseNode.h; sourceTree = "<group>"; };
-		681AF1250F699AF900E8DE1B /* FSEParseTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSEParseTree.h; sourceTree = "<group>"; };
-		681AF1260F699AF900E8DE1B /* FSEParseTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSEParseTree.m; sourceTree = "<group>"; };
-		681AF1270F699AF900E8DE1B /* FSECompiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSECompiler.h; sourceTree = "<group>"; };
-		681AF1280F699AF900E8DE1B /* FSECompiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSECompiler.m; sourceTree = "<group>"; };
-		681AF1290F699AF900E8DE1B /* FSEC_gcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSEC_gcc.h; sourceTree = "<group>"; };
-		681AF12A0F699AF900E8DE1B /* FSEC_gcc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FSEC_gcc.c; sourceTree = "<group>"; };
-		681AF12B0F699AF900E8DE1B /* FSEController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSEController.h; sourceTree = "<group>"; };
-		681AF12C0F699AF900E8DE1B /* FSEController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSEController.m; sourceTree = "<group>"; };
-		681AF12D0F699AF900E8DE1B /* FSKernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSKernel.h; sourceTree = "<group>"; };
-		681AF12E0F699AF900E8DE1B /* FSKernel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FSKernel.mm; sourceTree = "<group>"; };
-		681AF12F0F699AF900E8DE1B /* FSJitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSJitter.h; sourceTree = "<group>"; };
-		681AF1300F699AF900E8DE1B /* FSJitter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FSJitter.mm; sourceTree = "<group>"; };
-		681AF1320F699AF900E8DE1B /* FSTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSTool.h; sourceTree = "<group>"; };
-		681AF1330F699AF900E8DE1B /* FSViewerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSViewerData.h; sourceTree = "<group>"; };
-		681AF1340F699AF900E8DE1B /* FSToolStruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSToolStruct.h; sourceTree = "<group>"; };
-		681AF1350F699AF900E8DE1B /* FSToolInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSToolInterface.h; sourceTree = "<group>"; };
-		681AF1360F699AF900E8DE1B /* FSCursors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCursors.h; sourceTree = "<group>"; };
-		681AF1370F699AF900E8DE1B /* FSCursors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCursors.m; sourceTree = "<group>"; };
-		681AF1380F699AF900E8DE1B /* FSTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSTools.h; sourceTree = "<group>"; };
-		681AF1390F699AF900E8DE1B /* FSTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSTools.m; sourceTree = "<group>"; };
-		681AF13A0F699AF900E8DE1B /* FSRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSRenderer.h; sourceTree = "<group>"; };
-		681AF13B0F699AF900E8DE1B /* FSRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSRenderer.m; sourceTree = "<group>"; };
-		681AF13C0F699AF900E8DE1B /* FSViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSViewer.h; sourceTree = "<group>"; };
-		681AF13D0F699AF900E8DE1B /* FSViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSViewer.m; sourceTree = "<group>"; };
-		681AF13E0F699AF900E8DE1B /* FSRenderUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSRenderUnit.h; sourceTree = "<group>"; };
-		681AF13F0F699AF900E8DE1B /* FSRenderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSRenderOperation.h; sourceTree = "<group>"; };
-		681AF1400F699AF900E8DE1B /* FSRenderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSRenderOperation.m; sourceTree = "<group>"; };
-		681AF1410F699AF900E8DE1B /* FSColorizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSColorizer.h; sourceTree = "<group>"; };
-		681AF1420F699AF900E8DE1B /* FSColorizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSColorizer.m; sourceTree = "<group>"; };
-		681AF1430F699AF900E8DE1B /* FSColorOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSColorOperation.h; sourceTree = "<group>"; };
-		681AF1440F699AF900E8DE1B /* FSColorOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSColorOperation.m; sourceTree = "<group>"; };
-		681AF1450F699AF900E8DE1B /* FSThreading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSThreading.h; sourceTree = "<group>"; };
-		681AF1460F699AF900E8DE1B /* FSThreading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSThreading.m; sourceTree = "<group>"; };
-		681AF15C0F699B2A00E8DE1B /* FSStartup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSStartup.h; sourceTree = "<group>"; };
-		681AF15D0F699B2A00E8DE1B /* FSStartup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSStartup.m; sourceTree = "<group>"; };
 		681AF1630F699B3800E8DE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		681AF1650F699B3800E8DE1B /* FSMovieTool */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = FSMovieTool; sourceTree = "<group>"; };
 		681AF1670F699B3800E8DE1B /* FSMovieTool.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = FSMovieTool.nib; sourceTree = "<group>"; };
@@ -572,16 +577,9 @@
 		681AF1710F699B3800E8DE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		681AF1730F699B3800E8DE1B /* FSTraceTool */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = FSTraceTool; sourceTree = "<group>"; };
 		681AF1750F699B3900E8DE1B /* FSTraceTool.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = FSTraceTool.nib; sourceTree = "<group>"; };
-		681AF1B60F699BCC00E8DE1B /* julia.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = julia.icns; sourceTree = "<group>"; };
-		681AF4C30F6CCE8000E8DE1B /* FSFullscreenWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSFullscreenWindow.h; sourceTree = "<group>"; };
-		681AF4C40F6CCE8000E8DE1B /* FSFullscreenWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSFullscreenWindow.m; sourceTree = "<group>"; };
 		683942CD10B39DEB00A6A993 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = "English.lproj/FSDocument-windows.xib"; sourceTree = "<group>"; };
 		683942CF10B39DEB00A6A993 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = "English.lproj/MainMenu-windows.xib"; sourceTree = "<group>"; };
 		683CAB960FD787500071EEAB /* FractalStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FractalStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		68411691100306F000C5323F /* FSColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSColor.h; sourceTree = "<group>"; };
-		68411692100306F000C5323F /* FSColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSColor.m; sourceTree = "<group>"; };
-		68605DB60F6DCEE500189C8C /* FSCustomDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCustomDataManager.h; sourceTree = "<group>"; };
-		68605DB70F6DCEE500189C8C /* FSCustomDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCustomDataManager.m; sourceTree = "<group>"; };
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* FractalStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FractalStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -602,13 +600,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
-				364D0AE81571159600971A37 /* LLVMExecutionEngine.o in Frameworks */,
-				364D0AEA157115B200971A37 /* LLVMJIT.o in Frameworks */,
-				364D0AEC157115BA00971A37 /* LLVMPowerPCAsmPrinter.o in Frameworks */,
-				364D0AEE157115C600971A37 /* LLVMPowerPCCodeGen.o in Frameworks */,
-				36F1D9B3157115E000E1B7E5 /* LLVMX86AsmPrinter.o in Frameworks */,
-				36F1D9B4157115E000E1B7E5 /* LLVMX86CodeGen.o in Frameworks */,
-				36F1D9B71571168300E1B7E5 /* libLLVMAsmPrinter.a in Frameworks */,
+				360A23031573EC1D00BF41B2 /* libLLVMAsmPrinter.a in Frameworks */,
+				360A23051573EC2B00BF41B2 /* LLVMX86AsmPrinter.o in Frameworks */,
+				360A23071573EC4000BF41B2 /* LLVMX86CodeGen.o in Frameworks */,
+				360A230C1573EC6D00BF41B2 /* LLVMExecutionEngine.o in Frameworks */,
+				360A230D1573EC6D00BF41B2 /* LLVMJIT.o in Frameworks */,
+				360A230E1573EC6D00BF41B2 /* LLVMPowerPCAsmPrinter.o in Frameworks */,
+				360A230F1573EC6D00BF41B2 /* LLVMPowerPCCodeGen.o in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,10 +642,8 @@
 		2A37F4AAFDCFA73011CA2CEA /* FractalStream */ = {
 			isa = PBXGroup;
 			children = (
-				36F0295215731B4500FEA4A6 /* CrashReporter.xcodeproj */,
-				36F029121571255600FEA4A6 /* LLVM.xcodeproj */,
-				2A37F4ABFDCFA73011CA2CEA /* Classes */,
-				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
+				360A228F1573E5C400BF41B2 /* classes */,
+				360A22521573E59600BF41B2 /* External */,
 				681AF15F0F699B3800E8DE1B /* PlugIns */,
 				2A37F4B8FDCFA73011CA2CEA /* Resources */,
 				681AF1B80F699DEA00E8DE1B /* Libraries */,
@@ -658,37 +654,12 @@
 			name = FractalStream;
 			sourceTree = "<group>";
 		};
-		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				36F029471571540A00FEA4A6 /* Utility */,
-				681AF1310F699AF900E8DE1B /* View */,
-				681AF1220F699AF900E8DE1B /* Program Editor */,
-				681AF1190F699AF900E8DE1B /* Document */,
-				681AF1150F699AF900E8DE1B /* Color Editor */,
-				681AF1100F699AF900E8DE1B /* Library */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
-		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
-			isa = PBXGroup;
-			children = (
-				32DBCF750370BD2300C91783 /* FractalStream_Prefix.pch */,
-				2A37F4B0FDCFA73011CA2CEA /* main.m */,
-				681AF15C0F699B2A00E8DE1B /* FSStartup.h */,
-				681AF15D0F699B2A00E8DE1B /* FSStartup.m */,
-			);
-			name = "Other Sources";
-			sourceTree = "<group>";
-		};
 		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6816EB7E10B1CCBC00B01D0E /* mandelbrot.icns */,
+				360A22F91573E5F300BF41B2 /* images */,
 				6802824310AB1A060077048E /* FSDocument.xib */,
 				6802824510AB1A060077048E /* MainMenu.xib */,
-				681AF1B60F699BCC00E8DE1B /* julia.icns */,
 				683942CC10B39DEB00A6A993 /* FSDocument-windows.xib */,
 				683942CE10B39DEB00A6A993 /* MainMenu-windows.xib */,
 				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
@@ -705,6 +676,181 @@
 				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		360A22521573E59600BF41B2 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				360A22611573E5B000BF41B2 /* CrashReporter.xcodeproj */,
+				360A22531573E5A100BF41B2 /* LLVM.xcodeproj */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		360A22541573E5A100BF41B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		360A22621573E5B000BF41B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				360A227A1573E5B100BF41B2 /* libCrashReporter-MacOSX-Static.a */,
+				360A227C1573E5B100BF41B2 /* CrashReporter.framework */,
+				360A227E1573E5B100BF41B2 /* CrashReporter.framework */,
+				360A22801573E5B100BF41B2 /* libCrashReporter-iphoneos.a */,
+				360A22821573E5B100BF41B2 /* libCrashReporter.a */,
+				360A22841573E5B100BF41B2 /* plcrashutil */,
+				360A22861573E5B100BF41B2 /* Tests-MacOSX.octest */,
+				360A22881573E5B100BF41B2 /* Tests-iPhoneSimulator.app */,
+				360A228A1573E5B100BF41B2 /* Tests-iPhoneOS.app */,
+				360A228C1573E5B100BF41B2 /* DemoCrash.app */,
+				360A228E1573E5B100BF41B2 /* Fuzz Testing */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		360A228F1573E5C400BF41B2 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				360A22901573E5C400BF41B2 /* Color Editor */,
+				360A229A1573E5C400BF41B2 /* Document */,
+				360A22A51573E5C400BF41B2 /* Library */,
+				360A22AA1573E5C400BF41B2 /* Other Sources */,
+				360A22AF1573E5C400BF41B2 /* Program Editor */,
+				360A22C01573E5C400BF41B2 /* Utility */,
+				360A22C51573E5C400BF41B2 /* View */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		360A22901573E5C400BF41B2 /* Color Editor */ = {
+			isa = PBXGroup;
+			children = (
+				360A22911573E5C400BF41B2 /* FSColor.h */,
+				360A22921573E5C400BF41B2 /* FSColor.m */,
+				360A22931573E5C400BF41B2 /* FSColorizer.h */,
+				360A22941573E5C400BF41B2 /* FSColorizer.m */,
+				360A22951573E5C400BF41B2 /* FSColorOperation.h */,
+				360A22961573E5C400BF41B2 /* FSColorOperation.m */,
+				360A22971573E5C400BF41B2 /* FSColorWidget.h */,
+				360A22981573E5C400BF41B2 /* FSColorWidget.m */,
+				360A22991573E5C400BF41B2 /* FSCWNamedColors.H */,
+			);
+			path = "Color Editor";
+			sourceTree = "<group>";
+		};
+		360A229A1573E5C400BF41B2 /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				360A229B1573E5C400BF41B2 /* FSBrowser.h */,
+				360A229C1573E5C400BF41B2 /* FSBrowser.m */,
+				360A229D1573E5C400BF41B2 /* FSDocument.h */,
+				360A229E1573E5C400BF41B2 /* FSDocument.m */,
+				360A229F1573E5C400BF41B2 /* FSPanel.h */,
+				360A22A01573E5C400BF41B2 /* FSPanel.m */,
+				360A22A11573E5C400BF41B2 /* FSSave.h */,
+				360A22A21573E5C400BF41B2 /* FSSave.m */,
+				360A22A31573E5C400BF41B2 /* FSSession.h */,
+				360A22A41573E5C400BF41B2 /* FSSession.m */,
+			);
+			path = Document;
+			sourceTree = "<group>";
+		};
+		360A22A51573E5C400BF41B2 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				360A22A61573E5C400BF41B2 /* FSColorLibraryController.h */,
+				360A22A71573E5C400BF41B2 /* FSColorLibraryController.m */,
+				360A22A81573E5C400BF41B2 /* FSScriptLibraryController.h */,
+				360A22A91573E5C400BF41B2 /* FSScriptLibraryController.m */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		360A22AA1573E5C400BF41B2 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				360A22AB1573E5C400BF41B2 /* FractalStream_Prefix.pch */,
+				360A22AC1573E5C400BF41B2 /* FSStartup.h */,
+				360A22AD1573E5C400BF41B2 /* FSStartup.m */,
+				360A22AE1573E5C400BF41B2 /* main.m */,
+			);
+			path = "Other Sources";
+			sourceTree = "<group>";
+		};
+		360A22AF1573E5C400BF41B2 /* Program Editor */ = {
+			isa = PBXGroup;
+			children = (
+				360A22B01573E5C400BF41B2 /* FSCustomDataManager.h */,
+				360A22B11573E5C400BF41B2 /* FSCustomDataManager.m */,
+				360A22B21573E5C400BF41B2 /* FSEC_gcc.c */,
+				360A22B31573E5C400BF41B2 /* FSEC_gcc.h */,
+				360A22B41573E5C400BF41B2 /* FSECompiler.h */,
+				360A22B51573E5C400BF41B2 /* FSECompiler.m */,
+				360A22B61573E5C400BF41B2 /* FSECompilerSymbols.H */,
+				360A22B71573E5C400BF41B2 /* FSEController.h */,
+				360A22B81573E5C400BF41B2 /* FSEController.m */,
+				360A22B91573E5C400BF41B2 /* FSEParseNode.h */,
+				360A22BA1573E5C400BF41B2 /* FSEParseTree.h */,
+				360A22BB1573E5C400BF41B2 /* FSEParseTree.m */,
+				360A22BC1573E5C400BF41B2 /* FSJitter.h */,
+				360A22BD1573E5C400BF41B2 /* FSJitter.mm */,
+				360A22BE1573E5C400BF41B2 /* FSKernel.h */,
+				360A22BF1573E5C400BF41B2 /* FSKernel.mm */,
+			);
+			path = "Program Editor";
+			sourceTree = "<group>";
+		};
+		360A22C01573E5C400BF41B2 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				360A22C11573E5C400BF41B2 /* CircularOverwriteBuffer.h */,
+				360A22C21573E5C400BF41B2 /* CircularOverwriteBuffer.m */,
+				360A22C31573E5C400BF41B2 /* FSLog.h */,
+				360A22C41573E5C400BF41B2 /* FSLog.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		360A22C51573E5C400BF41B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				360A22C61573E5C400BF41B2 /* debug.c */,
+				360A22C71573E5C400BF41B2 /* debug.h */,
+				360A22C81573E5C400BF41B2 /* FSCursors.h */,
+				360A22C91573E5C400BF41B2 /* FSCursors.m */,
+				360A22CA1573E5C400BF41B2 /* FSFullscreenWindow.h */,
+				360A22CB1573E5C400BF41B2 /* FSFullscreenWindow.m */,
+				360A22CC1573E5C400BF41B2 /* FSRenderer.h */,
+				360A22CD1573E5C400BF41B2 /* FSRenderer.m */,
+				360A22CE1573E5C400BF41B2 /* FSRenderOperation.h */,
+				360A22CF1573E5C400BF41B2 /* FSRenderOperation.m */,
+				360A22D01573E5C400BF41B2 /* FSRenderUnit.h */,
+				360A22D11573E5C400BF41B2 /* FSThreading.h */,
+				360A22D21573E5C400BF41B2 /* FSThreading.m */,
+				360A22D31573E5C400BF41B2 /* FSTool.h */,
+				360A22D41573E5C400BF41B2 /* FSToolInterface.h */,
+				360A22D51573E5C400BF41B2 /* FSTools.h */,
+				360A22D61573E5C400BF41B2 /* FSTools.m */,
+				360A22D71573E5C400BF41B2 /* FSToolStruct.h */,
+				360A22D81573E5C400BF41B2 /* FSViewer.h */,
+				360A22D91573E5C400BF41B2 /* FSViewer.m */,
+				360A22DA1573E5C400BF41B2 /* FSViewerData.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		360A22F91573E5F300BF41B2 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				360A22FC1573E61A00BF41B2 /* julia.icns */,
+				360A22FD1573E61A00BF41B2 /* mandelbrot.icns */,
+				360A22FA1573E5F300BF41B2 /* ZoomIn.tiff */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		364D0AB1157114D700971A37 /* Scripts */ = {
@@ -793,42 +939,6 @@
 			path = "Transcendental Dynamics";
 			sourceTree = "<group>";
 		};
-		36F029131571255600FEA4A6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		36F029471571540A00FEA4A6 /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				36F029481571542A00FEA4A6 /* FSLog.h */,
-				36F029491571542A00FEA4A6 /* FSLog.m */,
-				36F0294F157159E900FEA4A6 /* CircularOverwriteBuffer.h */,
-				36F02950157159E900FEA4A6 /* CircularOverwriteBuffer.m */,
-			);
-			name = Utility;
-			sourceTree = "<group>";
-		};
-		36F0295315731B4500FEA4A6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				36F0296B15731B4600FEA4A6 /* libCrashReporter-MacOSX-Static.a */,
-				36F0296D15731B4600FEA4A6 /* CrashReporter.framework */,
-				36F0296F15731B4600FEA4A6 /* CrashReporter.framework */,
-				36F0297115731B4600FEA4A6 /* libCrashReporter-iphoneos.a */,
-				36F0297315731B4600FEA4A6 /* libCrashReporter.a */,
-				36F0297515731B4600FEA4A6 /* plcrashutil */,
-				36F0297715731B4600FEA4A6 /* Tests-MacOSX.octest */,
-				36F0297915731B4600FEA4A6 /* Tests-iPhoneSimulator.app */,
-				36F0297B15731B4600FEA4A6 /* Tests-iPhoneOS.app */,
-				36F0297D15731B4600FEA4A6 /* DemoCrash.app */,
-				36F0297F15731B4600FEA4A6 /* Fuzz Testing */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		36F029801573C21700FEA4A6 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -861,100 +971,6 @@
 				36F029991573C23E00FEA4A6 /* FSToolTest.fstool */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		681AF1100F699AF900E8DE1B /* Library */ = {
-			isa = PBXGroup;
-			children = (
-				681AF1110F699AF900E8DE1B /* FSScriptLibraryController.h */,
-				681AF1120F699AF900E8DE1B /* FSScriptLibraryController.m */,
-				681AF1130F699AF900E8DE1B /* FSColorLibraryController.h */,
-				681AF1140F699AF900E8DE1B /* FSColorLibraryController.m */,
-			);
-			name = Library;
-			sourceTree = "<group>";
-		};
-		681AF1150F699AF900E8DE1B /* Color Editor */ = {
-			isa = PBXGroup;
-			children = (
-				681AF1160F699AF900E8DE1B /* FSCWNamedColors.H */,
-				681AF1170F699AF900E8DE1B /* FSColorWidget.h */,
-				681AF1180F699AF900E8DE1B /* FSColorWidget.m */,
-				68411691100306F000C5323F /* FSColor.h */,
-				68411692100306F000C5323F /* FSColor.m */,
-				681AF1410F699AF900E8DE1B /* FSColorizer.h */,
-				681AF1420F699AF900E8DE1B /* FSColorizer.m */,
-				681AF1430F699AF900E8DE1B /* FSColorOperation.h */,
-				681AF1440F699AF900E8DE1B /* FSColorOperation.m */,
-			);
-			name = "Color Editor";
-			sourceTree = "<group>";
-		};
-		681AF1190F699AF900E8DE1B /* Document */ = {
-			isa = PBXGroup;
-			children = (
-				681AF11A0F699AF900E8DE1B /* FSDocument.h */,
-				681AF11B0F699AF900E8DE1B /* FSDocument.m */,
-				6802822B10AB17CF0077048E /* FSPanel.h */,
-				6802822C10AB17CF0077048E /* FSPanel.m */,
-				681AF11C0F699AF900E8DE1B /* FSSave.h */,
-				681AF11D0F699AF900E8DE1B /* FSSave.m */,
-				681AF11E0F699AF900E8DE1B /* FSSession.h */,
-				681AF11F0F699AF900E8DE1B /* FSSession.m */,
-				681AF1200F699AF900E8DE1B /* FSBrowser.h */,
-				681AF1210F699AF900E8DE1B /* FSBrowser.m */,
-			);
-			name = Document;
-			sourceTree = "<group>";
-		};
-		681AF1220F699AF900E8DE1B /* Program Editor */ = {
-			isa = PBXGroup;
-			children = (
-				681AF1230F699AF900E8DE1B /* FSECompilerSymbols.H */,
-				681AF1240F699AF900E8DE1B /* FSEParseNode.h */,
-				681AF1250F699AF900E8DE1B /* FSEParseTree.h */,
-				681AF1260F699AF900E8DE1B /* FSEParseTree.m */,
-				681AF1270F699AF900E8DE1B /* FSECompiler.h */,
-				681AF1280F699AF900E8DE1B /* FSECompiler.m */,
-				681AF1290F699AF900E8DE1B /* FSEC_gcc.h */,
-				681AF12A0F699AF900E8DE1B /* FSEC_gcc.c */,
-				681AF12B0F699AF900E8DE1B /* FSEController.h */,
-				681AF12C0F699AF900E8DE1B /* FSEController.m */,
-				681AF12D0F699AF900E8DE1B /* FSKernel.h */,
-				681AF12E0F699AF900E8DE1B /* FSKernel.mm */,
-				681AF12F0F699AF900E8DE1B /* FSJitter.h */,
-				681AF1300F699AF900E8DE1B /* FSJitter.mm */,
-				68605DB60F6DCEE500189C8C /* FSCustomDataManager.h */,
-				68605DB70F6DCEE500189C8C /* FSCustomDataManager.m */,
-			);
-			name = "Program Editor";
-			sourceTree = "<group>";
-		};
-		681AF1310F699AF900E8DE1B /* View */ = {
-			isa = PBXGroup;
-			children = (
-				681AF1320F699AF900E8DE1B /* FSTool.h */,
-				681AF1330F699AF900E8DE1B /* FSViewerData.h */,
-				681AF1340F699AF900E8DE1B /* FSToolStruct.h */,
-				681AF1350F699AF900E8DE1B /* FSToolInterface.h */,
-				681AF1360F699AF900E8DE1B /* FSCursors.h */,
-				681AF1370F699AF900E8DE1B /* FSCursors.m */,
-				681AF1380F699AF900E8DE1B /* FSTools.h */,
-				681AF1390F699AF900E8DE1B /* FSTools.m */,
-				681AF13A0F699AF900E8DE1B /* FSRenderer.h */,
-				681AF13B0F699AF900E8DE1B /* FSRenderer.m */,
-				6802831810ABD0CF0077048E /* debug.h */,
-				681AF13C0F699AF900E8DE1B /* FSViewer.h */,
-				681AF13D0F699AF900E8DE1B /* FSViewer.m */,
-				681AF13E0F699AF900E8DE1B /* FSRenderUnit.h */,
-				681AF13F0F699AF900E8DE1B /* FSRenderOperation.h */,
-				681AF1400F699AF900E8DE1B /* FSRenderOperation.m */,
-				681AF1450F699AF900E8DE1B /* FSThreading.h */,
-				681AF1460F699AF900E8DE1B /* FSThreading.m */,
-				681AF4C30F6CCE8000E8DE1B /* FSFullscreenWindow.h */,
-				681AF4C40F6CCE8000E8DE1B /* FSFullscreenWindow.m */,
-			);
-			name = View;
 			sourceTree = "<group>";
 		};
 		681AF15F0F699B3800E8DE1B /* PlugIns */ = {
@@ -1093,13 +1109,13 @@
 		681AF1B80F699DEA00E8DE1B /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				36F1D9B61571168300E1B7E5 /* libLLVMAsmPrinter.a */,
-				36F1D9B1157115E000E1B7E5 /* LLVMX86AsmPrinter.o */,
-				36F1D9B2157115E000E1B7E5 /* LLVMX86CodeGen.o */,
-				364D0AED157115C600971A37 /* LLVMPowerPCCodeGen.o */,
-				364D0AEB157115BA00971A37 /* LLVMPowerPCAsmPrinter.o */,
-				364D0AE9157115B200971A37 /* LLVMJIT.o */,
-				364D0AE71571159600971A37 /* LLVMExecutionEngine.o */,
+				360A23081573EC6D00BF41B2 /* LLVMExecutionEngine.o */,
+				360A23091573EC6D00BF41B2 /* LLVMJIT.o */,
+				360A230A1573EC6D00BF41B2 /* LLVMPowerPCAsmPrinter.o */,
+				360A230B1573EC6D00BF41B2 /* LLVMPowerPCCodeGen.o */,
+				360A23061573EC4000BF41B2 /* LLVMX86CodeGen.o */,
+				360A23041573EC2B00BF41B2 /* LLVMX86AsmPrinter.o */,
+				360A23021573EC1D00BF41B2 /* libLLVMAsmPrinter.a */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1157,6 +1173,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				365AECCE1574011400083A53 /* PBXTargetDependency */,
+				365AECCC1574010D00083A53 /* PBXTargetDependency */,
+				365AECCA1574010A00083A53 /* PBXTargetDependency */,
 			);
 			name = FractalStream;
 			productInstallPath = "$(HOME)/Applications";
@@ -1180,8 +1199,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 36F0295315731B4500FEA4A6 /* Products */;
-					ProjectRef = 36F0295215731B4500FEA4A6 /* CrashReporter.xcodeproj */;
+					ProductGroup = 360A22621573E5B000BF41B2 /* Products */;
+					ProjectRef = 360A22611573E5B000BF41B2 /* CrashReporter.xcodeproj */;
 				},
 				{
 					ProductGroup = 36F029821573C22A00FEA4A6 /* Products */;
@@ -1192,8 +1211,8 @@
 					ProjectRef = 36F029931573C23D00FEA4A6 /* FSToolTest.xcodeproj */;
 				},
 				{
-					ProductGroup = 36F029131571255600FEA4A6 /* Products */;
-					ProjectRef = 36F029121571255600FEA4A6 /* LLVM.xcodeproj */;
+					ProductGroup = 360A22541573E5A100BF41B2 /* Products */;
+					ProjectRef = 360A22531573E5A100BF41B2 /* LLVM.xcodeproj */;
 				},
 				{
 					ProductGroup = 36F0298B1573C23100FEA4A6 /* Products */;
@@ -1209,81 +1228,81 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		36F0296B15731B4600FEA4A6 /* libCrashReporter-MacOSX-Static.a */ = {
+		360A227A1573E5B100BF41B2 /* libCrashReporter-MacOSX-Static.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libCrashReporter-MacOSX-Static.a";
-			remoteRef = 36F0296A15731B4600FEA4A6 /* PBXContainerItemProxy */;
+			remoteRef = 360A22791573E5B100BF41B2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		36F0296D15731B4600FEA4A6 /* CrashReporter.framework */ = {
+		360A227C1573E5B100BF41B2 /* CrashReporter.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CrashReporter.framework;
-			remoteRef = 36F0296C15731B4600FEA4A6 /* PBXContainerItemProxy */;
+			remoteRef = 360A227B1573E5B100BF41B2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		36F0296F15731B4600FEA4A6 /* CrashReporter.framework */ = {
+		360A227E1573E5B100BF41B2 /* CrashReporter.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CrashReporter.framework;
-			remoteRef = 36F0296E15731B4600FEA4A6 /* PBXContainerItemProxy */;
+			remoteRef = 360A227D1573E5B100BF41B2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		36F0297115731B4600FEA4A6 /* libCrashReporter-iphoneos.a */ = {
+		360A22801573E5B100BF41B2 /* libCrashReporter-iphoneos.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libCrashReporter-iphoneos.a";
-			remoteRef = 36F0297015731B4600FEA4A6 /* PBXContainerItemProxy */;
+			remoteRef = 360A227F1573E5B100BF41B2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		36F0297315731B4600FEA4A6 /* libCrashReporter.a */ = {
+		360A22821573E5B100BF41B2 /* libCrashReporter.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libCrashReporter.a;
-			remoteRef = 36F0297215731B4600FEA4A6 /* PBXContainerItemProxy */;
+			remoteRef = 360A22811573E5B100BF41B2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		36F0297515731B4600FEA4A6 /* plcrashutil */ = {
+		360A22841573E5B100BF41B2 /* plcrashutil */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = plcrashutil;
-			remoteRef = 36F0297415731B4600FEA4A6 /* PBXContainerItemProxy */;
+			remoteRef = 360A22831573E5B100BF41B2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		36F0297715731B4600FEA4A6 /* Tests-MacOSX.octest */ = {
+		360A22861573E5B100BF41B2 /* Tests-MacOSX.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "Tests-MacOSX.octest";
-			remoteRef = 36F0297615731B4600FEA4A6 /* PBXContainerItemProxy */;
+			remoteRef = 360A22851573E5B100BF41B2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		36F0297915731B4600FEA4A6 /* Tests-iPhoneSimulator.app */ = {
+		360A22881573E5B100BF41B2 /* Tests-iPhoneSimulator.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = "Tests-iPhoneSimulator.app";
-			remoteRef = 36F0297815731B4600FEA4A6 /* PBXContainerItemProxy */;
+			remoteRef = 360A22871573E5B100BF41B2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		36F0297B15731B4600FEA4A6 /* Tests-iPhoneOS.app */ = {
+		360A228A1573E5B100BF41B2 /* Tests-iPhoneOS.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = "Tests-iPhoneOS.app";
-			remoteRef = 36F0297A15731B4600FEA4A6 /* PBXContainerItemProxy */;
+			remoteRef = 360A22891573E5B100BF41B2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		36F0297D15731B4600FEA4A6 /* DemoCrash.app */ = {
+		360A228C1573E5B100BF41B2 /* DemoCrash.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = DemoCrash.app;
-			remoteRef = 36F0297C15731B4600FEA4A6 /* PBXContainerItemProxy */;
+			remoteRef = 360A228B1573E5B100BF41B2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		36F0297F15731B4600FEA4A6 /* Fuzz Testing */ = {
+		360A228E1573E5B100BF41B2 /* Fuzz Testing */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = "Fuzz Testing";
-			remoteRef = 36F0297E15731B4600FEA4A6 /* PBXContainerItemProxy */;
+			remoteRef = 360A228D1573E5B100BF41B2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		36F029891573C22A00FEA4A6 /* FSToolTest.fstool */ = {
@@ -1314,7 +1333,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68A3108B10B3B79D0019C1F8 /* mandelbrot.icns in Resources */,
 				68A3108C10B3B79D0019C1F8 /* FSDocument.xib in Resources */,
 				68A3108D10B3B79D0019C1F8 /* MainMenu.xib in Resources */,
 				68A3108E10B3B79D0019C1F8 /* FSDocument-windows.xib in Resources */,
@@ -1322,7 +1340,6 @@
 				68A3109010B3B79D0019C1F8 /* Info.plist in Resources */,
 				683CAB340FD787500071EEAB /* InfoPlist.strings in Resources */,
 				683CAB330FD787500071EEAB /* Credits.rtf in Resources */,
-				683CAB390FD787500071EEAB /* julia.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1330,10 +1347,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6816EB7F10B1CCBC00B01D0E /* mandelbrot.icns in Resources */,
 				6802824710AB1A060077048E /* FSDocument.xib in Resources */,
 				6802824810AB1A060077048E /* MainMenu.xib in Resources */,
-				681AF1B70F699BCC00E8DE1B /* julia.icns in Resources */,
 				683942D010B39DEB00A6A993 /* FSDocument-windows.xib in Resources */,
 				683942D110B39DEB00A6A993 /* MainMenu-windows.xib in Resources */,
 				8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */,
@@ -1342,6 +1357,9 @@
 				36F029401571360F00FEA4A6 /* C13699648.fscolor in Resources */,
 				36F029411571360F00FEA4A6 /* C13708784.fscolor in Resources */,
 				36F029421571360F00FEA4A6 /* ColorLibrary in Resources */,
+				360A22FB1573E5F300BF41B2 /* ZoomIn.tiff in Resources */,
+				360A22FE1573E61A00BF41B2 /* julia.icns in Resources */,
+				360A22FF1573E61A00BF41B2 /* mandelbrot.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1368,32 +1386,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				683CAB3B0FD787500071EEAB /* main.m in Sources */,
-				683CAB3C0FD787500071EEAB /* FSScriptLibraryController.m in Sources */,
-				683CAB3D0FD787500071EEAB /* FSColorLibraryController.m in Sources */,
-				683CAB3E0FD787500071EEAB /* FSColorWidget.m in Sources */,
-				683CAB3F0FD787500071EEAB /* FSDocument.m in Sources */,
-				683CAB400FD787500071EEAB /* FSSave.m in Sources */,
-				683CAB410FD787500071EEAB /* FSSession.m in Sources */,
-				683CAB420FD787500071EEAB /* FSBrowser.m in Sources */,
-				683CAB430FD787500071EEAB /* FSEParseTree.m in Sources */,
-				683CAB440FD787500071EEAB /* FSECompiler.m in Sources */,
-				683CAB460FD787500071EEAB /* FSEController.m in Sources */,
-				683CAB470FD787500071EEAB /* FSKernel.mm in Sources */,
-				683CAB480FD787500071EEAB /* FSJitter.mm in Sources */,
-				683CAB490FD787500071EEAB /* FSCursors.m in Sources */,
-				683CAB4A0FD787500071EEAB /* FSTools.m in Sources */,
-				683CAB4B0FD787500071EEAB /* FSRenderer.m in Sources */,
-				683CAB4C0FD787500071EEAB /* FSViewer.m in Sources */,
-				683CAB4D0FD787500071EEAB /* FSRenderOperation.m in Sources */,
-				683CAB4E0FD787500071EEAB /* FSColorizer.m in Sources */,
-				683CAB4F0FD787500071EEAB /* FSColorOperation.m in Sources */,
-				683CAB500FD787500071EEAB /* FSThreading.m in Sources */,
-				683CAB510FD787500071EEAB /* FSStartup.m in Sources */,
-				683CAB520FD787500071EEAB /* FSFullscreenWindow.m in Sources */,
-				683CAB530FD787500071EEAB /* FSCustomDataManager.m in Sources */,
-				68AF3AA51049EB7600967604 /* FSColor.m in Sources */,
-				68A310C610B3C1040019C1F8 /* FSPanel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1401,38 +1393,58 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D15AC320486D014006FF6A4 /* main.m in Sources */,
-				681AF1470F699AF900E8DE1B /* FSScriptLibraryController.m in Sources */,
-				681AF1480F699AF900E8DE1B /* FSColorLibraryController.m in Sources */,
-				681AF1490F699AF900E8DE1B /* FSColorWidget.m in Sources */,
-				681AF14A0F699AF900E8DE1B /* FSDocument.m in Sources */,
-				681AF14B0F699AF900E8DE1B /* FSSave.m in Sources */,
-				681AF14C0F699AF900E8DE1B /* FSSession.m in Sources */,
-				681AF14D0F699AF900E8DE1B /* FSBrowser.m in Sources */,
-				681AF14E0F699AF900E8DE1B /* FSEParseTree.m in Sources */,
-				681AF14F0F699AF900E8DE1B /* FSECompiler.m in Sources */,
-				681AF1510F699AF900E8DE1B /* FSEController.m in Sources */,
-				681AF1520F699AF900E8DE1B /* FSKernel.mm in Sources */,
-				681AF1530F699AF900E8DE1B /* FSJitter.mm in Sources */,
-				681AF1540F699AF900E8DE1B /* FSCursors.m in Sources */,
-				681AF1550F699AF900E8DE1B /* FSTools.m in Sources */,
-				681AF1560F699AF900E8DE1B /* FSRenderer.m in Sources */,
-				681AF1570F699AF900E8DE1B /* FSViewer.m in Sources */,
-				681AF1580F699AF900E8DE1B /* FSRenderOperation.m in Sources */,
-				681AF1590F699AF900E8DE1B /* FSColorizer.m in Sources */,
-				681AF15A0F699AF900E8DE1B /* FSColorOperation.m in Sources */,
-				681AF15B0F699AF900E8DE1B /* FSThreading.m in Sources */,
-				681AF15E0F699B2A00E8DE1B /* FSStartup.m in Sources */,
-				681AF4C50F6CCE8000E8DE1B /* FSFullscreenWindow.m in Sources */,
-				68605DB80F6DCEE500189C8C /* FSCustomDataManager.m in Sources */,
-				68411693100306F000C5323F /* FSColor.m in Sources */,
-				6802822D10AB17CF0077048E /* FSPanel.m in Sources */,
-				36F0294A1571542A00FEA4A6 /* FSLog.m in Sources */,
-				36F02951157159E900FEA4A6 /* CircularOverwriteBuffer.m in Sources */,
+				360A22DB1573E5C400BF41B2 /* FSColor.m in Sources */,
+				360A22DC1573E5C400BF41B2 /* FSColorizer.m in Sources */,
+				360A22DD1573E5C400BF41B2 /* FSColorOperation.m in Sources */,
+				360A22DE1573E5C400BF41B2 /* FSColorWidget.m in Sources */,
+				360A22DF1573E5C400BF41B2 /* FSBrowser.m in Sources */,
+				360A22E01573E5C400BF41B2 /* FSDocument.m in Sources */,
+				360A22E11573E5C400BF41B2 /* FSPanel.m in Sources */,
+				360A22E21573E5C400BF41B2 /* FSSave.m in Sources */,
+				360A22E31573E5C400BF41B2 /* FSSession.m in Sources */,
+				360A22E41573E5C400BF41B2 /* FSColorLibraryController.m in Sources */,
+				360A22E51573E5C400BF41B2 /* FSScriptLibraryController.m in Sources */,
+				360A22E61573E5C400BF41B2 /* FSStartup.m in Sources */,
+				360A22E71573E5C400BF41B2 /* main.m in Sources */,
+				360A22E81573E5C400BF41B2 /* FSCustomDataManager.m in Sources */,
+				360A22E91573E5C400BF41B2 /* FSEC_gcc.c in Sources */,
+				360A22EA1573E5C400BF41B2 /* FSECompiler.m in Sources */,
+				360A22EB1573E5C400BF41B2 /* FSEController.m in Sources */,
+				360A22EC1573E5C400BF41B2 /* FSEParseTree.m in Sources */,
+				360A22ED1573E5C400BF41B2 /* FSJitter.mm in Sources */,
+				360A22EE1573E5C400BF41B2 /* FSKernel.mm in Sources */,
+				360A22EF1573E5C400BF41B2 /* CircularOverwriteBuffer.m in Sources */,
+				360A22F01573E5C400BF41B2 /* FSLog.m in Sources */,
+				360A22F11573E5C400BF41B2 /* debug.c in Sources */,
+				360A22F21573E5C400BF41B2 /* FSCursors.m in Sources */,
+				360A22F31573E5C400BF41B2 /* FSFullscreenWindow.m in Sources */,
+				360A22F41573E5C400BF41B2 /* FSRenderer.m in Sources */,
+				360A22F51573E5C400BF41B2 /* FSRenderOperation.m in Sources */,
+				360A22F61573E5C400BF41B2 /* FSThreading.m in Sources */,
+				360A22F71573E5C400BF41B2 /* FSTools.m in Sources */,
+				360A22F81573E5C400BF41B2 /* FSViewer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		365AECCA1574010A00083A53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FSMovieTool;
+			targetProxy = 365AECC91574010A00083A53 /* PBXContainerItemProxy */;
+		};
+		365AECCC1574010D00083A53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SDTool;
+			targetProxy = 365AECCB1574010D00083A53 /* PBXContainerItemProxy */;
+		};
+		365AECCE1574011400083A53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FSToolTest;
+			targetProxy = 365AECCD1574011400083A53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089C165FFE840EACC02AAC07 /* InfoPlist.strings */ = {
@@ -1632,13 +1644,14 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = FractalStream_Prefix.pch;
+				GCC_PREFIX_HEADER = "./classes/Other Sources/FractalStream_Prefix.pch";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/win\"",
 					"\"$(SRCROOT)/llvm-2.5/Release/lib\"",
+					"\"$(SRCROOT)/external/llvm-2.5/Release/lib\"",
 				);
 				PRODUCT_NAME = FractalStream;
 				VALID_ARCHS = x86_64;
@@ -1654,7 +1667,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PLATFORM_DEFINES = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = FractalStream_Prefix.pch;
+				GCC_PREFIX_HEADER = "./classes/Other Sources/FractalStream_Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					__STDC_CONSTANT_MACROS,
 					__STDC_LIMIT_MACROS,
@@ -1667,6 +1680,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/llvm-2.5/Release/lib\"",
+					"\"$(SRCROOT)/external/llvm-2.5/Release/lib\"",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -1710,7 +1724,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
-					"${SRCROOT}/llvm-2.5/include",
+					"${SRCROOT}/external/llvm-2.5/include",
 				);
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
@@ -1755,7 +1769,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
-					"${SRCROOT}/llvm-2.5/include",
+					"${SRCROOT}/external/llvm-2.5/include",
 				);
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
