@@ -3,4 +3,4 @@
 *.pbxuser
 xcuserdata
 project.xcworkspace
-
+tools/*/build/*
