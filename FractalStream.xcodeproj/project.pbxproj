@@ -42,6 +42,8 @@
 		36F029441571362600FEA4A6 /* C13699648.fscolor in Copy Files (Colors) */ = {isa = PBXBuildFile; fileRef = 36F0293C1571360F00FEA4A6 /* C13699648.fscolor */; };
 		36F029451571362600FEA4A6 /* C13708784.fscolor in Copy Files (Colors) */ = {isa = PBXBuildFile; fileRef = 36F0293D1571360F00FEA4A6 /* C13708784.fscolor */; };
 		36F029461571362600FEA4A6 /* ColorLibrary in Copy Files (Colors) */ = {isa = PBXBuildFile; fileRef = 36F0293E1571360F00FEA4A6 /* ColorLibrary */; };
+		36F0294A1571542A00FEA4A6 /* FSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F029491571542A00FEA4A6 /* FSLog.m */; };
+		36F02951157159E900FEA4A6 /* CircularOverwriteBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F02950157159E900FEA4A6 /* CircularOverwriteBuffer.m */; };
 		36F1D9B3157115E000E1B7E5 /* LLVMX86AsmPrinter.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F1D9B1157115E000E1B7E5 /* LLVMX86AsmPrinter.o */; };
 		36F1D9B4157115E000E1B7E5 /* LLVMX86CodeGen.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F1D9B2157115E000E1B7E5 /* LLVMX86CodeGen.o */; };
 		36F1D9B71571168300E1B7E5 /* libLLVMAsmPrinter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F1D9B61571168300E1B7E5 /* libLLVMAsmPrinter.a */; };
@@ -391,6 +393,10 @@
 		36F0293C1571360F00FEA4A6 /* C13699648.fscolor */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = C13699648.fscolor; path = Colors/C13699648.fscolor; sourceTree = "<group>"; };
 		36F0293D1571360F00FEA4A6 /* C13708784.fscolor */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = C13708784.fscolor; path = Colors/C13708784.fscolor; sourceTree = "<group>"; };
 		36F0293E1571360F00FEA4A6 /* ColorLibrary */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = ColorLibrary; path = Colors/ColorLibrary; sourceTree = "<group>"; };
+		36F029481571542A00FEA4A6 /* FSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSLog.h; sourceTree = "<group>"; };
+		36F029491571542A00FEA4A6 /* FSLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSLog.m; sourceTree = "<group>"; };
+		36F0294F157159E900FEA4A6 /* CircularOverwriteBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularOverwriteBuffer.h; sourceTree = "<group>"; };
+		36F02950157159E900FEA4A6 /* CircularOverwriteBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularOverwriteBuffer.m; sourceTree = "<group>"; };
 		36F1D9B1157115E000E1B7E5 /* LLVMX86AsmPrinter.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = LLVMX86AsmPrinter.o; path = "llvm-2.5/Release/lib/LLVMX86AsmPrinter.o"; sourceTree = "<group>"; };
 		36F1D9B2157115E000E1B7E5 /* LLVMX86CodeGen.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = LLVMX86CodeGen.o; path = "llvm-2.5/Release/lib/LLVMX86CodeGen.o"; sourceTree = "<group>"; };
 		36F1D9B61571168300E1B7E5 /* libLLVMAsmPrinter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMAsmPrinter.a; path = "llvm-2.5/Release/lib/libLLVMAsmPrinter.a"; sourceTree = "<group>"; };
@@ -548,6 +554,7 @@
 		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				36F029471571540A00FEA4A6 /* Utility */,
 				681AF1310F699AF900E8DE1B /* View */,
 				681AF1220F699AF900E8DE1B /* Program Editor */,
 				681AF1190F699AF900E8DE1B /* Document */,
@@ -684,6 +691,17 @@
 			children = (
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		36F029471571540A00FEA4A6 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				36F029481571542A00FEA4A6 /* FSLog.h */,
+				36F029491571542A00FEA4A6 /* FSLog.m */,
+				36F0294F157159E900FEA4A6 /* CircularOverwriteBuffer.h */,
+				36F02950157159E900FEA4A6 /* CircularOverwriteBuffer.m */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 		681AF1100F699AF900E8DE1B /* Library */ = {
@@ -1133,6 +1151,8 @@
 				68605DB80F6DCEE500189C8C /* FSCustomDataManager.m in Sources */,
 				68411693100306F000C5323F /* FSColor.m in Sources */,
 				6802822D10AB17CF0077048E /* FSPanel.m in Sources */,
+				36F0294A1571542A00FEA4A6 /* FSLog.m in Sources */,
+				36F02951157159E900FEA4A6 /* CircularOverwriteBuffer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

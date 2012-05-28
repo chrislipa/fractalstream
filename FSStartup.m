@@ -7,11 +7,13 @@
 //
 
 #import "FSStartup.h"
-
+#import "FSLog.h"
 
 @implementation FSStartup
 
 - (void) awakeFromNib {
+	LOG(@"hi")
+	
 	[slsave setTarget: nil];
 	[slsave setAction: @selector(saveToLibrary:)];
 	[embedtool setTarget: nil];
