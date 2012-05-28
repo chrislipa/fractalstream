@@ -1,0 +1,12 @@
+{
+    IBClasses = (
+        {
+            CLASS = FSToolTest; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {owner = id; theDisplay = NSTextField; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}
