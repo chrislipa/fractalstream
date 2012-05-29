@@ -19,8 +19,10 @@
 
 
 #define PRIVATE_LOG(x, ...) [FSLog log:[NSString stringWithFormat:@"%s:%d %@", __PRETTY_FUNCTION__, __LINE__, [NSString stringWithFormat:x, ##__VA_ARGS__]]];
-
+#define PRIVATE_EXIT [FSLog exit:[NSString stringWithFormat:@"EXIT  %s", __PRETTY_FUNCTION__]];
+#define PRIVATE_ENTER [FSLog exit:[NSString stringWithFormat:@"ENTER %s", __PRETTY_FUNCTION__]];
 
 
 #define LOG(x, ...) PRIVATE_LOG(x, ##__VA_ARGS__)
-#
+#define EXIT PRIVATE_EXIT
+#define ENTER PRIVATE_ENTER

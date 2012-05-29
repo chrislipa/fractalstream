@@ -41,9 +41,9 @@ static int FSLogIndentation = 0;
 		[formatter setDateFormat:@"dd-MM-yyyy HH:mm"];
 	}
 	
-	NSString   *dateString = [formatter stringFromDate:[NSDate date]];
+	//NSString   *dateString = [formatter stringFromDate:[NSDate date]];
 	
-	NSString* s = [NSString stringWithFormat:@"%@%@ %@", [self spaces:FSLogIndentation], dateString,string];
+	NSString* s = [NSString stringWithFormat:@"%@%@", [self spaces:FSLogIndentation], /*dateString,*/string];
 	[self logInternal:s];
 }
 

@@ -12,18 +12,23 @@
 @implementation FSStartup
 
 - (void) awakeFromNib {
-
-	
+	ENTER
 	[slsave setTarget: nil];
 	[slsave setAction: @selector(saveToLibrary:)];
 	[embedtool setTarget: nil];
 	[embedtool setAction: @selector(embedTool:)];
+	EXIT
 }
 
 - (IBAction) openLibrary: (id) sender {
-	NSError* error;
+	ENTER
+	NSError* error = nil;
 	[[[NSDocumentController sharedDocumentController] openUntitledDocumentAndDisplay: YES error: &error]
 		openScriptLibrary];
+	if (error) {
+		LOG(@"Error: %@", error);
+	}
+	EXIT
 }
 
 @end

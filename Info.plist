@@ -7,16 +7,16 @@
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleDocumentTypes</key>
+			<array>
+				<string>FractalStream Script</string>
+			</array>
 			<key>CFBundleTypeExtensions</key>
 			<array>
 				<string>fs</string>
 			</array>
 			<key>CFBundleTypeIconFile</key>
 			<string>mandelbrot.icns</string>
-			<key>CFBundleDocumentTypes</key>
-			<array>
-				<string>FractalStream Script</string>
-			</array>
 			<key>CFBundleTypeName</key>
 			<string>FractalStream Script</string>
 			<key>CFBundleTypeOSTypes</key>
@@ -44,7 +44,7 @@
 	<key>CFBundleSignature</key>
 	<string>fsdy</string>
 	<key>CFBundleVersion</key>
-	<string>0.9.9</string>
+	<string>0.9.9.1</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
