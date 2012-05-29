@@ -15,7 +15,7 @@
 @implementation FSLog
 static CircularOverwriteBuffer* loggingArray = nil;
 static NSDateFormatter *formatter = nil;
-
+static int FSLogIndentation = 0;
 
 
 +(void) logInternal:(NSString*) s {
@@ -27,7 +27,13 @@ static NSDateFormatter *formatter = nil;
 
 }
 
-
++(NSString*) spaces:(int) n {
+	NSMutableString* s = [NSMutableString stringWithString:@""];
+	for(int i = 0; i<n; i++) {
+		[s appendString:@" "];
+	}
+	return s;
+}
 +(void) log:(NSString*) string {
 	
 	if (!formatter) {
@@ -37,11 +43,19 @@ static NSDateFormatter *formatter = nil;
 	
 	NSString   *dateString = [formatter stringFromDate:[NSDate date]];
 	
-	NSString* s = [NSString stringWithFormat:@"%@ %@", dateString,string];
+	NSString* s = [NSString stringWithFormat:@"%@%@ %@", [self spaces:FSLogIndentation], dateString,string];
 	[self logInternal:s];
 }
 
++(void) enter:(NSString*) string {
+	[self log:string];
+	FSLogIndentation++;
+}
 
++(void) exit:(NSString*) string {
+	FSLogIndentation--;
+	[self log:string];
+}
 
 +(NSDictionary*) deviceInformation {
 	NSMutableDictionary* d = [NSMutableDictionary dictionary];
