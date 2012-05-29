@@ -7,18 +7,20 @@
 //
 
 #import "FSCursors.h"
-
+#import "FSLog.h"
 
 @implementation NSCursor(FSCursors)
 
 + (NSCursor*) zoomInCursor
 {
+	ENTER
 	static NSCursor *zoomInCursor = nil;
 	if(zoomInCursor == nil) {
 		NSImage *picture = [NSImage imageNamed: @"ZoomIn"];
 		NSPoint hotspot = NSMakePoint(7.0, 7.0);		
 		zoomInCursor = [[NSCursor alloc] initWithImage: picture hotSpot: hotspot];
 	}
+	EXIT
 	return zoomInCursor;
 }
 

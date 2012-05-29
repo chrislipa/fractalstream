@@ -7,15 +7,19 @@
 //
 
 #import "FSScriptLibraryController.h"
-
+#import "FSLog.h"
 @implementation FSScriptLibraryItem
 
 - (id) initWithPath: (NSString*) p file: (NSString*) f {
+	ENTER
 	self = [super init];
-	return [[self makeLibraryItemForPath: [NSString stringWithFormat: @"%@%@", p, f]] retain];
+	id x = [[self makeLibraryItemForPath: [NSString stringWithFormat: @"%@%@", p, f]] retain];
+	EXIT
+	return x;
 }
 
 - (id) makeLibraryItemForPath: (NSString*) p {
+	ENTER
 	NSFileManager* fs;
 	fs = [NSFileManager defaultManager];
 	path = [p copy];
@@ -58,10 +62,12 @@
 			++i;
 		}
 	} 
+	EXIT
 	return self;
 }
 
 - (void) loadChildren {
+	ENTER
 	NSFileManager* fs;
 	NSArray* ar;
 	id item;
@@ -80,6 +86,7 @@
 			[children addObject: [[[FSScriptLibraryItem alloc]
 				initWithPath: path file: item] autorelease]];
 	}
+	EXIT
 
 }
 
@@ -89,6 +96,7 @@
 - (NSString*) path { return path; }
 - (NSImage*) image { return preview; }
 - (int) children { 
+	
 	if(group == NO) return 0;
 	if(children == nil) [self loadChildren];
 	return [children count];
@@ -99,8 +107,10 @@
 }
 
 - (void) dealloc {
+	ENTER
 	[children release];
 	[super dealloc];
+	EXIT
 }
 
 @end
@@ -108,6 +118,7 @@
 @implementation FSScriptLibraryController
 
 - (void) awakeFromNib {
+	ENTER
 	useOutlineView = YES;
 	[[NSNotificationCenter defaultCenter]
 		addObserver: self selector: @selector(newSelection:)
@@ -115,17 +126,21 @@
 	];
 	library = nil;
 	[self reload];
+	EXIT
 }
 
 - (void) dealloc {
+	ENTER
 	[[NSNotificationCenter defaultCenter]
 		removeObserver: self
 		name: NSOutlineViewSelectionDidChangeNotification object: outline
 	];
 	[super dealloc];
+	EXIT
 }
 
 - (void) reload {
+	ENTER
 	NSFileManager* fs;
 	NSArray* ar;
 	id item;
@@ -136,6 +151,7 @@
 #ifdef WINDOWS
 	NSLog(@"FSScriptLibraryController needs builtInPlugInsPath, not available in Cocotron\n");
 	library = nil;
+	EXIT
 	return;
 #endif
 	path = [NSString stringWithFormat: @"%@/", [[[NSBundle mainBundle] builtInPlugInsPath] stringByAppendingPathComponent: @"Scripts/"]];
@@ -155,6 +171,7 @@
 		}
 	}
 	[outline reloadData];
+	EXIT
 }
 
 - (int) outlineView: (NSOutlineView*) outlineView numberOfChildrenOfItem: (id) item {
@@ -174,10 +191,13 @@
 }
 
 - (IBAction) newScript: (id) sender {
+	ENTER
 	[theDoc doDocumentLoadWithLibrary: NO];
+	EXIT
 }
 
 - (IBAction) openScript: (id) sender {
+	ENTER
 	id item;
 	item = [outline itemAtRow: [outline selectedRow]];
 	if(item == nil) { NSLog(@"item was nil?\n"); return; }
@@ -185,9 +205,11 @@
 	if([item isGroup]) return;
 	if([theDoc loadDataRepresentation: [NSData dataWithContentsOfFile: [item path]] ofType: @"FractalStream Script"])
 		[theDoc doDocumentLoadWithLibrary: NO];
+	EXIT
 }
 
 - (IBAction) editScript: (id) sender {
+	ENTER
 	id item;
 	item = [outline itemAtRow: [outline selectedRow]];
 	if(item == nil) { NSLog(@"item was nil?\n"); return; }
@@ -195,15 +217,19 @@
 	if([item isGroup]) return;
 	if([theDoc loadDataRepresentation: [NSData dataWithContentsOfFile: [item path]] ofType: @"FractalStream Script"])
 		[theDoc openEditor];
+	EXIT
 }
 
 - (IBAction) switchScriptView: (id) sender {
+	ENTER
 	useOutlineView = ([sender indexOfSelectedItem] == 0)? YES : NO;
 	[self reload];
+	EXIT
 }
 
 
 - (void) newSelection: (NSNotification*) note {
+	ENTER
 	id item;
 	item = [outline itemAtRow: [outline selectedRow]];
 	if (item == nil) {
@@ -211,6 +237,7 @@
 		[openEditorButton setEnabled: NO];
 		[description setString: @""];
 		[previewer setImage: [NSImage imageNamed: @"NSRemoveTemplate"]];
+		EXIT
 		return;
 	}
 	if ([item isGroup]) {
@@ -232,6 +259,7 @@
 		if([item isGroup]) [previewer setImage: [NSImage imageNamed: @"NSMultipleDocuments"]];
 		else [previewer setImage: [NSImage imageNamed: @"NSRemoveTemplate"]];
 	}
+	EXIT
 }
 
 

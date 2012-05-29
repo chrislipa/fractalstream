@@ -8,11 +8,12 @@
 
 #import "FSColorWidget.h"
 #import "FSCWNamedColors.H"
-
+#import "FSLog.h"
 
 @implementation FSColorWidget
 
 - (id) init {
+	ENTER
 	self = [super init];
 	colors = nil;
 	unarchiving = NO;
@@ -29,6 +30,7 @@
 	colorCache.Y = NULL;
 	colorCache.subcolors = NULL;
 	colorCache.lock = [[NSConditionLock alloc] initWithCondition: 0];
+	EXIT
 	return self;
 }
 

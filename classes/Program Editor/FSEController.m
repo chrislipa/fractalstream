@@ -1,14 +1,17 @@
 #import "FSEController.h"
-
+#import "FSLog.h"
 @implementation FSEController
 
 - (void) awakeFromNib {
+	ENTER
 //	NSLog(@"FSEController is in window %@\n", [sourceView window]);
 	[sourceView setRichText: NO];
+	EXIT
 }
 
 - (IBAction)compile:(id)sender
 {
+	ENTER
 	NSString* tmp;
 	NSString* errorMessage;
 	
@@ -52,6 +55,7 @@
 //	NSLog(@"about to change tab, enclosingView is %@\n", enclosingView);
 	[enclosingView selectTabViewItemAtIndex: [enclosingView indexOfTabViewItem: [enclosingView selectedTabViewItem]] + 1];
 //	NSLog(@"did it.\n");
+	EXIT
 }
 
 - (IBAction) insertPi: (id) sender {

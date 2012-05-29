@@ -1,11 +1,12 @@
 #import "FSECompiler.h"
 #import <stdlib.h>
 #import "FSECompilerSymbols.H"
-
+#import "FSLog.h"
 
 @implementation FSECompiler
 
 - (id) init {
+	ENTER
 	self = [super init];
 	flags = [[NSMutableArray alloc] init];
 	[flags addObject: [NSString stringWithString: @"Default Exit Condition"]];
@@ -15,10 +16,15 @@
 	source = symbol = title = nil;
 	usesC = 0;
 	nextvar = 0;
+	EXIT
 	return self;
 }
 
-- (void) awakeFromNib { NSLog(@"FSECompiler %@ woke from nib\n", self); }
+- (void) awakeFromNib { 
+	ENTER 
+	NSLog(@"FSECompiler %@ woke from nib\n", self); 
+	EXIT
+}
 
 #define FSSymbol_NIL		-1
 #define FSSymbol_WHITESPACE 0

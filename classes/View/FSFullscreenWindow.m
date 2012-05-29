@@ -7,14 +7,16 @@
 //
 
 #import "FSFullscreenWindow.h"
-
+#import "FSLog.h"
 
 @implementation FSFullscreenWindow
 
 
 - (id) init { 
+	ENTER
 	self = [super init];
 	isFullscreen = NO;
+	EXIT
 	return self;
 }
 

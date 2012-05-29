@@ -7,7 +7,7 @@
 //
 
 #import "FSViewer.h"
-
+#import "FSLog.h"
 #import "debug.h"
 
 #define LogBoxSize 7
@@ -25,15 +25,17 @@
 
 - (id) initWithCoder: (NSCoder*) coder
 {
+	ENTER
 	int i;
 	self = [super initWithCoder: coder];
 
 	Debug(@"this is viewer %@\n", self);
-
+	EXIT
 	return self;
 }
 
 - (void) awakeFromNib {
+	ENTER
 	int i, j, xBoxes, yBoxes;
 	
 	
@@ -115,9 +117,11 @@
 	queueLock = [[NSConditionLock alloc] initWithCondition: 0];
 	inset = nil;
 	showInset = NO;
+	EXIT
 }
 
 - (void) stopAllRenderOperations: (NSNotification*) note {
+	ENTER
 //	NSLog(@"FSViewer %@ decided to stop rendering, controllingWindow is %@, note is %@.\n", self, controllingWindow, note);
 	[[NSNotificationCenter defaultCenter] removeObserver: self];
 	++renderBatch;
@@ -125,15 +129,18 @@
 //	[viewerColorizer setCurrentBatch: renderBatch+1];
 	[queueLock lockWhenCondition: 0];
 	[queueLock unlockWithCondition: 0];
+	EXIT
 }
 	
 																					
 - (BOOL) isAwake { return awake; }
 
 - (void) dealloc {
+	ENTER
 	[workQueue release];
 	[queueLock release];
 	[super dealloc];
+	EXIT
 }
 
 - (id) document { return document; }

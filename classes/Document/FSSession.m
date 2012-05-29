@@ -7,13 +7,14 @@
 //
 
 #import "FSSession.h"
-
+#import "FSLog.h"
 @implementation FSSessionNode
 
 + (void) initialize { [FSSessionNode setVersion: 0]; }
 
 - (id) init
 {
+	ENTER
 	self = [super init];
 	
 	self -> upperLeft[0] = -2.0; self -> upperLeft[1] = 2.0;
@@ -31,6 +32,7 @@
 	self -> parent = nil;
 	self -> children = 0;
 	extra = nil;
+	EXIT
 	return self;
 }
 
@@ -40,16 +42,20 @@
 
 - (id) setViewportX: (double) x Y: (double) y scale: (double) c
 {
+	ENTER
 	self -> scale = c;
 	self -> center[0] = x; self -> center[0] = y;
+	EXIT
 	return self;
 }
 
 - (id) setTitle: (NSString*) newTitle
 {
+	ENTER
 	[self -> title release];
 	self -> title = newTitle;
 	[self -> title retain];
+	EXIT
 	return self;
 }
 
@@ -59,6 +65,7 @@
 
 - (void) encodeWithCoder: (NSCoder*) coder
 {
+	ENTER
 	/* version 0 */
 	[coder encodeObject: [NSNumber numberWithBool: YES] forKey: @"keyed"];
 	[coder encodeObject: [NSNumber numberWithDouble: upperLeft[0]] forKey: @"ul0"];
@@ -98,9 +105,11 @@
 		[coder encodeObject: [NSNumber numberWithInt: -1] forKey: @"nodeNumber"];
 		[coder encodeObject: extra forKey: @"extra"];
 	}
+	EXIT
 }
 
 - (id) initWithCoder: (NSCoder*) coder {
+	ENTER
 	self = [super init];
 	/* version 0 */
 	if([coder containsValueForKey: @"keyed"]) {
@@ -175,6 +184,7 @@
 		if(nodeNumber == -1) extra = [[coder decodeObject] retain];
 		else extra = nil;
 	}
+	EXIT
 	return self;
 }
 
@@ -186,26 +196,32 @@
 
 - (id) init 
 {
+	ENTER
 	self = [super init];
 	root = [[FSSessionNode alloc] init];
 	currentNode = root;
 	sessionTitle = [[NSString stringWithString: @"FractalStream Beta Session"] retain];
+	EXIT
 	return self;
 }
 
 - (void) awakeFromNib
 { 
+	ENTER
 	[[historyView window] setTitle: sessionTitle];
+	EXIT
 }
 
 - (void) setTitle: (NSString*) title { sessionTitle = title; }
 - (void) setNotes: (NSData*) notes { sessionNotes = notes; }
 - (void) setProgram: (NSString*) program { sessionProgram = program; }
 - (void) readKernelFrom: (NSString*) path {
+	ENTER
 //	NSLog(@"reading kernel from %@\n", path);
 	sessionKernel = [[NSFileWrapper alloc] init];
 	sessionKernel = [sessionKernel initWithPath: path];
 	if([sessionKernel isRegularFile] == NO) sessionKernel = nil;
+	EXIT
 //	NSLog(@"kernel has been read.\n");
 }
 - (void) setKernelIsCached: (BOOL) isCached { kernelIsCached = isCached; }
@@ -244,6 +260,7 @@
 
 // delete a node and link any children in as siblings of the deleted node.
 - (IBAction) deleteCurrentNode: (id) sender {
+	ENTER
 	FSSessionNode* node;
 
 //	NSLog(@"deleteCurrentNode\n");
@@ -262,33 +279,41 @@
 	else { node = currentNode; [self changeTo: currentNode -> parent]; }
 	// destroy 'node' here
 	[historyView reloadItem: currentNode reloadChildren: YES];
+	EXIT
 }
 
 - (IBAction) deleteCurrentChildren: (id) sender {
+	ENTER
 //	NSLog(@"deleteCurrentChildren\n");
 
 	currentNode -> children = 0;
 	// code to recursively destroy children here
 	currentNode -> firstChild = nil;
 	[historyView reloadItem: currentNode reloadChildren: YES];
+	EXIT
 }
 
 - (IBAction) goForward: (id) sender
 {
+	ENTER
 	if(currentNode -> favoredChild != nil) {
 		[self changeTo: currentNode -> favoredChild];
 	}
+	EXIT
 //	NSLog(@"going forward\n");
 }
 
 - (IBAction) goBackward: (id) sender
 {
+	ENTER
 	if(currentNode->parent && (currentNode != root) && (currentNode->parent != root)) [self changeTo: currentNode -> parent];
 //	NSLog(@"going backward\n");
+	EXIT
 }
 
 - (FSSessionNode*) addChildNode: (FSSessionNode*) child andMakeCurrent: (BOOL) makeCurrent
 {
+	ENTER
 	FSSessionNode* sibling;
 
 //	NSLog(@"adding a new child, this child thinks that pixelSize is %f\n", (child -> data).pixelSize);
@@ -302,6 +327,7 @@
 		child -> children = 0;
 		(child -> parent) -> favoredChild = child;
 		if(makeCurrent == YES) currentNode = child;
+		EXIT
 		return child;
 	}
 	
@@ -316,10 +342,12 @@
 	child -> children = 0;
 	(child -> parent) -> favoredChild = child;
 	if(makeCurrent == YES) [self changeTo: child];
+	EXIT
 	return child;
 }
 
 - (FSSessionNode*) addChildWithData: (FSViewerData) theData andMakeCurrent: (BOOL) makeCurrent {
+	ENTER
 	FSSessionNode* child;
 	child = [[FSSessionNode alloc] init];
 	child -> data = theData;
@@ -331,11 +359,13 @@
 	[self addChildNode: child andMakeCurrent: makeCurrent];
 	[historyView reloadItem: currentNode -> parent reloadChildren: YES];
 	[historyView expandItem: currentNode -> parent];
+	EXIT
 	return child;
 }
 
 - (FSSessionNode*) addChildNodeWithLocation: (double*) box andProgram: (int) program
 {
+	ENTER
 	FSSessionNode* child;
 	child = [[FSSessionNode alloc] init];
 	child -> upperLeft[0] = box[0]; child -> upperLeft[1] = box[1];
@@ -349,11 +379,13 @@
 	[self addChildNode: child andMakeCurrent: YES];
 	[historyView reloadItem: currentNode -> parent reloadChildren: YES];
 	[historyView expandItem: currentNode -> parent];
+	EXIT
 	return child;
 }
 
 - (FSSessionNode*) addChildNodeWithScale: (double) scale X: (double) x Y: (double) y flags: (int) flag
 {
+	ENTER
 	FSSessionNode* child;
 	child = [[FSSessionNode alloc] init];
 	child -> center[0] = x; child -> center[1] = y;
@@ -365,6 +397,7 @@
 	[self addChildNode: child andMakeCurrent: YES];
 	[historyView reloadItem: currentNode -> parent reloadChildren: YES];
 	[historyView expandItem: currentNode -> parent];
+	EXIT
 	return child;
 }
 
@@ -409,6 +442,7 @@
 
 - (void) getSessionFrom: (FSSession*) session
 {
+	ENTER
 	//root = session -> root;
 	root = currentNode = session -> currentNode;
 	currentNode->children = 0; currentNode->firstChild = nil;
@@ -418,6 +452,7 @@
 	sessionKernel = session -> sessionKernel;
 	kernelIsCached = session -> kernelIsCached;
 	historyView = nil;
+	EXIT
 }
 
 - (void) setFlags: (NSArray*) flagArray { 
@@ -431,6 +466,7 @@
 
 - (void) encodeWithCoder: (NSCoder*) coder
 {
+	ENTER
 	// version 0
 	[coder encodeObject: [NSNumber numberWithBool: YES] forKey: @"keyed"];
 	[coder encodeObject: root forKey: @"root"];
@@ -440,10 +476,12 @@
 	[coder encodeObject: sessionNotes forKey: @"session notes"];
 	if(kernelIsCached) [coder encodeObject: sessionKernel forKey: @"cached kernel"];
 	[coder encodeObject: [NSNumber numberWithBool: kernelIsCached] forKey: @"kernel is cached?"];
+	EXIT
 }
 
 - (id) initWithCoder: (NSCoder*) coder
 {
+	ENTER
 	self = [super init];
 	// version 0
 	if([coder containsValueForKey: @"keyed"]) {
@@ -465,11 +503,13 @@
 		sessionKernel = [[coder decodeObject] retain];
 		kernelIsCached = [[coder decodeObject] boolValue];
 	}
+	EXIT
 	return self;
 }
 
 
 - (void) changeTo: (FSSessionNode*) node {
+	ENTER
 	[[NSNotificationCenter defaultCenter]
 		postNotificationName: @"FSSessionWillChangeNode"
 		object: self
@@ -489,6 +529,7 @@
 			nil
 		]
 	];
+	EXIT
 }
 
 

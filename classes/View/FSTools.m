@@ -7,12 +7,13 @@
 //
 
 #import "FSTools.h"
-
+#import "FSLog.h"
 
 @implementation FSTools
 
 - (void) awakeFromNib
 {
+	ENTER
 	toolClasses = [[NSMutableArray alloc] init];
 	tools = [[NSMutableArray alloc] init];
 	toolsLoaded = NO;
@@ -54,6 +55,7 @@
 	wheel[8][1] = 0.0;
 	wheel[8][2] = 0.0;
 	NSLog(@"tools %@ awoke from nib\n", self);
+	EXIT
 
 }
 

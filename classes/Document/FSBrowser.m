@@ -2,21 +2,26 @@
 #import "FSBrowser.h"
 #import "FSSession.h"
 #import "FSViewer.h"
-
+#import "FSLog.h"
 @implementation FSBrowser
 
 - (id) init {
+	ENTER
 	self = [super init];
 	toolsWrapper = nil;
 	return self;
+	EXIT
 }
 
 - (void) dealloc {
+	ENTER
 	[[NSNotificationCenter defaultCenter] removeObserver: self];
 	[super dealloc];
+	EXIT
 }
 
 - (void) awakeFromNib {
+	ENTER
 	NSString* path;
 	void* loadedModule;
 	NSLog(@"browser %@ awoke from nib\n", self);
@@ -43,15 +48,20 @@
 		addObserver: self selector: @selector(testAndRefresh:)
 		name: NSControlTextDidEndEditingNotification object: aspectBox
 	];
+	EXIT
 }
 
 - (IBAction) hidePanels: (id) sender {
+	ENTER
 }
 
 - (IBAction) revealPanels: (id) sender {
+	EXIT
 }
 
 - (void) testAndRefresh: (NSNotification*) note {
+	ENTER
+	LOG(@"Notification = %@", note);
 	id control;
 	control = [note object];
 	if(
@@ -60,20 +70,30 @@
 		( (control == minRadiusBox) && (([theSession currentNode] -> data).minRadius != [minRadiusBox doubleValue]) ) ||
 		( (control == aspectBox) && (([theSession currentNode] -> data).aspectRatio != [aspectBox doubleValue]) )
 	) [self refresh: self];
+	EXIT
 }
 
-- (FSKernel*) kernel { return theKernel; }
+- (FSKernel*) kernel { 
+	ENTER
+	
+	EXIT
+	return theKernel;
+
+}
 
 - (void) loadDataFromInterfaceTo: (FSViewerData*) theData {
+	ENTER
 	theData -> maxIters = [iterBox intValue];
 	theData -> maxRadius = [radiusBox doubleValue];
 	theData -> minRadius = [minRadiusBox doubleValue];
 	theData -> aspectRatio = [aspectBox floatValue];
 	theData -> eventManager = theTools;
 	theData -> kernel = kernel;
+	EXIT
 }
 
 - (void) reloadSessionWithoutRefresh { 
+	ENTER
 	void* loadedModule;
 	NSString* tmp;
 	FSViewerData d;
@@ -101,13 +121,14 @@
 	}
 	kernel = [theKernel kernelPtr];
 	if(kernel == NULL) {
+		EXIT
 		return;
 	}
 	rootData.kernel = kernel;
 
 	/* hack */
 	kernel3 = kernel;
-	
+	EXIT
 }
 
 - (BOOL) editorDisabled { return ([editorButton isEnabled] == YES)? NO : YES; }
@@ -124,6 +145,7 @@
 - (void) addTools: (NSFileWrapper*) toolWrapper { toolsWrapper = [toolWrapper retain]; [theTools addTools: toolWrapper]; }
 - (NSFileWrapper*) extraTools { return toolsWrapper; }
 - (IBAction) embedTool: (id) sender {
+	ENTER
 	NSOpenPanel* panel;
 	panel = [NSOpenPanel openPanel];
 	[panel setTitle: @"Select a Directory to Embed"];
@@ -136,12 +158,15 @@
 		toolsWrapper = [[NSFileWrapper alloc] initWithPath: [panel filename]];
 		[theTools addTools: toolsWrapper];
 	}
+	EXIT
 }
 
 - (void) refreshAll { 
+	ENTER
 	[theTools setupMenu: self];
 	[colorWidget setNamesTo: [theSession flagNames]];
 	[self refresh: self];
+	EXIT
 }
 
 - (IBAction) goHome: (id) sender {
@@ -168,22 +193,27 @@
 }
 
 - (IBAction) goForward: (id) sender {
+	ENTER
 	[theSession goForward: sender];
 	([theSession currentNode] -> data).kernel = kernel;
 	([theSession currentNode] -> data).eventManager = theTools;
 	[self sendDefaultsToViewer];
 	[theViewer setViewerData: &([theSession currentNode] -> data)];
+	EXIT
 }
 
 - (IBAction) goBackward: (id) sender {
+	ENTER
 	[theSession goBackward: sender];
 	([theSession currentNode] -> data).kernel = kernel;
 	([theSession currentNode] -> data).eventManager = theTools;
 	[self sendDefaultsToViewer];
 	[theViewer setViewerData: &([theSession currentNode] -> data)];
+	EXIT
 }
 
 - (IBAction) refresh: (id) sender {
+	ENTER
 //	([theSession currentNode] -> data).kernel = ([programBox indexOfSelectedItem] == 0)? kernel1 : kernel2;
 	/* hack */ ([theSession currentNode] -> data).kernel = kernel;
 	([theSession currentNode] -> data).eventManager = theTools;
@@ -194,6 +224,7 @@
 	([theSession currentNode] -> data).detailLevel = ([detailBox state] == NSOnState) ? 2.0 : 1.0;
 	[self sendDefaultsToViewer];
 	[theViewer setViewerData: &([theSession currentNode] -> data)];
+	EXIT
 }
 
 
@@ -259,11 +290,14 @@
 - (void) setSpecialToolsTo: (NSArray*) names { specialTools = [[NSArray arrayWithArray: names] retain]; }
 
 - (void) setVariableValuesToReal: (NSArray*) rp imag: (NSArray*) ip {
+	ENTER
 	realPart = [[NSArray arrayWithArray: rp] retain];
 	imagPart = [[NSArray arrayWithArray: ip] retain];
+	EXIT
 }
 
 - (void) resetDefaults {
+	ENTER
 	double* defaults;
 	double c;
 	int i, j;
@@ -300,9 +334,11 @@
 	imagPart = [[NSArray arrayWithArray: im] retain];
 	reducedVariableNames = [[NSArray arrayWithArray: rvn] retain];
 	[re release]; [im release]; [rvn release];
+	EXIT
 }
 
 - (void) sendDefaultsToViewer {
+	ENTER
 	NSEnumerator *eE, *iE;
 	id n;
 	double* d;
@@ -323,12 +359,15 @@
 	}
 	[theViewer setDefaultsTo: d count: i];
 	free(d);
+	EXIT
 }
 
 - (int) numberOfRowsInTableView: (NSTableView*) tableView { return uniqueVariableNames; }
 - (id) tableView: (NSTableView*) tableView objectValueForTableColumn: (NSTableColumn*) tableColumn row: (int) row {
+	ENTER
 	int col;
 	col = [[tableColumn identifier] intValue];
+	EXIT
 	switch(col) {
 		case 0:
 			return [NSString stringWithString: [reducedVariableNames objectAtIndex: row]];
@@ -341,6 +380,7 @@
 	}
 }
 - (void) tableView: (NSTableView*) tableView setObjectValue: (id) anObject forTableColumn: (NSTableColumn*) tableColumn row: (int) row {
+	ENTER
 	NSEnumerator* en;
 	NSNumber* val;
 	NSMutableArray* ar;
@@ -373,6 +413,7 @@
 			break;
 	}
 	[self refresh: self];
+	EXIT
 }
 
 - (NSArray*) specialTools { return specialTools; }

@@ -7,11 +7,12 @@
 //
 
 #import "FSDocument.h"
-
+#import "FSLog.h"
 @implementation FSDocument
 
 - (id) init
 {
+	ENTER
     self = [super init];
     if (self) {
     
@@ -19,53 +20,73 @@
         // If an error occurs here, send a [self release] message and return nil.
 		newSession = YES;
     }
+	EXIT
     return self;
 }
 
 + (BOOL) isNativeType: (NSString*) type { return YES; } // need this for GNUstep?  maybe a problem with Info-gnustep.plist?
 
 - (void) awakeFromNib { 
+	ENTER
+	EXIT
 }
 
 - (void) windowDidBecomeMain: (NSNotification*) notification {
+	ENTER
 	[[NSNotificationCenter defaultCenter] postNotificationName: @"FSDocumentDidBecomeActive" object: self];
+	EXIT
 }
 
 - (void) windowDidResignMain: (NSNotification*) notification {
+	ENTER
 	[[NSNotificationCenter defaultCenter] postNotificationName: @"FSDocumentDidResignActive" object: self];
+	EXIT
 }
 
 - (void) windowWillClose: (NSNotification*) notification {
+	ENTER
+	EXIT
 }
 
 - (void) log: (NSString*) str {
+	ENTER
 	[logView insertText: str];
-	NSLog(@"%@", str);
+	LOG(@"LOG: %@", str);
+	EXIT
 }
 
 - (IBAction) showLog: (id) sender {
+	ENTER
 	[[logView window] orderFront: sender];
+	EXIT
 }
 
 - (IBAction) hideLog: (id) sender {
+	ENTER
 	[[logView window] orderOut: sender];
+	EXIT
 }
 
 - (NSString *)windowNibName
 {
+	ENTER
+	EXIT
     // Override returning the nib file name of the document
     // If you need to use a subclass of NSWindowController or if your document supports multiple NSWindowControllers, you should remove this method and override -makeWindowControllers instead.
     return @"FSDocument";
 }
 
 - (void) windowControllerDidLoadNib: (NSWindowController *) aController {
+	ENTER
     [super windowControllerDidLoadNib:aController];
 	[self doDocumentLoadWithLibrary: YES];
 	[panelHelper associatePanelsToDocument: self];
     // Add any code here that needs to be executed once the windowController has loaded the document's window.
+	EXIT
 }
 
 - (void) doDocumentLoadWithLibrary: (BOOL) lib {
+	ENTER
 	if(newSession == NO) { 
 		[editor restoreFrom: [savedData editor]];
 		if([savedData session] != nil) {
@@ -94,26 +115,36 @@
 		else [self log: @"Opening blank FractalStream script.\n"];
 		[mainTabView selectTabViewItemAtIndex: (lib == YES)? 0 : 1];
 	}
+	EXIT
 }
 
 - (void) openEditor {
+	ENTER
 	[editor restoreFrom: [savedData editor]];
 	[mainTabView selectTabViewItemAtIndex: 1];
+	EXIT
 }
 
 - (void) openScriptLibrary {
+	ENTER
 	[self log: @"Opening script library.\n"];
 	[mainTabView selectTabViewItemAtIndex: 0];
+	EXIT
 }
 
 - (void) completeConfiguration 
 {
+	ENTER
+	EXIT
 }
 
-- (NSString*) fileType { return @"fs"; }
+- (NSString*) fileType { 
+	return @"fs"; 
+}
 
 - (NSData *)dataRepresentationOfType:(NSString *)aType
 {
+	ENTER
 	FSSave* save;
 	
 	save = [[FSSave alloc] init];
@@ -121,18 +152,22 @@
 		[save setType: @"editor" session: nil colorizer: nil editor: editor browser: nil];
 	else
 		[save setType: @"full session [22oct]" session: session colorizer: colorizer editor: editor browser: browser];
+	EXIT
     return [NSKeyedArchiver archivedDataWithRootObject: [save autorelease]];
 }
 
 - (BOOL)loadDataRepresentation:(NSData *)data ofType:(NSString *)aType
 {
+	ENTER
 	[FSSave useMiniLoads: NO];
 	savedData = [[NSKeyedUnarchiver unarchiveObjectWithData: data] retain];
 	newSession = NO;
+	EXIT
     return YES;
 }
 
 - (IBAction) saveToLibrary: (id) sender {
+	ENTER
 	NSSavePanel* panel;
 	NSArray* editorState;
 	NSRange range;
@@ -175,6 +210,7 @@
 		break;
 	}
 #endif
+	EXIT
 }
 
 - (IBAction) embedTool: (id) sender { [browser embedTool: sender]; }

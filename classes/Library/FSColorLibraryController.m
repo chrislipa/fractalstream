@@ -7,10 +7,11 @@
 //
 
 #import "FSColorLibraryController.h"
-
+#import "FSLog.h"
 @implementation FSColorLibraryController
 
 - (void) awakeFromNib {
+	ENTER
 	library = [[NSMutableArray alloc] init];
 	index = -1;
 	if(outline) [[NSNotificationCenter defaultCenter]
@@ -20,30 +21,39 @@
 	[self loadColorLibrary: self];
 	if(outline) [editor connectToLibrary: self];
 	else [editor connectToLibrary: nil];
+	EXIT
 }
 
 - (void) dealloc {
+	ENTER
 	[[NSNotificationCenter defaultCenter] removeObserver: self];
 	[super dealloc];
+	EXIT
 }
 
 - (IBAction) newColor: (id) sender {
+	ENTER
 	[library addObject: [[[FSGradient alloc] init] autorelease]];
 	[outline reloadData];
 	[self saveColor: nil];
+	EXIT
 }
 
 - (IBAction) deleteColor: (id) sender {
+	ENTER
 	if([outline selectedRow] >= 0) [library removeObjectAtIndex: [outline selectedRow]];
 	[outline reloadData];
 	[self saveColor: nil];
+	EXIT
 }
 
 - (IBAction) changeColor: (id) sender {
+	ENTER
 	if([button indexOfSelectedItem]) {
 		[editor insertGradient: [library objectAtIndex: [button indexOfSelectedItem] - 1]];
 		[button selectItemAtIndex: 0];
 	}
+	EXIT
 }
 
 - (IBAction) loadColorLibrary: (id) sender {

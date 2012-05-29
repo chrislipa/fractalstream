@@ -7,7 +7,7 @@
 //
 
 #import "FSSave.h"
-
+#import "FSLog.h"
 
 @implementation FSSave
 
@@ -30,18 +30,22 @@ static BOOL miniLoads = YES;
 - (BOOL) hasTools { return ([tools isKindOfClass: [NSFileWrapper class]]); }
 
 - (id) init {
+	ENTER
 	self = [super init];
 	tools = [NSNull null];
 	disableEditor = NO;
+	EXIT
 	return self;
 }
 
 - (void) setType: (NSString*) newType session: (FSSession*) sess colorizer: (FSColorWidget*) col editor: (FSEController*) edit browser: (FSBrowser*) brow {
+	ENTER
 	type = [NSString stringWithString: newType];
 	session = [sess retain];
 	colorizer = [col retain];
 	editor = [[edit state] retain];
 	browser = [brow retain];
+	EXIT
 }
 
 - (void) encodeWithCoder: (NSCoder*) coder {
@@ -67,6 +71,7 @@ static BOOL miniLoads = YES;
 }
 
 - (id) initWithCoder: (NSCoder*) coder {
+	ENTER
 	self = [super init];
 	
 
@@ -145,7 +150,7 @@ static BOOL miniLoads = YES;
 		}
 	}
 	else NSLog(@"***** unknown type string, FSSave is confused!\n");
-	
+	EXIT
 	return self;
 }
 
