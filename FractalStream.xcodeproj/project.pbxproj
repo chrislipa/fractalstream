@@ -47,7 +47,8 @@
 		360A230D1573EC6D00BF41B2 /* LLVMJIT.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 360A23091573EC6D00BF41B2 /* LLVMJIT.o */; };
 		360A230E1573EC6D00BF41B2 /* LLVMPowerPCAsmPrinter.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 360A230A1573EC6D00BF41B2 /* LLVMPowerPCAsmPrinter.o */; };
 		360A230F1573EC6D00BF41B2 /* LLVMPowerPCCodeGen.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 360A230B1573EC6D00BF41B2 /* LLVMPowerPCCodeGen.o */; };
-		365AECDE1574097000083A53 /* SDTool.fstool in Copy Files (Tools) */ = {isa = PBXBuildFile; fileRef = 36F029921573C23100FEA4A6 /* SDTool.fstool */; };
+		36A5B506157421DA00569973 /* FSMovieTool.fstool in Copy Files (Tools) */ = {isa = PBXBuildFile; fileRef = 36A5B505157421CC00569973 /* FSMovieTool.fstool */; };
+		36A5B5141574246200569973 /* SDTool.fstool in Copy Files (Tools) */ = {isa = PBXBuildFile; fileRef = 36A5B5111574245100569973 /* SDTool.fstool */; };
 		36F02924157133A600FEA4A6 /* ab.fs in Copy Files (Quadratic Maps) */ = {isa = PBXBuildFile; fileRef = 364D0AC1157114D700971A37 /* ab.fs */; };
 		36F02925157133A600FEA4A6 /* boundary.fs in Copy Files (Quadratic Maps) */ = {isa = PBXBuildFile; fileRef = 364D0AC2157114D700971A37 /* boundary.fs */; };
 		36F02926157133A600FEA4A6 /* ext.fs in Copy Files (Quadratic Maps) */ = {isa = PBXBuildFile; fileRef = 364D0AC3157114D700971A37 /* ext.fs */; };
@@ -195,47 +196,33 @@
 			remoteGlobalIDString = 050DE24D0F61B80B00152ED3;
 			remoteInfo = "Fuzz Testing";
 		};
-		365AECC91574010A00083A53 /* PBXContainerItemProxy */ = {
+		36A5B504157421CC00569973 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 36F029811573C22A00FEA4A6 /* FSMovieTool.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = FSMovieTool;
-		};
-		365AECCB1574010D00083A53 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 36F0298A1573C23100FEA4A6 /* SDTool.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = SDTool;
-		};
-		365AECCD1574011400083A53 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 36F029931573C23D00FEA4A6 /* FSToolTest.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
-			remoteInfo = FSToolTest;
-		};
-		36F029881573C22A00FEA4A6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 36F029811573C22A00FEA4A6 /* FSMovieTool.xcodeproj */;
+			containerPortal = 36A5B4FD157421CC00569973 /* FSMovieTool.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 68DB386A0D63B0C900D018BD;
 			remoteInfo = FSMovieTool;
 		};
-		36F029911573C23100FEA4A6 /* PBXContainerItemProxy */ = {
+		36A5B507157421E900569973 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 36F0298A1573C23100FEA4A6 /* SDTool.xcodeproj */;
+			containerPortal = 36A5B4FD157421CC00569973 /* FSMovieTool.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = FSMovieTool;
+		};
+		36A5B5101574245100569973 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36A5B5091574245000569973 /* SDTool.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 8D5B49B6048680CD000E48DA;
 			remoteInfo = SDTool;
 		};
-		36F029981573C23E00FEA4A6 /* PBXContainerItemProxy */ = {
+		36A5B5121574245900569973 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 36F029931573C23D00FEA4A6 /* FSToolTest.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8D5B49B6048680CD000E48DA;
-			remoteInfo = FSToolTest;
+			containerPortal = 36A5B5091574245000569973 /* SDTool.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = SDTool;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -354,7 +341,8 @@
 			dstPath = Tools;
 			dstSubfolderSpec = 13;
 			files = (
-				365AECDE1574097000083A53 /* SDTool.fstool in Copy Files (Tools) */,
+				36A5B5141574246200569973 /* SDTool.fstool in Copy Files (Tools) */,
+				36A5B506157421DA00569973 /* FSMovieTool.fstool in Copy Files (Tools) */,
 			);
 			name = "Copy Files (Tools)";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -561,13 +549,12 @@
 		364D0ACD157114D700971A37 /* arcsin.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = arcsin.fs; sourceTree = "<group>"; };
 		364D0ACE157114D700971A37 /* arcsinp1.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = arcsinp1.fs; sourceTree = "<group>"; };
 		364D0ACF157114D700971A37 /* exp.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = exp.fs; sourceTree = "<group>"; };
+		36A5B4FD157421CC00569973 /* FSMovieTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FSMovieTool.xcodeproj; path = tools/movietool/FSMovieTool.xcodeproj; sourceTree = "<group>"; };
+		36A5B5091574245000569973 /* SDTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDTool.xcodeproj; path = tools/saddledrop/SDTool.xcodeproj; sourceTree = "<group>"; };
 		36F0293B1571360F00FEA4A6 /* < please name me >.fscolor */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "< please name me >.fscolor"; path = "Colors/< please name me >.fscolor"; sourceTree = "<group>"; };
 		36F0293C1571360F00FEA4A6 /* C13699648.fscolor */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = C13699648.fscolor; path = Colors/C13699648.fscolor; sourceTree = "<group>"; };
 		36F0293D1571360F00FEA4A6 /* C13708784.fscolor */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = C13708784.fscolor; path = Colors/C13708784.fscolor; sourceTree = "<group>"; };
 		36F0293E1571360F00FEA4A6 /* ColorLibrary */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = ColorLibrary; path = Colors/ColorLibrary; sourceTree = "<group>"; };
-		36F029811573C22A00FEA4A6 /* FSMovieTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FSMovieTool.xcodeproj; path = tools/movietool/FSMovieTool.xcodeproj; sourceTree = "<group>"; };
-		36F0298A1573C23100FEA4A6 /* SDTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDTool.xcodeproj; path = tools/saddledrop/SDTool.xcodeproj; sourceTree = "<group>"; };
-		36F029931573C23D00FEA4A6 /* FSToolTest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FSToolTest.xcodeproj; path = tools/emptytool/FSToolTest.xcodeproj; sourceTree = "<group>"; };
 		6802824410AB1A060077048E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/FSDocument.xib; sourceTree = "<group>"; };
 		6802824610AB1A060077048E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		681AF16A0F699B3800E8DE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -938,35 +925,29 @@
 			path = "Transcendental Dynamics";
 			sourceTree = "<group>";
 		};
+		36A5B4FE157421CC00569973 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36A5B505157421CC00569973 /* FSMovieTool.fstool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36A5B50A1574245000569973 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36A5B5111574245100569973 /* SDTool.fstool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		36F029801573C21700FEA4A6 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				36A5B5091574245000569973 /* SDTool.xcodeproj */,
+				36A5B4FD157421CC00569973 /* FSMovieTool.xcodeproj */,
 			);
 			name = Tools;
-			sourceTree = "<group>";
-		};
-		36F029821573C22A00FEA4A6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				36F029891573C22A00FEA4A6 /* FSMovieTool.fstool */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		36F0298B1573C23100FEA4A6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				36F029921573C23100FEA4A6 /* SDTool.fstool */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		36F029941573C23D00FEA4A6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				36F029991573C23E00FEA4A6 /* FSToolTest.fstool */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		681AF15F0F699B3800E8DE1B /* PlugIns */ = {
@@ -982,9 +963,6 @@
 		681AF1600F699B3800E8DE1B /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				36F029931573C23D00FEA4A6 /* FSToolTest.xcodeproj */,
-				36F0298A1573C23100FEA4A6 /* SDTool.xcodeproj */,
-				36F029811573C22A00FEA4A6 /* FSMovieTool.xcodeproj */,
 				681AF1680F699B3800E8DE1B /* FSSnapshotTool.fstool */,
 				681AF16F0F699B3800E8DE1B /* FSTraceTool.fstool */,
 			);
@@ -1137,9 +1115,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				365AECCE1574011400083A53 /* PBXTargetDependency */,
-				365AECCC1574010D00083A53 /* PBXTargetDependency */,
-				365AECCA1574010A00083A53 /* PBXTargetDependency */,
+				36A5B5131574245900569973 /* PBXTargetDependency */,
+				36A5B508157421E900569973 /* PBXTargetDependency */,
 			);
 			name = FractalStream;
 			productInstallPath = "$(HOME)/Applications";
@@ -1168,20 +1145,16 @@
 					ProjectRef = 360A22611573E5B000BF41B2 /* CrashReporter.xcodeproj */;
 				},
 				{
-					ProductGroup = 36F029821573C22A00FEA4A6 /* Products */;
-					ProjectRef = 36F029811573C22A00FEA4A6 /* FSMovieTool.xcodeproj */;
-				},
-				{
-					ProductGroup = 36F029941573C23D00FEA4A6 /* Products */;
-					ProjectRef = 36F029931573C23D00FEA4A6 /* FSToolTest.xcodeproj */;
+					ProductGroup = 36A5B4FE157421CC00569973 /* Products */;
+					ProjectRef = 36A5B4FD157421CC00569973 /* FSMovieTool.xcodeproj */;
 				},
 				{
 					ProductGroup = 360A22541573E5A100BF41B2 /* Products */;
 					ProjectRef = 360A22531573E5A100BF41B2 /* LLVM.xcodeproj */;
 				},
 				{
-					ProductGroup = 36F0298B1573C23100FEA4A6 /* Products */;
-					ProjectRef = 36F0298A1573C23100FEA4A6 /* SDTool.xcodeproj */;
+					ProductGroup = 36A5B50A1574245000569973 /* Products */;
+					ProjectRef = 36A5B5091574245000569973 /* SDTool.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1270,25 +1243,18 @@
 			remoteRef = 360A228D1573E5B100BF41B2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		36F029891573C22A00FEA4A6 /* FSMovieTool.fstool */ = {
+		36A5B505157421CC00569973 /* FSMovieTool.fstool */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = FSMovieTool.fstool;
-			remoteRef = 36F029881573C22A00FEA4A6 /* PBXContainerItemProxy */;
+			remoteRef = 36A5B504157421CC00569973 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		36F029921573C23100FEA4A6 /* SDTool.fstool */ = {
+		36A5B5111574245100569973 /* SDTool.fstool */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = SDTool.fstool;
-			remoteRef = 36F029911573C23100FEA4A6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		36F029991573C23E00FEA4A6 /* FSToolTest.fstool */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = FSToolTest.fstool;
-			remoteRef = 36F029981573C23E00FEA4A6 /* PBXContainerItemProxy */;
+			remoteRef = 36A5B5101574245100569973 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1394,20 +1360,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		365AECCA1574010A00083A53 /* PBXTargetDependency */ = {
+		36A5B508157421E900569973 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FSMovieTool;
-			targetProxy = 365AECC91574010A00083A53 /* PBXContainerItemProxy */;
+			targetProxy = 36A5B507157421E900569973 /* PBXContainerItemProxy */;
 		};
-		365AECCC1574010D00083A53 /* PBXTargetDependency */ = {
+		36A5B5131574245900569973 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SDTool;
-			targetProxy = 365AECCB1574010D00083A53 /* PBXContainerItemProxy */;
-		};
-		365AECCE1574011400083A53 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FSToolTest;
-			targetProxy = 365AECCD1574011400083A53 /* PBXContainerItemProxy */;
+			targetProxy = 36A5B5121574245900569973 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
