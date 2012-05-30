@@ -99,7 +99,7 @@
 }
 
 - (NSColor*) colorForOffset: (float) offset {
-	ENTER
+
 	NSNumber* stop;
 	NSColor *c0, *c1, *c;
 	NSEnumerator* stopEnumerator, *colorEnumerator;
@@ -123,7 +123,7 @@
 	r = [c0 redComponent] * x + [c1 redComponent] * (1.0 - x);
 	g = [c0 greenComponent] * x + [c1 greenComponent] * (1.0 - x);
 	b = [c0 blueComponent] * x + [c1 blueComponent] * (1.0 - x);
-	EXIT
+
 	return [NSColor colorWithCalibratedRed: r green: g blue: b alpha: 1.0];
 }
 
