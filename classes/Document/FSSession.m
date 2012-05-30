@@ -306,7 +306,7 @@
 - (IBAction) goBackward: (id) sender
 {
 	ENTER
-	if(currentNode->parent && (currentNode != root) && (currentNode->parent != root)) [self changeTo: currentNode -> parent];
+	if(currentNode->parent && (currentNode != root)/* && (currentNode->parent != root)*/) [self changeTo: currentNode -> parent];
 //	NSLog(@"going backward\n");
 	EXIT
 }
