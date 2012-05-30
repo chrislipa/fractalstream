@@ -11,7 +11,7 @@
 @implementation FSGradient 
 
 - (id) initWithR: (float) r G: (float) g B: (float) b {
-	ENTER
+
 	self = [super init];
 	[self resetToColor: [NSColor colorWithCalibratedRed: r*0.5 green: g*0.5 blue: b*0.5 alpha: 1.0]];
 	[self addColor: [NSColor colorWithCalibratedRed: r + 0.5*g green: g+0.4*b blue: b+0.2*r alpha: 1.0] atStop: 0.5];
@@ -20,12 +20,12 @@
 	subdivisions = 16;
 	cacheDirty = YES;
 	cache = malloc(subdivisions * 3 * sizeof(float));
-	EXIT
+
 	return self;
 }
 
 - (id) init {
-	ENTER
+
  	self = [super init];
 	[self resetToColor: [NSColor colorWithCalibratedRed: 1.0 green: 1.0 blue: 1.0 alpha: 1.0]];
 	name = [[NSString stringWithString: @"< please name me >"] retain];
@@ -34,7 +34,7 @@
 	subdivisions = 16;
 	cacheDirty = YES;
 	cache = malloc(subdivisions * 3 * sizeof(float));
-	EXIT
+
 	return self;
 }
 
@@ -49,7 +49,7 @@
 }
 
 - (id) initWithCoder: (NSCoder*) coder {
-	ENTER
+
 	self = [super init];
 	name = [[coder decodeObjectForKey: @"name"] retain];
 	stopArray = [[coder decodeObjectForKey: @"stops"] retain];
@@ -59,19 +59,19 @@
 	subdivisions = [[coder decodeObjectForKey: @"subdivisions"] intValue];
 	cacheDirty = YES;
 	cache = malloc(subdivisions * 3 * sizeof(float));
-	EXIT
+
 	return self;
 }
 
 - (void) encodeWithCoder: (NSCoder*) coder {
-	ENTER
+
 	[coder encodeObject: name forKey: @"name"];
 	[coder encodeObject: stopArray forKey: @"stops"];
 	[coder encodeObject: colorArray forKey: @"colors"];
 	[coder encodeObject: [NSNumber numberWithInt: smoothing] forKey: @"isSmooth"];
 	[coder encodeObject: [NSNumber numberWithBool: linear] forKey: @"isLinear"];
 	[coder encodeObject: [NSNumber numberWithInt: subdivisions] forKey: @"subdivisions"];
-	EXIT
+
 	return;
 }
 
@@ -85,7 +85,7 @@
 
 
 - (void) resetToColor: (NSColor*) c {
-	ENTER
+
 	NSColor* cd;
 	cd = [NSColor colorWithCalibratedRed: [c redComponent]
 		green: [c greenComponent]
@@ -95,7 +95,7 @@
 	stopArray = [[NSMutableArray arrayWithObjects: [NSNumber numberWithFloat: 0.0], [NSNumber numberWithFloat: 1.0], nil] retain];
 	colorArray = [[NSMutableArray arrayWithObjects: cd, cd, nil] retain];
 	cacheDirty = YES;
-	EXIT
+
 }
 
 - (NSColor*) colorForOffset: (float) offset {
