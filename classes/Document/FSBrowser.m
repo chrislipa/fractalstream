@@ -345,7 +345,7 @@
 	id n;
 	double* d;
 	int i;
-	if([variableNames count] == 0) { [theViewer setDefaultsTo: NULL count: 0]; return; }
+	if([variableNames count] == 0) { [theViewer setDefaultsTo: NULL count: 0]; EXIT; return; }
 	eE = [realPart objectEnumerator];
 	iE = [imagPart objectEnumerator];
 	d = malloc([variableNames count] * 2 * sizeof(double));
