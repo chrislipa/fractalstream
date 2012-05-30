@@ -67,6 +67,10 @@ static NSBundle* ourBundle = nil;
 
 /* When you receive this message, you should unpackage nib files or other freeze-dried data */
 - (void) unfreeze {
+	
+}
+
+- (void) unfreezeInternal {
 	if([NSBundle loadNibNamed: @"FSMovieTool" owner: self] == NO) NSLog(@"FSMovieTool: nib did not load!!!\n");
 	isFirstPoint = YES; currentPoint = 0; pathLength = 0.0;
 	NSLog(@"unfreeze: toolWindow is %@, wheel window is %@\n", toolWindow, [wheel window]);
@@ -92,6 +96,7 @@ static NSBundle* ourBundle = nil;
 
 /* The plugin gets this message when the user has switched to your tool. */
 - (void) activate {
+	[self unfreezeInternal];
 	NSLog(@"FSMovieTool got an activate message, the panel is %@, wheel window is %@ :)\n", toolWindow, [wheel window]);
 	/* Get data from the main view */
 	[owner getViewerDataTo: &data];

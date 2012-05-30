@@ -53,9 +53,11 @@
 
 - (IBAction) hidePanels: (id) sender {
 	ENTER
+	EXIT
 }
 
 - (IBAction) revealPanels: (id) sender {
+	ENTER
 	EXIT
 }
 

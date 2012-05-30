@@ -47,8 +47,13 @@
 		360A230D1573EC6D00BF41B2 /* LLVMJIT.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 360A23091573EC6D00BF41B2 /* LLVMJIT.o */; };
 		360A230E1573EC6D00BF41B2 /* LLVMPowerPCAsmPrinter.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 360A230A1573EC6D00BF41B2 /* LLVMPowerPCAsmPrinter.o */; };
 		360A230F1573EC6D00BF41B2 /* LLVMPowerPCCodeGen.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 360A230B1573EC6D00BF41B2 /* LLVMPowerPCCodeGen.o */; };
-		36A5B506157421DA00569973 /* FSMovieTool.fstool in Copy Files (Tools) */ = {isa = PBXBuildFile; fileRef = 36A5B505157421CC00569973 /* FSMovieTool.fstool */; };
+		36118EB815759D18005D2C05 /* FSTraceTool.fstool in Copy Files (Tools) */ = {isa = PBXBuildFile; fileRef = 36D36ADA15759C0E00F78D74 /* FSTraceTool.fstool */; };
+		36118EB915759D18005D2C05 /* FSPreviewTool.fstool in Copy Files (Tools) */ = {isa = PBXBuildFile; fileRef = 36D36AC515759BC300F78D74 /* FSPreviewTool.fstool */; };
+		364EDF0D157594E200E89B5B /* FSDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364EDF0B157594E200E89B5B /* FSDocument.xib */; };
+		364EDF0E157594E200E89B5B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364EDF0C157594E200E89B5B /* MainMenu.xib */; };
 		36A5B5141574246200569973 /* SDTool.fstool in Copy Files (Tools) */ = {isa = PBXBuildFile; fileRef = 36A5B5111574245100569973 /* SDTool.fstool */; };
+		36C1563A1575A6C30090EC48 /* FSSnapshotTool.bundle in Copy Files (Tools) */ = {isa = PBXBuildFile; fileRef = 36118EB315759C4C005D2C05 /* FSSnapshotTool.bundle */; };
+		36D36AB31575980700F78D74 /* FSMovieTool.fstool in Copy Files (Tools) */ = {isa = PBXBuildFile; fileRef = 36A5B505157421CC00569973 /* FSMovieTool.fstool */; };
 		36F02924157133A600FEA4A6 /* ab.fs in Copy Files (Quadratic Maps) */ = {isa = PBXBuildFile; fileRef = 364D0AC1157114D700971A37 /* ab.fs */; };
 		36F02925157133A600FEA4A6 /* boundary.fs in Copy Files (Quadratic Maps) */ = {isa = PBXBuildFile; fileRef = 364D0AC2157114D700971A37 /* boundary.fs */; };
 		36F02926157133A600FEA4A6 /* ext.fs in Copy Files (Quadratic Maps) */ = {isa = PBXBuildFile; fileRef = 364D0AC3157114D700971A37 /* ext.fs */; };
@@ -72,25 +77,16 @@
 		36F029381571352900FEA4A6 /* except.fs in Copy Files (Several Complex Variables) */ = {isa = PBXBuildFile; fileRef = 364D0ACB157114D700971A37 /* except.fs */; };
 		36F029391571353600FEA4A6 /* mathieu.fs in Copy Files (Other) */ = {isa = PBXBuildFile; fileRef = 364D0ABE157114D700971A37 /* mathieu.fs */; };
 		36F0293A1571353600FEA4A6 /* torus.fs in Copy Files (Other) */ = {isa = PBXBuildFile; fileRef = 364D0ABF157114D700971A37 /* torus.fs */; };
-		36F0293F1571360F00FEA4A6 /* < please name me >.fscolor in Resources */ = {isa = PBXBuildFile; fileRef = 36F0293B1571360F00FEA4A6 /* < please name me >.fscolor */; };
-		36F029401571360F00FEA4A6 /* C13699648.fscolor in Resources */ = {isa = PBXBuildFile; fileRef = 36F0293C1571360F00FEA4A6 /* C13699648.fscolor */; };
-		36F029411571360F00FEA4A6 /* C13708784.fscolor in Resources */ = {isa = PBXBuildFile; fileRef = 36F0293D1571360F00FEA4A6 /* C13708784.fscolor */; };
 		36F029421571360F00FEA4A6 /* ColorLibrary in Resources */ = {isa = PBXBuildFile; fileRef = 36F0293E1571360F00FEA4A6 /* ColorLibrary */; };
 		36F029431571362500FEA4A6 /* < please name me >.fscolor in Copy Files (Colors) */ = {isa = PBXBuildFile; fileRef = 36F0293B1571360F00FEA4A6 /* < please name me >.fscolor */; };
 		36F029441571362600FEA4A6 /* C13699648.fscolor in Copy Files (Colors) */ = {isa = PBXBuildFile; fileRef = 36F0293C1571360F00FEA4A6 /* C13699648.fscolor */; };
 		36F029451571362600FEA4A6 /* C13708784.fscolor in Copy Files (Colors) */ = {isa = PBXBuildFile; fileRef = 36F0293D1571360F00FEA4A6 /* C13708784.fscolor */; };
 		36F029461571362600FEA4A6 /* ColorLibrary in Copy Files (Colors) */ = {isa = PBXBuildFile; fileRef = 36F0293E1571360F00FEA4A6 /* ColorLibrary */; };
-		6802824710AB1A060077048E /* FSDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6802824310AB1A060077048E /* FSDocument.xib */; };
-		6802824810AB1A060077048E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6802824510AB1A060077048E /* MainMenu.xib */; };
-		683942D010B39DEB00A6A993 /* FSDocument-windows.xib in Resources */ = {isa = PBXBuildFile; fileRef = 683942CC10B39DEB00A6A993 /* FSDocument-windows.xib */; };
-		683942D110B39DEB00A6A993 /* MainMenu-windows.xib in Resources */ = {isa = PBXBuildFile; fileRef = 683942CE10B39DEB00A6A993 /* MainMenu-windows.xib */; };
 		683CAB330FD787500071EEAB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
 		683CAB340FD787500071EEAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
 		683CAB570FD787500071EEAB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
 		688F109A0FD9BED700FAFC60 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */; };
 		688F109B0FD9BED700FAFC60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */; };
-		68A3108C10B3B79D0019C1F8 /* FSDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6802824310AB1A060077048E /* FSDocument.xib */; };
-		68A3108D10B3B79D0019C1F8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6802824510AB1A060077048E /* MainMenu.xib */; };
 		68A3108E10B3B79D0019C1F8 /* FSDocument-windows.xib in Resources */ = {isa = PBXBuildFile; fileRef = 683942CC10B39DEB00A6A993 /* FSDocument-windows.xib */; };
 		68A3108F10B3B79D0019C1F8 /* MainMenu-windows.xib in Resources */ = {isa = PBXBuildFile; fileRef = 683942CE10B39DEB00A6A993 /* MainMenu-windows.xib */; };
 		68A3109010B3B79D0019C1F8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D15AC360486D014006FF6A4 /* Info.plist */; };
@@ -196,6 +192,13 @@
 			remoteGlobalIDString = 050DE24D0F61B80B00152ED3;
 			remoteInfo = "Fuzz Testing";
 		};
+		36118EB215759C4C005D2C05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36118EAB15759C4C005D2C05 /* FSSnapshot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D5B49B6048680CD000E48DA;
+			remoteInfo = FSSnapshotTool;
+		};
 		36A5B504157421CC00569973 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 36A5B4FD157421CC00569973 /* FSMovieTool.xcodeproj */;
@@ -223,6 +226,41 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = SDTool;
+		};
+		36C156341575A69C0090EC48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36118EAB15759C4C005D2C05 /* FSSnapshot.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 36C155E01575A5E20090EC48;
+			remoteInfo = FSSnapshotTool;
+		};
+		36C156361575A6A00090EC48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36D36ABD15759BC200F78D74 /* FSPreviewTool.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = FSPreviewTool;
+		};
+		36C156381575A6A60090EC48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36D36AD215759C0D00F78D74 /* FSTraceTool.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = FSTraceTool;
+		};
+		36D36AC415759BC300F78D74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36D36ABD15759BC200F78D74 /* FSPreviewTool.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D5B49B6048680CD000E48DA;
+			remoteInfo = FSPreviewTool;
+		};
+		36D36AD915759C0E00F78D74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36D36AD215759C0D00F78D74 /* FSTraceTool.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D5B49B6048680CD000E48DA;
+			remoteInfo = FSTraceTool;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -341,8 +379,11 @@
 			dstPath = Tools;
 			dstSubfolderSpec = 13;
 			files = (
+				36C1563A1575A6C30090EC48 /* FSSnapshotTool.bundle in Copy Files (Tools) */,
+				36118EB815759D18005D2C05 /* FSTraceTool.fstool in Copy Files (Tools) */,
+				36118EB915759D18005D2C05 /* FSPreviewTool.fstool in Copy Files (Tools) */,
 				36A5B5141574246200569973 /* SDTool.fstool in Copy Files (Tools) */,
-				36A5B506157421DA00569973 /* FSMovieTool.fstool in Copy Files (Tools) */,
+				36D36AB31575980700F78D74 /* FSMovieTool.fstool in Copy Files (Tools) */,
 			);
 			name = "Copy Files (Tools)";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,6 +567,7 @@
 		360A23091573EC6D00BF41B2 /* LLVMJIT.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = LLVMJIT.o; path = "external/llvm-2.5/Release/lib/LLVMJIT.o"; sourceTree = "<group>"; };
 		360A230A1573EC6D00BF41B2 /* LLVMPowerPCAsmPrinter.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = LLVMPowerPCAsmPrinter.o; path = "external/llvm-2.5/Release/lib/LLVMPowerPCAsmPrinter.o"; sourceTree = "<group>"; };
 		360A230B1573EC6D00BF41B2 /* LLVMPowerPCCodeGen.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = LLVMPowerPCCodeGen.o; path = "external/llvm-2.5/Release/lib/LLVMPowerPCCodeGen.o"; sourceTree = "<group>"; };
+		36118EAB15759C4C005D2C05 /* FSSnapshot.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FSSnapshot.xcodeproj; path = tools/FSSnapshot/FSSnapshot.xcodeproj; sourceTree = "<group>"; };
 		364D0AB3157114D700971A37 /* nqsle.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = nqsle.fs; sourceTree = "<group>"; };
 		364D0AB4157114D700971A37 /* pend.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = pend.fs; sourceTree = "<group>"; };
 		364D0AB6157114D700971A37 /* henona.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = henona.fs; sourceTree = "<group>"; };
@@ -549,14 +591,16 @@
 		364D0ACD157114D700971A37 /* arcsin.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = arcsin.fs; sourceTree = "<group>"; };
 		364D0ACE157114D700971A37 /* arcsinp1.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = arcsinp1.fs; sourceTree = "<group>"; };
 		364D0ACF157114D700971A37 /* exp.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = exp.fs; sourceTree = "<group>"; };
+		364EDF0B157594E200E89B5B /* FSDocument.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FSDocument.xib; sourceTree = "<group>"; };
+		364EDF0C157594E200E89B5B /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		36A5B4FD157421CC00569973 /* FSMovieTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FSMovieTool.xcodeproj; path = tools/movietool/FSMovieTool.xcodeproj; sourceTree = "<group>"; };
 		36A5B5091574245000569973 /* SDTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDTool.xcodeproj; path = tools/saddledrop/SDTool.xcodeproj; sourceTree = "<group>"; };
+		36D36ABD15759BC200F78D74 /* FSPreviewTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FSPreviewTool.xcodeproj; path = tools/FSPreviewTool/FSPreviewTool.xcodeproj; sourceTree = "<group>"; };
+		36D36AD215759C0D00F78D74 /* FSTraceTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FSTraceTool.xcodeproj; path = tools/FSTraceTool/FSTraceTool.xcodeproj; sourceTree = "<group>"; };
 		36F0293B1571360F00FEA4A6 /* < please name me >.fscolor */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "< please name me >.fscolor"; path = "Colors/< please name me >.fscolor"; sourceTree = "<group>"; };
 		36F0293C1571360F00FEA4A6 /* C13699648.fscolor */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = C13699648.fscolor; path = Colors/C13699648.fscolor; sourceTree = "<group>"; };
 		36F0293D1571360F00FEA4A6 /* C13708784.fscolor */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = C13708784.fscolor; path = Colors/C13708784.fscolor; sourceTree = "<group>"; };
 		36F0293E1571360F00FEA4A6 /* ColorLibrary */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = ColorLibrary; path = Colors/ColorLibrary; sourceTree = "<group>"; };
-		6802824410AB1A060077048E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/FSDocument.xib; sourceTree = "<group>"; };
-		6802824610AB1A060077048E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		681AF16A0F699B3800E8DE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		681AF16C0F699B3800E8DE1B /* FSSnapshotTool */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = FSSnapshotTool; sourceTree = "<group>"; };
 		681AF16E0F699B3800E8DE1B /* FSSnapshotTool.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = FSSnapshotTool.nib; sourceTree = "<group>"; };
@@ -643,9 +687,9 @@
 		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				364EDF0B157594E200E89B5B /* FSDocument.xib */,
+				364EDF0C157594E200E89B5B /* MainMenu.xib */,
 				360A22F91573E5F300BF41B2 /* images */,
-				6802824310AB1A060077048E /* FSDocument.xib */,
-				6802824510AB1A060077048E /* MainMenu.xib */,
 				683942CC10B39DEB00A6A993 /* FSDocument-windows.xib */,
 				683942CE10B39DEB00A6A993 /* MainMenu-windows.xib */,
 				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
@@ -839,6 +883,14 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		36118EAC15759C4C005D2C05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36118EB315759C4C005D2C05 /* FSSnapshotTool.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		364D0AB1157114D700971A37 /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
@@ -941,9 +993,28 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		36D36ABE15759BC200F78D74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36D36AC515759BC300F78D74 /* FSPreviewTool.fstool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36D36AD315759C0D00F78D74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36D36ADA15759C0E00F78D74 /* FSTraceTool.fstool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		36F029801573C21700FEA4A6 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				36118EAB15759C4C005D2C05 /* FSSnapshot.xcodeproj */,
+				36D36AD215759C0D00F78D74 /* FSTraceTool.xcodeproj */,
+				36D36ABD15759BC200F78D74 /* FSPreviewTool.xcodeproj */,
 				36A5B5091574245000569973 /* SDTool.xcodeproj */,
 				36A5B4FD157421CC00569973 /* FSMovieTool.xcodeproj */,
 			);
@@ -1115,6 +1186,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				36C156391575A6A60090EC48 /* PBXTargetDependency */,
+				36C156371575A6A00090EC48 /* PBXTargetDependency */,
+				36C156351575A69C0090EC48 /* PBXTargetDependency */,
 				36A5B5131574245900569973 /* PBXTargetDependency */,
 				36A5B508157421E900569973 /* PBXTargetDependency */,
 			);
@@ -1150,6 +1224,18 @@
 				{
 					ProductGroup = 36A5B4FE157421CC00569973 /* Products */;
 					ProjectRef = 36A5B4FD157421CC00569973 /* FSMovieTool.xcodeproj */;
+				},
+				{
+					ProductGroup = 36D36ABE15759BC200F78D74 /* Products */;
+					ProjectRef = 36D36ABD15759BC200F78D74 /* FSPreviewTool.xcodeproj */;
+				},
+				{
+					ProductGroup = 36118EAC15759C4C005D2C05 /* Products */;
+					ProjectRef = 36118EAB15759C4C005D2C05 /* FSSnapshot.xcodeproj */;
+				},
+				{
+					ProductGroup = 36D36AD315759C0D00F78D74 /* Products */;
+					ProjectRef = 36D36AD215759C0D00F78D74 /* FSTraceTool.xcodeproj */;
 				},
 				{
 					ProductGroup = 360A22541573E5A100BF41B2 /* Products */;
@@ -1246,6 +1332,13 @@
 			remoteRef = 360A228D1573E5B100BF41B2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		36118EB315759C4C005D2C05 /* FSSnapshotTool.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FSSnapshotTool.bundle;
+			remoteRef = 36118EB215759C4C005D2C05 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		36A5B505157421CC00569973 /* FSMovieTool.fstool */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
@@ -1260,6 +1353,20 @@
 			remoteRef = 36A5B5101574245100569973 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		36D36AC515759BC300F78D74 /* FSPreviewTool.fstool */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FSPreviewTool.fstool;
+			remoteRef = 36D36AC415759BC300F78D74 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		36D36ADA15759C0E00F78D74 /* FSTraceTool.fstool */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FSTraceTool.fstool;
+			remoteRef = 36D36AD915759C0E00F78D74 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -1267,8 +1374,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68A3108C10B3B79D0019C1F8 /* FSDocument.xib in Resources */,
-				68A3108D10B3B79D0019C1F8 /* MainMenu.xib in Resources */,
 				68A3108E10B3B79D0019C1F8 /* FSDocument-windows.xib in Resources */,
 				68A3108F10B3B79D0019C1F8 /* MainMenu-windows.xib in Resources */,
 				68A3109010B3B79D0019C1F8 /* Info.plist in Resources */,
@@ -1281,19 +1386,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6802824710AB1A060077048E /* FSDocument.xib in Resources */,
-				6802824810AB1A060077048E /* MainMenu.xib in Resources */,
-				683942D010B39DEB00A6A993 /* FSDocument-windows.xib in Resources */,
-				683942D110B39DEB00A6A993 /* MainMenu-windows.xib in Resources */,
 				8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */,
 				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
-				36F0293F1571360F00FEA4A6 /* < please name me >.fscolor in Resources */,
-				36F029401571360F00FEA4A6 /* C13699648.fscolor in Resources */,
-				36F029411571360F00FEA4A6 /* C13708784.fscolor in Resources */,
 				36F029421571360F00FEA4A6 /* ColorLibrary in Resources */,
 				360A22FB1573E5F300BF41B2 /* ZoomIn.tiff in Resources */,
 				360A22FE1573E61A00BF41B2 /* julia.icns in Resources */,
 				360A22FF1573E61A00BF41B2 /* mandelbrot.icns in Resources */,
+				364EDF0D157594E200E89B5B /* FSDocument.xib in Resources */,
+				364EDF0E157594E200E89B5B /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1373,6 +1473,21 @@
 			name = SDTool;
 			targetProxy = 36A5B5121574245900569973 /* PBXContainerItemProxy */;
 		};
+		36C156351575A69C0090EC48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FSSnapshotTool;
+			targetProxy = 36C156341575A69C0090EC48 /* PBXContainerItemProxy */;
+		};
+		36C156371575A6A00090EC48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FSPreviewTool;
+			targetProxy = 36C156361575A6A00090EC48 /* PBXContainerItemProxy */;
+		};
+		36C156391575A6A60090EC48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FSTraceTool;
+			targetProxy = 36C156381575A6A60090EC48 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -1390,22 +1505,6 @@
 				2A37F4BAFDCFA73011CA2CEA /* English */,
 			);
 			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		6802824310AB1A060077048E /* FSDocument.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6802824410AB1A060077048E /* English */,
-			);
-			name = FSDocument.xib;
-			sourceTree = "<group>";
-		};
-		6802824510AB1A060077048E /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6802824610AB1A060077048E /* English */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 		683942CC10B39DEB00A6A993 /* FSDocument-windows.xib */ = {
