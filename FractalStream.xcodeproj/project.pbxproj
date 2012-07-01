@@ -199,6 +199,13 @@
 			remoteGlobalIDString = 8D5B49B6048680CD000E48DA;
 			remoteInfo = FSSnapshotTool;
 		};
+		36947DA815A005440020ABEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 360A22531573E5A100BF41B2 /* LLVM.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D28A88AD04BDD90700651E21;
+			remoteInfo = LLVM;
+		};
 		36A5B504157421CC00569973 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 36A5B4FD157421CC00569973 /* FSMovieTool.xcodeproj */;
@@ -1186,6 +1193,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				36947DA915A005440020ABEA /* PBXTargetDependency */,
 				36C156391575A6A60090EC48 /* PBXTargetDependency */,
 				36C156371575A6A00090EC48 /* PBXTargetDependency */,
 				36C156351575A69C0090EC48 /* PBXTargetDependency */,
@@ -1463,6 +1471,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		36947DA915A005440020ABEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LLVM;
+			targetProxy = 36947DA815A005440020ABEA /* PBXContainerItemProxy */;
+		};
 		36A5B508157421E900569973 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FSMovieTool;
