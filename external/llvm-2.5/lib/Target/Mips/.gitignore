@@ -1,9 +1,0 @@
-/MipsGenAsmWriter.inc
-/MipsGenCallingConv.inc
-/MipsGenDAGISel.inc
-/MipsGenInstrInfo.inc
-/MipsGenInstrNames.inc
-/MipsGenRegisterInfo.h.inc
-/MipsGenRegisterInfo.inc
-/MipsGenRegisterNames.inc
-/MipsGenSubtarget.inc

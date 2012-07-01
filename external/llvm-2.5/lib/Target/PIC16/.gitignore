@@ -1,9 +1,0 @@
-/PIC16GenAsmWriter.inc
-/PIC16GenCallingConv.inc
-/PIC16GenDAGISel.inc
-/PIC16GenInstrInfo.inc
-/PIC16GenInstrNames.inc
-/PIC16GenRegisterInfo.h.inc
-/PIC16GenRegisterInfo.inc
-/PIC16GenRegisterNames.inc
-/PIC16GenSubtarget.inc

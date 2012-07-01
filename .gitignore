@@ -4,3 +4,4 @@
 xcuserdata
 project.xcworkspace
 tools/*/build/*
+/build/
