@@ -106,7 +106,7 @@ void* DynamicLibrary::SearchForAddressOfSymbol(const char* symbolName) {
     EXPLICIT_SYMBOL(__ashrdi3);
     EXPLICIT_SYMBOL(__cmpdi2);
     EXPLICIT_SYMBOL(__divdi3);
-    EXPLICIT_SYMBOL(__eprintf);
+   
     EXPLICIT_SYMBOL(__fixdfdi);
     EXPLICIT_SYMBOL(__fixsfdi);
     EXPLICIT_SYMBOL(__fixunsdfdi);

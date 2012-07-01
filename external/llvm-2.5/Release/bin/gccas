@@ -19,7 +19,7 @@
 ##===----------------------------------------------------------------------===##
 #
 echo "gccas: This tool is deprecated, please use opt" 1>&2
-TOOLDIR=/Users/lipa/Downloads/llvm-2.5/Release/bin
+TOOLDIR=/Users/lipa/fractalstream/external/llvm-2.5/Release/bin
 OPTOPTS="-std-compile-opts -f"
 ASOPTS=""
 lastwasdasho=0
