@@ -1,0 +1,13 @@
+/.dir
+/gtest-death-test.d
+/gtest-death-test.o
+/gtest-filepath.d
+/gtest-filepath.o
+/gtest-port.d
+/gtest-port.o
+/gtest-test-part.d
+/gtest-test-part.o
+/gtest-typed-test.d
+/gtest-typed-test.o
+/gtest.d
+/gtest.o

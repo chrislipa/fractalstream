@@ -1,0 +1,7 @@
+/.dir
+/CLIDebugger.d
+/CLIDebugger.o
+/Commands.d
+/Commands.o
+/llvm-db.d
+/llvm-db.o

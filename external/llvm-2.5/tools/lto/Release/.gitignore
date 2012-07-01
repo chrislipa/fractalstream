@@ -1,0 +1,10 @@
+/.dir
+/LTOCodeGenerator.d
+/LTOCodeGenerator.lo
+/LTOCodeGenerator.o
+/LTOModule.d
+/LTOModule.lo
+/LTOModule.o
+/lto.d
+/lto.lo
+/lto.o

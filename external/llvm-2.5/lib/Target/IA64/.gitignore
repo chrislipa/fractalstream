@@ -1,0 +1,7 @@
+/IA64GenAsmWriter.inc
+/IA64GenDAGISel.inc
+/IA64GenInstrInfo.inc
+/IA64GenInstrNames.inc
+/IA64GenRegisterInfo.h.inc
+/IA64GenRegisterInfo.inc
+/IA64GenRegisterNames.inc

@@ -1,0 +1,9 @@
+/ARMGenAsmWriter.inc
+/ARMGenCodeEmitter.inc
+/ARMGenDAGISel.inc
+/ARMGenInstrInfo.inc
+/ARMGenInstrNames.inc
+/ARMGenRegisterInfo.h.inc
+/ARMGenRegisterInfo.inc
+/ARMGenRegisterNames.inc
+/ARMGenSubtarget.inc

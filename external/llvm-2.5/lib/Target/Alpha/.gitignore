@@ -1,0 +1,9 @@
+/AlphaGenAsmWriter.inc
+/AlphaGenCodeEmitter.inc
+/AlphaGenDAGISel.inc
+/AlphaGenInstrInfo.inc
+/AlphaGenInstrNames.inc
+/AlphaGenRegisterInfo.h.inc
+/AlphaGenRegisterInfo.inc
+/AlphaGenRegisterNames.inc
+/AlphaGenSubtarget.inc

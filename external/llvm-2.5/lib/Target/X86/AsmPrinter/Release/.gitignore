@@ -1,0 +1,7 @@
+/.dir
+/X86ATTAsmPrinter.d
+/X86ATTAsmPrinter.o
+/X86AsmPrinter.d
+/X86AsmPrinter.o
+/X86IntelAsmPrinter.d
+/X86IntelAsmPrinter.o

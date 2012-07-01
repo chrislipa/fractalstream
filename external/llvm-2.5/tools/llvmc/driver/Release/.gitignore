@@ -1,0 +1,11 @@
+/.dir
+/Action.d
+/Action.o
+/CompilationGraph.d
+/CompilationGraph.o
+/Plugin.d
+/Plugin.o
+/Tool.d
+/Tool.o
+/llvmc.d
+/llvmc.o
