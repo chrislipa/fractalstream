@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36DE216D15A18F23002A01AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36DE216C15A18F23002A01AB /* Foundation.framework */; };
 		6837DB5C0CEA9C4300EC448F /* SDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6837DB5B0CEA9C4300EC448F /* SDTool.m */; };
 		6837DB640CEA9C4B00EC448F /* SDTool.nib in Resources */ = {isa = PBXBuildFile; fileRef = 6837DB630CEA9C4B00EC448F /* SDTool.nib */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
@@ -19,6 +20,7 @@
 		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		32DBCF630370AF2F00C91783 /* SDTool_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTool_Prefix.pch; sourceTree = "<group>"; };
+		36DE216C15A18F23002A01AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6837DB5A0CEA9C4300EC448F /* SDTool.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SDTool.h; sourceTree = "<group>"; };
 		6837DB5B0CEA9C4300EC448F /* SDTool.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SDTool.m; sourceTree = "<group>"; };
 		6837DB630CEA9C4B00EC448F /* SDTool.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = SDTool.nib; sourceTree = "<group>"; };
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36DE216D15A18F23002A01AB /* Foundation.framework in Frameworks */,
 				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +50,7 @@
 		089C166AFE841209C02AAC07 /* FSTraceTool */ = {
 			isa = PBXGroup;
 			children = (
+				36DE216C15A18F23002A01AB /* Foundation.framework */,
 				08FB77AFFE84173DC02AAC07 /* Classes */,
 				32C88E010371C26100C91783 /* Other Sources */,
 				089C167CFE841241C02AAC07 /* Resources */,

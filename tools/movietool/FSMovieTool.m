@@ -7,6 +7,7 @@
 //
 
 #import "FSMovieTool.h"
+#import "FSViewer.h"
 
 static NSBundle* ourBundle = nil;
 
@@ -161,9 +162,9 @@ static NSBundle* ourBundle = nil;
 	NSEnumerator* frameEnum;
 	NSImage* pic;
 	NSString* tmp;
-	NSDictionary* frameAttr, *movieAttr;
+	NSDictionary* frameAttr/*, *movieAttr*/;
 	QTTime frameLength;
-	QTDataReference* ref;
+	//QTDataReference* ref;
 	double a,b;
 	
 	madeMovie = NO;
@@ -231,7 +232,8 @@ static NSBundle* ourBundle = nil;
 			[owner setViewerData: &data];
 		}
 		else {
-			NSInvocation* invoc; void* nilptr[1];
+			//NSInvocation* invoc;
+			void* nilptr[1];
 			nilptr[0] = nil;
 			[owner setRenderCompletedMessage: @selector(nextFrame) forObject: nil];
 			[owner setViewerData: &savedData];
@@ -322,7 +324,8 @@ static NSBundle* ourBundle = nil;
 		savePanel = [NSSavePanel savePanel];
 		[savePanel setRequiredFileType: @"mov"];
 		if([savePanel runModal] == NSFileHandlingPanelOKButton) {
-			filename = [savePanel filename];
+
+			filename = [[savePanel URL] path];
 			if(useCompression) {
 //				NSLog(@"creating movie at %@\n", filename);
 				[movie writeToFile: filename withAttributes:

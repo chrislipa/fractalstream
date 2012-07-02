@@ -422,7 +422,9 @@
 	[self setNeedsDisplay: YES];
 }
 
-- (void) setRenderCompletedMessage: (SEL) message forObject: (id) obj { renderingFinished = message; renderingFinishedObject = obj; }
+- (void) setRenderCompletedMessage: (SEL) message forObject: (id) obj {
+	renderingFinished = message; renderingFinishedObject = obj; 
+}
 
 - (void) setDefaultsTo: (double*) def count: (int) n {
 	int i;
@@ -721,9 +723,9 @@
 - (void) zoomFrom: (double*) start to: (double*) end scalingFrom: (double) startSize to: (double) endSize {
 	double t[2];
 	NSPoint p, q;
-	int height, width;
-	int i, j, k, s;
-	float x, y, dx, dy, tw, th, zoom;
+	//int height, width;
+	//int i, j, k, s;
+	float /*x, y, dx, dy, tw, th,*/ zoom;
 	NSRect rect;
 	NSImage* backgroundCopy;
 

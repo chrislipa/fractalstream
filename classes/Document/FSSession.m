@@ -360,7 +360,7 @@
 	[historyView reloadItem: currentNode -> parent reloadChildren: YES];
 	[historyView expandItem: currentNode -> parent];
 	EXIT
-	return child;
+	return [child autorelease];
 }
 
 - (FSSessionNode*) addChildNodeWithLocation: (double*) box andProgram: (int) program
@@ -380,7 +380,7 @@
 	[historyView reloadItem: currentNode -> parent reloadChildren: YES];
 	[historyView expandItem: currentNode -> parent];
 	EXIT
-	return child;
+	return [child autorelease];
 }
 
 - (FSSessionNode*) addChildNodeWithScale: (double) scale X: (double) x Y: (double) y flags: (int) flag
@@ -398,7 +398,7 @@
 	[historyView reloadItem: currentNode -> parent reloadChildren: YES];
 	[historyView expandItem: currentNode -> parent];
 	EXIT
-	return child;
+	return [child autorelease];
 }
 
 - (BOOL) outlineView: (NSOutlineView*) outlineView isItemExpandable: (FSSessionNode*) item

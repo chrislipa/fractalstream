@@ -209,28 +209,28 @@ int emitSubtreeFrom(int node, FSEParseNode* tree, FILE* fp) {
 							rhs = emitSubtreeFrom(tree[tree[node].firstChild].nextSibling, tree, fp);
 							fprintf(fp, "/* node = %i, firstChild = %i, secondChild = %i */\n",
 								node, tree[node].firstChild, tree[tree[node].firstChild].nextSibling);
-							out = tree[node].auxi[0];
+							//out = tree[node].auxi[0];
 							/*** hack ***/ out = node;
 							fprintf(fp, "x[%i] = x[%i] + x[%i];\n", out, lhs, rhs);
 							break;
 						case FSE_Sub:
 							lhs = emitSubtreeFrom(tree[node].firstChild, tree, fp);
 							rhs = emitSubtreeFrom(tree[tree[node].firstChild].nextSibling, tree, fp);
-							out = tree[node].auxi[0];
+							//out = tree[node].auxi[0];
 							/*** hack ***/ out = node;
 							fprintf(fp, "x[%i] = x[%i] - x[%i];\n", out, lhs, rhs);
 							break;
 						case FSE_Mul:
 							lhs = emitSubtreeFrom(tree[node].firstChild, tree, fp);
 							rhs = emitSubtreeFrom(tree[tree[node].firstChild].nextSibling, tree, fp);
-							out = tree[node].auxi[0];
+							//out = tree[node].auxi[0];
 							/*** hack ***/ out = node;
 							fprintf(fp, "x[%i] = x[%i] * x[%i];\n", out, lhs, rhs);
 							break;
 						case FSE_Div:
 							lhs = emitSubtreeFrom(tree[node].firstChild, tree, fp);
 							rhs = emitSubtreeFrom(tree[tree[node].firstChild].nextSibling, tree, fp);
-							out = tree[node].auxi[0];
+							//out = tree[node].auxi[0];
 							/*** hack ***/ out = node;
 							fprintf(fp, "if(x[%i] == 0.0) x[%i] = close;\n", rhs, rhs);
 							fprintf(fp, "x[%i] = x[%i] / x[%i];\n", out, lhs, rhs);
@@ -264,8 +264,8 @@ int emitSubtreeFrom(int node, FSEParseNode* tree, FILE* fp) {
 						case FSE_Power:
 							lhs = emitSubtreeFrom(tree[node].firstChild, tree, fp);
 							eSF_was_const = 0;
-							rhs = emitSubtreeFrom(tree[tree[node].firstChild].nextSibling, tree, fp);
-							out = tree[node].auxi[0];
+							/*rhs =*/ emitSubtreeFrom(tree[tree[node].firstChild].nextSibling, tree, fp);
+							/*out = tree[node].auxi[0]*/;
 							/*** hack ***/ out = node;
 							if(eSF_was_const) {
 								fprintf(fp, "/* FSE_Power: got a constant */\n");
@@ -602,7 +602,7 @@ int emit(char* filename, FSEParseNode* tree, int stacksize) {
 	
 	fprintf(fp, "void kernel(int mode, double* in, int length, double* out, int maxiter, double maxnorm, double close) {\n");
 	fprintf(fp, "int i, j[16], k, n[%i], flag, probe, reported;\n", stacksize);
-	fprintf(fp, "double x[%i], step, r, cx, cy, reportX, reportY;\n", stacksize, stacksize);
+	fprintf(fp, "double x[%i], step, r, cx, cy, reportX, reportY;\n", stacksize);
 	fprintf(fp, "flag = 0;\n");
 	fprintf(fp, "reported = 0;\n");
 	fprintf(fp, "if(mode == -1) /* initialization */{\n");
@@ -646,5 +646,6 @@ int emit(char* filename, FSEParseNode* tree, int stacksize) {
 	fprintf(fp, "}\n");
 	
 	fclose(fp);
+	return 0;
 }
 

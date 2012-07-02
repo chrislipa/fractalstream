@@ -90,5 +90,5 @@
 - (double) yVal;
 - (BOOL) hasInfinity;
 - (void) setHasInfinity: (BOOL) inf;
-
+- (FSGradient*) baseGradient;
 @end

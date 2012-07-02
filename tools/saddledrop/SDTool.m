@@ -5,6 +5,7 @@
 
 
 #import "SDTool.h"
+#import <Foundation/Foundation.h>
 
 static NSBundle* ourBundle = nil;
 
@@ -35,6 +36,9 @@ int _eval_for_point(double* saddle, int* flag) {
 					for(i = 0; i < _shared_saddle_total; i++) 
 						if(flag[2*i + 1] < bestCount) { bestCount = flag[2*i + 1]; bestIndex = i; }
 				}
+				break;
+			default:
+				
 				break;
 		}
 		saddle[0] = saddle[2*bestIndex];
@@ -171,7 +175,7 @@ int _saddles_for_point(double* point, double* saddle) {
 
 - (IBAction) updateConfiguration: (id) sender {
 	FSViewerData viewerData;
-	void* hooks[2];
+	//void* hooks[2];
 	if(configured == NO) {
 		batch = [owner getBatchNumber];
 		saddles = 0;
@@ -216,10 +220,11 @@ int _saddles_for_point(double* point, double* saddle) {
 
 - (BOOL) performNewtonWithParameter: (double*) cc on: (double*) p into: (double*) q {
 	double result[16];
-	int k, flag;
+	int k;
+	//int  flag;
 	[owner runAt: p withParameter: cc into: result probe: 1 steps: 100];
 	k = result[2];
-	flag = k & 0xff;  flag &= 0x0f;
+	//flag = k & 0xff;  flag &= 0x0f;
 	k >>= 8;
 	if(k == 100) {
 		q[0] = p[0];
@@ -233,10 +238,11 @@ int _saddles_for_point(double* point, double* saddle) {
 - (BOOL) performNewtonOn: (double*) p into: (double*) q {
 	/*** Run Newton's Method via probe in the program.  Return YES on success, NO on failure. ***/
 	double result[16];
-	int k, flag;
+	int k;
+	//int flag;
 	[owner runAt: p into: result probe: 1 steps: 100];
 	k = result[2];
-	flag = k & 0xff;  flag &= 0x0f;
+	//flag = k & 0xff;  flag &= 0x0f;
 	k >>= 8;
 	if(k == 100) {
 		q[0] = p[0];
@@ -254,7 +260,7 @@ int _saddles_for_point(double* point, double* saddle) {
 	double z[16], p[16], q[16], step[16], cc[16];
 	double unused;
 	FSViewerData viewerData;
-	int j, k, s;
+	int j=0, k, s;
 	
 	/* Stub for fill. p0 contains the parameter space coordinates to start from. */
 	[owner getViewerDataTo: &viewerData];

@@ -203,8 +203,11 @@
 	if(item == nil) { NSLog(@"item was nil?\n"); return; }
 	if([item path] == nil) return;
 	if([item isGroup]) return;
-	if([theDoc loadDataRepresentation: [NSData dataWithContentsOfFile: [item path]] ofType: @"FractalStream Script"])
+	NSError* error = nil;
+	bool retVal = [theDoc readFromData:[NSData dataWithContentsOfFile: [item path]] ofType:@"FractalStream Script" error:&error];
+	if(retVal) {
 		[theDoc doDocumentLoadWithLibrary: NO];
+	}
 	EXIT
 }
 
@@ -215,7 +218,10 @@
 	if(item == nil) { NSLog(@"item was nil?\n"); return; }
 	if([item path] == nil) return;
 	if([item isGroup]) return;
-	if([theDoc loadDataRepresentation: [NSData dataWithContentsOfFile: [item path]] ofType: @"FractalStream Script"])
+	NSError* error = nil;
+	bool retVal = [theDoc readFromData:[NSData dataWithContentsOfFile: [item path]] ofType:@"FractalStream Script" error:&error];
+	
+	if(retVal)
 		[theDoc openEditor];
 	EXIT
 }

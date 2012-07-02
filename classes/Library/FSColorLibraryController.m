@@ -57,11 +57,11 @@
 }
 
 - (IBAction) loadColorLibrary: (id) sender {
-	NSFileManager* fs;
-	NSArray* ar;
+	//NSFileManager* fs;
+	//NSArray* ar;
 	id item;
 	NSEnumerator* en;
-	BOOL isDirectory;
+	//BOOL isDirectory;
 	NSString* path;
 	
 #ifdef WINDOWS

@@ -109,7 +109,7 @@ typedef struct {
 - (int) numberOfRowsInTableView: (NSTableView*) tableView;
 - (id) tableView: (NSTableView*) tableView objectValueForTableColumn: (NSTableColumn*) tableColumn row: (int) row;
 - (id) tableView: (NSTableView*) tableView setObjectValue: (id) anObject forTableColumn: (NSTableColumn*) tableColumn row: (int) row;
-
+- (void) lockAllAutocolor;
 @end
 
 /*

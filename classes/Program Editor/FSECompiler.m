@@ -210,7 +210,8 @@
 	generated subtree on success, -1 on failure */
 - (int) extractArithBelowNode: (int) parent
 {
-	int i, oldnode, type, lhs, oldindex, parenindex, vindex, ret, oldparent;
+	int i, lhs, oldindex, parenindex,  oldparent;
+	//int oldnode, type, vindex, ret,
 	BOOL isEvalNode;
 	NSString* lastSymbol;
 	
@@ -312,10 +313,10 @@
 - (int) extractBoolBelowNode: (int) parent
 {
 	int i, oldparent, expr, oldindex, length, newparent, temp;
-	BOOL isEvalNode, wasParen;
-	char cName[64];
-	NSString* lastSymbol;
-	NSString* name;
+	BOOL /*isEvalNode,*/ wasParen;
+	//char cName[64];
+	//NSString* lastSymbol;
+	//NSString* name;
 
 	wasParen = NO;
 	oldindex = index; [self readNextSymbol];

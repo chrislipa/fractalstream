@@ -24,7 +24,7 @@
 - (void) setTempVar: (int) newTempVar { tempVar = newTempVar; }
 
 - (int) newOrphanOfType: (int) type {
-	int i;
+	//int i;
 	if(nextNode == nodes) {
 		nodes += 256;
 		node = realloc(node, nodes * sizeof(FSEParseNode));
@@ -237,7 +237,7 @@
 			t = [self newNodeOfType: FSE_Var | FSE_Variable at: lhs];
 			node[t].auxi[0] = node[here].auxi[0] + 1;
 		}
-		rhs = [self copySubtreeFrom: node[here].auxi[1] to: movednode];
+		/*rhs =*/ [self copySubtreeFrom: node[here].auxi[1] to: movednode];
 /*
 		rhs = [self newNodeOfType: FSE_Var | FSE_LinkedSubexpression at: movednode];
 		node[lhs].auxi[0] = node[here].auxi[0];
@@ -917,7 +917,7 @@
 						node[here].auxi[0] = -1;
 					}
 					if(node[child1].type == (FSE_Var | FSE_Join)) {
-						int nchilds, stops, v;
+						int nchilds, /*stops,*/ v;
 						nchilds = node[child1].children;
 						child = node[child1].firstChild;
 						if(nchilds == 1) return error;
@@ -966,9 +966,9 @@
 						return [self realifyFrom: here];
 					}
 					else if(node[child1].type == (FSE_Var | FSE_Join)) {
-						int c1, c2, nchilds, join;
+						int c1, c2,/* nchilds,*/ join;
 						node[here].type = FSE_Command | FSE_Block;
-						nchilds = node[child1].children;
+						/*nchilds =*/ node[child1].children;
 						if(node[child1].children != 2) return @"cannot default vector to scalar";
 						c1 = node[child1].firstChild;
 						join = [self newNodeOfType: FSE_Command | FSE_Default at: here];

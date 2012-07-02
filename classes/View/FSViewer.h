@@ -112,22 +112,22 @@
 - (void) runAt: (double*) p withParameter: (double*) q into: (double*) result probe: (int) pr steps: (int) ns;
 - (void) renderOperationFinished: (id) op;
 - (void) lockAllAutocolor;
-
+- (void) setRenderCompletedMessage: (SEL) message forObject: (id) obj;
 - (void) drawBoxFrom: (NSPoint) start to: (NSPoint) end withColor: (float*) rgb;
 - (void) draw: (int) nTraces tracesFrom: (NSPoint*) traceList steps: (int) nSteps;
-
+- (int) getBatchNumber ;
 - (void) drawItem: (FSViewerItem) newItem;
 - (void) drawObject: (FSViewerObject*) newObject;
 - (void) makeBatch: (int) batch visible: (BOOL) vis;
 - (void) changeBatch: (int) batch to: (int) newBatch;
 - (void) deleteObjectsInBatch: (int) batch;
 - (int) getBatchNumber;
-
+- (void) drawItem: (FSViewerItem) newItem ;
 - (void) convertEvent: (NSEvent*) theEvent toPoint: (double*) point;
 - (void) convertLocation: (NSPoint) theLocation toPoint: (double*) point;
 - (NSPoint) locationOfPoint: (double*) point;
 - (void) convertPoint: (double*) point toGL: (double*) gl;
-
+- (void) setRenderCompletedMessage: (SEL) message forObject: (id) obj ;
 - (FSColorWidget*) colorPicker;
 - (void) setColorPicker: (FSColorWidget*) newColorPicker;
 
@@ -138,5 +138,6 @@
 
 - (void) registerForNotifications: (id) owningDocument;
 - (id) document;
-
+- (void) drawItem: (FSViewerItem) newItem ;
+- (void) setRenderCompletedMessage: (SEL) message forObject: (id) obj;
 @end

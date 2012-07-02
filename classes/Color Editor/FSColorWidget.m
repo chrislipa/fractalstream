@@ -108,8 +108,8 @@
 	
 	
 	/* user selected a different color */
-	int newColor, i, j, k;
-	float c[3];
+	int newColor;
+	//float c[3];
 	BOOL acChanged;
 
 	NSLog(@"****** got change from %@ ******\n", sender);
@@ -230,6 +230,7 @@
 		totalSubcolors += [[color subcolors] count];
 	}
 	[colorCache.lock lockWhenCondition: 0];
+	NSAssert(colorSize>0,@"colorSize == 0");
 	{
 		colorCache.dependencies = 0;
 		free(colorCache.color);
@@ -312,17 +313,17 @@
 	NSString* name;
 	NSEnumerator* nameEnum;
 	BOOL namedColor;
-	int k, i, j, c;
-	float shade;
+	int k, i/*, j, c*/;
+	//float shade;
 	FSColor* color;
 	FSGradient* gradient;
 	float r, g, b;
-	NSArray* rawNames;
+	//NSArray* rawNames;
 	NSMutableArray* cleanedNames;
 	NSArray* subNames;
 	BOOL makeNewColors;
 	
-	cleanedNames = [[NSMutableArray alloc] init];
+	cleanedNames = [NSMutableArray array];
 	nameEnum = [newNames objectEnumerator];
 	i = 0;
 	makeNewColors = NO;
@@ -450,8 +451,8 @@
 - (void) setup {
 	NSEnumerator* namesEnumerator;
 	NSString* aName;
-	int i;
-	i = 0;
+	//int i;
+	//i = 0;
 	namesEnumerator = [names objectEnumerator];
 	[colorButton removeAllItems];
 	while(aName = [namesEnumerator nextObject]) { [colorButton addItemWithTitle: aName]; }
@@ -473,10 +474,10 @@
 
 - (id) initWithCoder: (NSCoder*) coder
 {
-	float* flat;
-	NSArray* floats;
-	NSEnumerator* en;
-	int i, j, k, c, l, size;
+	//float* flat;
+	//NSArray* floats;
+	//NSEnumerator* en;
+	int i, j, k/*, c, l, size*/;
 	float r, g, b;
 	self = [super init];
 	colors = [[NSMutableArray alloc] init];
@@ -515,6 +516,7 @@
 	cachedColorArrayNeedsUpdate = YES;	
 	return self;
 }
+/*
 
 - (int) numberOfRowsInTableView: (NSTableView*) tableView {
 }
@@ -527,7 +529,7 @@
 - (NSArray*) smoothnessArray {
 }
 
-- (NSArray*) gradientArray { }
+- (NSArray*) gradientArray { }*/
 
 - (void) readSmoothnessFrom: (NSArray*) smoothArray {
 }
