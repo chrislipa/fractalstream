@@ -81,8 +81,8 @@ static NSBundle* ourBundle = nil;
 	[movieTypeButton selectItemAtIndex: 0];
 	[[wheel window] close]; // close the movie window
 
-	compiler = [[[[NSBundle mainBundle] classNamed: @"FSECompiler"] alloc] init];
-	kernel = [[[[NSBundle mainBundle] classNamed: @"FSKernel"] alloc] init];
+	//compiler = [[[[NSBundle mainBundle] classNamed: @"FSECompiler"] alloc] init];
+	//kernel = [[[[NSBundle mainBundle] classNamed: @"FSKernel"] alloc] init];
 }
 
 - (void) setOwnerTo: (id) theOwner { owner = theOwner; }
@@ -484,19 +484,20 @@ static NSBundle* ourBundle = nil;
 	dt = (t1 - t0) / (double) steps;
 	[self resetPath: self];
 	
-	[compiler setOutputFilename: [NSString stringWithFormat: @"%@FSEtemp%i", NSTemporaryDirectory(), rand()]];
-	[compiler setTitle: @"FSMovieTool Parametric Curve"
-		source: [NSString stringWithFormat: @"default t to 0.\nset z to %@.", [parametricField stringValue]]
-		andDescription: nil
-	];
-	[compiler compile: self];
-	errorMessage = [compiler errorMessage];
+	//[compiler setOutputFilename: [NSString stringWithFormat: @"%@FSEtemp%i", NSTemporaryDirectory(), rand()]];
+	//[compiler setTitle: @"FSMovieTool Parametric Curve"
+	//	source: [NSString stringWithFormat: @"default t to 0.\nset z to %@.", [parametricField stringValue]]
+	//	andDescription: nil
+	//];
+	
+	//[compiler compile: self];
+	//errorMessage = [compiler errorMessage];
 	if(errorMessage != nil) {
 		[errorField setHidden: NO];
 		return;
 	}
 	[errorField setHidden: YES];
-	[kernel buildKernelFromCompiler: compiler];
+	//[kernel buildKernelFromCompiler: compiler];
 	
 	dataIn[0] = dataIn[1] = 0.0;
 	dataIn[2] = 1.0;
@@ -505,14 +506,14 @@ static NSBundle* ourBundle = nil;
 	dataIn[6] = dataIn[7] = 0.0;
 	for(i = 0, t = t0; i < steps; i++, t += dt) {
 		dataIn[6] = t;
-		[kernel runKernelWithMode: 3
+		/*[kernel runKernelWithMode: 3
 			input: dataIn
 			ofLength: 1
 			output: dataOut
 			maxIter: 1
 			maxNorm: 10000.0
 			minNorm: 0.00001
-		];
+		];*/
 		[self addPathPointX: dataOut[0] Y: dataOut[1]];
 	}
 	[parametricPanel performClose: self];

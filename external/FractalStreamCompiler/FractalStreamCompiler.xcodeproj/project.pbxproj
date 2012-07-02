@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		360C445D15A25C22003F9478 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360C445C15A25C22003F9478 /* Cocoa.framework */; };
+		360C446715A25C22003F9478 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 360C446515A25C22003F9478 /* InfoPlist.strings */; };
+		360C446B15A25C22003F9478 /* FractalStreamCompiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 360C446A15A25C22003F9478 /* FractalStreamCompiler.m */; };
+		360C44A915A26081003F9478 /* FSJitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 360C44A515A26081003F9478 /* FSJitter.h */; };
+		360C44AA15A26081003F9478 /* FSJitter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 360C44A615A26081003F9478 /* FSJitter.mm */; };
+		360C44AB15A26081003F9478 /* FSKernel.h in Headers */ = {isa = PBXBuildFile; fileRef = 360C44A715A26081003F9478 /* FSKernel.h */; };
+		360C44AC15A26081003F9478 /* FSKernel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 360C44A815A26081003F9478 /* FSKernel.mm */; };
+		360C44CF15A267D7003F9478 /* FSECompiler.h in Headers */ = {isa = PBXBuildFile; fileRef = 360C44C915A267D7003F9478 /* FSECompiler.h */; };
+		360C44D015A267D7003F9478 /* FSECompiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 360C44CA15A267D7003F9478 /* FSECompiler.m */; };
+		360C44D115A267D7003F9478 /* FSECompilerSymbols.H in Headers */ = {isa = PBXBuildFile; fileRef = 360C44CB15A267D7003F9478 /* FSECompilerSymbols.H */; };
+		360C44D215A267D7003F9478 /* FSEParseNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 360C44CC15A267D7003F9478 /* FSEParseNode.h */; };
+		360C44D315A267D7003F9478 /* FSEParseTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 360C44CD15A267D7003F9478 /* FSEParseTree.h */; };
+		360C44D415A267D7003F9478 /* FSEParseTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 360C44CE15A267D7003F9478 /* FSEParseTree.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		360C445915A25C22003F9478 /* FractalStreamCompiler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FractalStreamCompiler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		360C445C15A25C22003F9478 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		360C445F15A25C22003F9478 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		360C446015A25C22003F9478 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		360C446115A25C22003F9478 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		360C446415A25C22003F9478 /* FractalStreamCompiler-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FractalStreamCompiler-Info.plist"; sourceTree = "<group>"; };
+		360C446615A25C22003F9478 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		360C446815A25C22003F9478 /* FractalStreamCompiler-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FractalStreamCompiler-Prefix.pch"; sourceTree = "<group>"; };
+		360C446915A25C22003F9478 /* FractalStreamCompiler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FractalStreamCompiler.h; sourceTree = "<group>"; };
+		360C446A15A25C22003F9478 /* FractalStreamCompiler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FractalStreamCompiler.m; sourceTree = "<group>"; };
+		360C44A515A26081003F9478 /* FSJitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSJitter.h; sourceTree = "<group>"; };
+		360C44A615A26081003F9478 /* FSJitter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FSJitter.mm; sourceTree = "<group>"; };
+		360C44A715A26081003F9478 /* FSKernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSKernel.h; sourceTree = "<group>"; };
+		360C44A815A26081003F9478 /* FSKernel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FSKernel.mm; sourceTree = "<group>"; };
+		360C44C915A267D7003F9478 /* FSECompiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSECompiler.h; sourceTree = "<group>"; };
+		360C44CA15A267D7003F9478 /* FSECompiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSECompiler.m; sourceTree = "<group>"; };
+		360C44CB15A267D7003F9478 /* FSECompilerSymbols.H */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FSECompilerSymbols.H; sourceTree = "<group>"; };
+		360C44CC15A267D7003F9478 /* FSEParseNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSEParseNode.h; sourceTree = "<group>"; };
+		360C44CD15A267D7003F9478 /* FSEParseTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSEParseTree.h; sourceTree = "<group>"; };
+		360C44CE15A267D7003F9478 /* FSEParseTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSEParseTree.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		360C445515A25C22003F9478 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360C445D15A25C22003F9478 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		360C444D15A25C22003F9478 = {
+			isa = PBXGroup;
+			children = (
+				360C446215A25C22003F9478 /* FractalStreamCompiler */,
+				360C445B15A25C22003F9478 /* Frameworks */,
+				360C445A15A25C22003F9478 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		360C445A15A25C22003F9478 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				360C445915A25C22003F9478 /* FractalStreamCompiler.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		360C445B15A25C22003F9478 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				360C445C15A25C22003F9478 /* Cocoa.framework */,
+				360C445E15A25C22003F9478 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		360C445E15A25C22003F9478 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				360C445F15A25C22003F9478 /* AppKit.framework */,
+				360C446015A25C22003F9478 /* CoreData.framework */,
+				360C446115A25C22003F9478 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		360C446215A25C22003F9478 /* FractalStreamCompiler */ = {
+			isa = PBXGroup;
+			children = (
+				360C44A415A26081003F9478 /* classes */,
+				360C446915A25C22003F9478 /* FractalStreamCompiler.h */,
+				360C446A15A25C22003F9478 /* FractalStreamCompiler.m */,
+				360C446315A25C22003F9478 /* Supporting Files */,
+			);
+			path = FractalStreamCompiler;
+			sourceTree = "<group>";
+		};
+		360C446315A25C22003F9478 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				360C446415A25C22003F9478 /* FractalStreamCompiler-Info.plist */,
+				360C446515A25C22003F9478 /* InfoPlist.strings */,
+				360C446815A25C22003F9478 /* FractalStreamCompiler-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		360C44A415A26081003F9478 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				360C44C915A267D7003F9478 /* FSECompiler.h */,
+				360C44CA15A267D7003F9478 /* FSECompiler.m */,
+				360C44CB15A267D7003F9478 /* FSECompilerSymbols.H */,
+				360C44CC15A267D7003F9478 /* FSEParseNode.h */,
+				360C44CD15A267D7003F9478 /* FSEParseTree.h */,
+				360C44CE15A267D7003F9478 /* FSEParseTree.m */,
+				360C44A515A26081003F9478 /* FSJitter.h */,
+				360C44A615A26081003F9478 /* FSJitter.mm */,
+				360C44A715A26081003F9478 /* FSKernel.h */,
+				360C44A815A26081003F9478 /* FSKernel.mm */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		360C445615A25C22003F9478 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360C44A915A26081003F9478 /* FSJitter.h in Headers */,
+				360C44AB15A26081003F9478 /* FSKernel.h in Headers */,
+				360C44CF15A267D7003F9478 /* FSECompiler.h in Headers */,
+				360C44D115A267D7003F9478 /* FSECompilerSymbols.H in Headers */,
+				360C44D215A267D7003F9478 /* FSEParseNode.h in Headers */,
+				360C44D315A267D7003F9478 /* FSEParseTree.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		360C445815A25C22003F9478 /* FractalStreamCompiler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 360C446E15A25C22003F9478 /* Build configuration list for PBXNativeTarget "FractalStreamCompiler" */;
+			buildPhases = (
+				360C445415A25C22003F9478 /* Sources */,
+				360C445515A25C22003F9478 /* Frameworks */,
+				360C445615A25C22003F9478 /* Headers */,
+				360C445715A25C22003F9478 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FractalStreamCompiler;
+			productName = FractalStreamCompiler;
+			productReference = 360C445915A25C22003F9478 /* FractalStreamCompiler.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		360C444F15A25C22003F9478 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 360C445215A25C22003F9478 /* Build configuration list for PBXProject "FractalStreamCompiler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 360C444D15A25C22003F9478;
+			productRefGroup = 360C445A15A25C22003F9478 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				360C445815A25C22003F9478 /* FractalStreamCompiler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		360C445715A25C22003F9478 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360C446715A25C22003F9478 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		360C445415A25C22003F9478 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360C446B15A25C22003F9478 /* FractalStreamCompiler.m in Sources */,
+				360C44AA15A26081003F9478 /* FSJitter.mm in Sources */,
+				360C44AC15A26081003F9478 /* FSKernel.mm in Sources */,
+				360C44D015A267D7003F9478 /* FSECompiler.m in Sources */,
+				360C44D415A267D7003F9478 /* FSEParseTree.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		360C446515A25C22003F9478 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				360C446615A25C22003F9478 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		360C446C15A25C22003F9478 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		360C446D15A25C22003F9478 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		360C446F15A25C22003F9478 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FractalStreamCompiler/FractalStreamCompiler-Prefix.pch";
+				INFOPLIST_FILE = "FractalStreamCompiler/FractalStreamCompiler-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		360C447015A25C22003F9478 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FractalStreamCompiler/FractalStreamCompiler-Prefix.pch";
+				INFOPLIST_FILE = "FractalStreamCompiler/FractalStreamCompiler-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		360C445215A25C22003F9478 /* Build configuration list for PBXProject "FractalStreamCompiler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				360C446C15A25C22003F9478 /* Debug */,
+				360C446D15A25C22003F9478 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		360C446E15A25C22003F9478 /* Build configuration list for PBXNativeTarget "FractalStreamCompiler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				360C446F15A25C22003F9478 /* Debug */,
+				360C447015A25C22003F9478 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 360C444F15A25C22003F9478 /* Project object */;
+}

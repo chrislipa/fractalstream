@@ -16,39 +16,40 @@
 	NSString* errorMessage;
 	
 	tmp = [NSString stringWithFormat: @"%@FSEtemp%i", NSTemporaryDirectory(), rand()];
-	[compiler 
+	/*[compiler 
 		setTitle: [titleField stringValue]
 		source: [sourceView string]
 		andDescription: [descriptionView textStorage]
-	];
+	];*/
 	[[browser session] setProgram: [sourceView string]];
-	[compiler setOutputFilename: tmp];
-	[compiler compile: sender];
-	errorMessage = [compiler errorMessage];
+	//[compiler setOutputFilename: tmp];
+	//[compiler compile: sender];
+	//errorMessage = [compiler errorMessage];
+	/*
 	if(errorMessage != nil) {
 		[sourceView setSelectedRange: [compiler errorRange]];
 		NSRunAlertPanel(@"Script Error", errorMessage, nil, nil, nil);
 		return;
-	}
-	[browser setVariableNamesTo: [compiler parameters]];
-	[browser setProbeNamesTo: [compiler probeArray]];
+	}*/
+	//[browser setVariableNamesTo: [compiler parameters]];
+	//[browser setProbeNamesTo: [compiler probeArray]];
 //	NSLog(@"set probe names in the browser to %@\n", [compiler probeArray]);
-	[[browser session] setFlags: [compiler flagArray]];
+	//[[browser session] setFlags: [compiler flagArray]];
 //	NSLog(@"set flag names in the session to %@\n", [compiler flagArray]);
-	if([compiler usesCustom] == YES) {
+	/*if([compiler usesCustom] == YES) {
 		[[browser session] readKernelFrom: [NSString stringWithFormat: @"%@kernel", [compiler customPath]]];
 		[browser setAllowEditor: NO];
-	}
-	else [[browser session] readKernelFrom: tmp];
-	[[[browser session] root] dataPtr] -> program = [compiler isParametric]? 1 : 3;
+	}*/
+	//else [[browser session] readKernelFrom: tmp];
+	//[[[browser session] root] dataPtr] -> program = [compiler isParametric]? 1 : 3;
 	[browser loadDataFromInterfaceTo: [[[browser session] root] dataPtr]];	
 	[browser reloadSessionWithoutRefresh];
 	[browser resetDefaults];
 	[browser refreshAll];
-	if([compiler usesCustom] == YES) [browser addTools: [[[NSFileWrapper alloc] initWithPath: [compiler customPath]] autorelease]];
-	[browser setSpecialToolsTo: [compiler specialTools]];
+	//if([compiler usesCustom] == YES) [browser addTools: [[[NSFileWrapper alloc] initWithPath: [compiler customPath]] autorelease]];
+	//[browser setSpecialToolsTo: [compiler specialTools]];
 //	[browser loadTools];
-	[browser changeTo: @"testing!" X: 0.0 Y: 0.0 p1: 0.0 p2: 0.0 pixelSize: (4.0 / 512.0) parametric: [compiler isParametric]];
+	//[browser changeTo: @"testing!" X: 0.0 Y: 0.0 p1: 0.0 p2: 0.0 pixelSize: (4.0 / 512.0) parametric: [compiler isParametric]];
 	
 	//[enclosingView selectNextTabViewItem: self];  
 	// selectNextTabViewItem not implemented in Cocotron, so use this instead:

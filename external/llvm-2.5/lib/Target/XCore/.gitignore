@@ -1,9 +1,0 @@
-/XCoreGenAsmWriter.inc
-/XCoreGenCallingConv.inc
-/XCoreGenDAGISel.inc
-/XCoreGenInstrInfo.inc
-/XCoreGenInstrNames.inc
-/XCoreGenRegisterInfo.h.inc
-/XCoreGenRegisterInfo.inc
-/XCoreGenRegisterNames.inc
-/XCoreGenSubtarget.inc

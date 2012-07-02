@@ -39,9 +39,9 @@
 		in[2] = unit.step[0];
 		in[3] = unit.viewerData -> par[0];
 		in[4] = unit.viewerData -> par[1];
-		in[5] = unit.viewerData -> pixelSize;
-		(unit.viewerData -> kernel)(unit.viewerData -> program, in, unit.dimension[0], &(unit.result[3 * row * unit.dimension[0]]), 
-			unit.viewerData -> maxIters, unit.viewerData -> maxRadius, unit.viewerData -> minRadius);
+			in[5] = unit.viewerData -> pixelSize;
+		//(unit.viewerData -> kernel)(unit.viewerData -> program, in, unit.dimension[0], &(unit.result[3 * row * unit.dimension[0]]), 
+		//	unit.viewerData -> maxIters, unit.viewerData -> maxRadius, unit.viewerData -> minRadius);
 		if([self isCancelled] == YES) break;
 	}
 	unit.finished = [self isCancelled]? NO : YES;

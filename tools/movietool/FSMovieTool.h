@@ -5,8 +5,7 @@
 #import <stdlib.h>
 #import <math.h>
 #import "FSViewer.h"
-#import "FSECompiler.h"
-#import "FSKernel.h"
+
 
 #ifndef FSTool_Type_Definitions
 #define FSTool_Type_Definitions
@@ -60,8 +59,8 @@ typedef struct {
 	double point[4096][2];
 	NSMutableArray* images;
 	
-	FSECompiler* compiler;
-	FSKernel* kernel;
+	//FSECompiler* compiler;
+	//FSKernel* kernel;
 	
 	BOOL madeMovie;
 	int batchID;

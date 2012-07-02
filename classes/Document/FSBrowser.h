@@ -16,7 +16,7 @@
 #import "FSTools.h"
 #import "FSViewer.h"
 #import "FSSession.h"
-#import "FSKernel.h"
+//#import "FSKernel.h"
 #import "FSCustomDataManager.h"
 
 @interface FSBrowser : NSObject {
@@ -55,7 +55,7 @@
 	NSArray* probeNames;
 	NSArray* specialTools;
 	int uniqueVariableNames;
-	FSKernel* theKernel;
+	//FSKernel* theKernel;
 	FSCustomDataManager* dataManager;
 	
 	BOOL configured;
@@ -80,7 +80,7 @@
 - (void) setAllowEditor: (BOOL) allow;
 - (void) addTools: (NSFileWrapper*) toolWrapper;
 - (NSFileWrapper*) extraTools;
-- (FSKernel*) kernel;
+//- (FSKernel*) kernel;
 - (IBAction) embedTool: (id) sender;
 - (IBAction) hidePanels: (id) sender;
 - (IBAction) revealPanels: (id) sender;

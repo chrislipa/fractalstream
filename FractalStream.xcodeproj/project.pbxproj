@@ -21,12 +21,7 @@
 		360A22E61573E5C400BF41B2 /* FSStartup.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22AD1573E5C400BF41B2 /* FSStartup.m */; };
 		360A22E71573E5C400BF41B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22AE1573E5C400BF41B2 /* main.m */; };
 		360A22E81573E5C400BF41B2 /* FSCustomDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22B11573E5C400BF41B2 /* FSCustomDataManager.m */; };
-		360A22E91573E5C400BF41B2 /* FSEC_gcc.c in Sources */ = {isa = PBXBuildFile; fileRef = 360A22B21573E5C400BF41B2 /* FSEC_gcc.c */; };
-		360A22EA1573E5C400BF41B2 /* FSECompiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22B51573E5C400BF41B2 /* FSECompiler.m */; };
 		360A22EB1573E5C400BF41B2 /* FSEController.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22B81573E5C400BF41B2 /* FSEController.m */; };
-		360A22EC1573E5C400BF41B2 /* FSEParseTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22BB1573E5C400BF41B2 /* FSEParseTree.m */; };
-		360A22ED1573E5C400BF41B2 /* FSJitter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 360A22BD1573E5C400BF41B2 /* FSJitter.mm */; };
-		360A22EE1573E5C400BF41B2 /* FSKernel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 360A22BF1573E5C400BF41B2 /* FSKernel.mm */; };
 		360A22EF1573E5C400BF41B2 /* CircularOverwriteBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22C21573E5C400BF41B2 /* CircularOverwriteBuffer.m */; };
 		360A22F01573E5C400BF41B2 /* FSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22C41573E5C400BF41B2 /* FSLog.m */; };
 		360A22F11573E5C400BF41B2 /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 360A22C61573E5C400BF41B2 /* debug.c */; };
@@ -40,13 +35,6 @@
 		360A22FB1573E5F300BF41B2 /* ZoomIn.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 360A22FA1573E5F300BF41B2 /* ZoomIn.tiff */; };
 		360A22FE1573E61A00BF41B2 /* julia.icns in Resources */ = {isa = PBXBuildFile; fileRef = 360A22FC1573E61A00BF41B2 /* julia.icns */; };
 		360A22FF1573E61A00BF41B2 /* mandelbrot.icns in Resources */ = {isa = PBXBuildFile; fileRef = 360A22FD1573E61A00BF41B2 /* mandelbrot.icns */; };
-		360A23031573EC1D00BF41B2 /* libLLVMAsmPrinter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 360A23021573EC1D00BF41B2 /* libLLVMAsmPrinter.a */; };
-		360A23051573EC2B00BF41B2 /* LLVMX86AsmPrinter.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 360A23041573EC2B00BF41B2 /* LLVMX86AsmPrinter.o */; };
-		360A23071573EC4000BF41B2 /* LLVMX86CodeGen.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 360A23061573EC4000BF41B2 /* LLVMX86CodeGen.o */; };
-		360A230C1573EC6D00BF41B2 /* LLVMExecutionEngine.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 360A23081573EC6D00BF41B2 /* LLVMExecutionEngine.o */; };
-		360A230D1573EC6D00BF41B2 /* LLVMJIT.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 360A23091573EC6D00BF41B2 /* LLVMJIT.o */; };
-		360A230E1573EC6D00BF41B2 /* LLVMPowerPCAsmPrinter.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 360A230A1573EC6D00BF41B2 /* LLVMPowerPCAsmPrinter.o */; };
-		360A230F1573EC6D00BF41B2 /* LLVMPowerPCCodeGen.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 360A230B1573EC6D00BF41B2 /* LLVMPowerPCCodeGen.o */; };
 		36118EB815759D18005D2C05 /* FSTraceTool.fstool in Copy Files (Tools) */ = {isa = PBXBuildFile; fileRef = 36D36ADA15759C0E00F78D74 /* FSTraceTool.fstool */; };
 		36118EB915759D18005D2C05 /* FSPreviewTool.fstool in Copy Files (Tools) */ = {isa = PBXBuildFile; fileRef = 36D36AC515759BC300F78D74 /* FSPreviewTool.fstool */; };
 		364EDF0D157594E200E89B5B /* FSDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364EDF0B157594E200E89B5B /* FSDocument.xib */; };
@@ -198,13 +186,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 8D5B49B6048680CD000E48DA;
 			remoteInfo = FSSnapshotTool;
-		};
-		36947DA815A005440020ABEA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 360A22531573E5A100BF41B2 /* LLVM.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D28A88AD04BDD90700651E21;
-			remoteInfo = LLVM;
 		};
 		36A5B504157421CC00569973 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -494,7 +475,6 @@
 		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		360A22531573E5A100BF41B2 /* LLVM.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LLVM.xcodeproj; path = "external/llvm-2.5/Xcode/LLVM.xcodeproj"; sourceTree = "<group>"; };
 		360A22611573E5B000BF41B2 /* CrashReporter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CrashReporter.xcodeproj; path = "external/plcrashreporter-1.0/CrashReporter.xcodeproj"; sourceTree = "<group>"; };
 		360A22911573E5C400BF41B2 /* FSColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSColor.h; sourceTree = "<group>"; };
 		360A22921573E5C400BF41B2 /* FSColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSColor.m; sourceTree = "<group>"; };
@@ -525,20 +505,8 @@
 		360A22AE1573E5C400BF41B2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		360A22B01573E5C400BF41B2 /* FSCustomDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCustomDataManager.h; sourceTree = "<group>"; };
 		360A22B11573E5C400BF41B2 /* FSCustomDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCustomDataManager.m; sourceTree = "<group>"; };
-		360A22B21573E5C400BF41B2 /* FSEC_gcc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FSEC_gcc.c; sourceTree = "<group>"; };
-		360A22B31573E5C400BF41B2 /* FSEC_gcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSEC_gcc.h; sourceTree = "<group>"; };
-		360A22B41573E5C400BF41B2 /* FSECompiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSECompiler.h; sourceTree = "<group>"; };
-		360A22B51573E5C400BF41B2 /* FSECompiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSECompiler.m; sourceTree = "<group>"; };
-		360A22B61573E5C400BF41B2 /* FSECompilerSymbols.H */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FSECompilerSymbols.H; sourceTree = "<group>"; };
 		360A22B71573E5C400BF41B2 /* FSEController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSEController.h; sourceTree = "<group>"; };
 		360A22B81573E5C400BF41B2 /* FSEController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSEController.m; sourceTree = "<group>"; };
-		360A22B91573E5C400BF41B2 /* FSEParseNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSEParseNode.h; sourceTree = "<group>"; };
-		360A22BA1573E5C400BF41B2 /* FSEParseTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSEParseTree.h; sourceTree = "<group>"; };
-		360A22BB1573E5C400BF41B2 /* FSEParseTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSEParseTree.m; sourceTree = "<group>"; };
-		360A22BC1573E5C400BF41B2 /* FSJitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSJitter.h; sourceTree = "<group>"; };
-		360A22BD1573E5C400BF41B2 /* FSJitter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FSJitter.mm; sourceTree = "<group>"; };
-		360A22BE1573E5C400BF41B2 /* FSKernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSKernel.h; sourceTree = "<group>"; };
-		360A22BF1573E5C400BF41B2 /* FSKernel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FSKernel.mm; sourceTree = "<group>"; };
 		360A22C11573E5C400BF41B2 /* CircularOverwriteBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularOverwriteBuffer.h; sourceTree = "<group>"; };
 		360A22C21573E5C400BF41B2 /* CircularOverwriteBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularOverwriteBuffer.m; sourceTree = "<group>"; };
 		360A22C31573E5C400BF41B2 /* FSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSLog.h; sourceTree = "<group>"; };
@@ -637,13 +605,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
-				360A23031573EC1D00BF41B2 /* libLLVMAsmPrinter.a in Frameworks */,
-				360A23051573EC2B00BF41B2 /* LLVMX86AsmPrinter.o in Frameworks */,
-				360A23071573EC4000BF41B2 /* LLVMX86CodeGen.o in Frameworks */,
-				360A230C1573EC6D00BF41B2 /* LLVMExecutionEngine.o in Frameworks */,
-				360A230D1573EC6D00BF41B2 /* LLVMJIT.o in Frameworks */,
-				360A230E1573EC6D00BF41B2 /* LLVMPowerPCAsmPrinter.o in Frameworks */,
-				360A230F1573EC6D00BF41B2 /* LLVMPowerPCCodeGen.o in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -719,16 +680,8 @@
 			isa = PBXGroup;
 			children = (
 				360A22611573E5B000BF41B2 /* CrashReporter.xcodeproj */,
-				360A22531573E5A100BF41B2 /* LLVM.xcodeproj */,
 			);
 			name = External;
-			sourceTree = "<group>";
-		};
-		360A22541573E5A100BF41B2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		360A22621573E5B000BF41B2 /* Products */ = {
@@ -823,20 +776,8 @@
 			children = (
 				360A22B01573E5C400BF41B2 /* FSCustomDataManager.h */,
 				360A22B11573E5C400BF41B2 /* FSCustomDataManager.m */,
-				360A22B21573E5C400BF41B2 /* FSEC_gcc.c */,
-				360A22B31573E5C400BF41B2 /* FSEC_gcc.h */,
-				360A22B41573E5C400BF41B2 /* FSECompiler.h */,
-				360A22B51573E5C400BF41B2 /* FSECompiler.m */,
-				360A22B61573E5C400BF41B2 /* FSECompilerSymbols.H */,
 				360A22B71573E5C400BF41B2 /* FSEController.h */,
 				360A22B81573E5C400BF41B2 /* FSEController.m */,
-				360A22B91573E5C400BF41B2 /* FSEParseNode.h */,
-				360A22BA1573E5C400BF41B2 /* FSEParseTree.h */,
-				360A22BB1573E5C400BF41B2 /* FSEParseTree.m */,
-				360A22BC1573E5C400BF41B2 /* FSJitter.h */,
-				360A22BD1573E5C400BF41B2 /* FSJitter.mm */,
-				360A22BE1573E5C400BF41B2 /* FSKernel.h */,
-				360A22BF1573E5C400BF41B2 /* FSKernel.mm */,
 			);
 			path = "Program Editor";
 			sourceTree = "<group>";
@@ -1193,7 +1134,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				36947DA915A005440020ABEA /* PBXTargetDependency */,
 				36C156391575A6A60090EC48 /* PBXTargetDependency */,
 				36C156371575A6A00090EC48 /* PBXTargetDependency */,
 				36C156351575A69C0090EC48 /* PBXTargetDependency */,
@@ -1244,10 +1184,6 @@
 				{
 					ProductGroup = 36D36AD315759C0D00F78D74 /* Products */;
 					ProjectRef = 36D36AD215759C0D00F78D74 /* FSTraceTool.xcodeproj */;
-				},
-				{
-					ProductGroup = 360A22541573E5A100BF41B2 /* Products */;
-					ProjectRef = 360A22531573E5A100BF41B2 /* LLVM.xcodeproj */;
 				},
 				{
 					ProductGroup = 36A5B50A1574245000569973 /* Products */;
@@ -1449,12 +1385,7 @@
 				360A22E61573E5C400BF41B2 /* FSStartup.m in Sources */,
 				360A22E71573E5C400BF41B2 /* main.m in Sources */,
 				360A22E81573E5C400BF41B2 /* FSCustomDataManager.m in Sources */,
-				360A22E91573E5C400BF41B2 /* FSEC_gcc.c in Sources */,
-				360A22EA1573E5C400BF41B2 /* FSECompiler.m in Sources */,
 				360A22EB1573E5C400BF41B2 /* FSEController.m in Sources */,
-				360A22EC1573E5C400BF41B2 /* FSEParseTree.m in Sources */,
-				360A22ED1573E5C400BF41B2 /* FSJitter.mm in Sources */,
-				360A22EE1573E5C400BF41B2 /* FSKernel.mm in Sources */,
 				360A22EF1573E5C400BF41B2 /* CircularOverwriteBuffer.m in Sources */,
 				360A22F01573E5C400BF41B2 /* FSLog.m in Sources */,
 				360A22F11573E5C400BF41B2 /* debug.c in Sources */,
@@ -1471,11 +1402,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		36947DA915A005440020ABEA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = LLVM;
-			targetProxy = 36947DA815A005440020ABEA /* PBXContainerItemProxy */;
-		};
 		36A5B508157421E900569973 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FSMovieTool;
@@ -1770,18 +1696,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
-					"-lLLVMAsmPrinter",
-					"-lLLVMSelectionDAG",
-					"-lLLVMSystem",
-					"-lLLVMSupport",
-					"-lLLVMCore",
-					"-lLLVMTarget",
-					"-lLLVMAnalysis",
-					"-lLLVMipa",
-					"-lLLVMTransformUtils",
-					"-lLLVMScalarOpts",
-					"-lLLVMipo",
-					"-lLLVMCodeGen",
 					"-lm",
 					"-lpthread",
 				);
@@ -1814,18 +1728,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
-					"-lLLVMAsmPrinter",
-					"-lLLVMSelectionDAG",
-					"-lLLVMSystem",
-					"-lLLVMSupport",
-					"-lLLVMCore",
-					"-lLLVMTarget",
-					"-lLLVMAnalysis",
-					"-lLLVMipa",
-					"-lLLVMTransformUtils",
-					"-lLLVMScalarOpts",
-					"-lLLVMipo",
-					"-lLLVMCodeGen",
 					"-lm",
 					"-lpthread",
 				);

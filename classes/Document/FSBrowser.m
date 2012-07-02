@@ -26,8 +26,8 @@
 	void* loadedModule;
 	NSLog(@"browser %@ awoke from nib\n", self);
 	dataManager = [[FSCustomDataManager alloc] init];
-	theKernel = [[FSKernel alloc] init];
-	[theKernel setDataManager: dataManager];
+	//theKernel = [[FSKernel alloc] init];
+	//[theKernel setDataManager: dataManager];
 	[theTools setDataManager: dataManager];
 	[theTools setupMenu: self];
 	
@@ -74,14 +74,14 @@
 	) [self refresh: self];
 	EXIT
 }
-
+/*
 - (FSKernel*) kernel { 
 	ENTER
 	
 	EXIT
 	return theKernel;
 
-}
+}*/
 
 - (void) loadDataFromInterfaceTo: (FSViewerData*) theData {
 	ENTER
@@ -113,15 +113,15 @@
 		if([[theSession kernelWrapper] writeToFile: tmp atomically: YES updateFilenames: NO] == NO) {
 			NSLog(@"writeToFile failed with session %@ and data %@ writing to %@\n", theSession, [theSession kernelWrapper], tmp);
 		}
-		[theKernel loadKernelFromFile: tmp];
+		//[theKernel loadKernelFromFile: tmp];
 	}
 	else {
-		[theCompiler buildScript: [theSession program]];
-		specialTools = [[theCompiler specialTools] retain];
+		//[theCompiler buildScript: [theSession program]];
+		//specialTools = [[theCompiler specialTools] retain];
 		[self loadTools];
-		[theKernel buildKernelFromCompiler: theCompiler];
+		//[theKernel buildKernelFromCompiler: theCompiler];
 	}
-	kernel = [theKernel kernelPtr];
+	//kernel = [theKernel kernelPtr];
 	if(kernel == NULL) {
 		EXIT
 		return;

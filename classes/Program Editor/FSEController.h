@@ -1,7 +1,7 @@
 /* FSEController */
 
 #import <Cocoa/Cocoa.h>
-#import "FSECompiler.h"
+//#import "FSECompiler.h"
 #import "FSBrowser.h"
 
 @interface FSEController : NSObject
@@ -13,7 +13,7 @@
 	IBOutlet NSPanel* panel;
 	IBOutlet NSTextField* errorField;
 	
-	IBOutlet FSECompiler* compiler;
+	//IBOutlet FSECompiler* compiler;
 	IBOutlet FSBrowser* browser;
 }
 - (IBAction) compile: (id) sender;

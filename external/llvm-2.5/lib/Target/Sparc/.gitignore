@@ -1,9 +1,0 @@
-/SparcGenAsmWriter.inc
-/SparcGenCallingConv.inc
-/SparcGenDAGISel.inc
-/SparcGenInstrInfo.inc
-/SparcGenInstrNames.inc
-/SparcGenRegisterInfo.h.inc
-/SparcGenRegisterInfo.inc
-/SparcGenRegisterNames.inc
-/SparcGenSubtarget.inc
