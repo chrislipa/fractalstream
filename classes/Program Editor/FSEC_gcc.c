@@ -596,7 +596,7 @@ int emit(char* filename, FSEParseNode* tree, int stacksize) {
 	fp = fopen(filename, "w");
 	fprintf(fp, "/* emitted by FSEC_gcc.c */\n\n");
 	
-	fprintf(fp, "/* using tree at address %x */\n", tree);
+	fprintf(fp, "/* using tree at address %x */\n", (int)tree);
 	
 	fprintf(fp, "#include <math.h>\n\n");
 	

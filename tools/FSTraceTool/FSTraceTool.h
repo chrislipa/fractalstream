@@ -27,7 +27,7 @@ typedef struct {
 	IBOutlet NSPanel* panel;
 
 	BOOL configured;
-	float color[3];
+	CGFloat color[3];
 	int batch[64];
 	BOOL inLiveDrawing;
 	int liveBatch;

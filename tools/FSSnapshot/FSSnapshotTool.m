@@ -31,6 +31,7 @@ static NSBundle* ourBundle = nil;
 	[ourBundle release]; ourBundle = nil;
 }
 
+
 /* Return your tool's user-friendly name here */
 - (NSString*) name { 
 	return @"Snapshot";
@@ -122,9 +123,10 @@ static NSBundle* ourBundle = nil;
 	savePanel = [NSSavePanel savePanel];
 	if([savePanel runModal] == NSFileHandlingPanelOKButton) {
 	}
-	
-	NSLog(@"Selected file is \"%@\"\n", [savePanel filename]);
-	filename = [[savePanel filename] retain];
+	NSURL* filenameURL = [savePanel URL];
+	filename = [[filenameURL path] retain];
+	NSLog(@"Selected file is \"%@\"\n", filename);
+
 	tempFilenamePrefix = [[NSString stringWithFormat: @"%@fssnapshot", NSTemporaryDirectory()] retain];
 	[owner getViewerDataTo: &savedData];
 	[owner getViewerDataTo: &data];
@@ -215,8 +217,8 @@ static NSBundle* ourBundle = nil;
 	[widthBox setIntValue: multiplier * ((float) realPixelWidth + 0.5)];
 	[heightBox setIntValue: multiplier * ((float) realPixelHeight + 0.5)];
 	NSLog(@"z = %f + i%f, w = %f + i%f\n", z[0], z[1], w[0], w[1]);
-	if(z[0] > w[0]) t = w[0]; w[0] = z[0]; z[0] = t;
-	if(z[1] < w[1]) t = w[1]; w[1] = z[1]; z[1] = t;
+	if(z[0] > w[0]) {t = w[0]; w[0] = z[0]; z[0] = t;}
+	if(z[1] < w[1]) {t = w[1]; w[1] = z[1]; z[1] = t;}
 }
 
 - (void) mouseDown: (NSEvent*) theEvent {
