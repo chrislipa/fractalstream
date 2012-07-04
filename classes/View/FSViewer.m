@@ -225,6 +225,8 @@
 	double dx, dy;
 	//float detailLevel; 
 	FSRenderUnit unit;
+	unit.result = NULL;
+	unit.finished = NO;
 	FSRenderOperation* op;
 	NSPoint p;
 	double z[2];
@@ -331,6 +333,7 @@
 				p = [self locationOfPoint: z];
 				unit.location[0] = p.x;
 				unit.location[1] = p.y - (float) unit.dimension[1] / linearMultiplier;
+				
 				op = [[FSRenderOperation alloc] initWithUnit: unit colorizer: viewerColorizer];
 				[workQueue addOperation: op];
 				[op release];

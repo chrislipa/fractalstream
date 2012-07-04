@@ -139,43 +139,64 @@
 	}
 	else {
 		// create blended gradient
-		int i,j;
+		int i;
 		double weight;
 		double w[1024];
 		double d;
-		float r, g, b, t/*, dt*/;
+		float *r, *g, *b, t/*, dt*/;
+		
 		int s;
 		FSGradient* gr;
 		NSColor* co;
-		weight = 0.0; i = 0;
+		weight = 0.0; 
+		gr = [[FSGradient alloc] init];
+		s = [[self baseGradient] subdivisions]; if(s <= 0) s = 1;
+		t = 0.0; 
+		
+		r = malloc(s * sizeof(double));
+		g = malloc(s * sizeof(double));
+		b = malloc(s * sizeof(double));
+		
+		
+		for(int k = 0; k < s; k++) {
+			r[k] = 0.0; g[k] = 0.0; b[k] = 0.0;
+		}
+		
+		i = 0;
 		while((c = [en nextObject])) { 
 			d = (([c xVal] - X) * ([c xVal] - X) + ([c yVal] - Y) * ([c yVal] - Y)); 
 			if(d <= 0.00000001) d = 0.00000001;
 			weight += 1.0 / d; 
-			w[i++] = 1.0 / d;
+			w[i] = 1.0 / d;
+			
+		
+			for(int k = 0; k < s; k++) {
+				
+			
+				co = [[[c baseGradient] colorArray] objectAtIndex: k];
+				r[k] += w[i] * [co redComponent] / weight;
+				g[k] += w[i] * [co greenComponent] / weight;
+				b[k] += w[i] * [co blueComponent] / weight;
+				
+			}
+			++i;
+			
 		}
+		for(int k = 0; k < s; k++) {
+			if(k == 0) [gr resetToColor: [NSColor colorWithDeviceRed: r[k] green: g[k] blue: b[k] alpha: 1.0]];
+			else [gr addColor: [NSColor colorWithDeviceRed: r[k] green: g[k] blue: b[k] alpha: 1.0] atStop: t];
+		}
+		
+		free(r);
+		free(g);
+		free(b);
+		
 		if(weight <= 0.0) { 
+			[gr release];
 			gr = [[FSGradient alloc] initWithR: 0.2 G: 0.2 B: 0.2];
 			return [gr autorelease];
 		}
-		gr = [[FSGradient alloc] init];
-		s = [[self baseGradient] subdivisions]; if(s <= 0) s = 1;
-		t = 0.0; 
-		//dt = 1.0 / (float) s;
-		for(i = 0; i < s; i++) {
-			r = 0.0; g = 0.0; b = 0.0;
-			j = 0;
-			en = [subcolor objectEnumerator];
-			while((c = [en nextObject])) {
-				co = [[[c baseGradient] colorArray] objectAtIndex: j];
-				r += w[j] * [co redComponent] / weight;
-				g += w[j] * [co greenComponent] / weight;
-				b += w[j] * [co blueComponent] / weight;
-				++j;
-			}
-			if(i == 0) [gr resetToColor: [NSColor colorWithDeviceRed: r green: g blue: b alpha: 1.0]];
-			else [gr addColor: [NSColor colorWithDeviceRed: r green: g blue: b alpha: 1.0] atStop: t];
-		}
+		
 		return [gr autorelease];
 	}
 }

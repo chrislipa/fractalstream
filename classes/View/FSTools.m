@@ -127,7 +127,7 @@
 - (void) mouseDown: (NSEvent*) theEvent
 {
 	//void (*kernel)(int, double*, int, double*, int, double, double);
-	double x, y, /*in[9], out[6], */p[2];					
+	double /*x, y,*/ /*in[9], out[6], */p[2];					
 	//float c[3];
 	//int i; 
 	//FSViewerItem item;
@@ -144,7 +144,7 @@
 			
 			case 1: /* dynamical plane */
 				[viewport convertLocation: [theEvent locationInWindow] toPoint: p];
-				[theBrowser changeTo: [NSString stringWithFormat: @"Dynamical Plane for C = %f + %fi", x, y]
+				[theBrowser changeTo: [NSString stringWithFormat: @"Dynamical Plane for C = %f + %fi", p[0],p[1]]
 					X: 0.0 Y: 0.0
 					p1: p[0] p2: p[1]
 					pixelSize: 4.0 / 512.0 parametric: NO
@@ -296,8 +296,8 @@
 - (IBAction) setupMenu: (id) sender
 {
 	//NSString* appSupportSubpath = @"Application Support/FractalStream/PlugIns";
-	NSArray* librarySearchPaths;
-	NSEnumerator* searchPathEnum;
+	//NSArray* librarySearchPaths;
+	//NSEnumerator* searchPathEnum;
 	NSEnumerator* pluginEnum;
 	NSEnumerator* directoryEnum;
 	NSEnumerator* toolEnum;
@@ -317,12 +317,12 @@
 	if(toolsLoaded == NO) {
 		toolsLoaded = YES;
 
-		librarySearchPaths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSAllDomainsMask - NSSystemDomainMask, YES);
+		//librarySearchPaths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSAllDomainsMask - NSSystemDomainMask, YES);
 //		librarySearchPaths = [NSArray arrayWithObject: @"/Library"]; 
 
 		[bundleSearchPaths addObject: [[[NSBundle mainBundle] builtInPlugInsPath] stringByAppendingPathComponent: @"Tools/"]];
 		NSLog(@"bundleSearchPaths is %@\n", bundleSearchPaths);
-		searchPathEnum = [librarySearchPaths objectEnumerator];
+		//searchPathEnum = [librarySearchPaths objectEnumerator];
 //		while(currPath = [searchPathEnum nextObject])
 //			[bundleSearchPaths addObject: [currPath stringByAppendingPathComponent:appSupportSubpath]];
 //	NSLog(@"bundle search path array is %@\n", bundleSearchPaths);

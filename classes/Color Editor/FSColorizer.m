@@ -219,25 +219,19 @@
 					if(cache -> usesAutocolor[flag]) {
 						double weight, d, w[512];
 						weight = 0.0;
-						
+						r = g = b = 0.0;
+						offset = 3*(k % sd);
 						for(i = 0; i < cache -> subcolors[flag]; i++) {
 							d = ((oX - cache->X[cache->locationIndex[flag]+i])*(oX - cache->X[cache->locationIndex[flag]+i]) + (oY - cache->Y[cache->locationIndex[flag]+i])*(oY - cache->Y[cache->locationIndex[flag]+i]));
 							if(d < 0.000001) d = 0.000001;
 							w[i] = 1.0 / d;
 							weight += 1.0 / d;
+						
+							r += cache->color[index + (1+i)*3*sd + offset + 0] * w[i] / weight;
+							g += cache->color[index + (1+i)*3*sd + offset + 1] * w[i] / weight;
+							b += cache->color[index + (1+i)*3*sd + offset + 2] * w[i] / weight;
 						}
-						// make blended gradient
-						if(0) {
-						}
-						else {
-							r = g = b = 0.0;
-							offset = 3*(k % sd);
-							for(i = 0; i < cache -> subcolors[flag]; i++) {
-								r += cache->color[index + (1+i)*3*sd + offset + 0] * w[i] / weight;
-								g += cache->color[index + (1+i)*3*sd + offset + 1] * w[i] / weight;
-								b += cache->color[index + (1+i)*3*sd + offset + 2] * w[i] / weight;
-							}
-						}
+						
 					}
 					else {
 						if(cache -> smoothing[flag] > 0 && (oX*oX + oY*oY > 2.0)) {

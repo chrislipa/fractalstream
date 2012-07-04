@@ -489,7 +489,7 @@
 					break;
 				case FSE_Norm:
 					if(node[child1].type == (FSE_Var | FSE_Join)) {
-						child = node[child1].firstChild;
+						//child = node[child1].firstChild;
 						node[here].type = FSE_Func | FSE_Sqrt;
 						newNode = [self newNodeOfType: FSE_Arith | FSE_Norm2 at: here];
 						[self cloneSubtreeFrom: child1 to: newNode];
@@ -919,7 +919,7 @@
 					if(node[child1].type == (FSE_Var | FSE_Join)) {
 						int nchilds, /*stops,*/ v;
 						nchilds = node[child1].children;
-						child = node[child1].firstChild;
+						//child = node[child1].firstChild;
 						if(nchilds == 1) return error;
 						node[here].type = FSE_Comp | FSE_Equal;
 						node[here].auxi[0] = -1;
@@ -936,7 +936,7 @@
 				case FSE_Vanishes:
 					child1 = node[here].firstChild;
 					n = [self newNodeOfType: FSE_Arith | FSE_Norm2 at: here];
-					newNode = [self cloneSubtreeFrom: child1 to: n];
+					/*newNode =*/ [self cloneSubtreeFrom: child1 to: n];
 					[self deleteNodeAt: child1];
 					return [self realifyFrom: n];
 					break;
@@ -945,7 +945,7 @@
 		case FSE_Command: 
 			switch(node[here].type & (-1 ^ FSE_Type_Mask)) {
 				case FSE_Default:
-					t = node[here].type;
+					//t = node[here].type;
 					child1 = node[here].firstChild; child2 = node[child1].nextSibling;
 					if((node[child1].type == (FSE_Var | FSE_Join)) && (node[child2].type == (FSE_Var | FSE_Join))) {
 						int c1, c2, nchilds, join;
@@ -999,8 +999,8 @@
 					t = node[here].type;
 					child1 = node[here].firstChild; child2 = node[child1].nextSibling;
 					if((node[child1].type == (FSE_Var | FSE_Join)) && (node[child2].type == (FSE_Var | FSE_Join))) {
-						int nchilds, tn, c1, c2;
-						nchilds = node[child1].children;
+						int /*nchilds,*/ tn, c1, c2;
+						//nchilds = node[child1].children;
 						node[here].type = FSE_Command | FSE_Block;
 						if(node[child1].children != node[child2].children) return @"cannot set vectors of differing dimension";
 						c1 = node[child1].firstChild;
