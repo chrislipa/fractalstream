@@ -5,7 +5,7 @@
 //  Created by Matt Noonan on 11/24/07.
 //  Copyright 2007 __MyCompanyName__. All rights reserved.
 //
-
+#import "FSProtocols.h"
 #import "FSViewer.h"
 #import "FSLog.h"
 #import "debug.h"

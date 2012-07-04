@@ -20,7 +20,8 @@
 
 - (NSMutableArray*) colorArray;
 - (FSColorCache*) getColorCache;
-
+- (void) makeColorCache ;
+- (void) lockAllAutocolor;
 @end
 
 
@@ -44,6 +45,7 @@
 - (void) drawBoxFrom: (NSPoint) start to: (NSPoint) end withColor: (float*) rgb;
 - (NSWindow *)window;
 - (NSObject<FSColorWidgetProtocol>*) colorPicker;
+
 @end
 
 

@@ -380,7 +380,7 @@
 
 - (void) addTools: (NSFileWrapper*) toolWrapper {
 	NSEnumerator* en;
-	NSString* bundleName, *bundleDir, *filename;
+	NSString* bundleName, *bundleDir/*, *filename*/;
 	NSBundle* toolBundle;
 	id <FSTool> aTool;
 	Class pclass;
@@ -413,7 +413,7 @@
 
 - (void) addSpecialTools: (NSArray*) specialTools {
 	NSEnumerator* en;
-	NSString* bundleName, *bundleDir, *filename;
+	NSString* bundleName/*, *bundleDir, *filename*/;
 	NSBundle* toolBundle;
 	NSString* toolName;
 	id <FSTool> aTool;

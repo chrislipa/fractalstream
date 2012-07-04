@@ -9,9 +9,10 @@
 #import <Cocoa/Cocoa.h>
 #import "FSColor.h"
 #import "FSGradient.h"
+#import "FSColorLibraryController.h"
 
 @class FSGradientControl;
-
+@class FSScriptLibraryItem;
 @interface FSColorLibraryController : NSObject {
 	NSMutableArray* library;
 	IBOutlet FSGradientControl* editor;
@@ -26,11 +27,11 @@
 - (IBAction) loadColorLibrary: (id) sender;
 - (void) saveColor: (FSGradient*) grad;
 - (void) outlineSelectedColor: (NSNotification*) note;
-- (int) outlineView: (NSOutlineView*) outlineView numberOfChildrenOfItem: (id) item;
-- (BOOL) outlineView: (NSOutlineView*) outlineView isItemExpandable: (id) item;
-- (id) outlineView: (NSOutlineView*) outlineView child: (int) index ofItem: (id) item;
-- (id) outlineView: (NSOutlineView*) outlineView objectValueForTableColumn: (NSTableColumn*) col byItem: (id) item;
-- (void) outlineView: (NSOutlineView*) outlineView setObjectValue: (id) val forTableColumn: (NSTableColumn*) col byItem: (id) item;
+- (int) outlineView: (NSOutlineView*) outlineView numberOfChildrenOfItem: (FSScriptLibraryItem*) item;
+- (BOOL) outlineView: (NSOutlineView*) outlineView isItemExpandable: (FSScriptLibraryItem*) item;
+- (id) outlineView: (NSOutlineView*) outlineView child: (int) index ofItem: (FSScriptLibraryItem*) item;
+- (id) outlineView: (NSOutlineView*) outlineView objectValueForTableColumn: (NSTableColumn*) col byItem: (FSScriptLibraryItem*) item;
+- (void) outlineView: (NSOutlineView*) outlineView setObjectValue: (id) val forTableColumn: (NSTableColumn*) col byItem: (FSScriptLibraryItem*) item;
 
 
 @end

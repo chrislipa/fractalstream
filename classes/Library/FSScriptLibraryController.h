@@ -25,7 +25,7 @@
 - (BOOL) isGroup;
 - (NSString*) title;
 - (NSData*) description;
-- (int) children;
+- (int) numberOfChildren;
 - (id) child: (int) c;
 - (NSString*) path;
 - (NSImage*) image;
@@ -50,10 +50,10 @@
 
 - (void) newSelection: (NSNotification*) note;
 - (void) reload;
-- (int) outlineView: (NSOutlineView*) outlineView numberOfChildrenOfItem: (id) item;
-- (BOOL) outlineView: (NSOutlineView*) outlineView isItemExpandable: (id) item;
-- (id) outlineView: (NSOutlineView*) outlineView child: (int) index ofItem: (id) item;
-- (id) outlineView: (NSOutlineView*) outlineView objectValueForTableColumn: (NSTableColumn*) col byItem: (id) item;
+- (int) outlineView: (NSOutlineView*) outlineView numberOfChildrenOfItem: (FSScriptLibraryItem*) item;
+- (BOOL) outlineView: (NSOutlineView*) outlineView isItemExpandable: (FSScriptLibraryItem*) item;
+- (id) outlineView: (NSOutlineView*) outlineView child: (int) index ofItem: (FSScriptLibraryItem*) item;
+- (id) outlineView: (NSOutlineView*) outlineView objectValueForTableColumn: (NSTableColumn*) col byItem: (FSScriptLibraryItem*) item;
 
 
 @end

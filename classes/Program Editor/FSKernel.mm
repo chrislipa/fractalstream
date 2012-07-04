@@ -125,7 +125,7 @@ void gaussian2(double* R) {
 	Value *big2 = (Value*) _big2, *tiny2 = (Value*) _tiny2;
 	Value *maxIt = (Value*) _maxIt, *loop_i = (Value*) _loop_i;
 	AllocaInst *dsInP = (AllocaInst*) _dsInP, *dsOutP = (AllocaInst*) _dsOutP, *dsResPl = (AllocaInst*) _dsResPl, *dsResPf = (AllocaInst*) _dsResPf;
-	BasicBlock *commenceBlock = (BasicBlock*) _commenceBlock;
+	//BasicBlock *commenceBlock = (BasicBlock*) _commenceBlock;
 	
 	#define thisBlock builder -> GetInsertBlock()
 
@@ -907,7 +907,7 @@ void gaussian2(double* R) {
 	val = (void**) malloc(sizeof(Value*) * [[compiler tree] size]);
 	tree = [[compiler tree] nodeAt: 0];
 	int node = tree[0].firstChild;
-	int savedNode = 0;
+	//int savedNode = 0;
 	
 	// Build the kernel function's interface
 	Constant* c = mod -> getOrInsertFunction("kernel",
@@ -936,7 +936,7 @@ void gaussian2(double* R) {
 	std::vector<const Type*> twoDoubles(2, Type::DoubleTy);
 	FunctionType* ft = FunctionType::get(Type::DoubleTy, oneDouble, false);
 	FunctionType* ft2 = FunctionType::get(Type::DoubleTy, twoDoubles, false);
-	FunctionType* ft0 = FunctionType::get(Type::DoubleTy, nothing, false);
+	/*FunctionType* ft0 = */FunctionType::get(Type::DoubleTy, nothing, false);
 	Function* mathf;
 
 	/*** Build extern declarations for math functions ***/
@@ -1001,15 +1001,15 @@ void gaussian2(double* R) {
 	BasicBlock* initModeBlock = BasicBlock::Create("initialization modes", llvmKernel);
 	BasicBlock* runModeBlock = BasicBlock::Create("execution modes");
 
-	GetElementPtrInst *x, *j, *tmpP, *tmp2P, *tmp3P;
-	Value *tmp, *tmp2, *tmp3;
+	GetElementPtrInst *x, /**j,*/ *tmpP/*, *tmp2P, *tmp3P*/;
+	Value *tmp/*, *tmp2, *tmp3*/;
 	AllocaInst* jP = builder.CreateAlloca(Type::Int32Ty, LLVMi32([compiler maximumLoopDepth]), "j[]");	
 	AllocaInst* xP = builder.CreateAlloca(Type::DoubleTy, LLVMi32([compiler numberOfVariables]), "x[]");
 	AllocaInst* flagP = builder.CreateAlloca(IntegerType::get(32), 0, "&flag");
 	AllocaInst* probeP = builder.CreateAlloca(IntegerType::get(32), 0, "&probe");
 	AllocaInst* lengthP = builder.CreateAlloca(IntegerType::get(32), 0, "&length");
-	AllocaInst* crP = builder.CreateAlloca(Type::DoubleTy, 0, "cr");
-	AllocaInst* ciP = builder.CreateAlloca(Type::DoubleTy, 0, "ci");
+	//AllocaInst* crP = builder.CreateAlloca(Type::DoubleTy, 0, "cr");
+	//AllocaInst* ciP = builder.CreateAlloca(Type::DoubleTy, 0, "ci");
 	AllocaInst* reportedP = builder.CreateAlloca(IntegerType::get(32), 0, "&reported");
 	AllocaInst* reportxP = builder.CreateAlloca(Type::DoubleTy, 0, "reportX");
 	AllocaInst* reportyP = builder.CreateAlloca(Type::DoubleTy, 0, "reportY");
@@ -1332,7 +1332,7 @@ void gaussian2(double* R) {
 - (void*) loadKernelFromFile: (NSString*) filename {
 #ifndef WINDOWS
 	void* dmodule;
-	dmodule = dlopen([filename cString], RTLD_NOW);
+	dmodule = dlopen([filename cStringUsingEncoding:NSUTF8StringEncoding], RTLD_NOW);
 	NSLog(@"module is %p, filename is %@\n", dmodule, filename);
 	if(dmodule == NULL) return NULL;
 	kernelPtr = (void(*)(int,double*,int,double*,int,double,double)) dlsym(dmodule, "kernel");

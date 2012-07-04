@@ -95,7 +95,7 @@
 - (NSData*) description { return description; }
 - (NSString*) path { return path; }
 - (NSImage*) image { return preview; }
-- (int) children { 
+- (int) numberOfChildren { 
 	
 	if(group == NO) return 0;
 	if(children == nil) [self loadChildren];
@@ -174,19 +174,19 @@
 	EXIT
 }
 
-- (int) outlineView: (NSOutlineView*) outlineView numberOfChildrenOfItem: (id) item {
-	return (item == nil)? ((library == nil)? 0 : [library count]) : (int) [item children]; 
+- (int) outlineView: (NSOutlineView*) outlineView numberOfChildrenOfItem: (FSScriptLibraryItem*) item {
+	return (item == nil)? ((library == nil)? 0 : [library count]) : (int) [item numberOfChildren]; 
 }
 
-- (BOOL) outlineView: (NSOutlineView*) outlineView isItemExpandable: (id) item {
+- (BOOL) outlineView: (NSOutlineView*) outlineView isItemExpandable: (FSScriptLibraryItem*) item {
 	return (item == nil)? YES : (useOutlineView? [item isGroup] : NO);
 }
 
-- (id) outlineView: (NSOutlineView*) outlineView child: (int) index ofItem: (id) item {
+- (id) outlineView: (NSOutlineView*) outlineView child: (int) index ofItem:(FSScriptLibraryItem*) item {
 	return (item == nil)? [library objectAtIndex: index] : [item child: index];
 }
 
-- (id) outlineView: (NSOutlineView*) outlineView objectValueForTableColumn: (NSTableColumn*) col byItem: (id) item {
+- (id) outlineView: (NSOutlineView*) outlineView objectValueForTableColumn: (NSTableColumn*) col byItem: (FSScriptLibraryItem*) item {
 	return (item == nil)? @"FractalStream Script Library" : [item title];
 }
 
