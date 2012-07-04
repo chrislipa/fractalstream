@@ -4,9 +4,10 @@
 #import <QTKit/QTMovieView.h>
 #import <stdlib.h>
 #import <math.h>
-#import "FSViewer.h"
+
 #import "FSECompiler.h"
 #import "FSKernel.h"
+#import "FSProtocols.h"
 
 #ifndef FSTool_Type_Definitions
 #define FSTool_Type_Definitions
@@ -22,7 +23,7 @@ typedef struct {
 
 @interface FSMovieTool : NSObject {
 
-	id owner;
+	id<FractalStreamRenderer> owner;
 
 	IBOutlet NSProgressIndicator* wheel;
 	IBOutlet NSTextField* movieLengthField;
@@ -84,7 +85,7 @@ typedef struct {
 - (void) unfreeze;
 - (void) activate;
 - (void) deactivate;
-- (void) setOwnerTo: (id) theOwner;
+- (void) setOwnerTo: (id<FractalStreamRenderer>) theOwner;
 - (void) makeMovie: (NSString*) tmp;
 - (BOOL) is: (int) type;
 - (NSString*) name;

@@ -1,7 +1,7 @@
 
 #import <Cocoa/Cocoa.h>
-#import "FSViewer.h"
-
+#import "FSViewerData.h"
+#import "FSProtocols.h"
 #ifndef FSTool_Type_Definitions
 #define FSTool_Type_Definitions
 #define FSTool_Parametric	1
@@ -17,7 +17,7 @@ typedef struct {
 @interface FSPreviewTool : NSObject {
 
 	id owner;
-	IBOutlet FSViewer* viewport;
+	IBOutlet id<FractalStreamRenderer> viewport;
 	FSViewerData data;
 	BOOL memorized;
 }

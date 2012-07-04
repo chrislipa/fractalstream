@@ -25,8 +25,6 @@
 		6837DB5B0CEA9C4300EC448F /* SDTool.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SDTool.m; sourceTree = "<group>"; };
 		6837DB630CEA9C4B00EC448F /* SDTool.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = SDTool.nib; sourceTree = "<group>"; };
 		68605EF90F6F76AD00189C8C /* FSCustomDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCustomDataManager.h; sourceTree = "<group>"; };
-		68BFD52E0DA5946000325B56 /* FSViewerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSViewerData.h; sourceTree = "<group>"; };
-		68BFD52F0DA5946000325B56 /* FSViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSViewer.h; sourceTree = "<group>"; };
 		68BFD5300DA5946000325B56 /* FSColorWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSColorWidget.h; sourceTree = "<group>"; };
 		68BFD5FF0DA5EFD300325B56 /* FSTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSTool.h; sourceTree = "<group>"; };
 		8D5B49B6048680CD000E48DA /* SDTool.fstool */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDTool.fstool; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,9 +80,7 @@
 		08FB77AFFE84173DC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				68BFD52E0DA5946000325B56 /* FSViewerData.h */,
 				68BFD5FF0DA5EFD300325B56 /* FSTool.h */,
-				68BFD52F0DA5946000325B56 /* FSViewer.h */,
 				68BFD5300DA5946000325B56 /* FSColorWidget.h */,
 				68605EF90F6F76AD00189C8C /* FSCustomDataManager.h */,
 				6837DB5A0CEA9C4300EC448F /* SDTool.h */,
@@ -220,6 +216,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
 				PRODUCT_NAME = SDTool;
+				USER_HEADER_SEARCH_PATHS = ../../include/;
 				WRAPPER_EXTENSION = fstool;
 				ZERO_LINK = YES;
 			};
@@ -236,6 +233,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
 				PRODUCT_NAME = SaddleDrop;
+				USER_HEADER_SEARCH_PATHS = ../../include/;
 				WRAPPER_EXTENSION = fstool;
 			};
 			name = Release;
@@ -246,6 +244,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = ../../include/;
 			};
 			name = Debug;
 		};
@@ -256,6 +255,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = ../../include/;
 			};
 			name = Release;
 		};

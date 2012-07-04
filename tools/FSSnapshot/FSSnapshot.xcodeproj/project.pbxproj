@@ -28,8 +28,6 @@
 		6837DB5A0CEA9C4300EC448F /* FSSnapshotTool.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSSnapshotTool.h; sourceTree = "<group>"; };
 		6837DB5B0CEA9C4300EC448F /* FSSnapshotTool.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSSnapshotTool.m; sourceTree = "<group>"; };
 		6837DB630CEA9C4B00EC448F /* FSSnapshotTool.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = FSSnapshotTool.nib; sourceTree = "<group>"; };
-		68BFD52E0DA5946000325B56 /* FSViewerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSViewerData.h; sourceTree = "<group>"; };
-		68BFD52F0DA5946000325B56 /* FSViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSViewer.h; sourceTree = "<group>"; };
 		68BFD5300DA5946000325B56 /* FSColorWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSColorWidget.h; sourceTree = "<group>"; };
 		68BFD5FF0DA5EFD300325B56 /* FSTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSTool.h; sourceTree = "<group>"; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,9 +83,7 @@
 		08FB77AFFE84173DC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				68BFD52E0DA5946000325B56 /* FSViewerData.h */,
 				68BFD5FF0DA5EFD300325B56 /* FSTool.h */,
-				68BFD52F0DA5946000325B56 /* FSViewer.h */,
 				68BFD5300DA5946000325B56 /* FSColorWidget.h */,
 				6837DB5A0CEA9C4300EC448F /* FSSnapshotTool.h */,
 				6837DB5B0CEA9C4300EC448F /* FSSnapshotTool.m */,
@@ -247,6 +243,7 @@
 			buildSettings = {
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../include;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -256,6 +253,7 @@
 			buildSettings = {
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../include;
 				SDKROOT = macosx;
 			};
 			name = Release;

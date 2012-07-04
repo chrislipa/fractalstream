@@ -52,7 +52,7 @@
 	void** mergeSource;
 }
 
-- (void) test;
+//- (void) test;
 - (void) setDataManager: (FSCustomDataManager*) dm;
 - (BOOL) buildKernelFromCompiler: (FSECompiler*) newComp;
 - (void) buildLLVMKernel;

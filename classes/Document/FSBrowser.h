@@ -84,7 +84,7 @@
 - (IBAction) embedTool: (id) sender;
 - (IBAction) hidePanels: (id) sender;
 - (IBAction) revealPanels: (id) sender;
-
+- (void) setSpecialToolsTo: (NSArray*) names;
 - (void) reloadSession;
 - (void) reloadSessionWithoutRefresh;
 - (FSSession*) session;

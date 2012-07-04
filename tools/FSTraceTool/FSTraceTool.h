@@ -1,8 +1,8 @@
 
 #import <Cocoa/Cocoa.h>
-#import "FSViewer.h"
+#import "FSViewerData.h"
 #import "FSTool.h"
-
+#import "FSProtocols.h"
 #ifndef FSTool_Type_Definitions
 #define FSTool_Type_Definitions
 #define FSTool_Parametric	1
@@ -16,7 +16,7 @@ typedef struct {
 } FSPoint;
 
 @interface FSTraceTool : NSObject <FSTool> {
-	id owner;
+	id<FractalStreamRenderer> owner;
 	IBOutlet NSTextField* iteratesField;
 	IBOutlet NSColorWell* colorWell;
 	IBOutlet NSButton* boxesCheckbox;

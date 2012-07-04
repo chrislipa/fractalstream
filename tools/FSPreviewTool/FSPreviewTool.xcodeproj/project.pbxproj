@@ -23,8 +23,6 @@
 		6837DB5A0CEA9C4300EC448F /* FSPreviewTool.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSPreviewTool.h; sourceTree = "<group>"; };
 		6837DB5B0CEA9C4300EC448F /* FSPreviewTool.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSPreviewTool.m; sourceTree = "<group>"; };
 		6837DB630CEA9C4B00EC448F /* FSPreviewTool.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = FSPreviewTool.nib; sourceTree = "<group>"; };
-		68691C960D689E5600265440 /* FSViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSViewer.h; sourceTree = "<group>"; };
-		68FAB5960D5B9CDB004ABF7A /* FSViewerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSViewerData.h; sourceTree = "<group>"; };
 		68FAB5970D5B9CE7004ABF7A /* FSColorWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSColorWidget.h; sourceTree = "<group>"; };
 		68FAB59F0D5BACE0004ABF7A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		8D5B49B6048680CD000E48DA /* FSPreviewTool.fstool */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSPreviewTool.fstool; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,8 +81,6 @@
 				6837DB5A0CEA9C4300EC448F /* FSPreviewTool.h */,
 				6837DB5B0CEA9C4300EC448F /* FSPreviewTool.m */,
 				68FAB5970D5B9CE7004ABF7A /* FSColorWidget.h */,
-				68FAB5960D5B9CDB004ABF7A /* FSViewerData.h */,
-				68691C960D689E5600265440 /* FSViewer.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -243,6 +239,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = ../../include/;
 			};
 			name = Debug;
 		};
@@ -252,6 +249,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = ../../include/;
 			};
 			name = Release;
 		};

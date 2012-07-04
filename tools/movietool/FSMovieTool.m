@@ -7,8 +7,9 @@
 //
 
 #import "FSMovieTool.h"
-#import "FSViewer.h"
+#import "FSViewerData.h"
 
+#import "FSProtocols.h"
 static NSBundle* ourBundle = nil;
 
 @implementation FSMovieTool
@@ -322,7 +323,7 @@ static NSBundle* ourBundle = nil;
 	NSString* filename;
 	if(madeMovie == YES) {
 		savePanel = [NSSavePanel savePanel];
-		[savePanel setRequiredFileType: @"mov"];
+		[savePanel setAllowedFileTypes:[NSArray arrayWithObject:@"mov"]];
 		if([savePanel runModal] == NSFileHandlingPanelOKButton) {
 
 			filename = [[savePanel URL] path];

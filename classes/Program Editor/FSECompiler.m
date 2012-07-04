@@ -51,7 +51,7 @@
 		|| (c == 0x2020)) return FSSymbol_OPERATOR;
 	if((c == '0') || (c == '1') || (c == '2') || (c == '3') || (c == '4') || 
 		(c == '5') || (c == '6') || (c == '7') || (c == '8') || (c == '9')) return FSSymbol_NUMBER;
-	if((c == 0x03c0)) return FSSymbol_CONSTANT;
+	if(c == 0x03c0) return FSSymbol_CONSTANT;
 	else return FSSymbol_CHAR;
 }
 
@@ -145,9 +145,8 @@
 			lhs = [tree newNodeOfType: (FSE_Var | FSE_Counter) at: parent]; \
 		} \
 		else if(([self typeOf: [lastSymbol characterAtIndex: 0]] == FSSymbol_NUMBER) || (useComplexVars && [lastSymbol isEqualToString: @"i"])) { \
-			double x, y; FSEParseNode* num; \
+			double x, y; \
 			if(useComplexVars) { \
-				int tempn;\
 				x = y = 0.0;  \
 				if([lastSymbol isEqualToString: @"i"]) y = 1.0; \
 				else if([lastSymbol characterAtIndex: [lastSymbol length] - 1] == 'i') { \
@@ -210,7 +209,7 @@
 	generated subtree on success, -1 on failure */
 - (int) extractArithBelowNode: (int) parent
 {
-	int i, lhs, oldindex, parenindex,  oldparent;
+	int i, lhs, oldindex, /*parenindex,*/  oldparent;
 	//int oldnode, type, vindex, ret,
 	BOOL isEvalNode;
 	NSString* lastSymbol;
@@ -224,7 +223,8 @@
 		/* create a new node to sire the subexpression */
 		lhs = [tree newOrphanOfType: (FSE_Var | FSE_Ident)];
 		[self extractArithBelowNode: lhs];
-		parenindex = index; depth = 1;
+		//parenindex = index;
+		depth = 1;
 		while(1) {
 			[self readNextSymbol];
 			if(symbol == nil) {
@@ -253,7 +253,7 @@
 		}
 		for(i = 0; i < function_ops; i++) { /* is it a function name? */
 			if([symbol isEqualToString: function[i].word] == YES) {
-				lastSymbol = [NSString stringWithString: symbol];
+				//lastSymbol = [NSString stringWithString: symbol];
 				oldparent = parent;
 //				NSLog(@"found function %@\n", symbol);
 				parent = [tree newNodeOfType: (FSE_Func | function[i].code) at: oldparent];
@@ -302,17 +302,18 @@
 			/* not a prefix operator either, must be done */
 			return -1;
 		}
-		lastSymbol = [NSString stringWithString: symbol];
+		//lastSymbol = [NSString stringWithString: symbol];
 		oldparent = parent;
 		parent = [tree newNodeOfType: (FSE_Arith | arith_prefix[i].code) at: oldparent];
 		[self extractArithBelowNode: parent];
 		return parent;
 	}
+	return -1;
 }
 
 - (int) extractBoolBelowNode: (int) parent
 {
-	int i, oldparent, expr, oldindex, length, newparent, temp;
+	int i, oldparent, expr, oldindex, /*length,*/ newparent/*, temp*/;
 	BOOL /*isEvalNode,*/ wasParen;
 	//char cName[64];
 	//NSString* lastSymbol;
@@ -321,7 +322,7 @@
 	wasParen = NO;
 	oldindex = index; [self readNextSymbol];
 	if([symbol isEqualToString: @"("] == YES) {
-		int depth, lhs, savedindex;
+		int depth, lhs/*, savedindex*/;
 		/* create a new node to sire the subexpression */
 		lhs = [tree newOrphanOfType: (FSE_Var | FSE_Ident)];
 		[self extractBoolBelowNode: lhs];
@@ -516,7 +517,7 @@
 	else if([symbol isEqualToString: @"default"]) {
 		int ch, v;
 		if(useComplexVars) {
-			int join;
+			//int join;
 			node = [tree newNodeOfType: FSE_Command | FSE_Default at: parent];
 			ch = [self extractArithBelowNode: node];
 			v = [tree nodeAt: [tree nodeAt: ch] -> firstChild] -> auxi[0];
@@ -580,7 +581,7 @@
 		int n;
 		BOOL r;
 		n = [tree newNodeOfType: FSE_Command | FSE_Block at: parent];
-		while(r = [self extractCommandBelowNode: n]) ; // "end" will return NO but no error, so gets converted to YES.
+		while((r = [self extractCommandBelowNode: n])) ; // "end" will return NO but no error, so gets converted to YES.
 	}
 	else if([symbol isEqualToString: @"end"]) {
 		[self readNextSymbol];
@@ -666,7 +667,7 @@
 		[tree nodeAt: node] -> auxi[0] = loopDepth;
 		n = [tree newNodeOfType: FSE_Command | FSE_Block at: node];
 		++loopDepth;
-		while(r = [self extractCommandBelowNode: n]) ; // should return NO with error "until"
+		while((r = [self extractCommandBelowNode: n])) ; // should return NO with error "until"
 		--loopDepth;
 		if([error isEqualToString: @"until"]) error = nil;
 		else {
@@ -683,7 +684,7 @@
 		return NO;
 	}
 	else if([symbol isEqualToString: @"iterate"] == YES) {
-		int setnode, varnode, jnode, v, n;
+		int setnode, varnode, /*jnode,*//* v,*/ n;
 		node = [tree newNodeOfType: FSE_Command | FSE_Do at: parent];
 		[tree nodeAt: node] -> auxi[0] = loopDepth;
 		n = [tree newNodeOfType: FSE_Command | FSE_Block at: node];
@@ -780,11 +781,11 @@
 
 - (IBAction) compile: (id) sender
 {
-	int prefixblock, codeblock, rootblock, t, savednode, tmpnode, savedcounter, savedroot, node;
-	NSString *gcc, *ifile;
-	char gccC[256], ifileC[256];
-	BOOL reported, autopop, custom;
-	FSEOpStream opstream;
+	int /*prefixblock,*/ codeblock, rootblock, /*t,*/ /*savednode,*/ /*tmpnode,*/ /*savedcounter,*/ /*savedroot,*/ node;
+	//NSString *gcc, *ifile;
+	//char gccC[256], ifileC[256];
+	//BOOL reported, autopop, custom;
+	//FSEOpStream opstream;
 	
 //	NSLog(@"compiler %@ asked to compile by sender %@\n", self, sender);
 	error = nil;
@@ -799,12 +800,12 @@
 	dataSourceID = 0;
 	
 	usesC = 0;
-	int lastIf = -1;
+	//int lastIf = -1;
 	
-	reported = NO;
-	autopop = NO;
-	custom = NO;
-	savedcounter = 0;
+	//reported = NO;
+	//autopop = NO;
+	//custom = NO;
+	//savedcounter = 0;
 	probecount = 0;
 	nextvar = 0;
 	loopDepth = 0;
@@ -813,12 +814,12 @@
 	node = [tree newOrphanOfType: FSE_RootNode];
 	rootblock = node;
 	orphan = [tree newOrphanOfType: FSE_Nil];  /* orphan node gets used as a temporary root as subtrees get built */
-	prefixblock = [tree newNodeOfType: FSE_Command | FSE_Block at: rootblock]; /* this is where prefix code should go */
+	/*prefixblock = */[tree newNodeOfType: FSE_Command | FSE_Block at: rootblock]; /* this is where prefix code should go */
 	codeblock = [tree newNodeOfType: FSE_Command | FSE_Block at: rootblock];
 	useComplexVars = YES;
 	
 	index = 0;
-	savednode = -1;
+	//savednode = -1;
 	[self readNextSymbol];
 	if([symbol isEqualToString: @"{"]) { 
 		while(symbol != nil) {
@@ -828,7 +829,7 @@
 			else if([symbol isEqualToString: @"custom"]) {
 				NSRange range;
 				int savedindex;
-				custom = YES;
+				//custom = YES;
 				savedindex = index + 1;
 				while([source characterAtIndex: index] != '}') {
 					++index;
@@ -891,8 +892,10 @@
 - (void) buildScript: (NSString*) newSource {
 	if([[newSource lowercaseString] isEqualToString: source] != YES) {
 //		NSLog(@"Compiler is going to build script \"%@\"\n", newSource);
-		[self setTitle: @"" source: newSource andDescription: @""];
+		NSTextStorage* desc = [[NSTextStorage alloc] initWithString:@""];
+		[self setTitle: @"" source: newSource andDescription: desc];
 		[self compile: self];
+		[desc release];
 	}
 }
 

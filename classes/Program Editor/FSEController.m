@@ -1,5 +1,6 @@
 #import "FSEController.h"
 #import "FSLog.h"
+#import "FSBrowser.h"
 @implementation FSEController
 
 - (void) awakeFromNib {

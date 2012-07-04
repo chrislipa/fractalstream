@@ -31,14 +31,18 @@
 - (void*) getFunctionPointerForQuery: (NSString*) name {
 	id ob;
 	ob = [queryDictionary objectForKey: name];
-	if([ob respondsToSelector: @selector(queryNamed:)]) return [ob queryNamed: name];
+	if([ob respondsToSelector: @selector(queryNamed:)]) {
+		return [ob queryNamed: name];
+	}
 	return NULL;
 }
 
 - (void*) getFunctionPointerForMerge: (NSString*) name {
 	id ob;
 	ob = [dataDictionary objectForKey: name];
-	if([ob respondsToSelector: @selector(queryNamed:)]) return [ob queryNamed: name];
+	if([ob respondsToSelector: @selector(queryNamed:)]) {
+		return [ob queryNamed: name];
+	}
 	return NULL;
 }
 
@@ -49,7 +53,6 @@
 	ob = [dataDictionary objectForKey: name];
 //	NSLog(@"ob is %@\n", ob);
 	if([ob respondsToSelector: @selector(dataNamed:)]) {
-//		NSLog(@"responds to selector\n");
 		return [ob dataNamed: name];
 	}
 //	NSLog(@"!!!! does not respond to selector ????\n");

@@ -7,13 +7,13 @@
 //
 
 #import "FSColorizer.h"
-
-
+#import "FSColorWidget.h"
+#import "FSColor.h"
 @implementation FSColorizer
 
 - (id) init {
-	FSGradient* gradient;
-	FSColor* color;
+	//FSGradient* gradient;
+	//FSColor* color;
 	self = [super init];
 	colorArray = nil;
 	return self;
@@ -29,7 +29,7 @@
 	colorPicker = picker;
 }
 
-- (void) setColorArray: (NSArray*) colors { colorArray = colors; }
+- (void) setColorArray: (NSMutableArray*) colors { colorArray = colors; }
 
 - (void) setCurrentBatch: (int) cb {
 	synchronizeTo(colorArray) { currentBatch = cb; }
@@ -37,42 +37,42 @@
 
 
 - (void) colorUnit: (FSRenderUnit*) unit {
-	unsigned char* texture;
+	//unsigned char* texture;
 	double oX, oY;
 	int k;
-	int x, y, flag, sd, i, j;
-	float r, g, b, or, og, ob;
-	double loglog, golgol;
-	int phase;
+	int x, y, flag, sd, i/*, j*/;
+	float r, g, b/*, or, og, ob*/;
+	double loglog/*, golgol*/;
+	//int phase;
 	int xMax, yMax;
 //	float* colorArray;
-	int* smoothness;
+	//int* smoothness;
 //	id gradient;
-	FSColor* col;
+//	FSColor* col;
 	int index, offset;
-	NSColor* c;
-	FSGradient* gradient;
+	//NSColor* c;
+	//FSGradient* gradient;
 	FSColorCache* cache;
 	double nearR, farR;
-	int prog;
+	//int prog;
 	
 	if((unit->batch) != currentBatch) return;
 	
-	texture = (unsigned char*) (unit -> result);   /**** have to mix down to 8-bit integer with NSBitmapImageRep?? ***/
+	//texture = (unsigned char*) (unit -> result);   /**** have to mix down to 8-bit integer with NSBitmapImageRep?? ***/
 	xMax = unit -> dimension[0];
 	yMax = unit -> dimension[1];
-	colorArray = [colorPicker colorArray];
+	colorArray = [NSMutableArray arrayWithArray: [colorPicker colorArray]];
 	//	smoothness = [colorPicker smoothnessPtr];
 	farR = (unit -> viewerData) -> maxRadius;
 	nearR = (unit -> viewerData) -> minRadius;
 	nearR *= nearR; farR *= farR;
-	prog = (unit -> viewerData) -> program;
+	//prog = (unit -> viewerData) -> program;
 
 	cache = [colorPicker getColorCache];
 
 	
 	if(cache -> needsLock && (unit -> parametric == NO)) {		// grab a lock, color cache could change while we work.
-		colorArray = [colorPicker colorArray];
+		colorArray =  [colorPicker colorArray];
 		synchronizeTo(colorArray) {
 			cache = [colorPicker getColorCache];
 			[cache -> lock lock];
@@ -217,6 +217,7 @@
 					if(cache -> usesAutocolor[flag]) {
 						double weight, d, w[512];
 						weight = 0.0;
+						
 						for(i = 0; i < cache -> subcolors[flag]; i++) {
 							d = ((oX - cache->X[cache->locationIndex[flag]+i])*(oX - cache->X[cache->locationIndex[flag]+i]) + (oY - cache->Y[cache->locationIndex[flag]+i])*(oY - cache->Y[cache->locationIndex[flag]+i]));
 							if(d < 0.000001) d = 0.000001;

@@ -10,7 +10,7 @@
 #import "FSLog.h"
 @implementation FSPanelHelper
 
-- (IBAction) addPanel: (id) sender {
+- (void) addPanel: (id) sender {
 	ENTER
 	if(panels == nil) panels = [[NSMutableArray alloc] init];
 	[panels addObject: sender];

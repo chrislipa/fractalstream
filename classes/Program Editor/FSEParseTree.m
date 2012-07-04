@@ -321,7 +321,7 @@
 }
 
  - (NSString*) realifyFrom: (int) here {
-	int i, children, child, child1, child2, replacement, x, y, newNode, nx, ny, u, v, t, n, nnot;
+	int i, children, child, child1, child2, /*replacement,*/ x, y, newNode, nx, ny, u, v, t, n, nnot;
 	int bits, lastbit;
 	NSString* error;
 	
@@ -330,7 +330,7 @@
 	if(children == 0) return nil;
 	child = node[here].firstChild;
 	for(i = 0; i < children; i++) {
-		if(error = [self realifyFrom: child]) return error;
+		if((error = [self realifyFrom: child])) return error;
 		child = node[child].nextSibling;
 	}
 	
@@ -1077,15 +1077,16 @@
 		}
 	}
 }
+#define Indent for(i = 0; i < depth; i++) log = [log stringByAppendingString: @"  "];
 
 - (void) log {
 	int currentNode;
-	int depth, i;
+	//int /*depth,*//* i*/;
 	NSString* log;
 	
 	log = [[NSString alloc] initWithString: @"Parse tree:\n"];
-	depth = 0;
-#define Indent for(i = 0; i < depth; i++) log = [log stringByAppendingString: @"  "];
+	//depth = 0;
+
 
 	if(node[FSE_RootNode].children == 0) { 
 		//log = [log stringByAppendingString: @"{}"];

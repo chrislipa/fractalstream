@@ -7,6 +7,7 @@
 //
 
 #import "FSColorLibraryController.h"
+#import "FSGradientControl.h"
 #import "FSLog.h"
 @implementation FSColorLibraryController
 
@@ -102,8 +103,8 @@
 
 - (BOOL) outlineView: (NSOutlineView*) outlineView isItemExpandable: (id) item { return (item == nil)? YES : NO; }
 
-- (id) outlineView: (NSOutlineView*) outlineView child: (int) index ofItem: (id) item { 
-	if (item == nil) return [library objectAtIndex: index];
+- (id) outlineView: (NSOutlineView*) outlineView child: (int) p_index ofItem: (id) item { 
+	if (item == nil) return [library objectAtIndex: p_index];
 	return nil;
 }
 

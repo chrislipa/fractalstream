@@ -66,5 +66,5 @@
 - (void) updateMenuForParametric: (BOOL) isPar;
 - (void) addTools: (NSFileWrapper*) toolWrapper;
 - (void) setDataManager: (FSCustomDataManager*) dm;
-
+- (void) addSpecialTools: (NSArray*) specialTools;
 @end

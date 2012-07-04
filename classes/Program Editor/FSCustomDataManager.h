@@ -18,6 +18,7 @@
 - (void) addQueryNamed: (NSString*) name usingObject: (id) ob;
 - (void*) getFunctionPointerForQuery: (NSString*) name;
 - (void*) getFunctionPointerForData: (NSString*) name;
+- (void*) getFunctionPointerForEval: (NSString*) name ;
 - (NSDictionary*) dataDictionary;
 - (NSDictionary*) queryDictionary;
 

@@ -3,6 +3,8 @@
 #import "FSSession.h"
 #import "FSViewer.h"
 #import "FSLog.h"
+#import "FSTools.h"
+
 @implementation FSBrowser
 
 - (id) init {
@@ -22,8 +24,8 @@
 
 - (void) awakeFromNib {
 	ENTER
-	NSString* path;
-	void* loadedModule;
+	//NSString* path;
+	//void* loadedModule;
 	NSLog(@"browser %@ awoke from nib\n", self);
 	dataManager = [[FSCustomDataManager alloc] init];
 	theKernel = [[FSKernel alloc] init];
@@ -96,7 +98,7 @@
 
 - (void) reloadSessionWithoutRefresh { 
 	ENTER
-	void* loadedModule;
+	//void* loadedModule;
 	NSString* tmp;
 	FSViewerData d;
 
@@ -135,7 +137,9 @@
 
 - (BOOL) editorDisabled { return ([editorButton isEnabled] == YES)? NO : YES; }
 - (void) setAllowEditor: (BOOL) allow { [editorButton setEnabled: allow]; }
-- (void) loadTools { [theTools addSpecialTools: specialTools]; }
+- (void) loadTools { 
+	[theTools addSpecialTools: specialTools]; 
+}
 
 - (void) reloadSession {
 	[self reloadSessionWithoutRefresh];
@@ -180,15 +184,15 @@
 
 - (IBAction) goUp: (id) sender {
 	int currentPlane;
-	FSSessionNode* cn, *lastGood;
-	lastGood = [theSession currentNode];
+	FSSessionNode* cn /*,*lastGood*/;
+	/*lastGood =*/ [theSession currentNode];
 	currentPlane = ([theSession currentNode] -> data).program;
 	while([theSession currentNode] != [theSession getRootNode]) {
 		cn = [theSession currentNode];
 		[theSession goBackward: self];
 		if((([theSession currentNode] -> data).program != currentPlane)) break;
 		if([theSession currentNode] == cn) break;
-		lastGood = cn;
+		//lastGood = cn;
 	}
 //	if([theSession currentNode] == [theSession getRootNode]) [theSession goForward: self];
 	[theViewer setViewerData: &([theSession currentNode] -> data)];
@@ -288,8 +292,12 @@
 	[unique release], unique = nil;	
 }
 
-- (void) setProbeNamesTo: (NSArray*) names { probeNames = [[NSArray arrayWithArray: names] retain]; }
-- (void) setSpecialToolsTo: (NSArray*) names { specialTools = [[NSArray arrayWithArray: names] retain]; }
+- (void) setProbeNamesTo: (NSArray*) names { 
+	probeNames = [[NSArray arrayWithArray: names] retain]; 
+}
+- (void) setSpecialToolsTo: (NSArray*) names { 
+	specialTools = [[NSArray arrayWithArray: names] retain]; 
+}
 
 - (void) setVariableValuesToReal: (NSArray*) rp imag: (NSArray*) ip {
 	ENTER
@@ -302,21 +310,21 @@
 	ENTER
 	double* defaults;
 	double c;
-	int i, j;
+	int /*i,*/ j;
 	NSMutableArray *re, *im, *rvn;
 	NSString* prevName, *curName;
 	NSEnumerator* nameEnum;
 	
 	kernel(-2, NULL, 0, &c, 0, 0.0, 0.0);
 	if((int) c != [variableNames count])
-		NSLog(@"***** kernel is reporting a different value than expected for parameter count (reported %i, expected %i)\n", (int) c, [variableNames count]);
+		NSLog(@"***** kernel is reporting a different value than expected for parameter count (reported %d, expected %d)\n", (int) c,(int) [variableNames count]);
 	
 	re = [[NSMutableArray alloc] init];
 	im = [[NSMutableArray alloc] init];
 	rvn = [[NSMutableArray alloc] init];
 	defaults = malloc(2 * sizeof(double) * [variableNames count]);
 	kernel(-3, NULL, 0, defaults, 0, 0.0, 0.0);
-	prevName = @"";
+	//prevName = @"";
 	nameEnum = [variableNames objectEnumerator];
 	curName = [nameEnum nextObject];
 	uniqueVariableNames = 0; j = 0;

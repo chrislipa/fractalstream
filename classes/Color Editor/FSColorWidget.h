@@ -10,6 +10,7 @@
 #include <stdlib.h>
 #import "FSColorLibraryController.h"
 #import "FSThreading.h"
+#import "FSProtocols.h"
 
 typedef struct {
 	NSString* name;
@@ -33,7 +34,7 @@ typedef struct {
 	NSConditionLock* lock;
 } FSColorCache;
 
-@interface FSColorWidget : NSObject <NSCoding> {
+@interface FSColorWidget : NSObject <NSCoding,FSColorWidgetProtocol> {
 	IBOutlet NSMatrix* colorMatrix;
 	IBOutlet NSColorWell* colorWell;
 	IBOutlet NSButton* magGradient;
@@ -90,7 +91,8 @@ typedef struct {
 - (void) setNamesTo: (NSArray*) newNames;
 - (void) setup;
 - (void) getColorsFrom: (FSColorWidget*) cw;
-- (NSArray*) smoothnessArray;
+/*
+- (NSArray*) smoothnessArray;*/
 - (void) readSmoothnessFrom: (NSArray*) smoothArray;
 - (IBAction) smoothnessChanged: (id) sender;
 - (int*) smoothnessPtr; 
@@ -98,17 +100,19 @@ typedef struct {
 - (float*) colorArrayPtr;
 - (IBAction) updateColorInformation: (id) sender;
 - (void) updateAutocolorList: (NSNotification*) note; 
-
+- (FSColorCache*) getColorCache ;
 - (NSArray*) names;
-- (NSArray*) gradientArray;
-- (NSArray*) colorArray;
+//- (NSArray*) gradientArray;
+- (NSMutableArray*) colorArray;
 
 - (void) encodeWithCoder: (NSCoder*) coder;
 - (id) initWithCoder: (NSCoder*) coder;
-
+- (void) makeColorCache ;
+/**
 - (int) numberOfRowsInTableView: (NSTableView*) tableView;
 - (id) tableView: (NSTableView*) tableView objectValueForTableColumn: (NSTableColumn*) tableColumn row: (int) row;
 - (id) tableView: (NSTableView*) tableView setObjectValue: (id) anObject forTableColumn: (NSTableColumn*) tableColumn row: (int) row;
+ */
 - (void) lockAllAutocolor;
 @end
 

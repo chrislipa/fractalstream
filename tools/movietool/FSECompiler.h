@@ -2,7 +2,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "FSEParseTree.h"
-#import "FSEC_gcc.h"
+//#import "FSEC_gcc.h"
 
 /* This class builds a FSEParseTree from the source code.  This parse tree can then be interpreted by
 	any back-end systems (see FSEC_gcc.c for a simple example) */

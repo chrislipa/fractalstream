@@ -8,8 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 #import "FSColor.h"
+#import "FSGradient.h"
 
-
+@class FSGradientControl;
 
 @interface FSColorLibraryController : NSObject {
 	NSMutableArray* library;

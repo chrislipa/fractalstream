@@ -1,9 +1,10 @@
 
 #import <Cocoa/Cocoa.h>
 #include <math.h>
-#import "FSViewer.h"
+#import "FSViewerData.h"
 #import "FSTool.h"
 #import "FSCustomDataManager.h"
+#import "FSProtocols.h"
 
 #ifndef FSTool_Type_Definitions
 #define FSTool_Type_Definitions
@@ -32,7 +33,7 @@ int _saddles_for_point(double* saddle, double* point);
 int _test_saddles(int saddles, double* saddleX, double* saddleY, double radius2, double* r);
 
 @interface SDTool : NSObject <FSTool> {
-	id owner;
+	id<FractalStreamRenderer> owner;
 	IBOutlet NSColorWell* colorWell;
 	IBOutlet NSPanel* panel;
 	IBOutlet NSTextField* saddleCountField;

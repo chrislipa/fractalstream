@@ -26,7 +26,7 @@
 - (void) swapBirthOrderAt: (int) spot;
 - (FSEParseNode*) nodeAt: (int) index;
 - (void) reorder;
-- (NSString*) postprocessReserving: (int) firstTemp;
+//- (NSString*) postprocessReserving: (int) firstTemp;
 - (void) log;
 - (int) size;
 - (void) setTempVar: (int) newTempVar;
@@ -35,7 +35,7 @@
  - (NSString*) realifyFrom: (int) here;
 - (void) reorderFromNode: (int) here;
 - (int) weight: (int) type;
- - (double) evaluateFrom: (int) here usingVariables: (double*) var;
+// - (double) evaluateFrom: (int) here usingVariables: (double*) var;
 - (FSEParseNode*) nodeAt: (int) index;
 
 

@@ -28,7 +28,6 @@
 		68B3E1440FE41CB10094BF80 /* FSEParseNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSEParseNode.h; sourceTree = "<group>"; };
 		68B3E1450FE41CB10094BF80 /* FSEParseTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSEParseTree.h; sourceTree = "<group>"; };
 		68B3E1460FE41CB80094BF80 /* FSECompiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSECompiler.h; sourceTree = "<group>"; };
-		68B3E1470FE41CCA0094BF80 /* FSEC_gcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSEC_gcc.h; sourceTree = "<group>"; };
 		68B3E1480FE41CCA0094BF80 /* FSKernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSKernel.h; sourceTree = "<group>"; };
 		68B3E1490FE41CCA0094BF80 /* FSJitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSJitter.h; sourceTree = "<group>"; };
 		68B3E14A0FE41CCA0094BF80 /* FSCustomDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCustomDataManager.h; sourceTree = "<group>"; };
@@ -36,8 +35,6 @@
 		68DB37DB0D63A92D00D018BD /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		68DB37EB0D63AF7100D018BD /* FSColorWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSColorWidget.h; sourceTree = "<group>"; };
 		68DB386A0D63B0C900D018BD /* FSMovieTool.fstool */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSMovieTool.fstool; sourceTree = BUILT_PRODUCTS_DIR; };
-		68FAB54D0D5B9706004ABF7A /* FSViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSViewer.h; sourceTree = "<group>"; };
-		68FAB5960D5B9CDB004ABF7A /* FSViewerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSViewerData.h; sourceTree = "<group>"; };
 		68FAB59F0D5BACE0004ABF7A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -96,8 +93,6 @@
 				68B3E1420FE41C970094BF80 /* Compiler */,
 				6837DB5A0CEA9C4300EC448F /* FSMovieTool.h */,
 				6837DB5B0CEA9C4300EC448F /* FSMovieTool.m */,
-				68FAB5960D5B9CDB004ABF7A /* FSViewerData.h */,
-				68FAB54D0D5B9706004ABF7A /* FSViewer.h */,
 				68DB37EB0D63AF7100D018BD /* FSColorWidget.h */,
 			);
 			name = Classes;
@@ -144,7 +139,6 @@
 				68B3E1440FE41CB10094BF80 /* FSEParseNode.h */,
 				68B3E1450FE41CB10094BF80 /* FSEParseTree.h */,
 				68B3E1460FE41CB80094BF80 /* FSECompiler.h */,
-				68B3E1470FE41CCA0094BF80 /* FSEC_gcc.h */,
 				68B3E1480FE41CCA0094BF80 /* FSKernel.h */,
 				68B3E1490FE41CCA0094BF80 /* FSJitter.h */,
 				68B3E14A0FE41CCA0094BF80 /* FSCustomDataManager.h */,
@@ -276,6 +270,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = ../../include/;
 			};
 			name = Debug;
 		};
@@ -285,6 +280,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = ../../include/;
 			};
 			name = Release;
 		};

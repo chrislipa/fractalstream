@@ -8,6 +8,7 @@
 
 #import "FSStartup.h"
 #import "FSLog.h"
+#import "FSDocument.h"
 
 @implementation FSStartup
 

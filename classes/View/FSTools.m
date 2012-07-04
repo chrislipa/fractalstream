@@ -87,10 +87,10 @@
 
 - (void) rightMouseDown: (NSEvent*) theEvent {
 	void (*kernel)(int, double*, int, double*, int, double);
-	double x, y, in[9], out[6], p[2];					
-	float c[3];
-	int i; 
-	NSImage* snapshot;
+	double x, y,/* in[9], out[6],*/ p[2];					
+	//float c[3];
+	//int i; 
+	//NSImage* snapshot;
 
 	lastClick = [theEvent locationInWindow];
 	inDrag = NO;

@@ -7,7 +7,9 @@
 //
 
 #import "FSPreviewTool.h"
-#import "FSViewer.h"
+#import "FSViewerData.h"
+#import "FSProtocols.h"
+
 static NSBundle* ourBundle = nil;
 
 @implementation FSPreviewTool

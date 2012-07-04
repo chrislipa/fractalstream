@@ -9,6 +9,7 @@
 #import "FSColorWidget.h"
 #import "FSCWNamedColors.H"
 #import "FSLog.h"
+#import "FSGradientControl.h"
 
 @implementation FSColorWidget
 
@@ -69,7 +70,7 @@
 	return cachedColorArray;
 }
 
-- (NSArray*) colorArray { return colors; }
+- (NSMutableArray*) colorArray { return colors; }
 
 - (BOOL) useAutocolorForColor: (int) c {
 	return usesAutocolor[c];

@@ -21,7 +21,7 @@ int _toggle = 0;
 int _the_count = 0;
 
 int _eval_for_point(double* saddle, int* flag) {
-	int bestCount, bestIndex, i;
+	int bestCount, bestIndex=0, i;
 	if(_send_trivial_data) return 0;
 	else if(_shared_saddle_total) {
 		switch(_shared_color_method) {
@@ -279,7 +279,7 @@ int _saddles_for_point(double* point, double* saddle) {
 		free(_shared_saddle_iters);
 		free(queue);
 		unused = -12345.0;
-		NSLog(@"allocating %iK for saddles\n", (2*sizeof(double) * width * height * saddles)>>10);
+		NSLog(@"allocating %dK for saddles\n", (int)(2*sizeof(double) * width * height * saddles)>>10);
 		_shared_saddle_array = (double*) malloc(2*sizeof(double) * width * height * saddles);
 		_shared_saddle_iters = (int*) malloc(sizeof(int) * width * height * saddles);
 		queue = (SDQueue*) malloc(sizeof(SDQueue) * 4 * (width * height + 1));
@@ -414,7 +414,9 @@ int _saddles_for_point(double* point, double* saddle) {
 	if(saddles) [self propagateToParameterSpaceFrom: par];
 }
 
-- (IBAction) redraw: (id) sender { [owner reload: nil]; }
+- (IBAction) redraw: (id) sender { 
+	[owner reload: nil]; 
+}
 
 - (void) searchForSaddleFrom: (double*) p0 {
 	double p[16], q[16];

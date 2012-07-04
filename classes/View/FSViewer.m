@@ -26,7 +26,7 @@
 - (id) initWithCoder: (NSCoder*) coder
 {
 	ENTER
-	int i;
+	//int i;
 	self = [super initWithCoder: coder];
 
 	Debug(@"this is viewer %@\n", self);
@@ -36,7 +36,7 @@
 
 - (void) awakeFromNib {
 	ENTER
-	int i, j, xBoxes, yBoxes;
+	int i;//, j, xBoxes, yBoxes;
 	
 	
 	view = &fakeview;
@@ -205,11 +205,13 @@
 	[self render: self];
 //	NSLog(@"done setting data\n");
 }
-- (void) getViewerDataTo: (FSViewerData*) savedData { memmove(savedData, view, sizeof(FSViewerData)); }
+- (void) getViewerDataTo: (FSViewerData*) savedData {
+	memmove(savedData, view, sizeof(FSViewerData)); 
+}
 
 - (FSViewerData) data { return fakeview; }
 - (FSColorWidget*) colorPicker { return colorPicker; }
-- (void) setColorPicker: (FSColorWidget*) newColorPicker { 
+- (void) setColorPicker: (NSObject<FSColorWidgetProtocol>*) newColorPicker { 
 	colorPicker = newColorPicker;
 	[viewerColorizer setColorWidget: colorPicker autocolorCache: acCache];
 }
@@ -219,7 +221,7 @@
 	int i; 
 	int xBoxes, yBoxes, x, y, xRemainder, yRemainder;
 	double dx, dy;
-	float detailLevel; 
+	//float detailLevel; 
 	FSRenderUnit unit;
 	FSRenderOperation* op;
 	NSPoint p;
@@ -353,7 +355,7 @@
 	NSPoint p;
 	NSRect r;
 	NSBitmapImageRep* bitmap;
-	NSImage* partialImage;
+	//NSImage* partialImage;
 	
 	if(([op unit] -> finished) && ([op unit] -> batch == renderBatch)) {
 		size.width = [op unit] -> dimension[0];
@@ -520,16 +522,16 @@
 /******* Convert these methods to use the FSViewerItem stack ******/
 - (void) drawDotAt: (NSPoint) P withColor: (float*) rgb 
 {
-	float sx, sy, ex, ey;
-	NSPoint p;
+	//float sx, sy, ex, ey;
+	//NSPoint p;
 		
-	p = [self convertPoint: P fromView: nil];
+	/*p =*/ [self convertPoint: P fromView: nil];
 }
 
 - (void) drawBoxFrom: (NSPoint) start to: (NSPoint) end withColor: (float*) rgb
 {
-	double sx, sy, ex, ey;
-	float temp;
+	//double sx, sy, ex, ey;
+	//float temp;
 	FSViewerItem item;
 	[self convertLocation: start toPoint: item.point[0]];
 	[self convertLocation: end toPoint: item.point[1]];
@@ -729,7 +731,7 @@
 	NSRect rect;
 	NSImage* backgroundCopy;
 
-	NSBezierPath* path;
+	//NSBezierPath* path;
 	if(useFakeZoom == NO) return;
 
 	p = [self locationOfPoint: start];
@@ -861,7 +863,7 @@
 /* drawRect */
 - (void) drawRect: (NSRect) rect
 {
-	int i, j;
+	//int i, j;
 	if(readyToDisplay == NO) {
 		[[NSColor whiteColor] set];
 		NSRectFill(rect);

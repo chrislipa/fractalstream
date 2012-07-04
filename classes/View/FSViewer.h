@@ -10,6 +10,7 @@
 #import "FSColorizer.h"
 #import "FSThreading.h"
 #import "FSFullscreenWindow.h"
+#import "FSProtocols.h"
 
 #ifndef GL_TEXTURE_RECTANGLE_EXT
 #define GL_TEXTURE_RECTANGLE_EXT            0x84F5
@@ -26,7 +27,7 @@
 - (void) setItem: (FSViewerItem) newItem;
 @end
 
-@interface FSViewer : NSView {
+@interface FSViewer : NSView <FractalStreamRenderer> {
 
 	FSViewerData* view;
 	FSViewerData fakeview;
@@ -140,4 +141,5 @@
 - (id) document;
 - (void) drawItem: (FSViewerItem) newItem ;
 - (void) setRenderCompletedMessage: (SEL) message forObject: (id) obj;
+
 @end
