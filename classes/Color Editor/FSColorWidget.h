@@ -12,27 +12,7 @@
 #import "FSThreading.h"
 #import "FSProtocols.h"
 
-typedef struct {
-	NSString* name;
-	float r, g, b;
-} FSCW_named_color;
 
-typedef struct {
-	float* color;
-	int* colorIndex;
-	int* subdivisions;
-	BOOL* smoothing;
-	BOOL* locked;
-	BOOL* usesAutocolor;
-	int* subcolors;
-	int* locationIndex;
-	double* X;
-	double* Y;
-	int totalColors;
-	BOOL needsLock;
-	int dependencies;
-	NSConditionLock* lock;
-} FSColorCache;
 
 @interface FSColorWidget : NSObject <NSCoding,FSColorWidgetProtocol> {
 	IBOutlet NSMatrix* colorMatrix;

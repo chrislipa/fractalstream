@@ -70,7 +70,9 @@
 	return cachedColorArray;
 }
 
-- (NSMutableArray*) colorArray { return colors; }
+- (NSMutableArray*) colorArray { 
+	return colors; 
+}
 
 - (BOOL) useAutocolorForColor: (int) c {
 	return usesAutocolor[c];

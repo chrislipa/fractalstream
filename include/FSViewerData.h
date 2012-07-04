@@ -50,3 +50,25 @@ typedef struct {
 	int allocated_entries;
 	int used_entries;
 } FSViewer_Autocolor_Cache;
+
+typedef struct {
+	NSString* name;
+	float r, g, b;
+} FSCW_named_color;
+
+typedef struct {
+	float* color;
+	int* colorIndex;
+	int* subdivisions;
+	BOOL* smoothing;
+	BOOL* locked;
+	BOOL* usesAutocolor;
+	int* subcolors;
+	int* locationIndex;
+	double* X;
+	double* Y;
+	int totalColors;
+	BOOL needsLock;
+	int dependencies;
+	NSConditionLock* lock;
+} FSColorCache;

@@ -1351,7 +1351,9 @@ void gaussian2(double* R) {
 	return (void*) kernelPtr;
 }
 
-- (void) setDataManager: (FSCustomDataManager*) dm { dataManager = dm; }
+- (void) setDataManager: (FSCustomDataManager*) dm { 
+	dataManager = dm; 
+}
 
 
 @end

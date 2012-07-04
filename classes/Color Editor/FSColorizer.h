@@ -27,7 +27,7 @@
 - (void) dealloc;
 
 - (void) colorUnit: (FSRenderUnit*) unit;
-- (void) setColorWidget: (FSColorWidget*) picker autocolorCache: (FSViewer_Autocolor_Cache*) acc;
+- (void) setColorWidget: (NSObject<FSColorWidgetProtocol>*) picker autocolorCache: (FSViewer_Autocolor_Cache*) acc;
 - (void) setColorArray: (NSMutableArray*) colors;
 - (void) setCurrentBatch: (int) cb;
 

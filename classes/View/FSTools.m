@@ -8,7 +8,7 @@
 
 #import "FSTools.h"
 #import "FSLog.h"
-
+#import "FSKernel.h"
 @implementation FSTools
 
 - (void) awakeFromNib
@@ -87,7 +87,7 @@
 
 - (void) rightMouseDown: (NSEvent*) theEvent {
 	//void (*kernel)(int, double*, int, double*, int, double);
-	double x, y,/* in[9], out[6],*/ p[2];					
+	double x=0, y=0,/* in[9], out[6],*/ p[2];					
 	//float c[3];
 	//int i; 
 	//NSImage* snapshot;
@@ -126,11 +126,11 @@
 
 - (void) mouseDown: (NSEvent*) theEvent
 {
-	void (*kernel)(int, double*, int, double*, int, double, double);
-	double x, y, in[9], out[6], p[2];					
-	float c[3];
-	int i; 
-	FSViewerItem item;
+	//void (*kernel)(int, double*, int, double*, int, double, double);
+	double x, y, /*in[9], out[6], */p[2];					
+	//float c[3];
+	//int i; 
+	//FSViewerItem item;
 	double probeResult[16];
 	
 	lastClick = [theEvent locationInWindow];

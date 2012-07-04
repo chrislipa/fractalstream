@@ -9,6 +9,7 @@
 #import "FSColorizer.h"
 #import "FSColorWidget.h"
 #import "FSColor.h"
+#import "FSProtocols.h"
 
 @implementation FSColorizer
 
@@ -53,7 +54,7 @@
 	int index, offset;
 	//NSColor* c;
 	//FSGradient* gradient;
-	FSColorCache* cache;
+	FSColorCache * cache;
 	double nearR, farR;
 	//int prog;
 	

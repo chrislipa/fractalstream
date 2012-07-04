@@ -14,9 +14,12 @@
 #define FractalStream_Protocols_h
 
 
+
+
 @protocol FSColorWidgetProtocol <NSObject>
 
-
+- (NSMutableArray*) colorArray;
+- (FSColorCache*) getColorCache;
 
 @end
 
