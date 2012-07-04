@@ -250,10 +250,11 @@
 - (IBAction) goToRoot: (id) sender { [self changeTo: root]; }
 
 - (IBAction) cloneCurrentNode: (id) sender { 
-	FSSessionNode* node;
+	//FSSessionNode* node;
 //	NSLog(@"cloneCurrentNode\n");
 	
-	node = currentNode; currentNode = currentNode -> parent;
+	//node = currentNode; 
+	currentNode = currentNode -> parent;
 	[self addChildNode: currentNode andMakeCurrent: YES]; // not right, make a copy of currentNode
 	[historyView reloadItem: currentNode -> parent reloadChildren: YES];
 }
@@ -261,7 +262,7 @@
 // delete a node and link any children in as siblings of the deleted node.
 - (IBAction) deleteCurrentNode: (id) sender {
 	ENTER
-	FSSessionNode* node;
+	//FSSessionNode* node;
 
 //	NSLog(@"deleteCurrentNode\n");
 
@@ -269,14 +270,18 @@
 	if(currentNode -> children > 0) {
 		if(currentNode -> previousSibling != nil) 
 			currentNode -> firstChild -> previousSibling = currentNode -> previousSibling;
-		node = currentNode -> firstChild;
-		while(node -> nextSibling != nil) node = node -> nextSibling;
-		node -> nextSibling = currentNode -> nextSibling;
+		//node = currentNode -> firstChild;
+		//while(node -> nextSibling != nil)
+			//node = node -> nextSibling;
+		//node -> nextSibling = currentNode -> nextSibling;
 		currentNode -> parent -> children += currentNode -> children;
 	
-		node = currentNode; [self changeTo: currentNode -> firstChild];
+		//node = currentNode; 
+		[self changeTo: currentNode -> firstChild];
+	} else { 
+		//node = currentNode; 
+		[self changeTo: currentNode -> parent]; 
 	}
-	else { node = currentNode; [self changeTo: currentNode -> parent]; }
 	// destroy 'node' here
 	[historyView reloadItem: currentNode reloadChildren: YES];
 	EXIT

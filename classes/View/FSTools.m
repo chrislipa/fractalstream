@@ -295,7 +295,7 @@
 
 - (IBAction) setupMenu: (id) sender
 {
-	NSString* appSupportSubpath = @"Application Support/FractalStream/PlugIns";
+	//NSString* appSupportSubpath = @"Application Support/FractalStream/PlugIns";
 	NSArray* librarySearchPaths;
 	NSEnumerator* searchPathEnum;
 	NSEnumerator* pluginEnum;
@@ -306,7 +306,7 @@
 	NSMutableArray* bundleSearchPaths = [NSMutableArray array];
 	NSBundle* toolBundle;
 	Class pclass;
-	id <FSTool> aTool;
+	NSObject<FSTool>* aTool;
 	int i;
 	
 	/***** broken for cocotron :( *****/
@@ -382,7 +382,7 @@
 	NSEnumerator* en;
 	NSString* bundleName, *bundleDir/*, *filename*/;
 	NSBundle* toolBundle;
-	id <FSTool> aTool;
+	NSObject <FSTool>* aTool;
 	Class pclass;
 	int i;
 
@@ -416,7 +416,7 @@
 	NSString* bundleName/*, *bundleDir, *filename*/;
 	NSBundle* toolBundle;
 	NSString* toolName;
-	id <FSTool> aTool;
+	NSObject<FSTool>* aTool;
 	Class pclass;
 	int i;
 	

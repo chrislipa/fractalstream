@@ -8,6 +8,13 @@
  */
 #import "FSViewerData.h"
 
+
+@protocol FSTool;
+@protocol FSCustomDataManagerProtocol <NSObject>
+- (void) addDataNamed: (NSString*) name usingObject: (NSObject<FSTool>*) ob;
+@end
+
+
 @protocol FSTool
 + (BOOL) preload: (NSBundle*) theBundle;
 + (void) destroy;
@@ -29,11 +36,12 @@
 - (void) rightMouseDown: (NSEvent*) theEvent;
 - (void) scrollWheel: (NSEvent*) theEvent;
 
+
 @optional
 - (void*) dataNamed: (NSString*) name;
 - (void*) evalNamed: (NSString*) name;
 - (void*) queryNamed: (NSString*) name;
-
+- (void) setDataManager: (NSObject<FSCustomDataManagerProtocol>*) Dm;
 @end
 
 @protocol FSBrowserProtocol

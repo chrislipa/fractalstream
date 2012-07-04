@@ -9,7 +9,8 @@
 #import <Cocoa/Cocoa.h>
 #import "FSECompiler.h"
 #import "FSJitter.h"
-#import "FSCustomDataManager.h"
+#import "FSProtocols.h"
+#import "FSTool.h"
 
 #define LLVMi32(x) ConstantInt::get(IntegerType::get(32), (x), true)
 #define LLVMu32(x) ConstantInt::get(IntegerType::get(32), (x), false)
@@ -45,13 +46,13 @@
 	int emitStep;
 	
 	FSJitter* jitter;
-	FSCustomDataManager* dataManager;
+	NSObject<FSCustomDataManagerProtocol>* dataManager;
 	void* customDataPtr;
 	void* customQueryPtr;
 }
 
 - (void) test;
-- (void) setDataManager: (FSCustomDataManager*) dm;
+- (void) setDataManager: (NSObject<FSCustomDataManagerProtocol>*) dm;
 - (BOOL) buildKernelFromCompiler: (FSECompiler*) newComp;
 - (void) buildLLVMKernel;
 - (void*) loadKernelFromFile: (NSString*) filename;

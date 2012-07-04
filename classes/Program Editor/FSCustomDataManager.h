@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "FSTool.h"
 
-@interface FSCustomDataManager : NSObject {
+@interface FSCustomDataManager : NSObject <FSCustomDataManagerProtocol>  {
 	NSMutableDictionary* dataDictionary;
 	NSMutableDictionary* queryDictionary;
 }

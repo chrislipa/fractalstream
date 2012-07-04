@@ -30,7 +30,6 @@
 		68B3E1460FE41CB80094BF80 /* FSECompiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSECompiler.h; sourceTree = "<group>"; };
 		68B3E1480FE41CCA0094BF80 /* FSKernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSKernel.h; sourceTree = "<group>"; };
 		68B3E1490FE41CCA0094BF80 /* FSJitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSJitter.h; sourceTree = "<group>"; };
-		68B3E14A0FE41CCA0094BF80 /* FSCustomDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCustomDataManager.h; sourceTree = "<group>"; };
 		68B3E14B0FE41CE70094BF80 /* FSThreading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSThreading.h; sourceTree = "<group>"; };
 		68DB37DB0D63A92D00D018BD /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		68DB37EB0D63AF7100D018BD /* FSColorWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSColorWidget.h; sourceTree = "<group>"; };
@@ -141,7 +140,6 @@
 				68B3E1460FE41CB80094BF80 /* FSECompiler.h */,
 				68B3E1480FE41CCA0094BF80 /* FSKernel.h */,
 				68B3E1490FE41CCA0094BF80 /* FSJitter.h */,
-				68B3E14A0FE41CCA0094BF80 /* FSCustomDataManager.h */,
 				68B3E14B0FE41CE70094BF80 /* FSThreading.h */,
 			);
 			name = Compiler;

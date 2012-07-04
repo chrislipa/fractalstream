@@ -3,7 +3,7 @@
 #include <math.h>
 #import "FSViewerData.h"
 #import "FSTool.h"
-#import "FSCustomDataManager.h"
+
 #import "FSProtocols.h"
 
 #ifndef FSTool_Type_Definitions
@@ -41,7 +41,7 @@ int _test_saddles(int saddles, double* saddleX, double* saddleY, double radius2,
 	IBOutlet NSPopUpButton* colorButton;
 	IBOutlet NSButton* repropButton;
 	NSMutableArray* saddleArray;
-	FSCustomDataManager* dm;
+	NSObject<FSCustomDataManagerProtocol>* dm;
 	double* saddle;
 	double par[2];
 	
@@ -92,7 +92,7 @@ int _test_saddles(int saddles, double* saddleX, double* saddleY, double radius2,
 - (void) rightMouseDown: (NSEvent*) theEvent;
 - (void) scrollWheel: (NSEvent*) theEvent;
 
-- (void) setDataManager: (FSCustomDataManager*) Dm;
+- (void) setDataManager: (NSObject<FSCustomDataManagerProtocol>*) Dm;
 - (void*) dataNamed: (NSString*) name;
 
 @end

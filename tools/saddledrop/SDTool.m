@@ -6,6 +6,7 @@
 
 #import "SDTool.h"
 #import <Foundation/Foundation.h>
+#import "FSTool.h"
 
 static NSBundle* ourBundle = nil;
 
@@ -74,7 +75,7 @@ int _saddles_for_point(double* point, double* saddle) {
 
 /*** methods which communicate data to the kernel ***/
 
-- (void) setDataManager: (FSCustomDataManager*) Dm {
+- (void) setDataManager: (NSObject<FSCustomDataManagerProtocol>*) Dm {
 	dm = Dm; 
 	[dm addDataNamed: @"saddles" usingObject: self];
 }
