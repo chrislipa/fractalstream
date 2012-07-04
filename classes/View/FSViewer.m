@@ -210,7 +210,9 @@
 }
 
 - (FSViewerData) data { return fakeview; }
-- (FSColorWidget*) colorPicker { return colorPicker; }
+- (NSObject<FSColorWidgetProtocol>*) colorPicker { 
+	return colorPicker; 
+}
 - (void) setColorPicker: (NSObject<FSColorWidgetProtocol>*) newColorPicker { 
 	colorPicker = newColorPicker;
 	[viewerColorizer setColorWidget: colorPicker autocolorCache: acCache];

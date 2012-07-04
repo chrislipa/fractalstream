@@ -7,6 +7,7 @@
 //
 
 #import "FSKernel.h"
+#import "FSCustomDataManager.h"
 #include "llvm/Constants.h"
 #include "llvm/DerivedTypes.h"
 #include "llvm/Instructions.h"

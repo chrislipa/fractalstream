@@ -7,7 +7,7 @@
 //
 
 #import "FSCustomDataManager.h"
-
+#import "FSTool.h"
 
 @implementation FSCustomDataManager
 
@@ -18,18 +18,18 @@
 	return self;
 }
 
-- (void) addDataNamed: (NSString*) name usingObject: (id) ob {
+- (void) addDataNamed: (NSString*) name usingObject: (NSObject<FSTool>*) ob {
 	NSLog(@"adding data source named %@\n", name);
 	[dataDictionary setObject: ob forKey: name];
 	[[NSNotificationCenter defaultCenter] postNotificationName: @"FSCustomDataAdded" object: self];
 }
 
-- (void) addQueryNamed: (NSString*) name usingObject: (id) ob {
+- (void) addQueryNamed: (NSString*) name usingObject: (NSObject<FSTool>*) ob {
 	[queryDictionary setObject: ob forKey: name];
 }
 
 - (void*) getFunctionPointerForQuery: (NSString*) name {
-	id ob;
+	NSObject<FSTool>* ob;
 	ob = [queryDictionary objectForKey: name];
 	if([ob respondsToSelector: @selector(queryNamed:)]) {
 		return [ob queryNamed: name];
@@ -38,7 +38,7 @@
 }
 
 - (void*) getFunctionPointerForMerge: (NSString*) name {
-	id ob;
+	NSObject<FSTool>* ob;
 	ob = [dataDictionary objectForKey: name];
 	if([ob respondsToSelector: @selector(queryNamed:)]) {
 		return [ob queryNamed: name];
@@ -48,7 +48,7 @@
 
 - (void*) getFunctionPointerForData: (NSString*) name {
 	// returns a pointer to a function of type int(double* in, double* out)
-	id ob;
+	NSObject<FSTool>* ob;
 //	NSLog(@"dataManager (%@): somebody is requesting a data source named \"%@\"\n", self, name);
 	ob = [dataDictionary objectForKey: name];
 //	NSLog(@"ob is %@\n", ob);
@@ -60,7 +60,7 @@
 }
 
 - (void*) getFunctionPointerForEval: (NSString*) name {
-	id ob;
+	NSObject<FSTool>* ob;
 	ob = [dataDictionary objectForKey: name];
 	if([ob respondsToSelector: @selector(evalNamed:)]) {
 		return [ob evalNamed: name];

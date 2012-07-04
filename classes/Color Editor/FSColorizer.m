@@ -9,6 +9,7 @@
 #import "FSColorizer.h"
 #import "FSColorWidget.h"
 #import "FSColor.h"
+
 @implementation FSColorizer
 
 - (id) init {
@@ -24,7 +25,7 @@
 	[super dealloc];
 }
 
-- (void) setColorWidget: (FSColorWidget*) picker autocolorCache: (FSViewer_Autocolor_Cache*) acc {
+- (void) setColorWidget: (NSObject<FSColorWidgetProtocol>*) picker autocolorCache: (FSViewer_Autocolor_Cache*) acc {
 	acCache = acc;
 	colorPicker = picker;
 }

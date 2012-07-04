@@ -54,7 +54,7 @@
 	IBOutlet NSButton* boxButton;
 	IBOutlet NSButton* linesButton;
 	IBOutlet NSProgressIndicator* progress;
-	IBOutlet FSColorWidget* colorPicker;
+	IBOutlet NSObject<FSColorWidgetProtocol>* colorPicker;
 	IBOutlet NSButton* denormalButton;
 	IBOutlet NSTextField* timerField;
 	IBOutlet NSTextView* viewDescription;
@@ -129,7 +129,7 @@
 - (NSPoint) locationOfPoint: (double*) point;
 - (void) convertPoint: (double*) point toGL: (double*) gl;
 - (void) setRenderCompletedMessage: (SEL) message forObject: (id) obj ;
-- (FSColorWidget*) colorPicker;
+- (NSObject<FSColorWidgetProtocol>*) colorPicker;
 - (void) setColorPicker: (FSColorWidget*) newColorPicker;
 
 - (void) mouseEntered: (NSEvent*) theEvent;

@@ -6,6 +6,7 @@
  *  Copyright 2008 __MyCompanyName__. All rights reserved.
  *
  */
+#import "FSViewerData.h"
 
 @protocol FSTool
 + (BOOL) preload: (NSBundle*) theBundle;
@@ -27,6 +28,12 @@
 - (void) mouseDown: (NSEvent*) theEvent;
 - (void) rightMouseDown: (NSEvent*) theEvent;
 - (void) scrollWheel: (NSEvent*) theEvent;
+
+@optional
+- (void*) dataNamed: (NSString*) name;
+- (void*) evalNamed: (NSString*) name;
+- (void*) queryNamed: (NSString*) name;
+
 @end
 
 @protocol FSBrowserProtocol

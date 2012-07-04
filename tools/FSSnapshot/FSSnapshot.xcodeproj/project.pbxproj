@@ -29,7 +29,6 @@
 		6837DB5B0CEA9C4300EC448F /* FSSnapshotTool.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSSnapshotTool.m; sourceTree = "<group>"; };
 		6837DB630CEA9C4B00EC448F /* FSSnapshotTool.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = FSSnapshotTool.nib; sourceTree = "<group>"; };
 		68BFD5300DA5946000325B56 /* FSColorWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSColorWidget.h; sourceTree = "<group>"; };
-		68BFD5FF0DA5EFD300325B56 /* FSTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSTool.h; sourceTree = "<group>"; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
@@ -83,7 +82,6 @@
 		08FB77AFFE84173DC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				68BFD5FF0DA5EFD300325B56 /* FSTool.h */,
 				68BFD5300DA5946000325B56 /* FSColorWidget.h */,
 				6837DB5A0CEA9C4300EC448F /* FSSnapshotTool.h */,
 				6837DB5B0CEA9C4300EC448F /* FSSnapshotTool.m */,

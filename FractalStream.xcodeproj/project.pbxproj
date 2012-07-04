@@ -555,7 +555,6 @@
 		360A22D01573E5C400BF41B2 /* FSRenderUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSRenderUnit.h; sourceTree = "<group>"; };
 		360A22D11573E5C400BF41B2 /* FSThreading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSThreading.h; sourceTree = "<group>"; };
 		360A22D21573E5C400BF41B2 /* FSThreading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSThreading.m; sourceTree = "<group>"; };
-		360A22D31573E5C400BF41B2 /* FSTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSTool.h; sourceTree = "<group>"; };
 		360A22D41573E5C400BF41B2 /* FSToolInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSToolInterface.h; sourceTree = "<group>"; };
 		360A22D51573E5C400BF41B2 /* FSTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSTools.h; sourceTree = "<group>"; };
 		360A22D61573E5C400BF41B2 /* FSTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSTools.m; sourceTree = "<group>"; };
@@ -573,6 +572,7 @@
 		360A230A1573EC6D00BF41B2 /* LLVMPowerPCAsmPrinter.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = LLVMPowerPCAsmPrinter.o; path = "external/llvm-2.5/Release/lib/LLVMPowerPCAsmPrinter.o"; sourceTree = "<group>"; };
 		360A230B1573EC6D00BF41B2 /* LLVMPowerPCCodeGen.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = LLVMPowerPCCodeGen.o; path = "external/llvm-2.5/Release/lib/LLVMPowerPCCodeGen.o"; sourceTree = "<group>"; };
 		36118EAB15759C4C005D2C05 /* FSSnapshot.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FSSnapshot.xcodeproj; path = tools/FSSnapshot/FSSnapshot.xcodeproj; sourceTree = "<group>"; };
+		36358E1C15A3D9B200F9EB14 /* FSTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSTool.h; path = include/FSTool.h; sourceTree = "<group>"; };
 		36425FB715A3C1B3004A622C /* FSProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FSProtocols.h; path = include/FSProtocols.h; sourceTree = "<group>"; };
 		36425FBD15A3C896004A622C /* FSViewerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSViewerData.h; path = include/FSViewerData.h; sourceTree = "<group>"; };
 		36425FBE15A3CCC6004A622C /* FSGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSGradient.h; sourceTree = "<group>"; };
@@ -875,7 +875,6 @@
 				360A22D01573E5C400BF41B2 /* FSRenderUnit.h */,
 				360A22D11573E5C400BF41B2 /* FSThreading.h */,
 				360A22D21573E5C400BF41B2 /* FSThreading.m */,
-				360A22D31573E5C400BF41B2 /* FSTool.h */,
 				360A22D41573E5C400BF41B2 /* FSToolInterface.h */,
 				360A22D51573E5C400BF41B2 /* FSTools.h */,
 				360A22D61573E5C400BF41B2 /* FSTools.m */,
@@ -907,6 +906,7 @@
 		36425FB615A3C175004A622C /* include */ = {
 			isa = PBXGroup;
 			children = (
+				36358E1C15A3D9B200F9EB14 /* FSTool.h */,
 				36425FBD15A3C896004A622C /* FSViewerData.h */,
 				36425FB715A3C1B3004A622C /* FSProtocols.h */,
 			);

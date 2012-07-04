@@ -7,19 +7,21 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
+#import "FSTool.h"
 
 @interface FSCustomDataManager : NSObject {
 	NSMutableDictionary* dataDictionary;
 	NSMutableDictionary* queryDictionary;
 }
 
-- (void) addDataNamed: (NSString*) name usingObject: (id) ob;
-- (void) addQueryNamed: (NSString*) name usingObject: (id) ob;
+- (void) addDataNamed: (NSString*) name usingObject: (NSObject<FSTool>*) ob;
+- (void) addQueryNamed: (NSString*) name usingObject: (NSObject<FSTool>*) ob;
 - (void*) getFunctionPointerForQuery: (NSString*) name;
 - (void*) getFunctionPointerForData: (NSString*) name;
 - (void*) getFunctionPointerForEval: (NSString*) name ;
 - (NSDictionary*) dataDictionary;
 - (NSDictionary*) queryDictionary;
+
+- (void*) getFunctionPointerForMerge: (NSString*) name;
 
 @end

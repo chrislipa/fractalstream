@@ -39,9 +39,11 @@
 - (void) setViewerData: (FSViewerData*) newData;
 - (void) runAt: (double*) p into: (double*) result probe: (int) pr steps: (int) ns;
 - (void) drawBoxFrom: (NSPoint) start to: (NSPoint) end withColor: (float*) rgb;
-
-
+- (NSWindow *)window;
+- (NSObject<FSColorWidgetProtocol>*) colorPicker;
 @end
+
+
 
 
 

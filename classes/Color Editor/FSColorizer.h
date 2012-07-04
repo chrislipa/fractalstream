@@ -13,12 +13,12 @@
 #import "FSColorWidget.h"
 #import "FSThreading.h"
 #import "FSColorLibraryController.h"
-
+#import "FSProtocols.h"
 
 @interface FSColorizer : NSObject {
 	int acMax;
 	FSViewer_Autocolor_Cache* acCache;
-	FSColorWidget* colorPicker;
+	NSObject<FSColorWidgetProtocol>* colorPicker;
 	NSMutableArray* colorArray;
 	int currentBatch;
 }

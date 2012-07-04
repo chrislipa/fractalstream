@@ -213,7 +213,7 @@
 	}
 
 	if(node[here].type == (FSE_Command | FSE_Reset)) {
-		int movednode, bro, lhs, rhs, clearnode, t, loop;
+		int movednode, bro, lhs, /*rhs,*/ clearnode, t, loop;
 		loop = here;
 		while(loop &&
 			(node[loop].type != (FSE_Command | FSE_Do)) &&
@@ -968,7 +968,7 @@
 					else if(node[child1].type == (FSE_Var | FSE_Join)) {
 						int c1, c2,/* nchilds,*/ join;
 						node[here].type = FSE_Command | FSE_Block;
-						/*nchilds =*/ node[child1].children;
+						/*nchilds =*/ //node[child1].children;
 						if(node[child1].children != 2) return @"cannot default vector to scalar";
 						c1 = node[child1].firstChild;
 						join = [self newNodeOfType: FSE_Command | FSE_Default at: here];
