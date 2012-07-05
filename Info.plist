@@ -26,7 +26,7 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>NSDocumentClass</key>
-			<string>FSDocument</string>
+			<string>FSScriptLibrary</string>
 		</dict>
 	</array>
 	<key>CFBundleExecutable</key>
