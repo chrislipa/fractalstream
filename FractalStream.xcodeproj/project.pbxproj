@@ -55,6 +55,7 @@
 		3651D29D15A5134A00255FFB /* FSScriptLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3651D29B15A5134A00255FFB /* FSScriptLibrary.m */; };
 		365E6D0F15A50F96001B6C2A /* FSScriptLibrary.xib in Resources */ = {isa = PBXBuildFile; fileRef = 365E6D0D15A50F96001B6C2A /* FSScriptLibrary.xib */; };
 		36A5B5141574246200569973 /* SDTool.fstool in Copy Files (Tools) */ = {isa = PBXBuildFile; fileRef = 36A5B5111574245100569973 /* SDTool.fstool */; };
+		36ADD4A315A526C00045C7B4 /* FSScriptEditor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36ADD4A115A526C00045C7B4 /* FSScriptEditor.xib */; };
 		36C1563A1575A6C30090EC48 /* FSSnapshotTool.bundle in Copy Files (Tools) */ = {isa = PBXBuildFile; fileRef = 36118EB315759C4C005D2C05 /* FSSnapshotTool.bundle */; };
 		36D36AB31575980700F78D74 /* FSMovieTool.fstool in Copy Files (Tools) */ = {isa = PBXBuildFile; fileRef = 36A5B505157421CC00569973 /* FSMovieTool.fstool */; };
 		36F02924157133A600FEA4A6 /* ab.fs in Copy Files (Quadratic Maps) */ = {isa = PBXBuildFile; fileRef = 364D0AC1157114D700971A37 /* ab.fs */; };
@@ -611,6 +612,7 @@
 		365E6D0E15A50F96001B6C2A /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/FSScriptLibrary.xib; sourceTree = "<group>"; };
 		36A5B4FD157421CC00569973 /* FSMovieTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FSMovieTool.xcodeproj; path = tools/movietool/FSMovieTool.xcodeproj; sourceTree = "<group>"; };
 		36A5B5091574245000569973 /* SDTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDTool.xcodeproj; path = tools/saddledrop/SDTool.xcodeproj; sourceTree = "<group>"; };
+		36ADD4A215A526C00045C7B4 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/FSScriptEditor.xib; sourceTree = "<group>"; };
 		36D36ABD15759BC200F78D74 /* FSPreviewTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FSPreviewTool.xcodeproj; path = tools/FSPreviewTool/FSPreviewTool.xcodeproj; sourceTree = "<group>"; };
 		36D36AD215759C0D00F78D74 /* FSTraceTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FSTraceTool.xcodeproj; path = tools/FSTraceTool/FSTraceTool.xcodeproj; sourceTree = "<group>"; };
 		36F0293B1571360F00FEA4A6 /* < please name me >.fscolor */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "< please name me >.fscolor"; path = "Colors/< please name me >.fscolor"; sourceTree = "<group>"; };
@@ -713,6 +715,7 @@
 				8D15AC360486D014006FF6A4 /* Info.plist */,
 				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
 				365E6D0D15A50F96001B6C2A /* FSScriptLibrary.xib */,
+				36ADD4A115A526C00045C7B4 /* FSScriptEditor.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1426,6 +1429,7 @@
 				364EDF0D157594E200E89B5B /* FSDocument.xib in Resources */,
 				364EDF0E157594E200E89B5B /* MainMenu.xib in Resources */,
 				365E6D0F15A50F96001B6C2A /* FSScriptLibrary.xib in Resources */,
+				36ADD4A315A526C00045C7B4 /* FSScriptEditor.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1552,6 +1556,14 @@
 				365E6D0E15A50F96001B6C2A /* English */,
 			);
 			name = FSScriptLibrary.xib;
+			sourceTree = "<group>";
+		};
+		36ADD4A115A526C00045C7B4 /* FSScriptEditor.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36ADD4A215A526C00045C7B4 /* English */,
+			);
+			name = FSScriptEditor.xib;
 			sourceTree = "<group>";
 		};
 		683942CC10B39DEB00A6A993 /* FSDocument-windows.xib */ = {
