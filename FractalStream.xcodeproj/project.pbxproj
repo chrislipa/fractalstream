@@ -52,6 +52,8 @@
 		36425FC315A3CD08004A622C /* FSGradientControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 36425FC215A3CD07004A622C /* FSGradientControl.m */; };
 		364EDF0D157594E200E89B5B /* FSDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364EDF0B157594E200E89B5B /* FSDocument.xib */; };
 		364EDF0E157594E200E89B5B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364EDF0C157594E200E89B5B /* MainMenu.xib */; };
+		3651D29D15A5134A00255FFB /* FSScriptLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3651D29B15A5134A00255FFB /* FSScriptLibrary.m */; };
+		365E6D0F15A50F96001B6C2A /* FSScriptLibrary.xib in Resources */ = {isa = PBXBuildFile; fileRef = 365E6D0D15A50F96001B6C2A /* FSScriptLibrary.xib */; };
 		36A5B5141574246200569973 /* SDTool.fstool in Copy Files (Tools) */ = {isa = PBXBuildFile; fileRef = 36A5B5111574245100569973 /* SDTool.fstool */; };
 		36C1563A1575A6C30090EC48 /* FSSnapshotTool.bundle in Copy Files (Tools) */ = {isa = PBXBuildFile; fileRef = 36118EB315759C4C005D2C05 /* FSSnapshotTool.bundle */; };
 		36D36AB31575980700F78D74 /* FSMovieTool.fstool in Copy Files (Tools) */ = {isa = PBXBuildFile; fileRef = 36A5B505157421CC00569973 /* FSMovieTool.fstool */; };
@@ -604,6 +606,9 @@
 		364D0ACF157114D700971A37 /* exp.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = exp.fs; sourceTree = "<group>"; };
 		364EDF0B157594E200E89B5B /* FSDocument.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FSDocument.xib; sourceTree = "<group>"; };
 		364EDF0C157594E200E89B5B /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		3651D29A15A5134A00255FFB /* FSScriptLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSScriptLibrary.h; sourceTree = "<group>"; };
+		3651D29B15A5134A00255FFB /* FSScriptLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSScriptLibrary.m; sourceTree = "<group>"; };
+		365E6D0E15A50F96001B6C2A /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/FSScriptLibrary.xib; sourceTree = "<group>"; };
 		36A5B4FD157421CC00569973 /* FSMovieTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FSMovieTool.xcodeproj; path = tools/movietool/FSMovieTool.xcodeproj; sourceTree = "<group>"; };
 		36A5B5091574245000569973 /* SDTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDTool.xcodeproj; path = tools/saddledrop/SDTool.xcodeproj; sourceTree = "<group>"; };
 		36D36ABD15759BC200F78D74 /* FSPreviewTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FSPreviewTool.xcodeproj; path = tools/FSPreviewTool/FSPreviewTool.xcodeproj; sourceTree = "<group>"; };
@@ -707,6 +712,7 @@
 				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
 				8D15AC360486D014006FF6A4 /* Info.plist */,
 				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
+				365E6D0D15A50F96001B6C2A /* FSScriptLibrary.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -801,6 +807,8 @@
 				360A22A21573E5C400BF41B2 /* FSSave.m */,
 				360A22A31573E5C400BF41B2 /* FSSession.h */,
 				360A22A41573E5C400BF41B2 /* FSSession.m */,
+				3651D29A15A5134A00255FFB /* FSScriptLibrary.h */,
+				3651D29B15A5134A00255FFB /* FSScriptLibrary.m */,
 			);
 			path = Document;
 			sourceTree = "<group>";
@@ -1417,6 +1425,7 @@
 				360A22FF1573E61A00BF41B2 /* mandelbrot.icns in Resources */,
 				364EDF0D157594E200E89B5B /* FSDocument.xib in Resources */,
 				364EDF0E157594E200E89B5B /* MainMenu.xib in Resources */,
+				365E6D0F15A50F96001B6C2A /* FSScriptLibrary.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1481,6 +1490,7 @@
 				360A22F81573E5C400BF41B2 /* FSViewer.m in Sources */,
 				36425FC015A3CCC7004A622C /* FSGradient.m in Sources */,
 				36425FC315A3CD08004A622C /* FSGradientControl.m in Sources */,
+				3651D29D15A5134A00255FFB /* FSScriptLibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1534,6 +1544,14 @@
 				2A37F4BAFDCFA73011CA2CEA /* English */,
 			);
 			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		365E6D0D15A50F96001B6C2A /* FSScriptLibrary.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				365E6D0E15A50F96001B6C2A /* English */,
+			);
+			name = FSScriptLibrary.xib;
 			sourceTree = "<group>";
 		};
 		683942CC10B39DEB00A6A993 /* FSDocument-windows.xib */ = {
