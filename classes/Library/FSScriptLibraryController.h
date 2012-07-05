@@ -9,6 +9,8 @@
 #import <Cocoa/Cocoa.h>
 #import "FSSave.h"
 #import "FSDocument.h"
+#import	"FSScriptLibrary.h"
+
 
 @interface FSScriptLibraryItem : NSObject {
 	NSImage* preview;
@@ -37,7 +39,7 @@
 	IBOutlet NSTextView* description;
 	IBOutlet NSImageView* previewer;
 	IBOutlet NSOutlineView* outline;
-	IBOutlet FSDocument* theDoc;
+	IBOutlet FSScriptLibrary* theDoc;
 	IBOutlet NSButton* openButton;
 	IBOutlet NSButton* openEditorButton;
 	BOOL useOutlineView;

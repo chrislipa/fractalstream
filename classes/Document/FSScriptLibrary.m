@@ -104,6 +104,14 @@
 	EXIT
 }
 
+- (void) openEditor {
+	ENTER
+	[editor restoreFrom: [savedData editor]];
+	[mainTabView selectTabViewItemAtIndex: 1];
+	EXIT
+}
+
+
 
 
 @end
