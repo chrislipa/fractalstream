@@ -1807,6 +1807,7 @@
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
 					"${SRCROOT}/external/llvm-2.5/include",
+					external/FractalStreamCompiler/include,
 				);
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
@@ -1851,6 +1852,7 @@
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
 					"${SRCROOT}/external/llvm-2.5/include",
+					external/FractalStreamCompiler/include,
 				);
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
