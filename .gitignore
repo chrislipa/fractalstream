@@ -4,3 +4,6 @@
 xcuserdata
 project.xcworkspace
 tools/*/build/*
+external/llvm-2.5/Release
+*.dir
+*.a
