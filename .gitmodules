@@ -1,0 +1,3 @@
+[submodule "external/FractalStreamCompiler"]
+	path = external/FractalStreamCompiler
+	url = git://github.com:chrislipa/FractalStreamCompiler.git
