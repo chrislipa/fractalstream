@@ -14,6 +14,14 @@
 
 @implementation FSScriptLibraryController
 
+
+-(id) init {
+    if (self = [super init]) {
+        
+    }
+    return self;
+}
+
 - (void) awakeFromNib {
 	ENTER
 	useOutlineView = YES;
