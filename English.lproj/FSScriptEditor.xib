@@ -33,7 +33,7 @@
 		</object>
 		<array class="NSMutableArray" key="IBDocument.RootObjects" id="1000">
 			<object class="NSCustomObject" id="1001">
-				<string key="NSClassName">NSObject</string>
+				<string key="NSClassName">FSScriptEditorController</string>
 			</object>
 			<object class="NSCustomObject" id="1003">
 				<string key="NSClassName">FirstResponder</string>
@@ -74,28 +74,8 @@
 														<object class="NSTextView" id="635777086">
 															<reference key="NSNextResponder" ref="188081759"/>
 															<int key="NSvFlags">2322</int>
-															<set class="NSMutableSet" key="NSDragTypes">
-																<string>Apple HTML pasteboard type</string>
-																<string>Apple PDF pasteboard type</string>
-																<string>Apple PICT pasteboard type</string>
-																<string>Apple PNG pasteboard type</string>
-																<string>Apple URL pasteboard type</string>
-																<string>CorePasteboardFlavorType 0x6D6F6F76</string>
-																<string>NSColor pasteboard type</string>
-																<string>NSFilenamesPboardType</string>
-																<string>NSStringPboardType</string>
-																<string>NeXT Encapsulated PostScript v1.2 pasteboard type</string>
-																<string>NeXT RTFD pasteboard type</string>
-																<string>NeXT Rich Text Format v1.0 pasteboard type</string>
-																<string>NeXT TIFF v4.0 pasteboard type</string>
-																<string>NeXT font pasteboard type</string>
-																<string>NeXT ruler pasteboard type</string>
-																<string>WebURLsWithTitlesPboardType</string>
-																<string>public.url</string>
-															</set>
-															<string key="NSFrameSize">{475, 0}</string>
+															<string key="NSFrameSize">{475, 14}</string>
 															<reference key="NSSuperview" ref="188081759"/>
-															<reference key="NSWindow"/>
 															<reference key="NSNextKeyView" ref="106020413"/>
 															<int key="NSViewLayerContentsRedrawPolicy">2</int>
 															<object class="NSTextContainer" key="NSTextContainer" id="549033335">
@@ -164,7 +144,6 @@
 													</array>
 													<string key="NSFrame">{{1, 1}, {475, 302}}</string>
 													<reference key="NSSuperview" ref="22468672"/>
-													<reference key="NSWindow"/>
 													<reference key="NSNextKeyView" ref="635777086"/>
 													<int key="NSViewLayerContentsRedrawPolicy">2</int>
 													<reference key="NSDocView" ref="635777086"/>
@@ -195,7 +174,6 @@
 													<int key="NSvFlags">256</int>
 													<string key="NSFrame">{{476, 1}, {15, 302}}</string>
 													<reference key="NSSuperview" ref="22468672"/>
-													<reference key="NSWindow"/>
 													<reference key="NSNextKeyView" ref="298748088"/>
 													<reference key="NSTarget" ref="22468672"/>
 													<string key="NSAction">_doScroller:</string>
@@ -206,7 +184,6 @@
 													<int key="NSvFlags">-2147483392</int>
 													<string key="NSFrame">{{-100, -100}, {87, 18}}</string>
 													<reference key="NSSuperview" ref="22468672"/>
-													<reference key="NSWindow"/>
 													<reference key="NSNextKeyView" ref="188081759"/>
 													<int key="NSsFlags">1</int>
 													<reference key="NSTarget" ref="22468672"/>
@@ -217,7 +194,6 @@
 											</array>
 											<string key="NSFrameSize">{492, 304}</string>
 											<reference key="NSSuperview" ref="470888483"/>
-											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="855793492"/>
 											<int key="NSViewLayerContentsRedrawPolicy">2</int>
 											<int key="NSsFlags">133138</int>
@@ -228,7 +204,6 @@
 									</array>
 									<string key="NSFrameSize">{492, 304}</string>
 									<reference key="NSSuperview" ref="577838864"/>
-									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="22468672"/>
 									<int key="NSViewLayerContentsRedrawPolicy">2</int>
 									<string key="NSClassName">NSView</string>
@@ -248,28 +223,8 @@
 														<object class="NSTextView" id="1011097488">
 															<reference key="NSNextResponder" ref="288984792"/>
 															<int key="NSvFlags">2322</int>
-															<set class="NSMutableSet" key="NSDragTypes">
-																<string>Apple HTML pasteboard type</string>
-																<string>Apple PDF pasteboard type</string>
-																<string>Apple PICT pasteboard type</string>
-																<string>Apple PNG pasteboard type</string>
-																<string>Apple URL pasteboard type</string>
-																<string>CorePasteboardFlavorType 0x6D6F6F76</string>
-																<string>NSColor pasteboard type</string>
-																<string>NSFilenamesPboardType</string>
-																<string>NSStringPboardType</string>
-																<string>NeXT Encapsulated PostScript v1.2 pasteboard type</string>
-																<string>NeXT RTFD pasteboard type</string>
-																<string>NeXT Rich Text Format v1.0 pasteboard type</string>
-																<string>NeXT TIFF v4.0 pasteboard type</string>
-																<string>NeXT font pasteboard type</string>
-																<string>NeXT ruler pasteboard type</string>
-																<string>WebURLsWithTitlesPboardType</string>
-																<string>public.url</string>
-															</set>
-															<string key="NSFrameSize">{475, 3}</string>
+															<string key="NSFrameSize">{475, 14}</string>
 															<reference key="NSSuperview" ref="288984792"/>
-															<reference key="NSWindow"/>
 															<reference key="NSNextKeyView" ref="23804436"/>
 															<int key="NSViewLayerContentsRedrawPolicy">2</int>
 															<object class="NSTextContainer" key="NSTextContainer" id="232886577">
@@ -316,7 +271,6 @@
 													</array>
 													<string key="NSFrame">{{1, 1}, {475, 108}}</string>
 													<reference key="NSSuperview" ref="635131182"/>
-													<reference key="NSWindow"/>
 													<reference key="NSNextKeyView" ref="1011097488"/>
 													<int key="NSViewLayerContentsRedrawPolicy">2</int>
 													<reference key="NSDocView" ref="1011097488"/>
@@ -329,7 +283,6 @@
 													<int key="NSvFlags">256</int>
 													<string key="NSFrame">{{476, 1}, {15, 108}}</string>
 													<reference key="NSSuperview" ref="635131182"/>
-													<reference key="NSWindow"/>
 													<reference key="NSNextKeyView" ref="312269589"/>
 													<reference key="NSTarget" ref="635131182"/>
 													<string key="NSAction">_doScroller:</string>
@@ -340,7 +293,6 @@
 													<int key="NSvFlags">-2147483392</int>
 													<string key="NSFrame">{{-100, -100}, {87, 18}}</string>
 													<reference key="NSSuperview" ref="635131182"/>
-													<reference key="NSWindow"/>
 													<reference key="NSNextKeyView" ref="288984792"/>
 													<int key="NSsFlags">1</int>
 													<reference key="NSTarget" ref="635131182"/>
@@ -351,7 +303,6 @@
 											</array>
 											<string key="NSFrameSize">{492, 110}</string>
 											<reference key="NSSuperview" ref="298748088"/>
-											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="879178708"/>
 											<int key="NSViewLayerContentsRedrawPolicy">2</int>
 											<int key="NSsFlags">133138</int>
@@ -362,7 +313,6 @@
 									</array>
 									<string key="NSFrame">{{0, 305}, {492, 110}}</string>
 									<reference key="NSSuperview" ref="577838864"/>
-									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="635131182"/>
 									<int key="NSViewLayerContentsRedrawPolicy">2</int>
 									<string key="NSClassName">NSView</string>
@@ -370,7 +320,6 @@
 							</array>
 							<string key="NSFrame">{{20, 60}, {492, 415}}</string>
 							<reference key="NSSuperview" ref="1006"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="470888483"/>
 							<int key="NSViewLayerContentsRedrawPolicy">2</int>
 							<int key="NSDividerStyle">2</int>
@@ -380,7 +329,6 @@
 							<int key="NSvFlags">33</int>
 							<string key="NSFrame">{{385, 12}, {133, 32}}</string>
 							<reference key="NSSuperview" ref="1006"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView"/>
 							<int key="NSViewLayerContentsRedrawPolicy">2</int>
 							<bool key="NSEnabled">YES</bool>
@@ -407,7 +355,6 @@
 							<int key="NSvFlags">292</int>
 							<string key="NSFrame">{{14, 12}, {51, 32}}</string>
 							<reference key="NSSuperview" ref="1006"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="959959332"/>
 							<int key="NSViewLayerContentsRedrawPolicy">2</int>
 							<bool key="NSEnabled">YES</bool>
@@ -430,7 +377,6 @@
 							<int key="NSvFlags">266</int>
 							<string key="NSFrame">{{20, 483}, {492, 22}}</string>
 							<reference key="NSSuperview" ref="1006"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="577838864"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
@@ -459,68 +405,56 @@
 					</array>
 					<string key="NSFrameSize">{532, 525}</string>
 					<reference key="NSSuperview"/>
-					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="458637435"/>
 					<int key="NSViewLayerContentsRedrawPolicy">2</int>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1680, 1028}}</string>
+				<string key="NSScreenRect">{{0, 0}, {2560, 1578}}</string>
 				<string key="NSMinSize">{300, 322}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
 				<bool key="NSWindowIsRestorable">YES</bool>
-			</object>
-			<object class="NSCustomObject" id="133414315">
-				<string key="NSClassName">FSScriptEditorController</string>
 			</object>
 		</array>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
 			<array class="NSMutableArray" key="connectionRecords">
 				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">compile:</string>
-						<reference key="source" ref="133414315"/>
-						<reference key="destination" ref="959959332"/>
-					</object>
-					<int key="connectionID">76</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">insertPi:</string>
-						<reference key="source" ref="133414315"/>
-						<reference key="destination" ref="312269589"/>
-					</object>
-					<int key="connectionID">77</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">titleField</string>
-						<reference key="source" ref="133414315"/>
-						<reference key="destination" ref="458637435"/>
+						<string key="label">descriptionView</string>
+						<reference key="source" ref="1001"/>
+						<reference key="destination" ref="1011097488"/>
 					</object>
-					<int key="connectionID">78</int>
+					<int key="connectionID">82</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">sourceView</string>
-						<reference key="source" ref="133414315"/>
+						<reference key="source" ref="1001"/>
 						<reference key="destination" ref="635777086"/>
 					</object>
-					<int key="connectionID">79</int>
+					<int key="connectionID">83</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">descriptionView</string>
-						<reference key="source" ref="133414315"/>
-						<reference key="destination" ref="1011097488"/>
+						<string key="label">titleField</string>
+						<reference key="source" ref="1001"/>
+						<reference key="destination" ref="458637435"/>
 					</object>
-					<int key="connectionID">80</int>
+					<int key="connectionID">84</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">view</string>
-						<reference key="source" ref="133414315"/>
-						<reference key="destination" ref="1006"/>
+					<object class="IBActionConnection" key="connection">
+						<string key="label">compile:</string>
+						<reference key="source" ref="1001"/>
+						<reference key="destination" ref="959959332"/>
 					</object>
-					<int key="connectionID">81</int>
+					<int key="connectionID">88</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">insertPi:</string>
+						<reference key="source" ref="1001"/>
+						<reference key="destination" ref="312269589"/>
+					</object>
+					<int key="connectionID">89</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -682,11 +616,6 @@
 						<reference key="object" ref="799393126"/>
 						<reference key="parent" ref="458637435"/>
 					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">75</int>
-						<reference key="object" ref="133414315"/>
-						<reference key="parent" ref="0"/>
-					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -714,663 +643,14 @@
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="73.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="74.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="75.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">81</int>
+			<int key="maxID">89</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes">
-			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
-				<object class="IBPartialClassDescription">
-					<string key="className">FSBrowser</string>
-					<string key="superclassName">NSObject</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="embedTool:">id</string>
-						<string key="goBackward:">id</string>
-						<string key="goForward:">id</string>
-						<string key="goHome:">id</string>
-						<string key="goUp:">id</string>
-						<string key="hidePanels:">id</string>
-						<string key="refresh:">id</string>
-						<string key="revealPanels:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="embedTool:">
-							<string key="name">embedTool:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="goBackward:">
-							<string key="name">goBackward:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="goForward:">
-							<string key="name">goForward:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="goHome:">
-							<string key="name">goHome:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="goUp:">
-							<string key="name">goUp:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="hidePanels:">
-							<string key="name">hidePanels:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="refresh:">
-							<string key="name">refresh:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="revealPanels:">
-							<string key="name">revealPanels:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="aspectBox">NSTextField</string>
-						<string key="colorWidget">FSColorWidget</string>
-						<string key="detailBox">NSButton</string>
-						<string key="editorButton">NSButton</string>
-						<string key="historyView">FSViewer</string>
-						<string key="iterBox">NSTextField</string>
-						<string key="minRadiusBox">NSTextField</string>
-						<string key="preview">FSViewer</string>
-						<string key="programBox">NSPopUpButton</string>
-						<string key="radiusBox">NSTextField</string>
-						<string key="theCompiler">id</string>
-						<string key="theSession">FSSession</string>
-						<string key="theTools">FSTools</string>
-						<string key="theViewer">FSViewer</string>
-						<string key="varTable">NSTableView</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="aspectBox">
-							<string key="name">aspectBox</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="colorWidget">
-							<string key="name">colorWidget</string>
-							<string key="candidateClassName">FSColorWidget</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="detailBox">
-							<string key="name">detailBox</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="editorButton">
-							<string key="name">editorButton</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="historyView">
-							<string key="name">historyView</string>
-							<string key="candidateClassName">FSViewer</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="iterBox">
-							<string key="name">iterBox</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="minRadiusBox">
-							<string key="name">minRadiusBox</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="preview">
-							<string key="name">preview</string>
-							<string key="candidateClassName">FSViewer</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="programBox">
-							<string key="name">programBox</string>
-							<string key="candidateClassName">NSPopUpButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="radiusBox">
-							<string key="name">radiusBox</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="theCompiler">
-							<string key="name">theCompiler</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="theSession">
-							<string key="name">theSession</string>
-							<string key="candidateClassName">FSSession</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="theTools">
-							<string key="name">theTools</string>
-							<string key="candidateClassName">FSTools</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="theViewer">
-							<string key="name">theViewer</string>
-							<string key="candidateClassName">FSViewer</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="varTable">
-							<string key="name">varTable</string>
-							<string key="candidateClassName">NSTableView</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/FSBrowser.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">FSColorWidget</string>
-					<string key="superclassName">NSObject</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="acDelete:">id</string>
-						<string key="acDeleteAll:">id</string>
-						<string key="acEdit:">id</string>
-						<string key="acRefine:">id</string>
-						<string key="change:">id</string>
-						<string key="reset:">id</string>
-						<string key="smoothnessChanged:">id</string>
-						<string key="submit:">id</string>
-						<string key="updateAutocolorLockState:">id</string>
-						<string key="updateColorInformation:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="acDelete:">
-							<string key="name">acDelete:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="acDeleteAll:">
-							<string key="name">acDeleteAll:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="acEdit:">
-							<string key="name">acEdit:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="acRefine:">
-							<string key="name">acRefine:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="change:">
-							<string key="name">change:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="reset:">
-							<string key="name">reset:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="smoothnessChanged:">
-							<string key="name">smoothnessChanged:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="submit:">
-							<string key="name">submit:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="updateAutocolorLockState:">
-							<string key="name">updateAutocolorLockState:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="updateColorInformation:">
-							<string key="name">updateColorInformation:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="acDeleteAllButton">NSButton</string>
-						<string key="acDeleteButton">NSButton</string>
-						<string key="acEditButton">NSButton</string>
-						<string key="acList">NSPopUpButton</string>
-						<string key="acLockButton">NSButton</string>
-						<string key="acRefineButton">NSButton</string>
-						<string key="autocolorBox">NSButton</string>
-						<string key="colorButton">NSPopUpButton</string>
-						<string key="colorMatrix">NSMatrix</string>
-						<string key="colorWell">NSColorWell</string>
-						<string key="gradientControl">FSGradientControl</string>
-						<string key="magGradient">NSButton</string>
-						<string key="magShade">NSButton</string>
-						<string key="phaseGradient">NSButton</string>
-						<string key="phaseShade">NSButton</string>
-						<string key="smoothnessBox">NSButton</string>
-						<string key="smoothnessField">NSTextField</string>
-						<string key="subdivisionField">NSTextField</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="acDeleteAllButton">
-							<string key="name">acDeleteAllButton</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="acDeleteButton">
-							<string key="name">acDeleteButton</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="acEditButton">
-							<string key="name">acEditButton</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="acList">
-							<string key="name">acList</string>
-							<string key="candidateClassName">NSPopUpButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="acLockButton">
-							<string key="name">acLockButton</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="acRefineButton">
-							<string key="name">acRefineButton</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="autocolorBox">
-							<string key="name">autocolorBox</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="colorButton">
-							<string key="name">colorButton</string>
-							<string key="candidateClassName">NSPopUpButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="colorMatrix">
-							<string key="name">colorMatrix</string>
-							<string key="candidateClassName">NSMatrix</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="colorWell">
-							<string key="name">colorWell</string>
-							<string key="candidateClassName">NSColorWell</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="gradientControl">
-							<string key="name">gradientControl</string>
-							<string key="candidateClassName">FSGradientControl</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="magGradient">
-							<string key="name">magGradient</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="magShade">
-							<string key="name">magShade</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="phaseGradient">
-							<string key="name">phaseGradient</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="phaseShade">
-							<string key="name">phaseShade</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="smoothnessBox">
-							<string key="name">smoothnessBox</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="smoothnessField">
-							<string key="name">smoothnessField</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="subdivisionField">
-							<string key="name">subdivisionField</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/FSColorWidget.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">FSECompiler</string>
-					<string key="superclassName">NSObject</string>
-					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">compile:</string>
-						<string key="NS.object.0">id</string>
-					</object>
-					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">compile:</string>
-						<object class="IBActionInfo" key="NS.object.0">
-							<string key="name">compile:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</object>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/FSECompiler.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">FSGradientControl</string>
-					<string key="superclassName">NSView</string>
-					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">fill:</string>
-						<string key="NS.object.0">id</string>
-					</object>
-					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">fill:</string>
-						<object class="IBActionInfo" key="NS.object.0">
-							<string key="name">fill:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</object>
-					<object class="NSMutableDictionary" key="outlets">
-						<string key="NS.key.0">colorWell</string>
-						<string key="NS.object.0">NSColorWell</string>
-					</object>
-					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<string key="NS.key.0">colorWell</string>
-						<object class="IBToOneOutletInfo" key="NS.object.0">
-							<string key="name">colorWell</string>
-							<string key="candidateClassName">NSColorWell</string>
-						</object>
-					</object>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/FSGradientControl.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">FSScriptEditorController</string>
-					<string key="superclassName">NSViewController</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="compile:">id</string>
-						<string key="insertPi:">id</string>
-						<string key="testProgram:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="compile:">
-							<string key="name">compile:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="insertPi:">
-							<string key="name">insertPi:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="testProgram:">
-							<string key="name">testProgram:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="browser">FSBrowser</string>
-						<string key="compiler">FSECompiler</string>
-						<string key="descriptionView">NSTextView</string>
-						<string key="enclosingView">NSTabView</string>
-						<string key="errorField">NSTextField</string>
-						<string key="panel">NSPanel</string>
-						<string key="sourceView">NSTextView</string>
-						<string key="titleField">NSTextField</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="browser">
-							<string key="name">browser</string>
-							<string key="candidateClassName">FSBrowser</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="compiler">
-							<string key="name">compiler</string>
-							<string key="candidateClassName">FSECompiler</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="descriptionView">
-							<string key="name">descriptionView</string>
-							<string key="candidateClassName">NSTextView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="enclosingView">
-							<string key="name">enclosingView</string>
-							<string key="candidateClassName">NSTabView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="errorField">
-							<string key="name">errorField</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="panel">
-							<string key="name">panel</string>
-							<string key="candidateClassName">NSPanel</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="sourceView">
-							<string key="name">sourceView</string>
-							<string key="candidateClassName">NSTextView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="titleField">
-							<string key="name">titleField</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/FSScriptEditorController.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">FSSession</string>
-					<string key="superclassName">NSObject</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="cloneCurrentNode:">id</string>
-						<string key="deleteCurrentChildren:">id</string>
-						<string key="deleteCurrentNode:">id</string>
-						<string key="goBackward:">id</string>
-						<string key="goForward:">id</string>
-						<string key="goToRoot:">id</string>
-						<string key="selectCurrentParent:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="cloneCurrentNode:">
-							<string key="name">cloneCurrentNode:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="deleteCurrentChildren:">
-							<string key="name">deleteCurrentChildren:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="deleteCurrentNode:">
-							<string key="name">deleteCurrentNode:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="goBackward:">
-							<string key="name">goBackward:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="goForward:">
-							<string key="name">goForward:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="goToRoot:">
-							<string key="name">goToRoot:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="selectCurrentParent:">
-							<string key="name">selectCurrentParent:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="historyView">NSOutlineView</string>
-						<string key="owner">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="historyView">
-							<string key="name">historyView</string>
-							<string key="candidateClassName">NSOutlineView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="owner">
-							<string key="name">owner</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/FSSession.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">FSTools</string>
-					<string key="superclassName">NSObject</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="changeTool:">id</string>
-						<string key="configure:">id</string>
-						<string key="registerTrace:">id</string>
-						<string key="resetTrace:">id</string>
-						<string key="setupMenu:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="changeTool:">
-							<string key="name">changeTool:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="configure:">
-							<string key="name">configure:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="registerTrace:">
-							<string key="name">registerTrace:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="resetTrace:">
-							<string key="name">resetTrace:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="setupMenu:">
-							<string key="name">setupMenu:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="coordinates">NSTextField</string>
-						<string key="periodField">NSTextField</string>
-						<string key="popupMenu">NSPopUpButton</string>
-						<string key="probeTextField">NSTextField</string>
-						<string key="stepsBox">NSTextField</string>
-						<string key="theBrowser">id</string>
-						<string key="theSession">FSSession</string>
-						<string key="viewport">FSViewer</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="coordinates">
-							<string key="name">coordinates</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="periodField">
-							<string key="name">periodField</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="popupMenu">
-							<string key="name">popupMenu</string>
-							<string key="candidateClassName">NSPopUpButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="probeTextField">
-							<string key="name">probeTextField</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="stepsBox">
-							<string key="name">stepsBox</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="theBrowser">
-							<string key="name">theBrowser</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="theSession">
-							<string key="name">theSession</string>
-							<string key="candidateClassName">FSSession</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="viewport">
-							<string key="name">viewport</string>
-							<string key="candidateClassName">FSViewer</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/FSTools.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">FSViewer</string>
-					<string key="superclassName">NSView</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="endFullScreen:">id</string>
-						<string key="render:">id</string>
-						<string key="startFullScreen:">id</string>
-						<string key="tTest:">id</string>
-						<string key="toggleInset:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="endFullScreen:">
-							<string key="name">endFullScreen:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="render:">
-							<string key="name">render:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="startFullScreen:">
-							<string key="name">startFullScreen:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="tTest:">
-							<string key="name">tTest:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="toggleInset:">
-							<string key="name">toggleInset:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="boxButton">NSButton</string>
-						<string key="colorPicker">NSObject</string>
-						<string key="controllingWindow">NSWindow</string>
-						<string key="denormalButton">NSButton</string>
-						<string key="document">id</string>
-						<string key="insetButton">NSButton</string>
-						<string key="linesButton">NSButton</string>
-						<string key="progress">NSProgressIndicator</string>
-						<string key="tView">NSImageView</string>
-						<string key="timerField">NSTextField</string>
-						<string key="viewDescription">NSTextView</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="boxButton">
-							<string key="name">boxButton</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="colorPicker">
-							<string key="name">colorPicker</string>
-							<string key="candidateClassName">NSObject</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="controllingWindow">
-							<string key="name">controllingWindow</string>
-							<string key="candidateClassName">NSWindow</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="denormalButton">
-							<string key="name">denormalButton</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="document">
-							<string key="name">document</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="insetButton">
-							<string key="name">insetButton</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="linesButton">
-							<string key="name">linesButton</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="progress">
-							<string key="name">progress</string>
-							<string key="candidateClassName">NSProgressIndicator</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="tView">
-							<string key="name">tView</string>
-							<string key="candidateClassName">NSImageView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="timerField">
-							<string key="name">timerField</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="viewDescription">
-							<string key="name">viewDescription</string>
-							<string key="candidateClassName">NSTextView</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/FSViewer.h</string>
-					</object>
-				</object>
-			</array>
-		</object>
+		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaFramework</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">

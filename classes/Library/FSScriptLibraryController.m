@@ -128,7 +128,13 @@
 -(void) openItemInEditor:(FSScriptLibraryItem*) item {
     
     FSScriptEditorController *vc= [[FSScriptEditorController alloc] initWithItem:item];
+    //NSNib* n = [[NSNib alloc] initWithNibNamed:@"FSScriptEditor" bundle:nil];
+    //[n instantiateNibWithOwner:nil topLevelObjects:nil];
+    
+    //[vc awakeFromNib];
     [NSBundle loadNibNamed:@"FSScriptEditor" owner:vc];
+    
+    
 }
 
 - (IBAction) switchScriptView: (id) sender {

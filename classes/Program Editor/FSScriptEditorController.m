@@ -2,26 +2,40 @@
 #import "FSLog.h"
 #import "FSBrowser.h"
 #import "FSScriptEditorState.h"
-
+#import "FSSave.h"
 @implementation FSScriptEditorController
 
-
--(id) initWithItem:(FSScriptLibraryItem*) item {
+-(id) init {
+    if (self = [super init]) {
+        
+    }
+    return self;
+}
+-(id) initWithItem:(FSScriptLibraryItem*) p_item {
     if  (self = [super initWithNibName:@"FSScriptEditor" bundle:nil]) {
-        NSString* path = [item path];
-        NSData* data =   [NSData dataWithContentsOfFile:path];
-        if (data == nil) {
-            data = nil;
-        }
+        item = p_item;
     }
     return self;
 }
 
 - (void) awakeFromNib {
 	ENTER
-//	NSLog(@"FSScriptEditorController is in window %@\n", [sourceView window]);
+
 	[sourceView setRichText: NO];
+    NSString* path = [item path];
+    NSData* data =   [NSData dataWithContentsOfFile:path];
+    FSSave* savedData = [NSKeyedUnarchiver unarchiveObjectWithData: data];
+    NSArray* editorSavedData = [savedData editor];
+    [self restoreFrom:editorSavedData];
+
 	EXIT
+}
+
+- (NSString *)windowNibName
+{
+    // Override returning the nib file name of the document
+    // If you need to use a subclass of NSWindowController or if your document supports multiple NSWindowControllers, you should remove this method and override -makeWindowControllers instead.
+    return @"FSScriptEditor";
 }
 
 - (IBAction)compile:(id)sender

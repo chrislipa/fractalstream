@@ -4,8 +4,12 @@
 #import "FSECompiler.h"
 #import "FSBrowser.h"
 #import "FSScriptLibraryItem.h"
+
 @interface FSScriptEditorController : NSViewController
 {
+    
+    FSScriptLibraryItem* item;
+    
     IBOutlet NSTextView* descriptionView;
     IBOutlet NSTextView* sourceView;
     IBOutlet NSTextField* titleField;
