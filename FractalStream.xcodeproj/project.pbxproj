@@ -22,7 +22,7 @@
 		360A22E71573E5C400BF41B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22AE1573E5C400BF41B2 /* main.m */; };
 		360A22E81573E5C400BF41B2 /* FSCustomDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22B11573E5C400BF41B2 /* FSCustomDataManager.m */; };
 		360A22EA1573E5C400BF41B2 /* FSECompiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22B51573E5C400BF41B2 /* FSECompiler.m */; };
-		360A22EB1573E5C400BF41B2 /* FSEController.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22B81573E5C400BF41B2 /* FSEController.m */; };
+		360A22EB1573E5C400BF41B2 /* FSScriptEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22B81573E5C400BF41B2 /* FSScriptEditorController.m */; };
 		360A22EC1573E5C400BF41B2 /* FSEParseTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 360A22BB1573E5C400BF41B2 /* FSEParseTree.m */; };
 		360A22ED1573E5C400BF41B2 /* FSJitter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 360A22BD1573E5C400BF41B2 /* FSJitter.mm */; };
 		360A22EE1573E5C400BF41B2 /* FSKernel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 360A22BF1573E5C400BF41B2 /* FSKernel.mm */; };
@@ -48,6 +48,9 @@
 		360A230F1573EC6D00BF41B2 /* LLVMPowerPCCodeGen.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 360A230B1573EC6D00BF41B2 /* LLVMPowerPCCodeGen.o */; };
 		36118EB815759D18005D2C05 /* FSTraceTool.fstool in Copy Files (Tools) */ = {isa = PBXBuildFile; fileRef = 36D36ADA15759C0E00F78D74 /* FSTraceTool.fstool */; };
 		36118EB915759D18005D2C05 /* FSPreviewTool.fstool in Copy Files (Tools) */ = {isa = PBXBuildFile; fileRef = 36D36AC515759BC300F78D74 /* FSPreviewTool.fstool */; };
+		363B77C915BB8209002BD3DF /* FSScriptEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 363B77C715BB8209002BD3DF /* FSScriptEditor.m */; };
+		363B77D415BB9740002BD3DF /* FSScriptLibraryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 363B77D315BB9740002BD3DF /* FSScriptLibraryItem.m */; };
+		363B77D715BB9BE5002BD3DF /* FSScriptEditorState.m in Sources */ = {isa = PBXBuildFile; fileRef = 363B77D615BB9BE5002BD3DF /* FSScriptEditorState.m */; };
 		36425FC015A3CCC7004A622C /* FSGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 36425FBF15A3CCC7004A622C /* FSGradient.m */; };
 		36425FC315A3CD08004A622C /* FSGradientControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 36425FC215A3CD07004A622C /* FSGradientControl.m */; };
 		364EDF0D157594E200E89B5B /* FSDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364EDF0B157594E200E89B5B /* FSDocument.xib */; };
@@ -521,8 +524,8 @@
 		360A22A41573E5C400BF41B2 /* FSSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSSession.m; sourceTree = "<group>"; };
 		360A22A61573E5C400BF41B2 /* FSColorLibraryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSColorLibraryController.h; sourceTree = "<group>"; };
 		360A22A71573E5C400BF41B2 /* FSColorLibraryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSColorLibraryController.m; sourceTree = "<group>"; };
-		360A22A81573E5C400BF41B2 /* FSScriptLibraryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSScriptLibraryController.h; sourceTree = "<group>"; };
-		360A22A91573E5C400BF41B2 /* FSScriptLibraryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSScriptLibraryController.m; sourceTree = "<group>"; };
+		360A22A81573E5C400BF41B2 /* FSScriptLibraryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSScriptLibraryController.h; path = Library/FSScriptLibraryController.h; sourceTree = "<group>"; };
+		360A22A91573E5C400BF41B2 /* FSScriptLibraryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSScriptLibraryController.m; path = Library/FSScriptLibraryController.m; sourceTree = "<group>"; };
 		360A22AB1573E5C400BF41B2 /* FractalStream_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FractalStream_Prefix.pch; sourceTree = "<group>"; };
 		360A22AC1573E5C400BF41B2 /* FSStartup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSStartup.h; sourceTree = "<group>"; };
 		360A22AD1573E5C400BF41B2 /* FSStartup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSStartup.m; sourceTree = "<group>"; };
@@ -532,8 +535,8 @@
 		360A22B41573E5C400BF41B2 /* FSECompiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSECompiler.h; sourceTree = "<group>"; };
 		360A22B51573E5C400BF41B2 /* FSECompiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSECompiler.m; sourceTree = "<group>"; };
 		360A22B61573E5C400BF41B2 /* FSECompilerSymbols.H */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FSECompilerSymbols.H; sourceTree = "<group>"; };
-		360A22B71573E5C400BF41B2 /* FSEController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSEController.h; sourceTree = "<group>"; };
-		360A22B81573E5C400BF41B2 /* FSEController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSEController.m; sourceTree = "<group>"; };
+		360A22B71573E5C400BF41B2 /* FSScriptEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSScriptEditorController.h; path = "Program Editor/FSScriptEditorController.h"; sourceTree = "<group>"; };
+		360A22B81573E5C400BF41B2 /* FSScriptEditorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSScriptEditorController.m; path = "Program Editor/FSScriptEditorController.m"; sourceTree = "<group>"; };
 		360A22B91573E5C400BF41B2 /* FSEParseNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSEParseNode.h; sourceTree = "<group>"; };
 		360A22BA1573E5C400BF41B2 /* FSEParseTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSEParseTree.h; sourceTree = "<group>"; };
 		360A22BB1573E5C400BF41B2 /* FSEParseTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSEParseTree.m; sourceTree = "<group>"; };
@@ -576,6 +579,12 @@
 		360A230B1573EC6D00BF41B2 /* LLVMPowerPCCodeGen.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = LLVMPowerPCCodeGen.o; path = "external/llvm-2.5/Release/lib/LLVMPowerPCCodeGen.o"; sourceTree = "<group>"; };
 		36118EAB15759C4C005D2C05 /* FSSnapshot.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FSSnapshot.xcodeproj; path = tools/FSSnapshot/FSSnapshot.xcodeproj; sourceTree = "<group>"; };
 		36358E1C15A3D9B200F9EB14 /* FSTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSTool.h; path = include/FSTool.h; sourceTree = "<group>"; };
+		363B77C615BB8209002BD3DF /* FSScriptEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSScriptEditor.h; path = Document/FSScriptEditor.h; sourceTree = "<group>"; };
+		363B77C715BB8209002BD3DF /* FSScriptEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSScriptEditor.m; path = Document/FSScriptEditor.m; sourceTree = "<group>"; };
+		363B77D215BB9740002BD3DF /* FSScriptLibraryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSScriptLibraryItem.h; path = Library/FSScriptLibraryItem.h; sourceTree = "<group>"; };
+		363B77D315BB9740002BD3DF /* FSScriptLibraryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSScriptLibraryItem.m; path = Library/FSScriptLibraryItem.m; sourceTree = "<group>"; };
+		363B77D515BB9BE5002BD3DF /* FSScriptEditorState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSScriptEditorState.h; sourceTree = "<group>"; };
+		363B77D615BB9BE5002BD3DF /* FSScriptEditorState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSScriptEditorState.m; sourceTree = "<group>"; };
 		36425FB715A3C1B3004A622C /* FSProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FSProtocols.h; path = include/FSProtocols.h; sourceTree = "<group>"; };
 		36425FBD15A3C896004A622C /* FSViewerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSViewerData.h; path = include/FSViewerData.h; sourceTree = "<group>"; };
 		36425FBE15A3CCC6004A622C /* FSGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSGradient.h; sourceTree = "<group>"; };
@@ -607,8 +616,8 @@
 		364D0ACF157114D700971A37 /* exp.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = exp.fs; sourceTree = "<group>"; };
 		364EDF0B157594E200E89B5B /* FSDocument.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FSDocument.xib; sourceTree = "<group>"; };
 		364EDF0C157594E200E89B5B /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
-		3651D29A15A5134A00255FFB /* FSScriptLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSScriptLibrary.h; sourceTree = "<group>"; };
-		3651D29B15A5134A00255FFB /* FSScriptLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSScriptLibrary.m; sourceTree = "<group>"; };
+		3651D29A15A5134A00255FFB /* FSScriptLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSScriptLibrary.h; path = Document/FSScriptLibrary.h; sourceTree = "<group>"; };
+		3651D29B15A5134A00255FFB /* FSScriptLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSScriptLibrary.m; path = Document/FSScriptLibrary.m; sourceTree = "<group>"; };
 		365E6D0E15A50F96001B6C2A /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/FSScriptLibrary.xib; sourceTree = "<group>"; };
 		36A5B4FD157421CC00569973 /* FSMovieTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FSMovieTool.xcodeproj; path = tools/movietool/FSMovieTool.xcodeproj; sourceTree = "<group>"; };
 		36A5B5091574245000569973 /* SDTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDTool.xcodeproj; path = tools/saddledrop/SDTool.xcodeproj; sourceTree = "<group>"; };
@@ -766,6 +775,7 @@
 		360A228F1573E5C400BF41B2 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				363B77CE15BB86C3002BD3DF /* UI */,
 				360A22901573E5C400BF41B2 /* Color Editor */,
 				360A229A1573E5C400BF41B2 /* Document */,
 				360A22A51573E5C400BF41B2 /* Library */,
@@ -810,8 +820,6 @@
 				360A22A21573E5C400BF41B2 /* FSSave.m */,
 				360A22A31573E5C400BF41B2 /* FSSession.h */,
 				360A22A41573E5C400BF41B2 /* FSSession.m */,
-				3651D29A15A5134A00255FFB /* FSScriptLibrary.h */,
-				3651D29B15A5134A00255FFB /* FSScriptLibrary.m */,
 			);
 			path = Document;
 			sourceTree = "<group>";
@@ -821,8 +829,6 @@
 			children = (
 				360A22A61573E5C400BF41B2 /* FSColorLibraryController.h */,
 				360A22A71573E5C400BF41B2 /* FSColorLibraryController.m */,
-				360A22A81573E5C400BF41B2 /* FSScriptLibraryController.h */,
-				360A22A91573E5C400BF41B2 /* FSScriptLibraryController.m */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -846,8 +852,6 @@
 				360A22B41573E5C400BF41B2 /* FSECompiler.h */,
 				360A22B51573E5C400BF41B2 /* FSECompiler.m */,
 				360A22B61573E5C400BF41B2 /* FSECompilerSymbols.H */,
-				360A22B71573E5C400BF41B2 /* FSEController.h */,
-				360A22B81573E5C400BF41B2 /* FSEController.m */,
 				360A22B91573E5C400BF41B2 /* FSEParseNode.h */,
 				360A22BA1573E5C400BF41B2 /* FSEParseTree.h */,
 				360A22BB1573E5C400BF41B2 /* FSEParseTree.m */,
@@ -912,6 +916,49 @@
 				36118EB315759C4C005D2C05 /* FSSnapshotTool.bundle */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		363B77CE15BB86C3002BD3DF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				363B77CF15BB86CF002BD3DF /* Library */,
+				363B77D015BB86D8002BD3DF /* Editor */,
+				363B77D115BB8997002BD3DF /* New Group */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		363B77CF15BB86CF002BD3DF /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				3651D29A15A5134A00255FFB /* FSScriptLibrary.h */,
+				3651D29B15A5134A00255FFB /* FSScriptLibrary.m */,
+				360A22A81573E5C400BF41B2 /* FSScriptLibraryController.h */,
+				360A22A91573E5C400BF41B2 /* FSScriptLibraryController.m */,
+				363B77D215BB9740002BD3DF /* FSScriptLibraryItem.h */,
+				363B77D315BB9740002BD3DF /* FSScriptLibraryItem.m */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		363B77D015BB86D8002BD3DF /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				363B77C615BB8209002BD3DF /* FSScriptEditor.h */,
+				363B77C715BB8209002BD3DF /* FSScriptEditor.m */,
+				360A22B71573E5C400BF41B2 /* FSScriptEditorController.h */,
+				360A22B81573E5C400BF41B2 /* FSScriptEditorController.m */,
+				363B77D515BB9BE5002BD3DF /* FSScriptEditorState.h */,
+				363B77D615BB9BE5002BD3DF /* FSScriptEditorState.m */,
+			);
+			name = Editor;
+			sourceTree = "<group>";
+		};
+		363B77D115BB8997002BD3DF /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 		36425FB615A3C175004A622C /* include */ = {
@@ -1478,7 +1525,7 @@
 				360A22E71573E5C400BF41B2 /* main.m in Sources */,
 				360A22E81573E5C400BF41B2 /* FSCustomDataManager.m in Sources */,
 				360A22EA1573E5C400BF41B2 /* FSECompiler.m in Sources */,
-				360A22EB1573E5C400BF41B2 /* FSEController.m in Sources */,
+				360A22EB1573E5C400BF41B2 /* FSScriptEditorController.m in Sources */,
 				360A22EC1573E5C400BF41B2 /* FSEParseTree.m in Sources */,
 				360A22ED1573E5C400BF41B2 /* FSJitter.mm in Sources */,
 				360A22EE1573E5C400BF41B2 /* FSKernel.mm in Sources */,
@@ -1495,6 +1542,9 @@
 				36425FC015A3CCC7004A622C /* FSGradient.m in Sources */,
 				36425FC315A3CD08004A622C /* FSGradientControl.m in Sources */,
 				3651D29D15A5134A00255FFB /* FSScriptLibrary.m in Sources */,
+				363B77C915BB8209002BD3DF /* FSScriptEditor.m in Sources */,
+				363B77D415BB9740002BD3DF /* FSScriptLibraryItem.m in Sources */,
+				363B77D715BB9BE5002BD3DF /* FSScriptEditorState.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

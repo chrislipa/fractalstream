@@ -38,7 +38,7 @@ static BOOL miniLoads = YES;
 	return self;
 }
 
-- (void) setType: (NSString*) newType session: (FSSession*) sess colorizer: (FSColorWidget*) col editor: (FSEController*) edit browser: (FSBrowser*) brow {
+- (void) setType: (NSString*) newType session: (FSSession*) sess colorizer: (FSColorWidget*) col editor: (FSScriptEditorController*) edit browser: (FSBrowser*) brow {
 	ENTER
 	type = [NSString stringWithString: newType];
 	session = [sess retain];

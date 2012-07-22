@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "FSColorWidget.h"
 #import "FSSession.h"
-#import "FSEController.h"
+#import "FSScriptEditorController.h"
 #import "FSBrowser.h"
 
 @interface FSSave : NSObject <NSCoding> {
@@ -37,7 +37,7 @@
 - (BOOL) allowEditor;
 - (BOOL) hasTools;
 - (NSFileWrapper*) customTools;
-- (void) setType: (NSString*) newType session: (FSSession*) sess colorizer: (FSColorWidget*) col editor: (FSEController*) edit browser: (FSBrowser*) browser;
+- (void) setType: (NSString*) newType session: (FSSession*) sess colorizer: (FSColorWidget*) col editor: (FSScriptEditorController*) edit browser: (FSBrowser*) browser;
 
 - (void) encodeWithCoder: (NSCoder*) coder;
 - (id) initWithCoder: (NSCoder*) coder;

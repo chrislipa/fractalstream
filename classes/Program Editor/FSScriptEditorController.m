@@ -1,11 +1,25 @@
-#import "FSEController.h"
+#import "FSScriptEditorController.h"
 #import "FSLog.h"
 #import "FSBrowser.h"
-@implementation FSEController
+#import "FSScriptEditorState.h"
+
+@implementation FSScriptEditorController
+
+
+-(id) initWithItem:(FSScriptLibraryItem*) item {
+    if  (self = [super initWithNibName:@"FSScriptEditor" bundle:nil]) {
+        NSString* path = [item path];
+        NSData* data =   [NSData dataWithContentsOfFile:path];
+        if (data == nil) {
+            data = nil;
+        }
+    }
+    return self;
+}
 
 - (void) awakeFromNib {
 	ENTER
-//	NSLog(@"FSEController is in window %@\n", [sourceView window]);
+//	NSLog(@"FSScriptEditorController is in window %@\n", [sourceView window]);
 	[sourceView setRichText: NO];
 	EXIT
 }
@@ -66,6 +80,8 @@
 - (IBAction)testProgram:(id)sender
 {
 }
+
+
 
 - (void) restoreFrom: (NSArray*) savedState {
 	NSRange range;

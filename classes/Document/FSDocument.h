@@ -26,7 +26,7 @@
 	BOOL newSession;
 	FSSave* savedData;
 	
-	IBOutlet FSEController* editor;
+	IBOutlet FSScriptEditorController* editor;
 	IBOutlet FSColorWidget* colorizer;
 	IBOutlet FSTools* toolkit;
 	

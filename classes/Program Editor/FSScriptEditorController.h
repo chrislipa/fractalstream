@@ -1,10 +1,10 @@
-/* FSEController */
+/* FSScriptEditorController */
 
 #import <Cocoa/Cocoa.h>
 #import "FSECompiler.h"
 #import "FSBrowser.h"
-
-@interface FSEController : NSObject
+#import "FSScriptLibraryItem.h"
+@interface FSScriptEditorController : NSViewController
 {
     IBOutlet NSTextView* descriptionView;
     IBOutlet NSTextView* sourceView;
@@ -15,7 +15,12 @@
 	
 	IBOutlet FSECompiler* compiler;
 	IBOutlet FSBrowser* browser;
+    
+    
 }
+
+-(id) initWithItem:(FSScriptLibraryItem*) item;
+
 - (IBAction) compile: (id) sender;
 - (IBAction) testProgram: (id) sender;
 - (IBAction) insertPi: (id) sender;
