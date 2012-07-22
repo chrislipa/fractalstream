@@ -716,6 +716,7 @@
 			isa = PBXGroup;
 			children = (
 				364EDF0B157594E200E89B5B /* FSDocument.xib */,
+				365E6D0D15A50F96001B6C2A /* FSScriptLibrary.xib */,
 				364EDF0C157594E200E89B5B /* MainMenu.xib */,
 				360A22F91573E5F300BF41B2 /* images */,
 				683942CC10B39DEB00A6A993 /* FSDocument-windows.xib */,
@@ -723,7 +724,6 @@
 				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
 				8D15AC360486D014006FF6A4 /* Info.plist */,
 				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
-				365E6D0D15A50F96001B6C2A /* FSScriptLibrary.xib */,
 				36ADD4A115A526C00045C7B4 /* FSScriptEditor.xib */,
 			);
 			name = Resources;

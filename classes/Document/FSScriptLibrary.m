@@ -111,7 +111,11 @@
 	EXIT
 }
 
-
+- (void) openScriptLibrary {
+	ENTER
+	
+	EXIT
+}
 
 
 @end

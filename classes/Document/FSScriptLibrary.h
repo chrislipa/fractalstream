@@ -44,5 +44,5 @@
 
 - (void) doDocumentLoadWithLibrary: (BOOL) lib;
 - (void) openEditor;
-
+- (void) openScriptLibrary;
 @end
