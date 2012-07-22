@@ -23,7 +23,11 @@
 	IBOutlet NSButton* openButton;
 	IBOutlet NSButton* openEditorButton;
 	BOOL useOutlineView;
+    IBOutlet NSWindow* window;
 }
+
+@property (readonly) NSWindow* window;
+
 
 - (IBAction) newScript: (id) sender;
 - (IBAction) openScript: (id) sender;

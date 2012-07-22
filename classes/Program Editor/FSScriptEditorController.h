@@ -20,9 +20,10 @@
 	IBOutlet FSECompiler* compiler;
 	IBOutlet FSBrowser* browser;
     
+    IBOutlet NSWindow* window;
     
 }
-
+@property (readonly)  NSWindow* window;
 -(id) initWithItem:(FSScriptLibraryItem*) item;
 
 - (IBAction) compile: (id) sender;

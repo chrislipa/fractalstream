@@ -14,6 +14,7 @@
 
 @implementation FSScriptLibraryController
 
+@synthesize window;
 
 -(id) init {
     if (self = [super init]) {
@@ -141,6 +142,8 @@
     
     //[vc awakeFromNib];
     [NSBundle loadNibNamed:@"FSScriptEditor" owner:vc];
+    
+    [vc.window makeKeyAndOrderFront: nil];
     
     
 }

@@ -4,7 +4,7 @@
 #import "FSScriptEditorState.h"
 #import "FSSave.h"
 @implementation FSScriptEditorController
-
+@synthesize window;
 -(id) init {
     if (self = [super init]) {
         

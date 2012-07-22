@@ -426,7 +426,7 @@
 															<int key="NSvFlags">2322</int>
 															<string key="NSFrameSize">{715, 14}</string>
 															<reference key="NSSuperview" ref="473199598"/>
-															<reference key="NSNextKeyView" ref="113964075"/>
+															<reference key="NSNextKeyView" ref="1043404668"/>
 															<object class="NSTextContainer" key="NSTextContainer" id="540137596">
 																<object class="NSLayoutManager" key="NSLayoutManager">
 																	<object class="NSTextStorage" key="NSTextStorage">
@@ -513,7 +513,6 @@
 													<int key="NSvFlags">256</int>
 													<string key="NSFrame">{{715, 1}, {15, 153}}</string>
 													<reference key="NSSuperview" ref="401810035"/>
-													<reference key="NSNextKeyView"/>
 													<reference key="NSTarget" ref="401810035"/>
 													<string key="NSAction">_doScroller:</string>
 													<double key="NSPercent">0.96774190000000004</double>
@@ -534,7 +533,7 @@
 											</array>
 											<string key="NSFrameSize">{731, 155}</string>
 											<reference key="NSSuperview" ref="977584488"/>
-											<reference key="NSNextKeyView" ref="1043404668"/>
+											<reference key="NSNextKeyView" ref="473199598"/>
 											<int key="NSsFlags">133266</int>
 											<reference key="NSVScroller" ref="113964075"/>
 											<reference key="NSHScroller" ref="1043404668"/>
@@ -665,6 +664,14 @@
 						<reference key="destination" ref="1001"/>
 					</object>
 					<int key="connectionID">112</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">window</string>
+						<reference key="source" ref="282816614"/>
+						<reference key="destination" ref="1005"/>
+					</object>
+					<int key="connectionID">113</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -966,7 +973,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">112</int>
+			<int key="maxID">113</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
