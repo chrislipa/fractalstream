@@ -7,3 +7,13 @@ tools/*/build/*
 external/llvm-2.5/Release
 *.dir
 *.a
+/external/llvm-2.5/Release/*.o
+*/build/*
+**/build/*
+**/build/**
+/*/build/*
+/**/build/*
+/**/build/**
+
+/external/plcrashreporter-1.0/build/**
+/external/llvm-2.5/Release/lib/**
