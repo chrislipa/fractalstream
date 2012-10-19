@@ -3267,17 +3267,21 @@
 		DE66EC5108ABE78900323D32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				USER_HEADER_SEARCH_PATHS = "../include/**";
+				VALID_ARCHS = i386;
 			};
 			name = Debug;
 		};
 		DE66EC5208ABE78900323D32 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				USER_HEADER_SEARCH_PATHS = "../include/**";
+				VALID_ARCHS = i386;
 			};
 			name = Release;
 		};
