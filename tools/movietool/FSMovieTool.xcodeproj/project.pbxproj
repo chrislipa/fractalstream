@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		368FF18116322E7D00346C45 /* FractalStreamCompiler.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 368FF17E16322E6200346C45 /* FractalStreamCompiler.dylib */; };
 		6837DB5C0CEA9C4300EC448F /* FSMovieTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6837DB5B0CEA9C4300EC448F /* FSMovieTool.m */; };
 		6837DB640CEA9C4B00EC448F /* FSMovieTool.nib in Resources */ = {isa = PBXBuildFile; fileRef = 6837DB630CEA9C4B00EC448F /* FSMovieTool.nib */; };
 		68DB37DC0D63A92D00D018BD /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68DB37DB0D63A92D00D018BD /* QTKit.framework */; };
@@ -15,24 +16,34 @@
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		368FF17D16322E6200346C45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 368FF17916322E6200346C45 /* FractalStreamCompiler.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 36DE7C3215A5027300DCA597;
+			remoteInfo = FractalStreamCompiler;
+		};
+		368FF17F16322E7000346C45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 368FF17916322E6200346C45 /* FractalStreamCompiler.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 36DE7C3115A5027300DCA597;
+			remoteInfo = FractalStreamCompiler;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		32DBCF630370AF2F00C91783 /* FSToolTest_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSToolTest_Prefix.pch; sourceTree = "<group>"; };
+		368FF17916322E6200346C45 /* FractalStreamCompiler.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FractalStreamCompiler.xcodeproj; path = ../../external/FractalStreamCompiler/FractalStreamCompiler.xcodeproj; sourceTree = "<group>"; };
 		6837DB5A0CEA9C4300EC448F /* FSMovieTool.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSMovieTool.h; sourceTree = "<group>"; };
 		6837DB5B0CEA9C4300EC448F /* FSMovieTool.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSMovieTool.m; sourceTree = "<group>"; };
 		6837DB630CEA9C4B00EC448F /* FSMovieTool.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = FSMovieTool.nib; sourceTree = "<group>"; };
-		68B3E1430FE41CB10094BF80 /* FSECompilerSymbols.H */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FSECompilerSymbols.H; sourceTree = "<group>"; };
-		68B3E1440FE41CB10094BF80 /* FSEParseNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSEParseNode.h; sourceTree = "<group>"; };
-		68B3E1450FE41CB10094BF80 /* FSEParseTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSEParseTree.h; sourceTree = "<group>"; };
-		68B3E1460FE41CB80094BF80 /* FSECompiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSECompiler.h; sourceTree = "<group>"; };
-		68B3E1480FE41CCA0094BF80 /* FSKernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSKernel.h; sourceTree = "<group>"; };
-		68B3E1490FE41CCA0094BF80 /* FSJitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSJitter.h; sourceTree = "<group>"; };
-		68B3E14B0FE41CE70094BF80 /* FSThreading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSThreading.h; sourceTree = "<group>"; };
 		68DB37DB0D63A92D00D018BD /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
-		68DB37EB0D63AF7100D018BD /* FSColorWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSColorWidget.h; sourceTree = "<group>"; };
 		68DB386A0D63B0C900D018BD /* FSMovieTool.fstool */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSMovieTool.fstool; sourceTree = BUILT_PRODUCTS_DIR; };
 		68FAB59F0D5BACE0004ABF7A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				368FF18116322E7D00346C45 /* FractalStreamCompiler.dylib in Frameworks */,
 				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
 				68FAB5A00D5BACE0004ABF7A /* OpenGL.framework in Frameworks */,
 				68DB37DC0D63A92D00D018BD /* QTKit.framework in Frameworks */,
@@ -56,6 +68,7 @@
 		089C166AFE841209C02AAC07 /* FSToolTest */ = {
 			isa = PBXGroup;
 			children = (
+				368FF17916322E6200346C45 /* FractalStreamCompiler.xcodeproj */,
 				68DB37DB0D63A92D00D018BD /* QTKit.framework */,
 				08FB77AFFE84173DC02AAC07 /* Classes */,
 				32C88E010371C26100C91783 /* Other Sources */,
@@ -89,10 +102,8 @@
 		08FB77AFFE84173DC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				68B3E1420FE41C970094BF80 /* Compiler */,
 				6837DB5A0CEA9C4300EC448F /* FSMovieTool.h */,
 				6837DB5B0CEA9C4300EC448F /* FSMovieTool.m */,
-				68DB37EB0D63AF7100D018BD /* FSColorWidget.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -131,18 +142,12 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
-		68B3E1420FE41C970094BF80 /* Compiler */ = {
+		368FF17A16322E6200346C45 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				68B3E1430FE41CB10094BF80 /* FSECompilerSymbols.H */,
-				68B3E1440FE41CB10094BF80 /* FSEParseNode.h */,
-				68B3E1450FE41CB10094BF80 /* FSEParseTree.h */,
-				68B3E1460FE41CB80094BF80 /* FSECompiler.h */,
-				68B3E1480FE41CCA0094BF80 /* FSKernel.h */,
-				68B3E1490FE41CCA0094BF80 /* FSJitter.h */,
-				68B3E14B0FE41CE70094BF80 /* FSThreading.h */,
+				368FF17E16322E6200346C45 /* FractalStreamCompiler.dylib */,
 			);
-			name = Compiler;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +164,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				368FF18016322E7000346C45 /* PBXTargetDependency */,
 			);
 			name = FSMovieTool;
 			productInstallPath = "$(HOME)/Library/Bundles";
@@ -186,12 +192,28 @@
 			);
 			mainGroup = 089C166AFE841209C02AAC07 /* FSToolTest */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 368FF17A16322E6200346C45 /* Products */;
+					ProjectRef = 368FF17916322E6200346C45 /* FractalStreamCompiler.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8D5B49AC048680CD000E48DA /* FSMovieTool */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		368FF17E16322E6200346C45 /* FractalStreamCompiler.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = FractalStreamCompiler.dylib;
+			remoteRef = 368FF17D16322E6200346C45 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8D5B49AF048680CD000E48DA /* Resources */ = {
@@ -215,6 +237,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		368FF18016322E7000346C45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FractalStreamCompiler;
+			targetProxy = 368FF17F16322E7000346C45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
@@ -268,7 +298,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = ../../include/;
+				USER_HEADER_SEARCH_PATHS = "../../include/ ../../external/FractalStreamCompiler/include/";
 			};
 			name = Debug;
 		};
@@ -278,7 +308,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = ../../include/;
+				USER_HEADER_SEARCH_PATHS = "../../include/ ../../external/FractalStreamCompiler/include/";
 			};
 			name = Release;
 		};

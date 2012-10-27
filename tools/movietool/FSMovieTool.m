@@ -244,7 +244,8 @@ static NSBundle* ourBundle = nil;
 //			NSLog(@"frame length is %i of 600\n", (int) (6.0 * duration));
 			frameEnum = [images objectEnumerator];
 			pic = [frameEnum nextObject];
-			tmp = [NSString stringWithFormat: @"%@/FSMovieFrame%i.tiff", NSTemporaryDirectory(), random()];
+            unsigned int random = (unsigned int)arc4random();
+			tmp = [NSString stringWithFormat: @"%@/FSMovieFrame%u.tiff", NSTemporaryDirectory(), random];
 			[[pic TIFFRepresentation] writeToFile: tmp atomically: YES];
 
 //			NSLog(@"about to invoke [movie initWithFile: tmp error: nil] on main thread...\n");
@@ -490,7 +491,7 @@ static NSBundle* ourBundle = nil;
 		source: [NSString stringWithFormat: @"default t to 0.\nset z to %@.", [parametricField stringValue]]
 		andDescription: nil
 	];
-	[compiler compile: self];
+	[compiler compile];
 	errorMessage = [compiler errorMessage];
 	if(errorMessage != nil) {
 		[errorField setHidden: NO];

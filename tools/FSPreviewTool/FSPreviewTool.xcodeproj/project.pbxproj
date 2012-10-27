@@ -23,7 +23,6 @@
 		6837DB5A0CEA9C4300EC448F /* FSPreviewTool.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSPreviewTool.h; sourceTree = "<group>"; };
 		6837DB5B0CEA9C4300EC448F /* FSPreviewTool.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSPreviewTool.m; sourceTree = "<group>"; };
 		6837DB630CEA9C4B00EC448F /* FSPreviewTool.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = FSPreviewTool.nib; sourceTree = "<group>"; };
-		68FAB5970D5B9CE7004ABF7A /* FSColorWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSColorWidget.h; sourceTree = "<group>"; };
 		68FAB59F0D5BACE0004ABF7A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		8D5B49B6048680CD000E48DA /* FSPreviewTool.fstool */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSPreviewTool.fstool; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,7 +79,6 @@
 			children = (
 				6837DB5A0CEA9C4300EC448F /* FSPreviewTool.h */,
 				6837DB5B0CEA9C4300EC448F /* FSPreviewTool.m */,
-				68FAB5970D5B9CE7004ABF7A /* FSColorWidget.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -146,7 +144,7 @@
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0450;
 			};
 			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "FSPreviewTool" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -203,6 +201,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
@@ -221,6 +220,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 3;

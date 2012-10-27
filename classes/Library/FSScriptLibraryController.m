@@ -98,7 +98,14 @@
 
 - (IBAction) newScript: (id) sender {
 	ENTER
-	[theDoc doDocumentLoadWithLibrary: NO];
+    FSScriptEditorController* editorWindow = [[FSScriptEditorController alloc] initWithItem:nil];
+    [editorWindow view];
+    NSWindow* editwindow = [editorWindow window];
+    [editwindow makeKeyAndOrderFront:nil];
+    
+	//[theDoc doDocumentLoadWithLibrary: NO];
+    
+    
 	EXIT
 }
 

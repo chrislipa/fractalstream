@@ -28,7 +28,6 @@
 		6837DB5A0CEA9C4300EC448F /* FSSnapshotTool.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FSSnapshotTool.h; sourceTree = "<group>"; };
 		6837DB5B0CEA9C4300EC448F /* FSSnapshotTool.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSSnapshotTool.m; sourceTree = "<group>"; };
 		6837DB630CEA9C4B00EC448F /* FSSnapshotTool.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = FSSnapshotTool.nib; sourceTree = "<group>"; };
-		68BFD5300DA5946000325B56 /* FSColorWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSColorWidget.h; sourceTree = "<group>"; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
@@ -82,7 +81,6 @@
 		08FB77AFFE84173DC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				68BFD5300DA5946000325B56 /* FSColorWidget.h */,
 				6837DB5A0CEA9C4300EC448F /* FSSnapshotTool.h */,
 				6837DB5B0CEA9C4300EC448F /* FSSnapshotTool.m */,
 			);
@@ -175,7 +173,7 @@
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0450;
 			};
 			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "FSSnapshot" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -241,7 +239,11 @@
 			buildSettings = {
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = ../../include;
+				HEADER_SEARCH_PATHS = (
+					../../include,
+					../../external/FractalStreamCompiler/include/,
+					"../../external/FractalStreamCompiler/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/include/",
+				);
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -251,7 +253,11 @@
 			buildSettings = {
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = ../../include;
+				HEADER_SEARCH_PATHS = (
+					../../include,
+					../../external/FractalStreamCompiler/include/,
+					"../../external/FractalStreamCompiler/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/include/",
+				);
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -261,6 +267,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -291,6 +298,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;

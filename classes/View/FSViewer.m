@@ -57,7 +57,7 @@
 	viewerColorizer = [[FSColorizer alloc] init];
 	workQueue = [[FSOperationQueue alloc] init];
 	[workQueue setMaxConcurrentOperationCount: NSOperationQueueDefaultMaxConcurrentOperationCount];
-	drawing = [[NSString stringWithString: @"drawing"] retain]; // used as a semaphore
+	drawing = [@"drawing" retain]; // used as a semaphore
 	[viewerColorizer setColorWidget: colorPicker autocolorCache: acCache];
 	renderQueueEntries = 0;
 	renderBatch = 0;

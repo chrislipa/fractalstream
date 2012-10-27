@@ -3,6 +3,7 @@
 #import "FSBrowser.h"
 #import "FSScriptEditorState.h"
 #import "FSSave.h"
+#import "FSECompiler.h"
 @implementation FSScriptEditorController
 @synthesize window;
 -(id) init {
@@ -22,12 +23,15 @@
 	ENTER
 
 	[sourceView setRichText: NO];
-    NSString* path = [item path];
-    NSData* data =   [NSData dataWithContentsOfFile:path];
-    FSSave* savedData = [NSKeyedUnarchiver unarchiveObjectWithData: data];
-    NSArray* editorSavedData = [savedData editor];
-    [self restoreFrom:editorSavedData];
+    if (item) {
+        NSString* path = [item path];
+        NSData* data =   [NSData dataWithContentsOfFile:path];
+        FSSave* savedData = [NSKeyedUnarchiver unarchiveObjectWithData: data];
+        NSArray* editorSavedData = [savedData editor];
+        [self restoreFrom:editorSavedData];
 
+    }
+    
 	EXIT
 }
 
@@ -44,6 +48,10 @@
 	NSString* tmp;
 	NSString* errorMessage;
 	
+    if (compiler == nil) {
+        compiler = [[FSECompiler alloc] init];
+    }
+    
 	tmp = [NSString stringWithFormat: @"%@FSEtemp%i", NSTemporaryDirectory(), rand()];
 	[compiler 
 		setTitle: [titleField stringValue]
@@ -51,8 +59,8 @@
 		andDescription: [descriptionView textStorage]
 	];
 	[[browser session] setProgram: [sourceView string]];
-	[compiler setOutputFilename: tmp];
-	[compiler compile: sender];
+	//[compiler setOutputFilename: tmp];
+	[compiler compile];
 	errorMessage = [compiler errorMessage];
 	if(errorMessage != nil) {
 		[sourceView setSelectedRange: [compiler errorRange]];
@@ -88,7 +96,7 @@
 }
 
 - (IBAction) insertPi: (id) sender {
-	[sourceView insertText: [NSString stringWithFormat: @"%C", 0x03c0]];
+	[sourceView insertText: [NSString stringWithFormat: @"%C",(unsigned short) 0x03c0]];
 }
 
 - (IBAction)testProgram:(id)sender
@@ -98,21 +106,30 @@
 
 
 - (void) restoreFrom: (NSArray*) savedState {
-	NSRange range;
-//	NSLog(@"savedState 0 = %@, 1 = %@\n", [savedState objectAtIndex: 0], [savedState objectAtIndex: 1]);
-	[titleField setStringValue: [savedState objectAtIndex: 0]];
-	[sourceView setString: [savedState objectAtIndex: 1]];
-	[descriptionView selectAll: self];
-	range = [descriptionView selectedRange];
-	[descriptionView replaceCharactersInRange: range withRTFD: [savedState objectAtIndex: 2]];
-/*
- [descriptionView setString: [NSString stringWithFormat: @"first 4 bytes are: %c %c %c %c\n",
-		((char*) [[savedState objectAtIndex: 2] bytes])[0],
-		((char*) [[savedState objectAtIndex: 2] bytes])[1],
-		((char*) [[savedState objectAtIndex: 2] bytes])[2],
-		((char*) [[savedState objectAtIndex: 2] bytes])[3]
-	]];
-*/
+    if (savedState != nil && [savedState isKindOfClass:[NSArray class]] && [savedState count] >= 3 &&
+        [[savedState objectAtIndex:0] isKindOfClass:[NSString class]] &&
+        [[savedState objectAtIndex:1] isKindOfClass:[NSString class]] &&
+        [[savedState objectAtIndex:2] isKindOfClass:[NSData class]]
+        ) {
+        
+        
+        
+        NSRange range;
+        //	NSLog(@"savedState 0 = %@, 1 = %@\n", [savedState objectAtIndex: 0], [savedState objectAtIndex: 1]);
+        [titleField setStringValue: [savedState objectAtIndex: 0]];
+        [sourceView setString: [savedState objectAtIndex: 1]];
+        [descriptionView selectAll: self];
+        range = [descriptionView selectedRange];
+        [descriptionView replaceCharactersInRange: range withRTFD: [savedState objectAtIndex: 2]];
+        /*
+         [descriptionView setString: [NSString stringWithFormat: @"first 4 bytes are: %c %c %c %c\n",
+         ((char*) [[savedState objectAtIndex: 2] bytes])[0],
+         ((char*) [[savedState objectAtIndex: 2] bytes])[1],
+         ((char*) [[savedState objectAtIndex: 2] bytes])[2],
+         ((char*) [[savedState objectAtIndex: 2] bytes])[3]
+         ]];
+         */
+    }
 }
 
 - (NSArray*) state {

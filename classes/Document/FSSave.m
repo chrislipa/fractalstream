@@ -73,7 +73,7 @@ static BOOL miniLoads = YES;
 - (id) initWithCoder: (NSCoder*) coder {
 	ENTER
 	self = [super init];
-	
+		browser = nil;
 
 	tools = [NSNull null];
 	disableEditor = NO;
@@ -84,7 +84,7 @@ static BOOL miniLoads = YES;
 		else editor = [[coder decodeObject] retain];
 		session = nil;
 		colorizer = nil;
-		browser = nil;
+	
 	}
 	else if([type isEqualToString: @"full session"]) {
 		editor = [[coder decodeObject] retain];

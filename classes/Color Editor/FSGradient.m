@@ -27,7 +27,7 @@
 	
  	self = [super init];
 	[self resetToColor: [NSColor colorWithCalibratedRed: 1.0 green: 1.0 blue: 1.0 alpha: 1.0]];
-	name = [[NSString stringWithString: @"< please name me >"] retain];
+	name = [ @"< please name me >" retain];
 	smoothing = 0;
 	linear = YES;
 	subdivisions = 16;

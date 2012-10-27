@@ -68,39 +68,42 @@
 }
 
 - (void) doDocumentLoadWithLibrary: (BOOL) lib {
-	/*
+	
 	ENTER
-	if(newSession == NO) { 
+   
+	if(newSession == NO) {
 		[editor restoreFrom: [savedData editor]];
 		if([savedData session] != nil) {
-			[self log: @"Loading saved FractalStream document"];
-			[colorizer getColorsFrom: [savedData colorizer]]; [self log: @"."];
-			[session getSessionFrom: [savedData session]]; [self log: @"."];
-			[session setFlags: [colorizer names]]; [self log: @"."];
-			[browser setVariableNamesTo: [savedData variableNames]]; [self log: @"."];
-			[browser setVariableValuesToReal: [savedData variableReal] imag: [savedData variableImag]]; [self log: @"."];
-			[browser setProbeNamesTo: [savedData probeNames]]; [self log: @"."];
-			[browser setAllowEditor: [savedData allowEditor]]; [self log: @"."];
-			[browser reloadSession]; [self log: @"."];
-			if([savedData hasTools]) [browser addTools: [savedData customTools]];
-			//			[browser loadTools];
-			[self log: @"ok\n"];
+			LOG(@"Loading saved FractalStream document");
+			[colorizer getColorsFrom: [savedData colorizer]]; LOG(@".");
+			[session getSessionFrom: [savedData session]];  LOG(@".");
+			[session setFlags: [colorizer names]];  LOG(@".");
+			[browser setVariableNamesTo: [savedData variableNames]]; LOG(@".");
+			[browser setVariableValuesToReal: [savedData variableReal] imag: [savedData variableImag]];  LOG(@".");
+			[browser setProbeNamesTo: [savedData probeNames]]; LOG(@".");
+			[browser setAllowEditor: [savedData allowEditor]]; LOG(@".");
+			[browser reloadSession];  LOG(@".");
+			if([savedData hasTools]) {
+                [browser addTools: [savedData customTools]];
+            }
+            //![browser loadTools];
+            LOG(@"OK");
 			[mainTabView selectTabViewItemAtIndex: 2];
 		}
 		else {
-			[self log: @"Loading uncompiled FractalStream script...\n"];
+			LOG(@"Loading uncompiled FractalStream script...\n");
 			[mainTabView selectTabViewItemAtIndex: 1];
-			[self log: @"ok"];
+			LOG(@"ok");
 		}
+	} else {
+	 
+		if(lib) {
+			LOG(@"Opening script library.\n");
+        } else {
+            LOG(@"Opening blank FractalStream script.\n");
+        }
+		[mainTabView selectTabViewItemAtIndex: (lib == YES)? 0 : 1];
 	}
-	else {
-	 */
-//		if(lib) 
-//			[self log: @"Opening script library.\n"];
-	
-//		else [self log: @"Opening blank FractalStream script.\n"];
-//		[mainTabView selectTabViewItemAtIndex: (lib == YES)? 0 : 1];
-	//}
 	EXIT
 }
 

@@ -4,7 +4,7 @@
 #import "FSViewer.h"
 #import "FSLog.h"
 #import "FSTools.h"
-
+#import "FSECompiler.h"
 @implementation FSBrowser
 
 - (id) init {
@@ -386,7 +386,7 @@
 		case 2:
 			return [imagPart objectAtIndex: row];
 		default:
-			return [NSString stringWithString: @"?"];
+			return @"?";
 	}
 }
 - (void) tableView: (NSTableView*) tableView setObjectValue: (id) anObject forTableColumn: (NSTableColumn*) tableColumn row: (int) row {

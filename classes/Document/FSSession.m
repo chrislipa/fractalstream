@@ -23,8 +23,8 @@
 	self -> center[0] = 0.0; self -> center[1] = 0.0;
 	self -> program = 1;
 	self -> nodeNumber = 0;//GlobalNodeCount++;
-	self -> title = [[NSString stringWithString: @"(no title)"] retain];
-	self -> notes = [[NSString stringWithString: @"(no notes)"] retain];
+	self -> title = [ @"(no title)" retain];
+	self -> notes = [@"(no notes)" retain];
 	self -> firstChild = nil;
 	self -> previousSibling = nil;
 	self -> nextSibling = nil;
@@ -200,7 +200,7 @@
 	self = [super init];
 	root = [[FSSessionNode alloc] init];
 	currentNode = root;
-	sessionTitle = [[NSString stringWithString: @"FractalStream Beta Session"] retain];
+	sessionTitle = [ @"FractalStream Beta Session" retain];
 	EXIT
 	return self;
 }
@@ -396,9 +396,9 @@
 	child -> center[0] = x; child -> center[1] = y;
 	child -> scale = scale;
 	child -> program = flag;
-	if(flag == 1) child -> title = [[NSString stringWithString: @"Parameter Plane"] retain];
-	else child -> title = [[NSString stringWithString: @"Dynamical Plane"] retain];
-	child -> notes = [[NSString stringWithString: @""] retain];
+	if(flag == 1) child -> title = [ @"Parameter Plane" retain];
+	else child -> title = [@"Dynamical Plane" retain];
+	child -> notes = [@"" retain];
 	[self addChildNode: child andMakeCurrent: YES];
 	[historyView reloadItem: currentNode -> parent reloadChildren: YES];
 	[historyView expandItem: currentNode -> parent];
