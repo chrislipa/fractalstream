@@ -1,7 +1,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "FSViewerData.h"
-#import "FSTool.h"
+//#import "FSTool.h"
 #import "FSProtocols.h"
 #ifndef FSTool_Type_Definitions
 #define FSTool_Type_Definitions
@@ -15,7 +15,7 @@ typedef struct {
 	double x, y;
 } FSPoint;
 
-@interface FSSnapshotTool : NSObject <FSTool> {
+@interface FSSnapshotTool : NSObject /*<FSTool>*/ {
 	id<FractalStreamRenderer> owner;
 	IBOutlet NSPanel* panel;
 	IBOutlet NSTextField* widthBox;

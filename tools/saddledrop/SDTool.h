@@ -1,5 +1,5 @@
 
-#import "FSTool.h"
+//#import "FSTool.h"
 
 #import <Cocoa/Cocoa.h>
 #include <math.h>
@@ -34,7 +34,7 @@ typedef struct {
 int _saddles_for_point(double* saddle, double* point);
 int _test_saddles(int saddles, double* saddleX, double* saddleY, double radius2, double* r);
 
-@interface SDTool : NSObject <FSTool> {
+@interface SDTool : NSObject/* <FSTool> */{
 	id<FractalStreamRenderer> owner;
 	IBOutlet NSColorWell* colorWell;
 	IBOutlet NSPanel* panel;
