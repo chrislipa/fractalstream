@@ -14,6 +14,8 @@ external/llvm-2.5/Release
 /*/build/*
 /**/build/*
 /**/build/**
-
+external/plcrashreporter-1.0/build/*
+/external/plcrashreporter-1.0/build/*
+external/plcrashreporter-1.0/build
 /external/plcrashreporter-1.0/build/**
 /external/llvm-2.5/Release/lib/**
