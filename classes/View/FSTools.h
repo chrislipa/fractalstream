@@ -14,6 +14,7 @@
 #import "FSViewer.h"
 #import "FSTool.h"
 #import "FSCustomDataManager.h"
+#import "FSBrowserProtocol.h"
 
 #ifndef FSTool_Type_Definitions
 #define FSTool_Type_Definitions
